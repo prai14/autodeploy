@@ -1,0 +1,15 @@
+aws iam list-roles --output text --profile ids-aws --query 'Roles[].[Arn,RoleId,RoleName]'|column -t 
+arn:aws-cn:iam::484879136155:role/CloudTrail_CloudWatchLogs_Role       AROAOYUSAJK42LZLMYAUC  CloudTrail_CloudWatchLogs_Role
+arn:aws-cn:iam::484879136155:role/service-role/config-role-cn-north-1  AROAPPHWFCPAWDOMMKW5G  config-role-cn-north-1
+arn:aws-cn:iam::484879136155:role/dsrole                               AROAPWTNCVO3ODAYF7XBS  dsrole
+arn:aws-cn:iam::484879136155:role/rds-monitoring-role                  AROAOMEQWHOPQOGKXU4KI  rds-monitoring-role
+arn:aws-cn:iam::484879136155:role/role_95569                           AROAPLKJLUE2AZPGNOOLM  role_95569
+arn:aws-cn:iam::484879136155:role/role_abfinance                       AROAPBN6HND7WBTTBQHLW  role_abfinance
+arn:aws-cn:iam::484879136155:role/role_admin                           AROAOUVSF7O55R3D5GVRI  role_admin
+arn:aws-cn:iam::484879136155:role/role_epolicy                         AROAOQ7UPYQ4HYNZFD64A  role_epolicy
+arn:aws-cn:iam::484879136155:role/role_inovation                       AROAPNXZYYB773GRPELSY  role_inovation
+arn:aws-cn:iam::484879136155:role/role_internetds                      AROAP45D6AGS7HKGAM3UO  role_internetds
+arn:aws-cn:iam::484879136155:role/role_nat                             AROAPDRSFA264EPNY7WSK  role_nat
+arn:aws-cn:iam::484879136155:role/role_test_abfinance                  AROAO37AA7KILXWWV6YSW  role_test_abfinance
+arn:aws-cn:iam::484879136155:role/role_test_internetds                 AROAPMIO5GT5GL745U656  role_test_internetds
+arn:aws-cn:iam::484879136155:role/vmimport                             AROAPP2LVLEWS4PAIETQO  vmimport
