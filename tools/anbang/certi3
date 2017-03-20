@@ -1,0 +1,3 @@
+sudo echo "----check fstab-----"
+sudo cat /etc/fstab|grep app
+sudo cat /etc/fstab|grep swapfile

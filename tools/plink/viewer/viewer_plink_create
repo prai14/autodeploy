@@ -1,0 +1,3 @@
+#while read ip password user;do echo "$ip";echo y|plink "$user@$ip" -pw "$password" -m viewer_create;done < viewer_list
+while read ip password user;do echo "$ip";echo y|plink "$user@$ip" -pw "$password" -m viewer_passwd;done < viewer_list
+#while read ip password user;do echo "$ip";echo y|plink "$user@$ip" -pw "$password" -m viewer_grep;done < viewer_list

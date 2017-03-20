@@ -1,0 +1,10 @@
+#cat getlpminfo20160102.log|awk '{if(NR%2!=0)ORS="|";else ORS="\n";print}' > lpminfo20160102.txt
+#sed -i 's/://g' lpminfo20160102.txt
+#cat getlpminfo20160102n.log|awk '{if(NR%2!=0)ORS="|";else ORS="\n";print}' > lpminfo20160102n.txt
+#sed -i 's/://g' lpminfo20160102n.txt
+#cat getlpminfo20160103.log|awk '{if(NR%2!=0)ORS="|";else ORS="\n";print}' > lpminfo20160103.txt
+#sed -i 's/://g' lpminfo20160103.txt
+#cat getlpminfo20160104.log|awk '{if(NR%2!=0)ORS="|";else ORS="\n";print}' > lpminfo20160104.txt
+#sed -i 's/://g' lpminfo20160104.txt
+cat lpminfo20160104all.log|awk '{if(NR%2!=0)ORS="|";else ORS="\n";print}' > lpminfo20160104all.txt
+sed -i 's/://g' lpminfo20160104all.txt

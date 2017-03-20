@@ -1,0 +1,3 @@
+cat lpminfo.log |grep -v "CST" > 22
+cat 22|awk '{if(NR%2!=0)ORS="|";else ORS="\n";print}' > lpminfo.txt
+sed -i 's/://g' lpminfo.txt

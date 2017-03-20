@@ -1,0 +1,15 @@
+dd if=/dev/zero of=/dev/sdb1  bs=1024 count=4
+dd if=/dev/zero of=/dev/sdb2  bs=1024 count=4
+dd if=/dev/zero of=/dev/sdb3  bs=1024 count=4
+dd if=/dev/zero of=/dev/sdb5  bs=1024 count=4
+dd if=/dev/zero of=/dev/sdb6  bs=1024 count=4
+dd if=/dev/zero of=/dev/sdb7  bs=1024 count=4
+dd if=/dev/zero of=/dev/sdb8  bs=1024 count=4
+dd if=/dev/zero of=/dev/sdb9  bs=1024 count=4
+dd if=/dev/zero of=/dev/sdb10 bs=1024 count=4
+dd if=/dev/zero of=/dev/sdb11 bs=1024 count=4
+dd if=/dev/zero of=/dev/sdc1  bs=1024 count=4
+dd if=/dev/zero of=/dev/sdc2  bs=1024 count=4
+dd if=/dev/zero of=/dev/sdc3  bs=1024 count=4
+dd if=/dev/zero of=/dev/sdc5  bs=1024 count=4
+dd if=/dev/zero of=/dev/sdc6  bs=1024 count=4

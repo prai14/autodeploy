@@ -1,0 +1,1 @@
+date;while read ip password user;do echo "$ip";echo y|plink "$user@$ip" -pw "$password" -m getallpminfo.sh;done < rootpm_list ;date

@@ -1,0 +1,3 @@
+#sed -i '/no crontab for root/d' synlplist.log > synlplist1.log
+#cat synlplist.log|awk '{if(NR%2!=0)ORS="|";else ORS="\n";print}' > synlplist.txt
+cat synvlist.log|awk '{if(NR%2!=0)ORS="|";else ORS="\n";print}' > synvlist.txt

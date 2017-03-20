@@ -1,0 +1,37 @@
+#internetds yc 4 EC2 Amazon Linux
+./launch-ec2.sh ami-fa875397 c3.xlarge 10/90 kp_deploy sg_app_internetds_life_loadrunner bp1_internetds_life_ext1 role_internetds
+./launch-ec2.sh ami-fa875397 c3.xlarge 10/90 kp_deploy sg_app_internetds_life_loadrunner bp1_internetds_life_ext1 role_internetds
+./launch-ec2.sh ami-fa875397 c3.xlarge 10/90 kp_deploy sg_app_internetds_life_loadrunner bp1_internetds_life_ext1 role_internetds
+./launch-ec2.sh ami-fa875397 c3.xlarge 10/90 kp_deploy sg_app_internetds_life_loadrunner bp1_internetds_life_ext1 role_internetds
+#internetds yc 3 xqyhb EC2 Amazon Linux
+./launch-ec2.sh ami-fa875397 c3.xlarge 10/90 kp_deploy sg_app_internetds_life_xqyhb bp1_internetds_life_ext1 role_internetds
+./launch-ec2.sh ami-fa875397 c3.xlarge 10/90 kp_deploy sg_app_internetds_life_xqyhb bp1_internetds_life_ext2 role_internetds
+./launch-ec2.sh ami-fa875397 c3.xlarge 10/90 kp_deploy sg_app_internetds_life_xqyhb bp1_internetds_life_ext1 role_internetds
+--------------------------------------------------------
+ami-5806d235   tmp-yc-internetds_life_xqyhb_app01
+./launch-ec2.sh ami-5806d235 c3.xlarge 8/100 kp_deploy sg_app_internetds_life_xqyhb bp1_internetds_life_ext1 role_internetds
+./launch-ec2.sh ami-5806d235 c3.xlarge 8/100 kp_deploy sg_app_internetds_life_xqyhb bp1_internetds_life_ext2 role_internetds
+./launch-ec2.sh ami-5806d235 c3.xlarge 8/100 kp_deploy sg_app_internetds_life_xqyhb bp1_internetds_life_ext1 role_internetds
+-----------------------------------------------------------------------------------------------------------------------------------
+#top20 DMZ zone 2 nginx
+./launch-ec2.sh ami-fa875397 c3.xlarge 10/90 inovation_private sg_app_abfinance_top20_nginx bp1_abfinance_dmz1 role_inovation
+./launch-ec2.sh ami-fa875397 c3.xlarge 10/90 inovation_private sg_app_abfinance_top20_nginx bp1_abfinance_dmz2 role_inovation
+-----------------------------------------------------------------------------------------------------------------------------------
+./launch-ec2.sh ami-fa875397 c3.xlarge 10/90 kp_management sg_mgmt_bastion bp1_mgmt_dmz1 role_admin      ----Amazon Linux
+./launch-ec2.sh ami-fa875397 c3.xlarge 10/90 kp_management sg_mgmt_bastion bp1_mgmt_dmz2 role_admin
+----------------------------------
+./launch-ec2.sh ami-52d1183f c3.xlarge 10/90 kp_management sg_mgmt_bastion bp1_mgmt_dmz1 role_admin      ----redhat
+./launch-ec2.sh ami-52d1183f c3.xlarge 10/90 kp_management sg_mgmt_bastion bp1_mgmt_dmz2 role_admin
+-----------------------------------------------------------------------------------------------------------------------------------
+./launch-ec2.sh ami-7152861c c3.large 10/90 95569_private sg_app_abfinance_95569 bp1_abfinance_95569_ext1 role_95569
+./launch-ec2.sh ami-7152861c c3.large 10/90 95569_private sg_app_abfinance_95569 bp1_abfinance_95569_ext2 role_95569
+#95569 split 20 EC2 Amazon Linux
+-----------------------------------------------------------------------------------------------------------------------------------
+#internetds yc 6 xqyhb EC2 Amazon Linux
+./launch-ec2.sh ami-3e71a553 c3.2xlarge 8/100 kp_deploy sg_app_internetds_life_xqyhb bp1_internetds_life_int1 role_internetds
+./launch-ec2.sh ami-3e71a553 c3.2xlarge 8/100 kp_deploy sg_app_internetds_life_xqyhb bp1_internetds_life_int2 role_internetds
+--------------------------------------------------------
+#internetds yc 6 dsjr EC2 Amazon Linux
+./launch-ec2.sh ami-b476a2d9 c3.2xlarge 8/100 kp_deploy sg_app_internetds_front_dsjr bp1_internetds_front_int1 role_internetds
+./launch-ec2.sh ami-b476a2d9 c3.2xlarge 8/100 kp_deploy sg_app_internetds_front_dsjr bp1_internetds_front_int2 role_internetds
+--------------------------------------------------------

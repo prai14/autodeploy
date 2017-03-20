@@ -1,0 +1,83 @@
+Snapshots taken by ec2-volumes-autobackup.sh will be eligible for purging after the following date (the purge after date given in seconds from epoch): 1487361938.
+INSTANCE i-46b0ebfe
+INSTANCE NAME: igv-ec2-im02
+Tagging Snapshot snap-06dfb8bab7d4cb241 with the following Tags: Key=CreatedBy,Value=ec2-automate-backup Key=InstanceId,Value=i-46b0ebfe Key=InstanceName,Value=igv-ec2-im02 Key=PurgeAfterFE,Value=1487361938 Key=PurgeAllow,Value=true Key=Volume,Value=vol-e7515158 Key=Created,Value=1484769938
+INSTANCE i-24b0eb9c
+INSTANCE NAME: igv-ec2-web02
+Tagging Snapshot snap-0882fa01fbd7d7ac9 with the following Tags: Key=CreatedBy,Value=ec2-automate-backup Key=InstanceId,Value=i-24b0eb9c Key=InstanceName,Value=igv-ec2-web02 Key=PurgeAfterFE,Value=1487361938 Key=PurgeAllow,Value=true Key=Volume,Value=vol-3e515181 Key=Created,Value=1484769938
+INSTANCE i-24b0eb9c
+INSTANCE NAME: igv-ec2-web02
+Tagging Snapshot snap-0e84ffc9487ba6c3d with the following Tags: Key=CreatedBy,Value=ec2-automate-backup Key=InstanceId,Value=i-24b0eb9c Key=InstanceName,Value=igv-ec2-web02 Key=PurgeAfterFE,Value=1487361938 Key=PurgeAllow,Value=true Key=Volume,Value=vol-3d515182 Key=Created,Value=1484769938
+INSTANCE i-46b0ebfe
+INSTANCE NAME: igv-ec2-im02
+Tagging Snapshot snap-01e2beef178db56b5 with the following Tags: Key=CreatedBy,Value=ec2-automate-backup Key=InstanceId,Value=i-46b0ebfe Key=InstanceName,Value=igv-ec2-im02 Key=PurgeAfterFE,Value=1487361938 Key=PurgeAllow,Value=true Key=Volume,Value=vol-2d515192 Key=Created,Value=1484769938
+INSTANCE i-2eb0eb96
+INSTANCE NAME: igv-ec2-fs02
+Tagging Snapshot snap-03d209b32f721eee6 with the following Tags: Key=CreatedBy,Value=ec2-automate-backup Key=InstanceId,Value=i-2eb0eb96 Key=InstanceName,Value=igv-ec2-fs02 Key=PurgeAfterFE,Value=1487361938 Key=PurgeAllow,Value=true Key=Volume,Value=vol-2151519e Key=Created,Value=1484769938
+INSTANCE i-2eb0eb96
+INSTANCE NAME: igv-ec2-fs02
+Tagging Snapshot snap-02165b2ca9a65d817 with the following Tags: Key=CreatedBy,Value=ec2-automate-backup Key=InstanceId,Value=i-2eb0eb96 Key=InstanceName,Value=igv-ec2-fs02 Key=PurgeAfterFE,Value=1487361938 Key=PurgeAllow,Value=true Key=Volume,Value=vol-2051519f Key=Created,Value=1484769938
+INSTANCE i-ecbd9b54
+INSTANCE NAME: uat-igv-ec2-fs02
+Tagging Snapshot snap-0915153490a7eb0b9 with the following Tags: Key=CreatedBy,Value=ec2-automate-backup Key=InstanceId,Value=i-ecbd9b54 Key=InstanceName,Value=uat-igv-ec2-fs02 Key=PurgeAfterFE,Value=1487361938 Key=PurgeAllow,Value=true Key=Volume,Value=vol-1c0114a3 Key=Created,Value=1484769938
+INSTANCE i-ecbd9b54
+INSTANCE NAME: uat-igv-ec2-fs02
+Tagging Snapshot snap-07d79c58ee7539e05 with the following Tags: Key=CreatedBy,Value=ec2-automate-backup Key=InstanceId,Value=i-ecbd9b54 Key=InstanceName,Value=uat-igv-ec2-fs02 Key=PurgeAfterFE,Value=1487361938 Key=PurgeAllow,Value=true Key=Volume,Value=vol-1b0114a4 Key=Created,Value=1484769938
+INSTANCE i-ecbd9b54
+INSTANCE NAME: uat-igv-ec2-fs02
+Tagging Snapshot snap-08bcd1a1c179d21bd with the following Tags: Key=CreatedBy,Value=ec2-automate-backup Key=InstanceId,Value=i-ecbd9b54 Key=InstanceName,Value=uat-igv-ec2-fs02 Key=PurgeAfterFE,Value=1487361938 Key=PurgeAllow,Value=true Key=Volume,Value=vol-070114b8 Key=Created,Value=1484769938
+INSTANCE i-e599bf5d
+INSTANCE NAME: uat-igv-ec2-im02
+Tagging Snapshot snap-03321a7a19ad83ef7 with the following Tags: Key=CreatedBy,Value=ec2-automate-backup Key=InstanceId,Value=i-e599bf5d Key=InstanceName,Value=uat-igv-ec2-im02 Key=PurgeAfterFE,Value=1487361938 Key=PurgeAllow,Value=true Key=Volume,Value=vol-32d8cd8d Key=Created,Value=1484769938
+INSTANCE i-e599bf5d
+INSTANCE NAME: uat-igv-ec2-im02
+Tagging Snapshot snap-0260a2769229962a2 with the following Tags: Key=CreatedBy,Value=ec2-automate-backup Key=InstanceId,Value=i-e599bf5d Key=InstanceName,Value=uat-igv-ec2-im02 Key=PurgeAfterFE,Value=1487361938 Key=PurgeAllow,Value=true Key=Volume,Value=vol-99dbce26 Key=Created,Value=1484769938
+INSTANCE i-e599bf5d
+INSTANCE NAME: uat-igv-ec2-im02
+Tagging Snapshot snap-05e97304a5e6fcd6e with the following Tags: Key=CreatedBy,Value=ec2-automate-backup Key=InstanceId,Value=i-e599bf5d Key=InstanceName,Value=uat-igv-ec2-im02 Key=PurgeAfterFE,Value=1487361938 Key=PurgeAllow,Value=true Key=Volume,Value=vol-87dbce38 Key=Created,Value=1484769938
+INSTANCE i-46b0ebfe
+INSTANCE NAME: igv-ec2-im02
+Tagging Snapshot snap-09a0c04d296aed68c with the following Tags: Key=CreatedBy,Value=ec2-automate-backup Key=InstanceId,Value=i-46b0ebfe Key=InstanceName,Value=igv-ec2-im02 Key=PurgeAfterFE,Value=1487361938 Key=PurgeAllow,Value=true Key=Volume,Value=vol-0d15268307606d6f0 Key=Created,Value=1484769938
+INSTANCE i-2eb0eb96
+INSTANCE NAME: igv-ec2-fs02
+Tagging Snapshot snap-0ba2055b8af7617b2 with the following Tags: Key=CreatedBy,Value=ec2-automate-backup Key=InstanceId,Value=i-2eb0eb96 Key=InstanceName,Value=igv-ec2-fs02 Key=PurgeAfterFE,Value=1487361938 Key=PurgeAllow,Value=true Key=Volume,Value=vol-0e009e505c05a452a Key=Created,Value=1484769938
+INSTANCE i-b486a98c
+INSTANCE NAME: igv-ec2-im01
+Tagging Snapshot snap-045d7639f921705c7 with the following Tags: Key=CreatedBy,Value=ec2-automate-backup Key=InstanceId,Value=i-b486a98c Key=InstanceName,Value=igv-ec2-im01 Key=PurgeAfterFE,Value=1487361938 Key=PurgeAllow,Value=true Key=Volume,Value=vol-64bceae1 Key=Created,Value=1484769938
+INSTANCE i-b486a98c
+INSTANCE NAME: igv-ec2-im01
+Tagging Snapshot snap-06b2ef099201ed4b2 with the following Tags: Key=CreatedBy,Value=ec2-automate-backup Key=InstanceId,Value=i-b486a98c Key=InstanceName,Value=igv-ec2-im01 Key=PurgeAfterFE,Value=1487361938 Key=PurgeAllow,Value=true Key=Volume,Value=vol-67bceae2 Key=Created,Value=1484769938
+INSTANCE i-b287a88a
+INSTANCE NAME: igv-ec2-web01
+Tagging Snapshot snap-09dde37a3048c10ff with the following Tags: Key=CreatedBy,Value=ec2-automate-backup Key=InstanceId,Value=i-b287a88a Key=InstanceName,Value=igv-ec2-web01 Key=PurgeAfterFE,Value=1487361938 Key=PurgeAllow,Value=true Key=Volume,Value=vol-b5bdeb30 Key=Created,Value=1484769938
+INSTANCE i-b287a88a
+INSTANCE NAME: igv-ec2-web01
+Tagging Snapshot snap-00f7550541e94cf4a with the following Tags: Key=CreatedBy,Value=ec2-automate-backup Key=InstanceId,Value=i-b287a88a Key=InstanceName,Value=igv-ec2-web01 Key=PurgeAfterFE,Value=1487361938 Key=PurgeAllow,Value=true Key=Volume,Value=vol-c7bdeb42 Key=Created,Value=1484769938
+INSTANCE i-0a87a832
+INSTANCE NAME: igv-ec2-fs01
+Tagging Snapshot snap-016d8b3f18368e994 with the following Tags: Key=CreatedBy,Value=ec2-automate-backup Key=InstanceId,Value=i-0a87a832 Key=InstanceName,Value=igv-ec2-fs01 Key=PurgeAfterFE,Value=1487361938 Key=PurgeAllow,Value=true Key=Volume,Value=vol-30bdebb5 Key=Created,Value=1484769938
+INSTANCE i-0a87a832
+INSTANCE NAME: igv-ec2-fs01
+Tagging Snapshot snap-0fe824767d0fb145d with the following Tags: Key=CreatedBy,Value=ec2-automate-backup Key=InstanceId,Value=i-0a87a832 Key=InstanceName,Value=igv-ec2-fs01 Key=PurgeAfterFE,Value=1487361938 Key=PurgeAllow,Value=true Key=Volume,Value=vol-65bdebe0 Key=Created,Value=1484769938
+INSTANCE i-e3dcf6db
+INSTANCE NAME: uat-igv-ec2-web01
+Tagging Snapshot snap-0352f30c6caec8f0d with the following Tags: Key=CreatedBy,Value=ec2-automate-backup Key=InstanceId,Value=i-e3dcf6db Key=InstanceName,Value=uat-igv-ec2-web01 Key=PurgeAfterFE,Value=1487361938 Key=PurgeAllow,Value=true Key=Volume,Value=vol-60b0e8e5 Key=Created,Value=1484769938
+INSTANCE i-e3dcf6db
+INSTANCE NAME: uat-igv-ec2-web01
+Tagging Snapshot snap-013e68c64ab033a50 with the following Tags: Key=CreatedBy,Value=ec2-automate-backup Key=InstanceId,Value=i-e3dcf6db Key=InstanceName,Value=uat-igv-ec2-web01 Key=PurgeAfterFE,Value=1487361938 Key=PurgeAllow,Value=true Key=Volume,Value=vol-73b0e8f6 Key=Created,Value=1484769938
+INSTANCE i-aacec892
+INSTANCE NAME: newTags
+Tagging Snapshot snap-0c9344937efdb80a2 with the following Tags: Key=CreatedBy,Value=ec2-automate-backup Key=InstanceId,Value=i-aacec892 Key=InstanceName,Value=newTags Key=PurgeAfterFE,Value=1487361938 Key=PurgeAllow,Value=true Key=Volume,Value=vol-10241f95 Key=Created,Value=1484769938
+INSTANCE i-e3dcf6db
+INSTANCE NAME: uat-igv-ec2-web01
+Tagging Snapshot snap-0640e2299a9dc70d5 with the following Tags: Key=CreatedBy,Value=ec2-automate-backup Key=InstanceId,Value=i-e3dcf6db Key=InstanceName,Value=uat-igv-ec2-web01 Key=PurgeAfterFE,Value=1487361938 Key=PurgeAllow,Value=true Key=Volume,Value=vol-010b6aec845fdc72e Key=Created,Value=1484769938
+INSTANCE i-b486a98c
+INSTANCE NAME: igv-ec2-im01
+Tagging Snapshot snap-0da5a73c4ea081df3 with the following Tags: Key=CreatedBy,Value=ec2-automate-backup Key=InstanceId,Value=i-b486a98c Key=InstanceName,Value=igv-ec2-im01 Key=PurgeAfterFE,Value=1487361938 Key=PurgeAllow,Value=true Key=Volume,Value=vol-039deb6f07ed7c60c Key=Created,Value=1484769938
+INSTANCE i-0a87a832
+INSTANCE NAME: igv-ec2-fs01
+Tagging Snapshot snap-02181333b7622788c with the following Tags: Key=CreatedBy,Value=ec2-automate-backup Key=InstanceId,Value=i-0a87a832 Key=InstanceName,Value=igv-ec2-fs01 Key=PurgeAfterFE,Value=1487361938 Key=PurgeAllow,Value=true Key=Volume,Value=vol-095211fa83f1b6524 Key=Created,Value=1484769938
+INSTANCE i-b287a88a
+INSTANCE NAME: igv-ec2-web01
+Tagging Snapshot snap-07a7fe347778d40bd with the following Tags: Key=CreatedBy,Value=ec2-automate-backup Key=InstanceId,Value=i-b287a88a Key=InstanceName,Value=igv-ec2-web01 Key=PurgeAfterFE,Value=1487361938 Key=PurgeAllow,Value=true Key=Volume,Value=vol-0cd7c487775e1e6bb Key=Created,Value=1484769938
+Snapshot Purging is Starting Now.

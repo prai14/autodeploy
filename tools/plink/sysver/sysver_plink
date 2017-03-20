@@ -1,0 +1,3 @@
+#date;while read ip password user;do echo "$ip";echo y|plink "$user@$ip" -pw "$password" -m sysver.sh;done < rootvm_list ;date
+#date;while read ip password user;do echo "$ip";echo y|plink "$user@$ip" -pw "$password" -m sysver.sh;done < rootpm_list ;date
+while read ip password user;do echo "$ip";echo y|plink "$user@$ip" -pw "$password" -m uname-r.sh;done < rootpm_list

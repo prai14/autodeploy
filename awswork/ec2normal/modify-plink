@@ -1,0 +1,1 @@
+while read ip user;do echo "$ip";sudo echo y|plink "$user@$ip" -i "/app/ppk/kp_deploy.ppk" -m cr-lvm-swap-app.sh;done < iplist

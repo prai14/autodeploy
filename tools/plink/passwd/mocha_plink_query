@@ -1,0 +1,8 @@
+#while read ip password user;do echo "$ip";echo y|plink "$user@$ip" -pw "$password" -m mocha_grep;done < mocha1126
+#while read ip password user;do echo "$ip";echo y|plink "$user@$ip" -pw "$password" -m mocha_grep;done < mocha1127
+#while read ip password user;do echo "$ip";echo y|plink "$user@$ip" -pw "$password" -m mocha_grep;done < mocha1130
+#while read ip password user;do echo "$ip";echo y|plink "$user@$ip" -pw "$password" -m mocha_grep;done < mocha1202
+#while read ip password user;do echo "$ip";echo y|plink "$user@$ip" -pw "$password" -m mocha_grep;done<root_prelist.txt
+#while read ip password user;do echo "$ip";echo y|plink "$user@$ip" -pw "$password" -m mocha_grep;done<iplistall
+#while read ip password user;do echo "$ip";echo y|plink "$user@$ip" -pw "$password" -m mocha_grep;done<iplist01
+while read ip password user;do echo "$ip";echo y|plink "$user@$ip" -pw "$password" -m mocha_grep;done< aaa

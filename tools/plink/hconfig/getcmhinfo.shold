@@ -1,0 +1,5 @@
+echo "`cat /proc/cpuinfo |grep "physical id"|sort|uniq|wc -l`  
+`cat /proc/cpuinfo |grep "cores"|uniq|cut -f2 -d: |tr -d " "`
+`cat /proc/cpuinfo |grep "processor"|wc -l`
+`dmidecode |grep HTT|uniq|awk -F"[()]" '{print $2}' `
+`cat /proc/cpuinfo |grep name| cut -f2 -d: |uniq|tr " " = `"|awk '{printf P$0;P="|"}END{print""}'

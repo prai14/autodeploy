@@ -1,0 +1,306 @@
+----------------start-----------------------
+--------------------------------------------------------------
+####1. switch between the AWS account
+##ids-aws---->internet cloud core project ---->484879136155
+##abf-aws---->anbang finance project ---->530545868767
+##aml-aws---->anbang mobile learning project ---->193679806129
+--------------------------------------------------------------
+spawn aws configure
+AWS Access Key ID [****************VY3A]: AKIAOIGNZCJCZCXRVY3A
+AWS Secret Access Key [****************nFGO]: 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
+Default region name [cn-north-1]: cn-north-1
+Default output format [json]: json
+-------------AWS Account profile----------------
+----------cat ~/.aws/config----------
+[default]
+output = json
+region = cn-north-1
+[profile ids-aws]
+output = json
+region = cn-north-1
+[profile abf-aws]
+output = json
+region = cn-north-1
+[profile aml-aws]
+output = json
+region = cn-north-1
+----------cat ~/.aws/credentials----------
+[default]
+aws_access_key_id = AKIAOIGNZCJCZCXRVY3A
+aws_secret_access_key = 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
+[ids-aws]
+aws_access_key_id = AKIAOIGNZCJCZCXRVY3A
+aws_secret_access_key = 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
+[abf-aws]
+aws_access_key_id = AKIAPBFS5ZVIBPY7XRBA
+aws_secret_access_key = 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
+[aml-aws]
+aws_access_key_id = AKIAPRVZTWNQGHOF4IMA
+aws_secret_access_key = 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
+----------------------------------------------------------
+AWS account has switched to ids-aws---->484879136155!
+----------------------------------------------------------
+####2. query the old resources
+####From 2.1 to 2.5 ---->fee items.
+####2.1 EC2
+--------------------------------------------
+95569 EC2 47 sets
+--------------------------------------------
+--------------------------------------------------------------
+|                      DescribeInstances                     |
++----------------------------+-------------+-----------------+
+|  abfinance_95569_db02      |  i-1f577ea7 |  10.219.25.65   |
+|  abfinance_95569_app31     |  i-b2f2c30a |  10.219.23.85   |
+|  abfinance_95569_app13     |  i-61f2c3d9 |  10.219.23.192  |
+|  abfinance_95569_app12     |  i-5699986e |  10.219.22.67   |
+|  abfinance_95569_app16     |  i-83f2c33b |  10.219.23.125  |
+|  abfinance_95569_app14     |  i-63f2c3db |  10.219.23.218  |
+|  abfinance_95569_app28     |  i-929697aa |  10.219.22.85   |
+|  abfinance_95569_app36     |  i-fdf5c445 |  10.219.23.173  |
+|  abfinance_95569_app35     |  i-cb9697f3 |  10.219.22.244  |
+|  abfinance_95569_app10     |  i-3a969702 |  10.219.22.226  |
+|  abfinance_95569_app17     |  i-8af2c332 |  10.219.23.86   |
+|  abfinance_95569_app37     |  i-cbf2c373 |  10.219.23.90   |
+|  abfinance_95569_qyyxapp01 |  i-b470748c |  10.219.22.225  |
+|  abfinance_95569_qyyxapp02 |  i-b570748d |  10.219.22.224  |
+|  abfinance_95569_qyyxapp03 |  i-b670748e |  10.219.22.222  |
+|  abfinance_95569_qyyxapp04 |  i-b770748f |  10.219.22.221  |
+|  abfinance_95569_app34     |  i-c89697f0 |  10.219.22.101  |
+|  abfinance_95569_db01      |  i-80546db8 |  10.219.24.87   |
+|  abfinance_95569_app29     |  i-9b9697a3 |  10.219.22.91   |
+|  abfinance_95569_app30     |  i-9d9697a5 |  10.219.22.36   |
+|  abfinance_95569_app18     |  i-e6f5c45e |  10.219.23.73   |
+|  abfinance_95569_app09     |  i-3596970d |  10.219.22.201  |
+|  abfinance_95569_app06     |  i-b8526180 |  10.219.22.56   |
+|  abfinance_95569_app07     |  i-b9526181 |  10.219.22.57   |
+|  abfinance_95569_app08     |  i-ba526182 |  10.219.22.62   |
+|  abfinance_95569_app04     |  i-b652618e |  10.219.22.58   |
+|  abfinance_95569_app05     |  i-b752618f |  10.219.22.59   |
+|  abfinance_95569_app01     |  i-a0526198 |  10.219.22.52   |
+|  abfinance_95569_app02     |  i-a1526199 |  10.219.22.53   |
+|  abfinance_95569_app03     |  i-a352619b |  10.219.22.64   |
+|  abfinance_95569_app11     |  i-5599986d |  10.219.22.167  |
+|  abfinance_95569_app15     |  i-6ff2c3d7 |  10.219.23.71   |
+|  abfinance_95569_app27     |  i-898aa931 |  10.219.23.32   |
+|  abfinance_95569_app19     |  i-808aa938 |  10.219.23.29   |
+|  abfinance_95569_app20     |  i-818aa939 |  10.219.23.30   |
+|  abfinance_95569_app21     |  i-828aa93a |  10.219.23.23   |
+|  abfinance_95569_app22     |  i-838aa93b |  10.219.23.28   |
+|  abfinance_95569_app23     |  i-848aa93c |  10.219.23.35   |
+|  abfinance_95569_app24     |  i-858aa93d |  10.219.23.22   |
+|  abfinance_95569_app25     |  i-868aa93e |  10.219.23.33   |
+|  abfinance_95569_app26     |  i-878aa93f |  10.219.23.34   |
+|  abfinance_95569_app33     |  i-c59697fd |  10.219.22.241  |
+|  abfinance_95569_qyyxapp05 |  i-20477398 |  10.219.23.140  |
+|  abfinance_95569_qyyxapp06 |  i-2247739a |  10.219.23.138  |
+|  abfinance_95569_qyyxapp07 |  i-2347739b |  10.219.23.137  |
+|  abfinance_95569_qyyxapp08 |  i-2547739d |  10.219.23.139  |
+|  abfinance_95569_app32     |  i-c4f2c37c |  10.219.23.206  |
++----------------------------+-------------+-----------------+
+--------------------------------------------
+top20 EC2 10 sets
+--------------------------------------------
+----------------------------------------------------------------------------
+|                             DescribeInstances                            |
++---------------------------------+-----------------------+----------------+
+|  abfinance_top20_ubuntu_app2    |  i-1adfe022           |  10.219.28.182 |
+|  abfinance_top20_ubuntu_app1    |  i-15dfe02d           |  10.219.28.181 |
+|  abfinance_top20_ubuntu_app4    |  i-7a9fb0c2           |  10.219.29.72  |
+|  abfinance_top20_nginx02        |  i-f9635441           |  10.219.17.74  |
+|  abfinance_top20_ubuntu_db2     |  i-0e65a206a03b82071  |  10.219.27.46  |
+|  abfinance_top20_ubuntu_db1     |  i-05e23b84c4048734b  |  10.219.26.108 |
+|  abfinance_top20_ubuntu_app3    |  i-4b80aff3           |  10.219.29.220 |
+|  abfinance_top20_ubuntu_db1_old |  i-b0dee188           |  10.219.26.95  |
+|  abfinance_top20_ubuntu_db2_old |  i-ac9eb114           |  10.219.27.72  |
+|  abfinance_top20_nginx01        |  i-21757219           |  10.219.16.50  |
++---------------------------------+-----------------------+----------------+
+--------------------------------------------
+abfinance EC2 14 sets
+--------------------------------------------
+---------------------------------------------------------------
+|                      DescribeInstances                      |
++-----------------------------+-------------+-----------------+
+|  abfinance_lcb_production01 |  i-41685b79 |  10.219.18.29   |
+|  abfinance_lcb_sales02      |  i-ea8ba852 |  10.219.19.225  |
+|  abfinance_db02             |  i-8f6c4537 |  10.219.21.23   |
+|  abfinance_db01             |  i-d8615ce0 |  10.219.20.214  |
+|  abfinance_nat02            |  i-ae86a516 |  10.219.17.134  |
+|  abfinance_nat01            |  i-b8685b80 |  10.219.16.179  |
+|  abfinance_lcb_admin01      |  i-515a6069 |  10.219.18.251  |
+|  abfinance_fileshare01      |  i-b0507a08 |  10.219.19.88   |
+|  abfinance_lcb_webview04    |  i-0986a5b1 |  10.219.19.158  |
+|  abfinance_lcb_webview03    |  i-0286a5ba |  10.219.19.159  |
+|  abfinance_lcb_sales01      |  i-54685b6c |  10.219.18.60   |
+|  abfinance_lcb_production02 |  i-cd85a675 |  10.219.19.125  |
+|  abfinance_lcb_webview02    |  i-9e685ba6 |  10.219.18.102  |
+|  abfinance_lcb_webview01    |  i-89685bb1 |  10.219.18.101  |
++-----------------------------+-------------+-----------------+
+--------------------------------------------
+anbang finance project EC2 total 71 sets
+--------------------------------------------
+####2.2 RDS
+----------------------------------------------
+anbang finance project RDS total 0 sets
+----------------------------------------------
+####2.3 Redis
+--------------------------------------------
+95569 Redis 2 sets
+--------------------------------------------
+ec-95569-0001-001
+ec-95569-0001-002
+--------------------------------------------
+abfinance Redis 2 sets
+--------------------------------------------
+ec-abfinance-001
+ec-abfinance-002
+-----------------------------------------------
+anbang finance project Redis total 4 sets
+-----------------------------------------------
+####2.4 elb & alb
+--------------------------------------------
+95569 elb 13 sets
+--------------------------------------------
+elb-95569-01
+elb-95569-02
+elb-95569-03
+elb-95569-04
+elb-95569-05
+elb-95569-06
+elb-95569-07
+elb-95569-08
+elb-95569-09
+elb-95569-10
+elb-95569-11
+elb-95569-12
+elb-95569-0001
+--------------------------------------------
+abfinance alb 1 sets
+--------------------------------------------
+alb-abfinance-lcb01
+----------alb target group------------------
+abfinance-lcb-admin
+abfinance-lcb-production
+abfinance-lcb-sales
+abfinance-lcb-webview
+--------------------------------------------
+####2.5 volume
+--------------------------------
+|        DescribeVolumes       |
++---------------+------+-------+
+|  vol-5e5e25c3 |  500 |  io1  |
+|  vol-ba0a4f27 |  500 |  io1  |
+|  vol-40a1e7dd |  90  |  gp2  |
+|  vol-7f6940fa |  500 |  io1  |
+|  vol-458cbbc0 |  500 |  io1  |
++---------------+------+-------+
+--------------------------------------------
+ free---->the following of the old resources
+--------------------------------------------
+####2.6 keypair
+----------------------------------------------------------------------------------------
+|                                   DescribeKeyPairs                                   |
++--------------------------------------------------------------------------------------+
+||                                      KeyPairs                                      ||
+|+--------------------------------------------------------------+---------------------+|
+||                        KeyFingerprint                        |       KeyName       ||
+|+--------------------------------------------------------------+---------------------+|
+||  27:0e:71:b4:64:5b:ff:f4:11:73:d5:2f:5d:a0:ad:92:29:4a:08:4c |  abfinance          ||
+||  27:51:0b:09:05:05:1f:a1:e9:f0:8b:a6:d1:b7:29:23:d7:7e:f1:e6 |  abfinance_private  ||
+||  1f:1a:53:20:fa:c1:cc:be:00:a1:44:7e:a2:0c:8d:b4:3b:1e:1b:83 |  abfinance_public   ||
+||  26:f8:ef:59:86:7a:39:47:92:94:f0:d3:d3:a8:5a:b1:ae:48:3e:54 |  finace_public      ||
+|+--------------------------------------------------------------+---------------------+|
+-------------------------------------------------------------------------------------
+|                                 DescribeKeyPairs                                  |
++-----------------------------------------------------------------------------------+
+||                                    KeyPairs                                     ||
+|+----------------+----------------------------------------------------------------+|
+||  KeyFingerprint|  f8:22:43:c1:da:07:9f:ff:42:b8:c3:26:1e:52:d5:8f:00:61:0e:9e   ||
+||  KeyName       |  95569_private                                                 ||
+|+----------------+----------------------------------------------------------------+|
+-------------------------------------------------------------------------------------
+|                                 DescribeKeyPairs                                  |
++-----------------------------------------------------------------------------------+
+||                                    KeyPairs                                     ||
+|+----------------+----------------------------------------------------------------+|
+||  KeyFingerprint|  49:cc:23:06:ef:7b:31:db:e0:3c:df:b7:83:02:86:c2:1a:41:08:4b   ||
+||  KeyName       |  inovation_private                                             ||
+|+----------------+----------------------------------------------------------------+|
+####2.7 role
+--------------------------------------------
+role_95569
+role_abfinance
+role_inovation
+role_test_abfinance
+####2.8 user
+--------------------------------------------
+no users for anbang finance project !
+--------------------------------------------
+####2.9 group
+--------------------------------------------
+no groups for anbang finance project !
+--------------------------------------------
+####2.10 secruity group
+-----------------------------------------------------------
+anbang finance project security group total 19 pieces!
+-----------------------------------------------------------
+--------------------------------------------------------------------
+|                      DescribeSecurityGroups                      |
++----------------------------------+--------------+----------------+
+|  sg_alb_abfinance_lcb            |  sg-325c4457 |  vpc-b55fabd1  |
+|  sg_app_abfinance_95569          |  sg-c6e3eba3 |  vpc-b55fabd1  |
+|  sg_app_abfinance_95569_nginx    |  sg-a3dcc2c6 |  vpc-b55fabd1  |
+|  sg_app_abfinance_fileshare      |  sg-c5e3eba0 |  vpc-b55fabd1  |
+|  sg_app_abfinance_lcb_admin      |  sg-d19d89b4 |  vpc-b55fabd1  |
+|  sg_app_abfinance_lcb_nginx      |  sg-489f802d |  vpc-b55fabd1  |
+|  sg_app_abfinance_lcb_production |  sg-51e4ec34 |  vpc-b55fabd1  |
+|  sg_app_abfinance_lcb_sales      |  sg-52e4ec37 |  vpc-b55fabd1  |
+|  sg_app_abfinance_lcb_test       |  sg-cd7961a8 |  vpc-b55fabd1  |
+|  sg_app_abfinance_lcb_webview    |  sg-56e4ec33 |  vpc-b55fabd1  |
+|  sg_app_abfinance_top20          |  sg-c2e3eba7 |  vpc-b55fabd1  |
+|  sg_app_abfinance_top20_nginx    |  sg-a60aefc2 |  vpc-b55fabd1  |
+|  sg_cache_abfinance              |  sg-c4e3eba1 |  vpc-b55fabd1  |
+|  sg_cache_abfinance_95569        |  sg-c1e3eba4 |  vpc-b55fabd1  |
+|  sg_db_abfinance                 |  sg-c7e3eba2 |  vpc-b55fabd1  |
+|  sg_db_abfinance_95569           |  sg-c0e3eba5 |  vpc-b55fabd1  |
+|  sg_db_abfinance_top20           |  sg-cce3eba9 |  vpc-b55fabd1  |
+|  sg_elb_abfinance_95569          |  sg-857369e0 |  vpc-b55fabd1  |
+|  sg_nat_abfinance                |  sg-f9e3eb9c |  vpc-b55fabd1  |
++----------------------------------+--------------+----------------+
+####2.11 subnet
+-----------------------------------------------------------
+anbang finance project subnet total 14 pieces!
+-----------------------------------------------------------
+---------------------------------------------------------------------------
+|                              DescribeTags                               |
++-------------------------------------------------------------------------+
+||                                 Tags                                  ||
+|+------+-------------------+---------------+----------------------------+|
+||  Key |    ResourceId     | ResourceType  |           Value            ||
+|+------+-------------------+---------------+----------------------------+|
+||  Name|  subnet-5664be21  |  subnet       |  bp1_abfinance_95569_int2  ||
+||  Name|  subnet-6864be1f  |  subnet       |  bp1_abfinance_95569_ext2  ||
+||  Name|  subnet-7664be01  |  subnet       |  bp1_abfinance_ext2        ||
+||  Name|  subnet-76f1d513  |  subnet       |  bp1_abfinance_top20_ext1  ||
+||  Name|  subnet-7a64be0d  |  subnet       |  bp1_abfinance_int2        ||
+||  Name|  subnet-81aa0df6  |  subnet       |  bp1_abfinance_top20_ext2  ||
+||  Name|  subnet-8f67bdf8  |  subnet       |  bp1_abfinance_dmz2        ||
+||  Name|  subnet-a6500ac3  |  subnet       |  bp1_abfinance_int1        ||
+||  Name|  subnet-aaaa0ddd  |  subnet       |  bp1_abfinance_top20_int2  ||
+||  Name|  subnet-b1500ad4  |  subnet       |  bp1_abfinance_95569_ext1  ||
+||  Name|  subnet-b2500ad7  |  subnet       |  bp1_abfinance_95569_int1  ||
+||  Name|  subnet-bdf0d4d8  |  subnet       |  bp1_abfinance_top20_int1  ||
+||  Name|  subnet-cb500aae  |  subnet       |  bp1_abfinance_dmz1        ||
+||  Name|  subnet-dd500ab8  |  subnet       |  bp1_abfinance_ext1        ||
+|+------+-------------------+---------------+----------------------------+|
+####2.12 VPC
+-------------------------------------------------------------
+|                       DescribeTags                        |
++-----------------------------------------------------------+
+||                          Tags                           ||
+|+-----+----------------+----------------+-----------------+|
+|| Key |  ResourceId    | ResourceType   |      Value      ||
+|+-----+----------------+----------------+-----------------+|
+||Name |  vpc-389f695c  |  vpc           |  bt1_abfinance  ||
+||Name |  vpc-b55fabd1  |  vpc           |  bp1_abfinance  ||
+|+-----+----------------+----------------+-----------------+|
+----------------------end-------------------------

@@ -1,0 +1,15 @@
+aws rds describe-db-instances --output table --query 'DBInstances[].[DBInstanceClass,DBInstanceIdentifier,AllocatedStorage,Engine,Iops,StorageType,Endpoint.Address]'
+aws elasticache describe-cache-clusters --output text --query 'CacheClusters[].[CacheClusterId,CacheNodeType,Engine,EngineVersion,ReplicationGroupId]'|grep -v "95569"|grep -v "abfinance"
+aws elasticache describe-replication-groups --output table  --query 'ReplicationGroups[].[ReplicationGroupId,Status]'
+aws elasticache delete-cache-cluster --cache-cluster-id  ec-95569-001-001
+aws elasticache delete-replication-group --replication-group-id ec-95569
+aws elb delete-load-balancer --load-balancer-name 
+aws elb describe-load-balancers --output table --query 'LoadBalancerDescriptions[].[LoadBalancerName,Scheme,VPCId]'
+aws elbv2 describe-load-balancers --output table --query 'LoadBalancers[].[LoadBalancerName]'
+aws elbv2 describe-load-balancers --output text --query 'LoadBalancers[].[LoadBalancerName]'
+aws elbv2 delete-load-balancer --load-balancer-arn
+aws elbv2 delete-load-balancer --load-balancer-arn `aws elbv2 describe-load-balancers --output text --query 'LoadBalancers[].[LoadBalancerArn]'`
+aws rds delete-db-instance --db-instance-identifier
+aws ec2 describe-images --output text --query 'Images[].[Name,ImageId]' --filter Name=name,Values="*20170122"|sort
+aws ec2 describe-security-groups --output text --query 'SecurityGroups[].[OwnerId]'|uniq 
+aws s3 ls --region cn-north-1

@@ -1,0 +1,4 @@
+#cat /etc/passwd|tail -n 5
+#cat /etc/passwd|tail -n 2
+cat /etc/passwd|tail -n 1
+

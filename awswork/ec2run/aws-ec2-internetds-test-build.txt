@@ -1,0 +1,12 @@
+####20170208 internetds-health
+
+./launch-ec2.sh ami-421fc82f c3.xlarge 10/90 test_internetds_private test_sg_app_internetds bt1_internetds_int1 role_test_internetds
+./launch-ec2.sh ami-421fc82f c3.xlarge 10/90 test_internetds_private test_sg_app_internetds bt1_internetds_int2 role_test_internetds
+
+##--
+./launch-ec2.sh ami-3d17c050 c3.xlarge 10/90 test_internetds_private test_sg_app_internetds bt1_internetds_int1 role_test_internetds
+./launch-ec2.sh ami-3d17c050 c3.xlarge 10/90 test_internetds_private test_sg_app_internetds bt1_internetds_int2 role_test_internetds
+
+./launch-ec2.sh ami-f10fd89c c3.xlarge 10/90 test_internetds_private test_sg_app_internetds bt1_internetds_int2 role_test_internetds
+##----
+./launch-ec2.sh ami-e6c7108b c3.xlarge 10/90 test_internetds_private test_sg_app_internetds bt1_internetds_int2 role_test_internetds --profile ids-aws

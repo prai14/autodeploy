@@ -1,0 +1,2 @@
+#while read ip password user;do echo "$ip";echo y|plink "$user@$ip" -pw "$password" -m syn_ntpdate;done < syn_list-pr
+while read ip password user;do echo "$ip";echo y|plink "$user@$ip" -pw "$password" -m syn_ntpdate;done < syn_list-vr

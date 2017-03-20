@@ -1,0 +1,9 @@
+{
+  "ImageId": "ami-f239abcb",
+  "MinCount": 2,
+  "MaxCount": 4,
+  "KeyName": "demo-new-bjs",
+  "SecurityGroupIds": ["sg-2eb9a04c"],
+  "SubnetId": "subnet-760e2602",
+  "InstanceType": "t2.micro"
+}

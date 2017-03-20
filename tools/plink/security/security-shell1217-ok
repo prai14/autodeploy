@@ -1,0 +1,130 @@
+echo "++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++" >>security.log
+v1=`ls|grep security.log`
+echo ${v1}                             >>security.log
+echo "++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++" >>security.log
+echo "++++1.2 account login limit++++start++++" >>security.log
+v2=`awk -F: ' ($2 == "") { print $1 }' /etc/shadow`
+if [ "${v2}" != "" ] ;then
+    echo "esiting null password user in system!!!"
+    echo ${v2}
+    echo "need single operation!!!"
+else
+    echo "not esiting null password user in system!!!"   >>security.log
+fi
+echo "++++1.2 account login limit++++end++++++" >>security.log
+echo "++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++" >>security.log
+echo "++++1.3 account login limit++++start++++" >>security.log
+v3=`awk -F: ' ($3 == 0) { print $1 }' /etc/passwd|grep -v root`
+if [ "${v3}" != "" ] ;then
+    echo "esiting root authority user in system!!!"
+    echo ${v3}
+    echo "need single operation!!!"
+else
+    echo "not esiting root authority user in system!!!"   >>security.log
+fi
+echo "++++1.3 account login limit++++end++++++" >>security.log
+echo "++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++" >>security.log
+echo "++++2.1 account login limit++++start++++" >>security.log
+cat /etc/login.defs |grep PASS_MIN_LEN |grep -v length >>security.log
+v8=`cat /etc/login.defs |grep PASS_MIN_LEN|grep -v length|awk '{print $2}'`
+if [ "${v8}" != "5" ] ;then
+    echo "PASS_MIN_LEN modified!!!"
+else
+    cp -p /etc/login.defs /etc/login.defs.bak
+    sed -i '/PASS_MIN_LEN/ s/5/8/g' /etc/login.defs
+    echo "PASS_MIN_LEN from 5 to 8 modified!!!"    >>security.log    
+fi
+cat /etc/login.defs |grep PASS_MIN_LEN|grep -v length  >>security.log
+echo "++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++" >>security.log
+echo "++++2.1 account login limit++++end++++++" >>security.log
+echo "++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++" >>security.log
+echo "++++3.1 account login limit++++start++++" >>security.log
+#cp -p /etc/issue /etc/issue.bak
+#cat /etc/issue   >>security.log
+echo "++++3.1 account login limit++++end++++++" >>security.log
+echo "++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++" >>security.log
+echo "++++3.2 account login limit++++start++++" >>security.log
+echo "+++++++++++++++++++++++++++++++++++++++++++++++++++" >>security.log
+cat /etc/profile|grep TMOUT     >>security.log
+echo "+++++++++++++++++++++++++++++++++++++++++++++++++++" >>security.log
+v4=`cat /etc/profile|grep TMOUT`
+if [ "${v4}" != ""  ] ;then
+    echo "TMOUT added in profile!!!"
+else
+    cp -p /etc/profile /etc/profile.bak
+    echo "export TMOUT=300" >>/etc/profile
+    echo "new add TMOUT in profile!!!"      >>security.log
+fi
+echo "+++++++++++++++++++++++++++++++++++++++++++++++++++" >>security.log
+cat /etc/profile|grep TMOUT     >>security.log
+echo "++++3.2 account login limit++++end++++++" >>security.log
+echo "++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++" >>security.log
+echo "++++4.1 account login limit++++start++++" >>security.log
+chkconfig --list |grep syslog    >>security.log
+echo "+++++++++++++++++++++++++++++++++++++++++++++++++++" >>security.log
+chkconfig --level 345 syslog on
+/etc/init.d/syslog restart       >>security.log
+echo "+++++++++++++++++++++++++++++++++++++++++++++++++++" >>security.log
+cat /etc/syslog.conf|grep ftpd             >>security.log
+echo "+++++++++++++++++++++++++++++++++++++++++++++++++++" >>security.log
+cat /etc/xinetd.conf|grep ftpd            >>security.log
+echo "+++++++++++++++++++++++++++++++++++++++++++++++++++" >>security.log
+cat /etc/syslog.conf|grep "daemon.notice"            >>security.log
+echo "+++++++++++++++++++++++++++++++++++++++++++++++++++" >>security.log
+v5=`cat /etc/xinetd.conf|grep ftpd`
+if [ "${v5}" != "" ] ;then
+    echo "ftpd in xinetd.conf added!!!"
+else
+    cp -p /etc/xinetd.conf   /etc/xinetd.conf.bak
+    echo "# Log cron stuff " >>/etc/xinetd.conf
+    echo "ftpd -l -A -S"     >>/etc/xinetd.conf
+    echo "ftpd new add in xinetd.conf!!!" >>security.log
+fi
+v6=`cat /etc/syslog.conf|grep ftpd`
+if [ "${v6}" != "" ] ;then
+    echo "ftpd in syslog.conf added!!!"
+else
+    cp -p /etc/syslog.conf   /etc/syslog.conf.bak
+    echo "ftp.*    /var/log/ftpd "   >> /etc/syslog.conf 
+    echo "ftpd new add in syslog.conf!!!" >>security.log
+fi
+v7=`cat /etc/syslog.conf|grep "daemon.notice"`
+if [ "${v7}" != "" ] ;then
+    echo "daemon.notice in syslog.conf added!!!"
+else
+    echo "*.err;kern.debug;daemon.notice   /var/log/messages "   >> /etc/syslog.conf 
+    echo "daemon.notice new add in syslog.conf!!!" >>security.log
+fi
+
+/etc/init.d/syslog restart       >>security.log
+service xinetd restart           >>security.log
+
+echo "+++++++++++++++++++++++++++++++++++++++++++++++++++" >>security.log
+cat /etc/syslog.conf|grep ftpd             >>security.log
+echo "+++++++++++++++++++++++++++++++++++++++++++++++++++" >>security.log
+cat /etc/xinetd.conf|grep ftpd            >>security.log
+echo "+++++++++++++++++++++++++++++++++++++++++++++++++++" >>security.log
+cat /etc/syslog.conf|grep "daemon.notice"            >>security.log
+echo "+++++++++++++++++++++++++++++++++++++++++++++++++++" >>security.log
+echo "++++4.1 account login limit++++end++++++" >>security.log
+echo "++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++" >>security.log
+echo "++++5.1 account login limit++++start++++" >>security.log
+#chkconfig --list                 >>security.log
+echo "+++++++++++++++++++++++++++++++++++++++++++++++++++" >>security.log
+chkconfig --list |grep sendmail  >>security.log
+chkconfig --list |grep bluetooth >>security.log
+echo "+++++++++++++++++++++++++++++++++++++++++++++++++++" >>security.log
+res1=`chkconfig --list|grep sendmail`
+if [ "${res1}" != "" ] ;then
+    chkconfig --level 2345 sendmail  off
+fi
+res2=`chkconfig --list|grep bluetooth`
+if [ "${res2}" != "" ] ;then
+    chkconfig --level 2345 bluetooth off
+fi
+echo "+++++++++++++++++++++++++++++++++++++++++++++++++++" >>security.log
+#chkconfig --list                 >>security.log
+chkconfig --list |grep sendmail  >>security.log
+chkconfig --list |grep bluetooth >>security.log
+echo "++++5.1 account login limit++++end++++++" >>security.log
+echo "++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++" >>security.log

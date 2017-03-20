@@ -1,0 +1,3 @@
+#For Amazon Linux
+sudo sed -i '1s/UTC/\/usr\/share\/zoneinfo\/Asia\/Shanghai/' /etc/sysconfig/clock
+sudo ln -sf /usr/share/zoneinfo/Asia/Shanghai /etc/localtime

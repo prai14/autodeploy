@@ -1,0 +1,2 @@
+#cat /etc/passwd |grep mocha
+cat /etc/passwd |grep root|grep -v operator

@@ -1,0 +1,117 @@
+Download and run the installation script from the pip website:
+
+    $ curl "https://bootstrap.pypa.io/get-pip.py" -o "get-pip.py"
+    $ sudo python get-pip.py
+
+Install the AWS CLI Using pip:
+
+    $ sudo pip install awscli
+
+aws configure --profile ids-aws
+aws configure --profile abf-aws
+
+aws ec2 describe-instances --output table --profile abf-aws
+aws ec2 describe-instances --output text  --profile abf-aws
+aws ec2 describe-instances --output json --profile abf-aws
+
+aws ec2 stop-instances --instance-ids i-1486157a i-1286157c i-ec3a7e87  
+aws ec2 stop-instances --instance-ids '["i-1486157a","i-1286157c","i-ec3a7e87"]'                                             ---->json style
+aws ec2 create-tags --resources i-1286157c --tags '[    
+  { "Key": "Name",        "Value": "abfinance_db01" },
+  { "Key": "Project",     "Value": "abfinance"            },
+  { "Key": "Tier",        "Value": "DB"                          },
+  { "Key": "Environment", "Value": "Prod"               },
+  { "Key": "Contact",     "Value": "Infra"                   },
+  { "Key": "Creator",     "Value": "zhouchunlin"      }
+]'
+                                                                                                                                                                    ----json style
+aws ec2 create-key-pair --key-name devenv-key --query 'KeyMaterial' --output text > devenv-key.pem
+chmod 400 devenv-key.pem
+
+aws iam create-access-key --user-name MyUser
+aws iam delete-access-key --user-name MyUser --access-key-id AKIAI44QH8DHBEXAMPLE
+aws ec2 create-key-pair --key-name MyKeyPair --query 'KeyMaterial' --output text | out-file -encoding ascii -filepath MyKeyPair.pem
+aws ec2 describe-key-pairs --key-name MyKeyPair
+aws ec2 delete-key-pair --key-name MyKeyPair
+
+
+????Key,???????pem???
+
+aws ec2 create-key-pair --key-name MyCypayTestCalifornia --query 'KeyMaterial' --output text > MyTestCalifornia.pem
+
+aws ec2 create - key - pair -- key - name MyCypayTestCalifornia -- query 'KeyMaterial' -- output text > MyTestCalifornia . pem
+
+????VPC???
+
+aws ec2 create-security-group --group-name MyCATest --description MyCATest --vpc-id vpc-efxxxx8a
+
+aws ec2 create - security - group -- group - name MyCATest -- description MyCATest -- vpc - id vpc - efxxxx8a
+
+??????????ID
+
+aws ec2 describe-security-groups  --query SecurityGroups[*].[GroupName,GroupId,VpcId]
+
+aws ec2 describe - security - groups    -- query SecurityGroups [ * ] . [ GroupName , GroupId , VpcId ]
+
+???????
+
+aws ec2 authorize-security-group-ingress --group-id sg-d1xxxxb4 --protocol tcp --port 22 --cidr 202.x.x.120/29  --protocol tcp --port 8080-8082 --cidr 10.10.0.0/16  --protocol tcp --port 80 --cidr 0.0.0.0/0
+
+aws ec2 authorize - security - group - ingress -- group - id sg - d1xxxxb4 -- protocol tcp -- port 22 -- cidr 202.x.x.120 / 29    -- protocol tcp -- port 8080 - 8082 -- cidr 10.10.0.0 / 16    -- protocol tcp -- port 80 -- cidr 0.0.0.0 / 0
+
+?????????
+
+aws ec2 describe-security-groups --group-ids  sg-d1xxxxb4
+
+aws ec2 describe - security - groups -- group - ids   sg - d1xxxxb4
+
+????
+
+aws ec2 run-instances --image-id ami-7axxxx3f --count 1 --instance-type t1.micro --key-name MyTestCalifornia --security-group-ids sg-dxxxxbb4 --placement AvailabilityZone=us-west-1c --subnet-id subnet-5exxxx3b --block-device-mappings "[{\"DeviceName\": \"/dev/sdf\",\"Ebs\":{\"VolumeSize\":100}}]"  --user-data  "/sbin/mkfs.ext4 /dev/xvdf  && /bin/mount /dev/xvdf /home"
+
+aws ec2 run - instances -- image - id ami - 7axxxx3f -- count 1 -- instance - type t1 . micro -- key - name MyTestCalifornia -- security - group - ids sg - dxxxxbb4 -- placement AvailabilityZone = us - west - 1c -- subnet - id subnet - 5exxxx3b -- block - device - mappings "[{\"DeviceName\": \"/dev/sdf\",\"Ebs\":{\"VolumeSize\":100}}]"    -- user - data    "/sbin/mkfs.ext4 /dev/xvdf  && /bin/mount /dev/xvdf /home"
+
+??????
+
+aws ec2 create-tags --resources i-3xxxxb6d --tags Key=Name,Value=APITest  Key=PROJECT,Value=cypay
+
+aws ec2 create - tags -- resources i - 3xxxxb6d -- tags Key = Name , Value = APITest   Key = PROJECT , Value = cypay
+
+???EIP
+
+aws ec2 allocate-address --domain vpc
+{
+   "PublicIp": "54.x.x.12",
+   "Domain": "vpc",
+   "AllocationId": "eipalloc-axxxxxcd"
+}
+
+aws ec2 allocate - address -- domain vpc
+
+{
+
+"PublicIp" : "54.x.x.12" ,
+
+"Domain" : "vpc" ,
+
+"AllocationId" : "eipalloc-axxxxxcd"
+
+}
+
+?VPC??EIP?VPC??????
+
+aws ec2 associate-address --instance-id i-3xxxxx6d --allocation-id eipalloc-afxxxx8cd
+
+aws ec2 associate - address -- instance - id i - 3xxxxx6d -- allocation - id eipalloc - afxxxx8cd
+
+????ssh???????
+
+ssh -i MyTestCalifornia.pem  ec2-user@54.x.x.12
+
+ssh - i MyTestCalifornia . pem   ec2 - user @ 54.x.x.12
+
+????????????
+
+aws ec2 describe-instances --query 'Reservations[*].Instances[*].[InstanceId, Placement.AvailabilityZone, State.Name,  InstanceType, PublicIpAddress, PrivateIpAddress, Tags[0].Value, Tags[1].Value]' --output text
+
+aws ec2 describe - instances -- query 'Reservations[*].Instances[*].[InstanceId, Placement.AvailabilityZone, State.Name,  InstanceType, PublicIpAddress, PrivateIpAddress, Tags[0].Value, Tags[1].Value]' -- output text 

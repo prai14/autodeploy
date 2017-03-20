@@ -1,0 +1,9 @@
+uname -r
+echo "------zushi start--------"
+:<<testpoint
+date
+ntpdate 10.10.2.65
+uname -a
+testpoint
+echo "------zushi stop---------"
+df -P|column -t 

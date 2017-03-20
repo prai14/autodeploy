@@ -1,0 +1,62 @@
+#create user etc
+sudo groupadd bea1
+sudo useradd -g bea1 -d /home/bea1 bea1
+sudo mkdir -p /app/tomcat/image
+sudo chown -R root:root /app
+sudo chmod -R 777 /app
+sudo chown -R bea1:bea1 /app/tomcat/
+
+#samba install and setup
+sudo yum -y install *samba*
+
+sudo vi /etc/samba/smb.conf 
+    security= user
+#################
+[image]
+    comment = share
+    path = /app/tomcat/image
+    writeable = yes
+    browseable = yes
+    guest ok = yes
+"/etc/samba/smb.conf" 327L, 11765C written
+
+sudo service smb restart 
+sudo pdbedit -a -u bea1
+sudo pdbedit -L
+
+#security group port open
+sg_app_abfinance_lcb_webview
+
+UDP 137-138 10.0.0.0/8 
+TCP 139-902 10.0.0.0/8
+ICMP        10.0.0.0/8
+
+#windows
+login with mstsc---->10.4.16.23 
+with cmd---->ping 10.219.18.101 
+add share disk---->\\10.219.18.101\image
+windows login user and passwd with seem---->sudo pdbedit -a -u bea1
+##################################################################################################################################
+no user and no passwd---->
+
+sudo vi /etc/samba/smb.conf
+    security = share
+++++++++++++++++++++++++++++++++++++++++++++++
+[dat]
+        comment = share
+        path = /home/data/upload/photo/dat
+        writeable = yes
+        browseable = yes
+        guest ok = yes
+        public = yes
+        available = yes
+
+[vir]
+        comment = share
+        path = /home/data/upload/photo/vir
+        writeable = yes
+        browseable = yes
+        guest ok = yes
+        public = yes
+        available = yes
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++

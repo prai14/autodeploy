@@ -1,0 +1,13 @@
+cp /etc/bashrc /etc/bashrc.bak
+
+echo 'HISTTIMEFORMAT="%Y%m%d-%H%M%S:"'>>/etc/bashrc
+
+echo "export HISTTIMEFORMAT">>/etc/bashrc
+
+echo "export PROMPT_COMMAND='{ ip=$(who -u am i | { read x y z a b c d ; echo \$d; });command=\$(history 1 | { read x y; echo \$y; }); export HISTSIZE=2000 ; export HISTFILESIZE=2000 ; logger -p local1.notice -t bash -i \"user=\$USER,ppid=\$PPID,from=\$ip,pwd=\$PWD,command:\$command\"; }'" >>/etc/bashrc
+
+source /etc/bashrc
+
+echo "*.* @10.10.216.141">>/etc/syslog.conf
+
+service syslog restart

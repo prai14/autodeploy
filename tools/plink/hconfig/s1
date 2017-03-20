@@ -1,0 +1,11 @@
+get_sn(){
+    local mySN=`dmidecode -s system-serial-number | grep -v '#'`
+    if echo "${mySN}" | grep -qiE "^NotSpecified|^None|^ToBeFilledByO.E.M.|O.E.M." ; then
+            mySN=`dmidecode -s baseboard-serial-number`
+    fi
+    #Redhat4.4 CentOS4.4
+    if grep -q 'release 4'  /etc/redhat-release ; then
+        mySN=`dmidecode | grep -A5 'System Information' | grep 'Serial Number' | awk '{print $3}' | sed 's/^[ \t]*//g' | sed 's/[ \t]$//g'`
+    fi
+    echo $mySN
+}

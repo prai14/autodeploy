@@ -1,0 +1,3 @@
+while read ip password user;do echo "$ip";echo y|plink "$user@$ip" -pw "$password" -m user_expires;done < mocha_list
+#date;while read ip password user;do echo "$ip";echo y|plink "$user@$ip" -pw "$password" -m user_expires;done < mochavm_list  ;date
+#date;while read ip password user;do echo "$ip";echo y|plink "$user@$ip" -pw "$password" -m user_expires;done < mochapm_list ;date

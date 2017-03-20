@@ -1,0 +1,4 @@
+#while read ip password user;do echo "$ip";echo y|plink "$user@$ip" -pw "$password" -m mocha_grep;done < syn_list-pr
+#while read ip password user;do echo "$ip";echo y|plink "$user@$ip" -pw "$password" -m mocha_grep;done < syn_list-pw
+while read ip password user;do echo "$ip";echo y|plink "$user@$ip" -pw "$password" -m mocha_grep;done < syn_list-vr
+#while read ip password user;do echo "$ip";echo y|plink "$user@$ip" -pw "$password" -m mocha_grep;done < syn_list-vw

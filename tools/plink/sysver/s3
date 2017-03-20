@@ -1,0 +1,11 @@
+awk 'NR>1&&!/ms/{print ""}{printf $0" "}END{print ""}' file.txt
+echo "+++++++"
+sed ':a;$!N;/ms$/s/\n/ /;ta;P;D' file.txt
+echo "+++++++"
+cat file.txt | xargs -n8
+echo "+++++++"
+paste -sd '       \n' file.txt
+echo "+++++++"
+sed -e :a -e '$!N;/\n.*ms/{s/\n/ /;ta};P;D' file.txt
+echo "+++++++"
+sed '/^.*[.]/{:m;N;/\n.*[.]/!{s/\n/ /;bm};P;D}' file.txt

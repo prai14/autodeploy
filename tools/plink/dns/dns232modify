@@ -1,0 +1,1 @@
+sed -i '/nameserver/ s/10.10.2.1/10.10.232.254/g' /etc/resolv.conf

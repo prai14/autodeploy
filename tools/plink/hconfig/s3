@@ -1,0 +1,4 @@
+cat lpmcinfo.log|awk '{if(NR%2!=0)ORS="|";else ORS="\n";print}' > lpmcinfo.txt
+sed -i 's/=========//g' lpmcinfo.txt
+sed -i 's/=======//g' lpmcinfo.txt
+sed -i 's/=/ /g' lpmcinfo.txt

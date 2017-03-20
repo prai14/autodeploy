@@ -1,0 +1,6 @@
+sudo echo "-----pvs-----"
+sudo /sbin/pvs
+sudo echo "-----lvs-----"
+sudo /sbin/lvs
+sudo echo "-----vgs-----"
+sudo /sbin/vgs

@@ -1,0 +1,2 @@
+#while read ip password user;do echo "$ip";echo y|plink "$user@$ip" -pw "$password" -m root_grep;done < aycheck_list
+while read ip password user;do echo "$ip";echo y|plink "$user@$ip" -pw "$password" -m getuser.sh;done < aycheck_list

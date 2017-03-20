@@ -1,0 +1,10 @@
+echo "+++++++++++++++++++++++++++++++++++++++++++++++++++" >>security.log
+cat /etc/syslog.conf|grep notice             >>security.log
+echo "+++++++++++++++++++++++++++++++++++++++++++++++++++" >>security.log
+echo "*.err;kern.debug;daemon.notice   /var/log/messages "   >> /etc/syslog.conf 
+echo "+++++++++++++++++++++++++++++++++++++++++++++++++++" >>security.log
+/etc/init.d/syslog restart       >>security.log
+service xinetd restart           >>security.log
+echo "+++++++++++++++++++++++++++++++++++++++++++++++++++" >>security.log
+cat /etc/syslog.conf|grep notice            >>security.log
+echo "+++++++++++++++++++++++++++++++++++++++++++++++++++" >>security.log

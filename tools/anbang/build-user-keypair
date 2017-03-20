@@ -1,0 +1,30 @@
+if [ ! $# -eq 1 ]
+then
+    echo "  Usage:  sh test username "
+    echo "  username:  user name "
+    exit
+fi
+ 
+USER=`cat /etc/passwd|grep $1`
+IP=`ifconfig eth0|grep "inet addr"|awk -F":" '{print $2}'|awk '{print $1}'`
+ymd=`date +"%Y%m%d"`
+
+if [ ! -x /usr/bin/expect ] ;then
+    sudo yum -y install expect
+fi
+
+if [ -z $USER ] ;then
+    echo "It is not $1"
+    sudo adduser $1
+fi
+
+sudo cp -r /home/ec2-user/.ssh /home/$1/.ssh
+sudo cp /home/ec2-user/create-user-keypair /home/$1/create-user-keypair
+sudo chown -R $1:$1 /home/$1
+sudo su - $1 -c "expect create-user-keypair $1 $IP $ymd"
+sudo su - $1 -c "mv $1-$IP-$ymd $1-$IP-$ymd.pem"
+sudo su - $1 -c "chmod 600 $1-$IP-$ymd.pem"
+sudo su - $1 -c "cat $1-$IP-$ymd.pub > .ssh/authorized_keys"
+sudo cp /home/$1/$1-$IP-$ymd.pem /home/ec2-user/$1-$IP-$ymd.pem
+sudo chown ec2-user:ec2-user /home/ec2-user/$1-$IP-$ymd.pem
+sudo su - $1 -c "rm -rf $1-$IP-$ymd.p* create-user-keypair"

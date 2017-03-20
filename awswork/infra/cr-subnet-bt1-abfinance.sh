@@ -1,0 +1,6 @@
+aws ec2 create-subnet --vpc-id vpc-d21ae0b6 --cidr-block 10.219.48.0/24 --availability-zone cn-north-1a --profile "abfinance"
+aws ec2 create-subnet --vpc-id vpc-d21ae0b6 --cidr-block 10.219.49.0/24 --availability-zone cn-north-1b --profile "abfinance"
+aws ec2 create-subnet --vpc-id vpc-d21ae0b6 --cidr-block 10.219.50.0/24 --availability-zone cn-north-1a --profile "abfinance"
+aws ec2 create-subnet --vpc-id vpc-d21ae0b6 --cidr-block 10.219.51.0/24 --availability-zone cn-north-1b --profile "abfinance"
+aws ec2 create-subnet --vpc-id vpc-d21ae0b6 --cidr-block 10.219.52.0/24 --availability-zone cn-north-1a --profile "abfinance"
+aws ec2 create-subnet --vpc-id vpc-d21ae0b6 --cidr-block 10.219.53.0/24 --availability-zone cn-north-1b --profile "abfinance"

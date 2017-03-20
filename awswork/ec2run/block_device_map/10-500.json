@@ -1,0 +1,19 @@
+[
+  {
+    "DeviceName": "/dev/xvda",
+    "Ebs": {
+      "DeleteOnTermination": true,
+      "SnapshotId": "snap-030dca72135143c99",
+      "VolumeSize": 10,
+      "VolumeType": "gp2"
+        }
+  } 
+  ,{
+    "DeviceName": "/dev/sdb",
+    "Ebs": {
+      "DeleteOnTermination": true,
+      "VolumeType": "gp2",
+      "VolumeSize": 500 
+    }
+  } 
+] 

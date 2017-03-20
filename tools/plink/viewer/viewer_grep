@@ -1,0 +1,2 @@
+cat /etc/passwd|grep viewer
+#su - viewer -c "id"

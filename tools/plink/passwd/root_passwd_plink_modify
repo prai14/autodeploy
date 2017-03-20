@@ -1,0 +1,11 @@
+#!/bin/bash
+
+for i in `awk '{print $1}' root_iplist.txt`
+do
+    y=`awk /${i}/'{print $2}' root_iplist.txt`
+    z=`awk /${i}/'{print $3}' root_iplist.txt`
+    echo ${i}
+    echo ${y}
+    echo ${z}
+    ./expect.sh ${i} ${y} ${z}
+done

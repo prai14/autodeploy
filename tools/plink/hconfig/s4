@@ -1,0 +1,1 @@
+cat lpmcinfo20160101.log|awk '{if(NR%2!=0)ORS="|";else ORS="\n";print}' > lpmcinfo20160101.txt

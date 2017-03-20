@@ -1,0 +1,7 @@
+10 2 * * * /app/awswork/ec2vol/ec2-volumes-autobackup.sh -p -k 30 -u -s tag -t Backup,Values=True > /app/ec2log/ec2-volumes-autobackup-`date +"\%Y\%m\%d"`.log 2>&1
+
+
+#10 2 * * * /app/awswork/ec2vol/ec2-volumes-autobackup.sh -p -k 30 -u -s tag -t Backup,Values=True > /app/ec2log/ec2-volumes-autobackup-`date +"\%Y\%m\%d"`.log 2>&1
+10 2 * * * /app/autodeploy/awswork/ec2vol/ec2-vol-autobak.sh > /app/autodeploy/ec2log/ec2-vol-autoback-`date +"\%Y\%m\%d"`.log 2>&1
+# Puppet Name: run-puppet
+*/10 * * * * /usr/local/bin/pull-updates

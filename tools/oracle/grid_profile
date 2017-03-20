@@ -1,0 +1,18 @@
+####
+export TMP=/tmp
+export TMPDIR=$TMP
+export ORACLE_HOSTNAME=primary
+export ORACLE_SID=+ASM
+export ORACLE_BASE=/app/grid
+export ORACLE_HOME=$ORACLE_BASE/product/11.2.0/grid
+export PATH=$ORACLE_HOME/bin:$PATH
+
+if [ $USER = "oracle" ] || [ $USER = "grid" ]; then
+    if [ $SHELL = "/bin/ksh" ]; then
+          ulimit -p 16384
+          ulimit -n 65536
+    else
+          ulimit -u 16384 -n 65536
+    fi
+    umask 022
+fi

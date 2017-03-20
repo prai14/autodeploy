@@ -1,0 +1,61 @@
+#/etc/sysconfig/ntpd
+cp -p /etc/sysconfig/ntpd /root/ntpd.bak 
+
+v4=`cat /etc/sysconfig/ntpd|grep "\-x"`
+if [ "${v4}" = "" ] ;then
+    sed -i 's/-u/-x -u/' /etc/sysconfig/ntpd
+fi
+vu=`uname -r|grep xen`
+if [ "${vu}" = "" ] ;then
+    sed -i '/SYNC_HWCLOCK/ s/no/yes/' /etc/sysconfig/ntpd
+fi
+#/etc/ntp/step-tickers
+V6=`cat /etc/ntp/step-tickers`
+#if [ "${v6}" = "" ] ;then
+#fi
+
+#/etc/ntp.conf
+cp -p /etc/ntp.conf /root/ntp.confbak
+
+v7=`cat /etc/ntp.conf|grep "restrict default kod"|grep '#'`
+if [ "${v7}" = "" ] ;then
+    sed -i '/restrict default kod/ s/^/#/' /etc/ntp.conf
+fi
+v8=`cat /etc/ntp.conf|grep "restrict -6 default kod"|grep '#'`
+if [ "${v8}" = "" ] ;then
+    sed -i '/restrict -6 default kod/ s/^/#/' /etc/ntp.conf
+fi
+v9=`cat /etc/ntp.conf|grep "restrict default ignore"`
+if [ "${v9}" = "" ] ;then
+    sed -i '/#restrict -6 default kod nomodify notrap nopeer noquery/a\restrict default ignore' /etc/ntp.conf
+fi
+va=`cat /etc/ntp.conf|grep "restrict -6 default ignore"`
+if [ "${va}" = "" ] ;then
+    sed -i '/restrict default ignore/a\restrict -6 default ignore' /etc/ntp.conf
+fi
+vb=`cat /etc/ntp.conf|grep "restrict ntp2.sinosig.com"`
+if [ "${vb}" = "" ] ;then
+    sed -i '/restrict -6 default ignore/a\restrict ntp2.sinosig.com kod nomodify notrap nopeer noquery' /etc/ntp.conf
+fi
+vc=`cat /etc/ntp.conf|grep "server 0.rhel"|grep '#'`
+if [ "${vc}" = "" ] ;then
+    sed -i '/server 0.rhel/ s/^/#/' /etc/ntp.conf
+fi
+vd=`cat /etc/ntp.conf|grep "server 1.rhel"|grep '#'`
+if [ "${vd}" = "" ] ;then
+    sed -i '/server 1.rhel/ s/^/#/' /etc/ntp.conf
+fi
+ve=`cat /etc/ntp.conf|grep "server 2.rhel"|grep '#'`
+if [ "${ve}" = "" ] ;then
+    sed -i '/server 2.rhel/ s/^/#/' /etc/ntp.conf
+fi
+vf=`cat /etc/ntp.conf|grep "server ntp2.sinosig.com"`
+if [ "${vf}" = "" ] ;then
+    sed -i '/#server 2.rhel.pool.ntp.org/a\server ntp2.sinosig.com iburst' /etc/ntp.conf
+fi
+
+chkconfig ntpd on
+
+service ntpd stop
+
+service ntpd start

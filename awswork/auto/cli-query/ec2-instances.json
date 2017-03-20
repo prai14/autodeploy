@@ -1,0 +1,378 @@
+{
+    "Reservations": [
+        {
+            "OwnerId": "295085893158", 
+            "ReservationId": "r-b466cd8c", 
+            "Groups": [], 
+            "Instances": [
+                {
+                    "Monitoring": {
+                        "State": "disabled"
+                    }, 
+                    "PublicDnsName": "ec2-54-223-230-156.cn-north-1.compute.amazonaws.com.cn", 
+                    "State": {
+                        "Code": 16, 
+                        "Name": "running"
+                    }, 
+                    "EbsOptimized": false, 
+                    "LaunchTime": "2015-08-11T07:47:47.000Z", 
+                    "PublicIpAddress": "54.223.230.156", 
+                    "PrivateIpAddress": "172.31.11.145", 
+                    "ProductCodes": [], 
+                    "VpcId": "vpc-06504664", 
+                    "StateTransitionReason": "", 
+                    "InstanceId": "i-00078a38", 
+                    "ImageId": "ami-e839abd1", 
+                    "PrivateDnsName": "ip-172-31-11-145.cn-north-1.compute.internal", 
+                    "SecurityGroups": [
+                        {
+                            "GroupName": "cloud-former-WebServerSecurityGroup-1SHKI1W3C6OUA", 
+                            "GroupId": "sg-c552baa0"
+                        }
+                    ], 
+                    "ClientToken": "cloud-WebSe-10TQQAJLPOTHM", 
+                    "SubnetId": "subnet-f7544295", 
+                    "InstanceType": "t2.small", 
+                    "NetworkInterfaces": [
+                        {
+                            "Status": "in-use", 
+                            "MacAddress": "02:6c:dc:b9:69:95", 
+                            "SourceDestCheck": true, 
+                            "VpcId": "vpc-06504664", 
+                            "Description": "", 
+                            "Association": {
+                                "PublicIp": "54.223.230.156", 
+                                "PublicDnsName": "ec2-54-223-230-156.cn-north-1.compute.amazonaws.com.cn", 
+                                "IpOwnerId": "amazon"
+                            }, 
+                            "NetworkInterfaceId": "eni-34518050", 
+                            "PrivateIpAddresses": [
+                                {
+                                    "PrivateDnsName": "ip-172-31-11-145.cn-north-1.compute.internal", 
+                                    "Association": {
+                                        "PublicIp": "54.223.230.156", 
+                                        "PublicDnsName": "ec2-54-223-230-156.cn-north-1.compute.amazonaws.com.cn", 
+                                        "IpOwnerId": "amazon"
+                                    }, 
+                                    "Primary": true, 
+                                    "PrivateIpAddress": "172.31.11.145"
+                                }
+                            ], 
+                            "PrivateDnsName": "ip-172-31-11-145.cn-north-1.compute.internal", 
+                            "Attachment": {
+                                "Status": "attached", 
+                                "DeviceIndex": 0, 
+                                "DeleteOnTermination": true, 
+                                "AttachmentId": "eni-attach-69a2c451", 
+                                "AttachTime": "2015-08-11T07:47:47.000Z"
+                            }, 
+                            "Groups": [
+                                {
+                                    "GroupName": "cloud-former-WebServerSecurityGroup-1SHKI1W3C6OUA", 
+                                    "GroupId": "sg-c552baa0"
+                                }
+                            ], 
+                            "SubnetId": "subnet-f7544295", 
+                            "OwnerId": "295085893158", 
+                            "PrivateIpAddress": "172.31.11.145"
+                        }
+                    ], 
+                    "SourceDestCheck": true, 
+                    "Placement": {
+                        "Tenancy": "default", 
+                        "GroupName": "", 
+                        "AvailabilityZone": "cn-north-1a"
+                    }, 
+                    "Hypervisor": "xen", 
+                    "BlockDeviceMappings": [
+                        {
+                            "DeviceName": "/dev/xvda", 
+                            "Ebs": {
+                                "Status": "attached", 
+                                "DeleteOnTermination": true, 
+                                "VolumeId": "vol-3b97c32e", 
+                                "AttachTime": "2015-08-11T07:47:51.000Z"
+                            }
+                        }
+                    ], 
+                    "Architecture": "x86_64", 
+                    "RootDeviceType": "ebs", 
+                    "IamInstanceProfile": {
+                        "Id": "AIPAPO7ZIKNRPAGOA6I3M", 
+                        "Arn": "arn:aws-cn:iam::295085893158:instance-profile/cloud-former-CFNInstanceProfile-1KI0HCFWE00P9"
+                    }, 
+                    "RootDeviceName": "/dev/xvda", 
+                    "VirtualizationType": "hvm", 
+                    "Tags": [
+                        {
+                            "Value": "CloudFormer", 
+                            "Key": "Application"
+                        }, 
+                        {
+                            "Value": "arn:aws-cn:cloudformation:cn-north-1:295085893158:stack/cloud-former/ebbba580-3ffc-11e5-903b-50fa0fcb6862", 
+                            "Key": "aws:cloudformation:stack-id"
+                        }, 
+                        {
+                            "Value": "cloud-former", 
+                            "Key": "aws:cloudformation:stack-name"
+                        }, 
+                        {
+                            "Value": "WebServer", 
+                            "Key": "aws:cloudformation:logical-id"
+                        }
+                    ], 
+                    "AmiLaunchIndex": 0
+                }
+            ]
+        }, 
+        {
+            "OwnerId": "295085893158", 
+            "ReservationId": "r-4ad31072", 
+            "Groups": [], 
+            "Instances": [
+                {
+                    "Monitoring": {
+                        "State": "enabled"
+                    }, 
+                    "PublicDnsName": "ec2-54-223-218-79.cn-north-1.compute.amazonaws.com.cn", 
+                    "State": {
+                        "Code": 16, 
+                        "Name": "running"
+                    }, 
+                    "EbsOptimized": true, 
+                    "LaunchTime": "2015-08-06T08:24:55.000Z", 
+                    "PublicIpAddress": "54.223.218.79", 
+                    "PrivateIpAddress": "10.0.0.154", 
+                    "ProductCodes": [], 
+                    "VpcId": "vpc-bf7564dd", 
+                    "StateTransitionReason": "", 
+                    "InstanceId": "i-800bd4b8", 
+                    "ImageId": "ami-70d04d49", 
+                    "PrivateDnsName": "ip-10-0-0-154.cn-north-1.compute.internal", 
+                    "KeyName": "demo-new-bjs", 
+                    "SecurityGroups": [
+                        {
+                            "GroupName": "manager-sg", 
+                            "GroupId": "sg-b78a69d2"
+                        }, 
+                        {
+                            "GroupName": "bastion", 
+                            "GroupId": "sg-03917f66"
+                        }
+                    ], 
+                    "ClientToken": "KmlHQ1431359711789", 
+                    "SubnetId": "subnet-d77061b5", 
+                    "InstanceType": "c3.2xlarge", 
+                    "NetworkInterfaces": [
+                        {
+                            "Status": "in-use", 
+                            "MacAddress": "02:aa:62:a1:17:a9", 
+                            "SourceDestCheck": true, 
+                            "VpcId": "vpc-bf7564dd", 
+                            "Description": "Primary network interface", 
+                            "Association": {
+                                "PublicIp": "54.223.218.79", 
+                                "PublicDnsName": "ec2-54-223-218-79.cn-north-1.compute.amazonaws.com.cn", 
+                                "IpOwnerId": "295085893158"
+                            }, 
+                            "NetworkInterfaceId": "eni-75ab9d10", 
+                            "PrivateIpAddresses": [
+                                {
+                                    "PrivateDnsName": "ip-10-0-0-154.cn-north-1.compute.internal", 
+                                    "Association": {
+                                        "PublicIp": "54.223.218.79", 
+                                        "PublicDnsName": "ec2-54-223-218-79.cn-north-1.compute.amazonaws.com.cn", 
+                                        "IpOwnerId": "295085893158"
+                                    }, 
+                                    "Primary": true, 
+                                    "PrivateIpAddress": "10.0.0.154"
+                                }
+                            ], 
+                            "PrivateDnsName": "ip-10-0-0-154.cn-north-1.compute.internal", 
+                            "Attachment": {
+                                "Status": "attached", 
+                                "DeviceIndex": 0, 
+                                "DeleteOnTermination": true, 
+                                "AttachmentId": "eni-attach-90ed59a8", 
+                                "AttachTime": "2015-05-11T15:55:12.000Z"
+                            }, 
+                            "Groups": [
+                                {
+                                    "GroupName": "manager-sg", 
+                                    "GroupId": "sg-b78a69d2"
+                                }, 
+                                {
+                                    "GroupName": "bastion", 
+                                    "GroupId": "sg-03917f66"
+                                }
+                            ], 
+                            "SubnetId": "subnet-d77061b5", 
+                            "OwnerId": "295085893158", 
+                            "PrivateIpAddress": "10.0.0.154"
+                        }
+                    ], 
+                    "SourceDestCheck": true, 
+                    "Placement": {
+                        "Tenancy": "default", 
+                        "GroupName": "", 
+                        "AvailabilityZone": "cn-north-1a"
+                    }, 
+                    "Hypervisor": "xen", 
+                    "BlockDeviceMappings": [
+                        {
+                            "DeviceName": "/dev/xvda", 
+                            "Ebs": {
+                                "Status": "attached", 
+                                "DeleteOnTermination": true, 
+                                "VolumeId": "vol-b282eca7", 
+                                "AttachTime": "2015-05-11T15:55:15.000Z"
+                            }
+                        }
+                    ], 
+                    "Architecture": "x86_64", 
+                    "RootDeviceType": "ebs", 
+                    "IamInstanceProfile": {
+                        "Id": "AIPAPW6J3DOGOZNTBBPGK", 
+                        "Arn": "arn:aws-cn:iam::295085893158:instance-profile/aws-tools"
+                    }, 
+                    "RootDeviceName": "/dev/xvda", 
+                    "VirtualizationType": "hvm", 
+                    "Tags": [
+                        {
+                            "Value": "Demo", 
+                            "Key": "Environment"
+                        }, 
+                        {
+                            "Value": "Manager", 
+                            "Key": "Application"
+                        }, 
+                        {
+                            "Value": "Manager", 
+                            "Key": "Name"
+                        }
+                    ], 
+                    "AmiLaunchIndex": 0
+                }
+            ]
+        }, 
+        {
+            "OwnerId": "295085893158", 
+            "ReservationId": "r-bab0b811", 
+            "Groups": [], 
+            "Instances": [
+                {
+                    "Monitoring": {
+                        "State": "enabled"
+                    }, 
+                    "PublicDnsName": "ec2-54-223-231-81.cn-north-1.compute.amazonaws.com.cn", 
+                    "Platform": "windows", 
+                    "State": {
+                        "Code": 16, 
+                        "Name": "running"
+                    }, 
+                    "EbsOptimized": false, 
+                    "LaunchTime": "2015-08-11T07:42:28.000Z", 
+                    "PublicIpAddress": "54.223.231.81", 
+                    "PrivateIpAddress": "10.0.10.108", 
+                    "ProductCodes": [], 
+                    "VpcId": "vpc-bf7564dd", 
+                    "StateTransitionReason": "", 
+                    "InstanceId": "i-ff444f54", 
+                    "ImageId": "ami-341b860d", 
+                    "PrivateDnsName": "ip-10-0-10-108.cn-north-1.compute.internal", 
+                    "KeyName": "demo-new-bjs", 
+                    "SecurityGroups": [
+                        {
+                            "GroupName": "Win-Bastion", 
+                            "GroupId": "sg-e552ba80"
+                        }
+                    ], 
+                    "ClientToken": "HkEzN1439278948310", 
+                    "SubnetId": "subnet-760e2602", 
+                    "InstanceType": "t2.small", 
+                    "NetworkInterfaces": [
+                        {
+                            "Status": "in-use", 
+                            "MacAddress": "06:20:8b:29:fa:79", 
+                            "SourceDestCheck": true, 
+                            "VpcId": "vpc-bf7564dd", 
+                            "Description": "Primary network interface", 
+                            "Association": {
+                                "PublicIp": "54.223.231.81", 
+                                "PublicDnsName": "ec2-54-223-231-81.cn-north-1.compute.amazonaws.com.cn", 
+                                "IpOwnerId": "amazon"
+                            }, 
+                            "NetworkInterfaceId": "eni-0a54517e", 
+                            "PrivateIpAddresses": [
+                                {
+                                    "PrivateDnsName": "ip-10-0-10-108.cn-north-1.compute.internal", 
+                                    "Association": {
+                                        "PublicIp": "54.223.231.81", 
+                                        "PublicDnsName": "ec2-54-223-231-81.cn-north-1.compute.amazonaws.com.cn", 
+                                        "IpOwnerId": "amazon"
+                                    }, 
+                                    "Primary": true, 
+                                    "PrivateIpAddress": "10.0.10.108"
+                                }
+                            ], 
+                            "PrivateDnsName": "ip-10-0-10-108.cn-north-1.compute.internal", 
+                            "Attachment": {
+                                "Status": "attached", 
+                                "DeviceIndex": 0, 
+                                "DeleteOnTermination": true, 
+                                "AttachmentId": "eni-attach-9128f184", 
+                                "AttachTime": "2015-08-11T07:42:28.000Z"
+                            }, 
+                            "Groups": [
+                                {
+                                    "GroupName": "Win-Bastion", 
+                                    "GroupId": "sg-e552ba80"
+                                }
+                            ], 
+                            "SubnetId": "subnet-760e2602", 
+                            "OwnerId": "295085893158", 
+                            "PrivateIpAddress": "10.0.10.108"
+                        }
+                    ], 
+                    "SourceDestCheck": true, 
+                    "Placement": {
+                        "Tenancy": "default", 
+                        "GroupName": "", 
+                        "AvailabilityZone": "cn-north-1b"
+                    }, 
+                    "Hypervisor": "xen", 
+                    "BlockDeviceMappings": [
+                        {
+                            "DeviceName": "/dev/sda1", 
+                            "Ebs": {
+                                "Status": "attached", 
+                                "DeleteOnTermination": true, 
+                                "VolumeId": "vol-b7a84a5e", 
+                                "AttachTime": "2015-08-11T07:42:32.000Z"
+                            }
+                        }
+                    ], 
+                    "Architecture": "x86_64", 
+                    "RootDeviceType": "ebs", 
+                    "RootDeviceName": "/dev/sda1", 
+                    "VirtualizationType": "hvm", 
+                    "Tags": [
+                        {
+                            "Value": "Demo", 
+                            "Key": "Stage"
+                        }, 
+                        {
+                            "Value": "Win2012", 
+                            "Key": "Name"
+                        }, 
+                        {
+                            "Value": "Bastion-Win", 
+                            "Key": "Application"
+                        }
+                    ], 
+                    "AmiLaunchIndex": 0
+                }
+            ]
+        }
+    ]
+}

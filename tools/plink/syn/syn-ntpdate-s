@@ -1,0 +1,30 @@
+#close ntpd
+vntp=`ps -ef|grep ntpd|grep -v grep|awk '{print $1}'`
+if [ "${vntp}"  != "" ] ;then
+    service ntpd stop
+    chkconfig ntpd off
+fi
+
+#virtual server sysctl.conf modified
+v0=`uname -r|grep -i xen`
+v1=`cat /etc/sysctl.conf|grep -i "xen.independent_wallclock"|xargs`
+if [ "${v0}" != "" ] ;then    #virtual server
+    if [ "${v1}" = "" ] ;then #configuration
+        echo "virtual clock not configurated!!!"
+        echo "#Set independent wall clock time" >>/etc/sysctl.conf
+        echo "xen.independent_wallclock=1"      >>/etc/sysctl.conf
+        sysctl -p
+        echo "virtual clock configurated soon!!!"
+    fi
+fi
+
+#time syn
+ntpdate 10.10.2.65
+
+#crontab
+v2=`crontab -l|grep ntpdate|grep -v '#'|grep "10.10.2.65"`
+if [ "${v2}" = "" ] ;then   #configuration
+   echo "syn not configurated!!!"
+   echo "0 1 * * 6 /usr/sbin/ntpdate 10.10.2.65;/usr/sbin/ntpdate 10.10.2.65" >> /var/spool/cron/root
+   echo "syn configurated soon!!!"
+fi

@@ -1,0 +1,4 @@
+sudo echo "-----df-h-----"
+sudo df -h |grep app
+sudo echo "-----swap-----"
+sudo free -m|grep -i swap

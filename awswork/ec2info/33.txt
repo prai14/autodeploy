@@ -1,0 +1,31 @@
+aws ec2 describe-instances --output text --query 'Reservations[].Instances[].[join(`,`,Tags[?Key==`Name`].Value),InstanceId,PrivateIpAddress]'|wc -l
+aws ec2 describe-instances --output text --query 'Reservations[].Instances[].[join(`,`,Tags[?Key==`Name`].Value),InstanceId,PrivateIpAddress]' --filter "Name=tag:Name,Values=internetds_*"|wc -l
+aws ec2 describe-instances --output text --query 'Reservations[].Instances[].[join(`,`,Tags[?Key==`Name`].Value),InstanceId,PrivateIpAddress]' --filter "Name=tag:Name,Values=internetds*"
+aws ec2 describe-instances --output text --query 'Reservations[].Instances[].[join(`,`,Tags[?Key==`Name`].Value),InstanceId,PrivateIpAddress]' --filter "Name=tag:Name,Values=yc_internetds*"|wc -l
+aws ec2 describe-instances --output text --query 'Reservations[].Instances[].[join(`,`,Tags[?Key==`Name`].Value),InstanceId,PrivateIpAddress]' --filter "Name=tag:Name,Values=yc_internetds*"
+aws ec2 describe-instances --output text --query 'Reservations[].Instances[].[join(`,`,Tags[?Key==`Name`].Value),InstanceId,PrivateIpAddress]' --filter "Name=key-name,Values=test*"|wc -l
+aws ec2 describe-instances --output text --query 'Reservations[].Instances[].[join(`,`,Tags[?Key==`Name`].Value),InstanceId,PrivateIpAddress]' --filter "Name=key-name,Values=test*"
+aws ec2 describe-instances --output text --query 'Reservations[].Instances[].[join(`,`,Tags[?Key==`Name`].Value),InstanceId,PrivateIpAddress]' --filter "Name=key-name,Values=kp_m*"|wc -l
+aws ec2 describe-instances --output text --query 'Reservations[].Instances[].[join(`,`,Tags[?Key==`Name`].Value),InstanceId,PrivateIpAddress]' --filter "Name=key-name,Values=kp_m*"
+
+
+aws ec2 describe-snapshots --filters Name=volume-id,Values="vol-654176e0" Name=start-time,Values="2017-02-10*" --profile default --output table --query 'Snapshots[].[OwnerId,SnapshotId,join(`,`,Tags[?Key==`InstanceName`].Value),join(`,`,Tags[?Key==`InstanceId`].Value)]'
+aws ec2 describe-snapshots --filters Name=volume-id,Values="vol-654176e0" Name=start-time,Values="2017-02-10*" --profile default --output text --query 'Snapshots[].[OwnerId,SnapshotId,join(`,`,Tags[?Key==`InstanceName`].Value),join(`,`,Tags[?Key==`InstanceId`].Value)]'
+
+aws ec2 describe-instances --output text --query 'Reservations[].Instances[].[join(`,`,Tags[?Key==`Name`].Value),InstanceId,PrivateIpAddress]' --filter "Name=key-name,Values=abfinance_bases" --profile abf-aws|column -t
+aws ec2 describe-instances --output table --query 'Reservations[].Instances[].[join(`,`,Tags[?Key==`Name`].Value),InstanceId,PrivateIpAddress]' --filter "Name=key-name,Values=abfinance_95569"
+aws ec2 describe-instances --output table --query 'Reservations[].Instances[].[join(`,`,Tags[?Key==`Name`].Value),InstanceId,PrivateIpAddress]' --filter "Name=key-name,Values=abfinance_top20"
+
+aws ec2 create-image --instance-id i-1234567890abcdef0 --name "My server" --description "An AMI for my server" --no-reboot
+
+for i in `aws elb describe-load-balancers --output text --query 'LoadBalancerDescriptions[].[Instances[].[InstanceId]]'`
+> do
+> aws ec2 describe-instances --output text --query 'Reservations[].Instances[].[join(`,`,Tags[?Key==`Name`].Value)]' --filter "Name=instance-id,Values=$i"
+> done
+
+
+aws elasticache describe-cache-clusters --output table --profile ids-aws --query 'CacheClusters[].[CacheClusterId,CacheNodeType,CacheSubnetGroupName,Engine,EngineVersion,ReplicationGroupId]'
+
+aws ec2 describe-instances --output text --query 'Reservations[].Instances[].[join(`,`,Tags[?Key==`Name`].Value),InstanceType,PrivateIpAddress]' --filter "Name=key-name,Values=kp_depl*" --profile ids-aws |column -t
+aws ec2 describe-instances --output text --query 'Reservations[].Instances[].[join(`,`,Tags[?Key==`Name`].Value),InstanceType,PrivateIpAddress]' --filter "Name=key-name,Values=test*" --profile ids-aws |column -t
+aws ec2 describe-instances --output text --query 'Reservations[].Instances[].[join(`,`,Tags[?Key==`Name`].Value),InstanceId,PrivateIpAddress]' --filter "Name=key-name,Values=kp_depl*" --profile ids-aws |column -t 

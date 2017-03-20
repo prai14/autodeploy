@@ -1,0 +1,2 @@
+date;while read ip password user;do echo "$ip";echo y|plink "$user@$ip" -pw "$password" -m root_grep;done < rootvm_list ;date
+#date;while read ip password user;do echo "$ip";echo y|plink "$user@$ip" -pw "$password" -m root_grep;done < rootpm_list ;date

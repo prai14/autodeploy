@@ -1,0 +1,120 @@
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+++++1.2 account login limit++++start++++
+++++1.2 account login limit++++end++++++
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+++++1.3 account login limit++++start++++
+++++1.3 account login limit++++end++++++
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+++++2.1 account login limit++++start++++
+#	PASS_MIN_LEN	Minimum acceptable password length.
+PASS_MIN_LEN	5
+#	PASS_MIN_LEN	Minimum acceptable password length.
+PASS_MIN_LEN	8
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+++++2.1 account login limit++++end++++++
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+++++3.1 account login limit++++start++++
+++++3.1 account login limit++++end++++++
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+++++3.2 account login limit++++start++++
++++++++++++++++++++++++++++++++++++++++++++++++++++
++++++++++++++++++++++++++++++++++++++++++++++++++++
+export TMOUT=300
+++++3.2 account login limit++++end++++++
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+++++4.1 account login limit++++start++++
+syslog         	0:off	1:off	2:on	3:on	4:on	5:on	6:off
++++++++++++++++++++++++++++++++++++++++++++++++++++
+Shutting down kernel logger: [  OK  ]
+Shutting down system logger: [  OK  ]
+Starting system logger: [  OK  ]
+Starting kernel logger: [  OK  ]
++++++++++++++++++++++++++++++++++++++++++++++++++++
++++++++++++++++++++++++++++++++++++++++++++++++++++
++++++++++++++++++++++++++++++++++++++++++++++++++++
+Shutting down kernel logger: [  OK  ]
+Shutting down system logger: [  OK  ]
+Starting system logger: [  OK  ]
+Starting kernel logger: [  OK  ]
+Stopping xinetd: [  OK  ]
+Starting xinetd: [  OK  ]
++++++++++++++++++++++++++++++++++++++++++++++++++++
+ftp.*    /var/log/ftpd 
++++++++++++++++++++++++++++++++++++++++++++++++++++
+ftpd -l -A -S
++++++++++++++++++++++++++++++++++++++++++++++++++++
+++++4.1 account login limit++++end++++++
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+++++5.1 account login limit++++start++++
++++++++++++++++++++++++++++++++++++++++++++++++++++
+sendmail       	0:off	1:off	2:off	3:off	4:off	5:off	6:off
+bluetooth      	0:off	1:off	2:on	3:off	4:on	5:on	6:off
++++++++++++++++++++++++++++++++++++++++++++++++++++
++++++++++++++++++++++++++++++++++++++++++++++++++++
+sendmail       	0:off	1:off	2:off	3:off	4:off	5:off	6:off
+bluetooth      	0:off	1:off	2:off	3:off	4:off	5:off	6:off
+++++5.1 account login limit++++end++++++
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+++++1.2 account login limit++++start++++
+++++1.2 account login limit++++end++++++
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+++++1.3 account login limit++++start++++
+++++1.3 account login limit++++end++++++
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+++++2.1 account login limit++++start++++
+#	PASS_MIN_LEN	Minimum acceptable password length.
+PASS_MIN_LEN	8
+#	PASS_MIN_LEN	Minimum acceptable password length.
+PASS_MIN_LEN	8
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+++++2.1 account login limit++++end++++++
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+++++3.1 account login limit++++start++++
+++++3.1 account login limit++++end++++++
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+++++3.2 account login limit++++start++++
++++++++++++++++++++++++++++++++++++++++++++++++++++
+export TMOUT=300
++++++++++++++++++++++++++++++++++++++++++++++++++++
+export TMOUT=300
+export TMOUT=300
+++++3.2 account login limit++++end++++++
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+++++4.1 account login limit++++start++++
+syslog         	0:off	1:off	2:on	3:on	4:on	5:on	6:off
++++++++++++++++++++++++++++++++++++++++++++++++++++
+Shutting down kernel logger: [  OK  ]
+Shutting down system logger: [  OK  ]
+Starting system logger: [  OK  ]
+Starting kernel logger: [  OK  ]
++++++++++++++++++++++++++++++++++++++++++++++++++++
+ftp.*    /var/log/ftpd 
++++++++++++++++++++++++++++++++++++++++++++++++++++
+ftpd -l -A -S
++++++++++++++++++++++++++++++++++++++++++++++++++++
+Shutting down kernel logger: [  OK  ]
+Shutting down system logger: [  OK  ]
+Starting system logger: [  OK  ]
+Starting kernel logger: [  OK  ]
+Stopping xinetd: [  OK  ]
+Starting xinetd: [  OK  ]
++++++++++++++++++++++++++++++++++++++++++++++++++++
+ftp.*    /var/log/ftpd 
+ftp.*    /var/log/ftpd 
++++++++++++++++++++++++++++++++++++++++++++++++++++
+ftpd -l -A -S
+ftpd -l -A -S
++++++++++++++++++++++++++++++++++++++++++++++++++++
+++++4.1 account login limit++++end++++++
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+++++5.1 account login limit++++start++++
++++++++++++++++++++++++++++++++++++++++++++++++++++
+sendmail       	0:off	1:off	2:off	3:off	4:off	5:off	6:off
+bluetooth      	0:off	1:off	2:off	3:off	4:off	5:off	6:off
++++++++++++++++++++++++++++++++++++++++++++++++++++
++++++++++++++++++++++++++++++++++++++++++++++++++++
+sendmail       	0:off	1:off	2:off	3:off	4:off	5:off	6:off
+bluetooth      	0:off	1:off	2:off	3:off	4:off	5:off	6:off
+++++5.1 account login limit++++end++++++
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++

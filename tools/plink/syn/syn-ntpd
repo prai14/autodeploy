@@ -1,0 +1,132 @@
+######################################################################################################################
+#ntpd syn conf
+######################################################################################################################
+
+#############################################
+#1.nameserver conf
+#############################################
+y=`date +%F_%T|cut -b1-4`
+m=`date +%F_%T|cut -b6-7`
+d=`date +%F_%T|cut -b9-10`
+h=`date +%F_%T|cut -b12-13`
+mi=`date +%F_%T|cut -b15-16`
+s=`date +%F_%T|cut -b18-19`
+cp -p /etc/resolv.conf /etc/resolv.conf.${y}${m}${d}${h}${mi}${s}
+
+vdmz=`cat /etc/resolv.conf|grep "10.10.23"`    #DMZ option
+v0=`cat /etc/resolv.conf|grep "10.10.2.1"`
+if [ "${vdmz}" = "" ] ;then   
+    if [ "${v0}" = "" ] ;then   
+        echo "nameserver 10.10.2.1" >> /etc/resolv.conf
+    fi
+fi
+
+v1=`cat /etc/resolv.conf|grep "10.10.2.2"`
+if [ "${v1}" = "" ] ;then   
+    echo "nameserver 10.10.2.2" >> /etc/resolv.conf
+fi
+
+v2=`cat /etc/resolv.conf|grep "sinosig.com"`
+if [ "${v2}" = "" ] ;then   
+    sed -i '/search/d' /etc/resolv.conf
+    if [ "${vdmz}" != "" ] ;then
+        sed -i '/${vdmz}/i\search sinosig.com' /etc/resolv.conf
+    else
+        sed -i '/nameserver 10.10.2.1/i\search sinosig.com' /etc/resolv.conf
+    fi
+fi
+
+#############################################
+#2.ntpd conf
+#############################################
+
+#2a./etc/sysconfig/ntpd
+cp -p /etc/sysconfig/ntpd /root/ntpd.${y}${m}${d}${h}${mi}${s}
+
+v4=`cat /etc/sysconfig/ntpd|grep "\-x"`
+if [ "${v4}" = "" ] ;then
+    sed -i 's/-u/-x -u/' /etc/sysconfig/ntpd
+fi
+vpv=`dmidecode -s system-product-name`
+if [ "${vpv}" != "" ] ;then
+    sed -i '/SYNC_HWCLOCK/ s/no/yes/' /etc/sysconfig/ntpd
+else
+    vsc=`cat /etc/sysctl.conf|grep -i "xen.independent_wallclock"` ##virtual server
+    if [ "${vsc}" = "" ] ;then
+        echo "#Set independent wall clock time" >>/etc/sysctl.conf
+        echo "xen.independent_wallclock=1"      >>/etc/sysctl.conf
+        sysctl -p|grep -i "xen.independent_wallclock"
+    fi
+fi
+
+#2b./etc/ntp/step-tickers
+V6=`cat /etc/ntp/step-tickers`
+#if [ "${v6}" = "" ] ;then
+#fi
+
+#2c./etc/ntp.conf
+vnd=`uname -r|grep el6`
+vorg=`find /etc -name ntp.conf -print`
+if [ "${vnd}" != "" ] && [ "${vorg}" = "" ] ;then
+    cp -p /etc/ntp.conf.org /etc/ntp.conf
+fi
+cp -p /etc/ntp.conf /root/ntp.conf.${y}${m}${d}${h}${mi}${s}
+
+v7=`cat /etc/ntp.conf|grep "restrict default kod"|grep '#'`
+if [ "${v7}" = "" ] ;then
+    sed -i '/restrict default kod/ s/^/#/' /etc/ntp.conf
+fi
+v8=`cat /etc/ntp.conf|grep "restrict -6 default kod"|grep '#'`
+if [ "${v8}" = "" ] ;then
+    sed -i '/restrict -6 default kod/ s/^/#/' /etc/ntp.conf
+fi
+v9=`cat /etc/ntp.conf|grep "restrict default ignore"`
+if [ "${v9}" = "" ] ;then
+    sed -i '/#restrict -6 default kod nomodify notrap nopeer noquery/a\restrict default ignore' /etc/ntp.conf
+fi
+va=`cat /etc/ntp.conf|grep "restrict -6 default ignore"`
+if [ "${va}" = "" ] ;then
+    sed -i '/restrict default ignore/a\restrict -6 default ignore' /etc/ntp.conf
+fi
+vb=`cat /etc/ntp.conf|grep "restrict ntp2.sinosig.com"`
+if [ "${vb}" = "" ] ;then
+    sed -i '/restrict -6 default ignore/a\restrict ntp2.sinosig.com kod nomodify notrap nopeer noquery' /etc/ntp.conf
+fi
+vc=`cat /etc/ntp.conf|grep "server 0.rhel"|grep '#'`
+if [ "${vc}" = "" ] ;then
+    sed -i '/server 0.rhel/ s/^/#/' /etc/ntp.conf
+fi
+vd=`cat /etc/ntp.conf|grep "server 1.rhel"|grep '#'`
+if [ "${vd}" = "" ] ;then
+    sed -i '/server 1.rhel/ s/^/#/' /etc/ntp.conf
+fi
+ve=`cat /etc/ntp.conf|grep "server 2.rhel"|grep '#'`
+if [ "${ve}" = "" ] ;then
+    sed -i '/server 2.rhel/ s/^/#/' /etc/ntp.conf
+fi
+if [ "${vnd}" != "" ] ;then
+    ve3=`cat /etc/ntp.conf|grep "server 3.rhel"|grep '#'`
+    if [ "${ve}" = "" ] ;then
+        sed -i '/server 3.rhel/ s/^/#/' /etc/ntp.conf
+    fi
+    vf6=`cat /etc/ntp.conf|grep "server ntp2.sinosig.com"`
+    if [ "${vf6}" = "" ] ;then
+        sed -i '/#server 3.rhel.pool.ntp.org/a\server ntp2.sinosig.com iburst' /etc/ntp.conf
+    fi
+else
+    vf5=`cat /etc/ntp.conf|grep "server ntp2.sinosig.com"`
+    if [ "${vf5}" = "" ] ;then
+        sed -i '/#server 2.rhel.pool.ntp.org/a\server ntp2.sinosig.com iburst' /etc/ntp.conf
+    fi
+fi
+
+#############################################
+#3.ntpd start & stop 
+#############################################
+if [ "${vnd}" != "" ] ;then
+    chkconfig ntpdate on
+fi
+chkconfig ntpd on
+service ntpd stop
+service ntpd start
+######################################################################################################################

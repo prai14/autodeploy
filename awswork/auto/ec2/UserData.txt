@@ -1,0 +1,9 @@
+#!/bin/sh
+yum -y install httpd php mysql php-mysql
+chkconfig httpd on
+/etc/init.d/httpd start
+cd /var/www/html
+wget https://s3.cn-north-1.amazonaws.com.cn/awsu-pub/superman.zip
+unzip superman.zip
+cd superman
+mv * ..

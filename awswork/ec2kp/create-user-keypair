@@ -1,0 +1,17 @@
+#!/usr/bin/expect -f
+
+set username [lindex $argv 0] 
+set IP [lindex $argv 1]    
+set ymd [lindex $argv 2]    
+
+spawn ssh-keygen -t rsa -b 2048 -v -f ${username}-${IP}-${ymd}
+expect {
+       "*Enter passphrase*" {
+           send "\n\r"       
+           exp_continue        
+       }
+       "*Enter same passphrase again*" {
+           send "\n\r"       
+           exp_continue        
+       }
+}

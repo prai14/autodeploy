@@ -1,0 +1,5 @@
+#while read ip password user;do echo "$ip";echo y|plink "$user@$ip" -pw "$password" -m root_grep;done < iplist01o
+#while read ip password user;do echo "$ip";echo y|plink "$user@$ip" -pw "$password" -m root_grep;done < iplist02o
+#while read ip password user;do echo "$ip";echo y|plink "$user@$ip" -pw "$password" -m root_grep;done < iplist03o
+#while read ip password user;do echo "$ip";echo y|plink "$user@$ip" -pw "$password" -m root_grep;done < iplist04o
+while read ip password user;do echo "$ip";echo y|plink "$user@$ip" -pw "$password" -m root_grep;done < iplist05o

@@ -1,0 +1,26 @@
+#!/usr/bin/expect -f
+
+set v0 [lindex $argv 0] 
+set v1 [lindex $argv 1]    
+set v2 [lindex $argv 2]    
+set v3 [lindex $argv 3]    
+
+spawn aws configure
+expect {
+       "*AWS Access Key ID*"     {
+           send "${v0}\r"
+           exp_continue        
+       }
+       "*AWS Secret Access Key*" {
+           send "${v1}\r"
+           exp_continue        
+       }
+       "*Default region name*"   {
+           send "${v2}\r"       
+           exp_continue        
+       }
+       "*Default output format*" {
+           send "${v3}\r"       
+           exp_continue        
+       }
+}

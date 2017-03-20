@@ -1,0 +1,1 @@
+sh export-rds-instance-endpoint.sh |grep Address|awk -F'"' '{print $4}' > instance.txt

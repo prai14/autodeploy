@@ -1,0 +1,7 @@
+aws ec2 assign-private-ip-addresses --network-interface-id eni-0e23e956 --private-ip-addresses 10.219.16.42 
+aws ec2 assign-private-ip-addresses --network-interface-id eni-0e23e956  --secondary-private-ip-address-count 1
+aws ec2 describe-instances --query 'Reservations[].Instances[].NetworkInterfaces[].PrivateIpAddresses[].[Primary,PrivateIpAddress]' --filters "Name=instance-id,Values=i-061100ef3944cdc9f" --output table
+
+aws ec2 assign-private-ip-addresses --network-interface-id eni-4cb39967 --private-ip-addresses 10.219.17.246
+aws ec2 assign-private-ip-addresses --network-interface-id eni-4cb39967  --secondary-private-ip-address-count 1
+aws ec2 describe-instances --query 'Reservations[].Instances[].NetworkInterfaces[].PrivateIpAddresses[].[Primary,PrivateIpAddress]' --filters "Name=instance-id,Values=i-0ee80a69b4f45c60e" --output table

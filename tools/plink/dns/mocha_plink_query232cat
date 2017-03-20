@@ -1,0 +1,11 @@
+#while read ip password user;do echo "$ip";echo y|plink "$user@$ip" -pw "$password" -m mocha_grep;done < syn_list-pr
+#while read ip password user;do echo "$ip";echo y|plink "$user@$ip" -pw "$password" -m mocha_grep;done<syn_list_20150820
+#while read ip password user;do echo "$ip";echo y|plink "$user@$ip" -pw "$password" -m mocha_grep;done < syn-ip-0922
+#while read ip password user;do echo "$ip";echo y|plink "$user@$ip" -pw "$password" -m mocha_grep;done < syn-ip-pr-0922
+#while read ip password user;do echo "$ip";echo y|plink "$user@$ip" -pw "$password" -m mocha_grep;done < syn-20151014
+#while read ip password user;do echo "$ip";echo y|plink "$user@$ip" -pw "$password" -m mocha_grep;done < syn-liyunlei
+#while read ip password user;do echo "$ip";echo y|plink "$user@$ip" -pw "$password" -m mocha_grep;done < syn-20151111
+while read ip password user;do echo "$ip";echo y|plink "$user@$ip" -pw "$password" -m dns232cat;done < dns232
+#while read ip password user;do echo "$ip";echo y|plink "$user@$ip" -pw "$password" -m mocha_grep;done < syn_list-pw
+#while read ip password user;do echo "$ip";echo y|plink "$user@$ip" -pw "$password" -m mocha_grep;done < syn_list-vr
+#while read ip password user;do echo "$ip";echo y|plink "$user@$ip" -pw "$password" -m mocha_grep;done < syn_list-vw

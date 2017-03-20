@@ -1,0 +1,2 @@
+cat getlpminfo.log|awk '{if(NR%2!=0)ORS="|";else ORS="\n";print}' > lpminfo.txt
+sed -i 's/://g' lpminfo.txt

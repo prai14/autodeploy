@@ -1,0 +1,805 @@
+Snapshots taken by ec2-volumes-autobackup.sh will be eligible for purging after the following date (the purge after date given in seconds from epoch): 1488305405.
+INSTANCE i-526547ea
+INSTANCE NAME: test_internetds_nat02
+Tagging Snapshot snap-013f3f70a58439fa7 with the following Tags: Key=CreatedBy,Value=ec2-automate-backup Key=InstanceId,Value=i-526547ea Key=InstanceName,Value=test_internetds_nat02 Key=PurgeAfterFE,Value=1488305405 Key=PurgeAllow,Value=true Key=Volume,Value=vol-719282ce Key=Created,Value=1485713405
+INSTANCE i-b17a5809
+INSTANCE NAME: uat_internetds_front_app01
+Tagging Snapshot snap-0a7c9ca919fefc86d with the following Tags: Key=CreatedBy,Value=ec2-automate-backup Key=InstanceId,Value=i-b17a5809 Key=InstanceName,Value=uat_internetds_front_app01 Key=PurgeAfterFE,Value=1488305405 Key=PurgeAllow,Value=true Key=Volume,Value=vol-c6849479 Key=Created,Value=1485713405
+INSTANCE i-b17a5809
+INSTANCE NAME: uat_internetds_front_app01
+Tagging Snapshot snap-0b26596e06382c16b with the following Tags: Key=CreatedBy,Value=ec2-automate-backup Key=InstanceId,Value=i-b17a5809 Key=InstanceName,Value=uat_internetds_front_app01 Key=PurgeAfterFE,Value=1488305405 Key=PurgeAllow,Value=true Key=Volume,Value=vol-3084948f Key=Created,Value=1485713405
+INSTANCE i-8a7a5832
+INSTANCE NAME: uat_internetds_mid01
+Tagging Snapshot snap-0ef0157f0df484095 with the following Tags: Key=CreatedBy,Value=ec2-automate-backup Key=InstanceId,Value=i-8a7a5832 Key=InstanceName,Value=uat_internetds_mid01 Key=PurgeAfterFE,Value=1488305405 Key=PurgeAllow,Value=true Key=Volume,Value=vol-8c859533 Key=Created,Value=1485713405
+INSTANCE i-8a7a5832
+INSTANCE NAME: uat_internetds_mid01
+Tagging Snapshot snap-0ca60f06215a7d635 with the following Tags: Key=CreatedBy,Value=ec2-automate-backup Key=InstanceId,Value=i-8a7a5832 Key=InstanceName,Value=uat_internetds_mid01 Key=PurgeAfterFE,Value=1488305405 Key=PurgeAllow,Value=true Key=Volume,Value=vol-798595c6 Key=Created,Value=1485713405
+INSTANCE i-1b7a58a3
+INSTANCE NAME: uat_internetds_opsmon_mongo01
+Tagging Snapshot snap-03424b25517662043 with the following Tags: Key=CreatedBy,Value=ec2-automate-backup Key=InstanceId,Value=i-1b7a58a3 Key=InstanceName,Value=uat_internetds_opsmon_mongo01 Key=PurgeAfterFE,Value=1488305405 Key=PurgeAllow,Value=true Key=Volume,Value=vol-bf879700 Key=Created,Value=1485713405
+INSTANCE i-1a7a58a2
+INSTANCE NAME: uat_internetds_opsmon_mongo02
+Tagging Snapshot snap-0dadb56f71c7188d4 with the following Tags: Key=CreatedBy,Value=ec2-automate-backup Key=InstanceId,Value=i-1a7a58a2 Key=InstanceName,Value=uat_internetds_opsmon_mongo02 Key=PurgeAfterFE,Value=1488305405 Key=PurgeAllow,Value=true Key=Volume,Value=vol-fd879742 Key=Created,Value=1485713405
+INSTANCE i-1b7a58a3
+INSTANCE NAME: uat_internetds_opsmon_mongo01
+Tagging Snapshot snap-00403eb64504bc5d1 with the following Tags: Key=CreatedBy,Value=ec2-automate-backup Key=InstanceId,Value=i-1b7a58a3 Key=InstanceName,Value=uat_internetds_opsmon_mongo01 Key=PurgeAfterFE,Value=1488305405 Key=PurgeAllow,Value=true Key=Volume,Value=vol-e287975d Key=Created,Value=1485713405
+INSTANCE i-1a7a58a2
+INSTANCE NAME: uat_internetds_opsmon_mongo02
+Tagging Snapshot snap-0dd7cf9b21446ea99 with the following Tags: Key=CreatedBy,Value=ec2-automate-backup Key=InstanceId,Value=i-1a7a58a2 Key=InstanceName,Value=uat_internetds_opsmon_mongo02 Key=PurgeAfterFE,Value=1488305405 Key=PurgeAllow,Value=true Key=Volume,Value=vol-e187975e Key=Created,Value=1485713405
+INSTANCE i-c7795b7f
+INSTANCE NAME: uat_internetds_life_app02
+Tagging Snapshot snap-01e338691cdc4a3ae with the following Tags: Key=CreatedBy,Value=ec2-automate-backup Key=InstanceId,Value=i-c7795b7f Key=InstanceName,Value=uat_internetds_life_app02 Key=PurgeAfterFE,Value=1488305405 Key=PurgeAllow,Value=true Key=Volume,Value=vol-698b9bd6 Key=Created,Value=1485713405
+INSTANCE i-c7795b7f
+INSTANCE NAME: uat_internetds_life_app02
+Tagging Snapshot snap-0e05147fd1e8e36f0 with the following Tags: Key=CreatedBy,Value=ec2-automate-backup Key=InstanceId,Value=i-c7795b7f Key=InstanceName,Value=uat_internetds_life_app02 Key=PurgeAfterFE,Value=1488305405 Key=PurgeAllow,Value=true Key=Volume,Value=vol-fa8c9c45 Key=Created,Value=1485713405
+INSTANCE i-d6785a6e
+INSTANCE NAME: dev_internetds_front_app02
+Tagging Snapshot snap-0b498c401d5e1b864 with the following Tags: Key=CreatedBy,Value=ec2-automate-backup Key=InstanceId,Value=i-d6785a6e Key=InstanceName,Value=dev_internetds_front_app02 Key=PurgeAfterFE,Value=1488305405 Key=PurgeAllow,Value=true Key=Volume,Value=vol-068c9cb9 Key=Created,Value=1485713405
+INSTANCE i-d6785a6e
+INSTANCE NAME: dev_internetds_front_app02
+Tagging Snapshot snap-0afcaeafbafdd74be with the following Tags: Key=CreatedBy,Value=ec2-automate-backup Key=InstanceId,Value=i-d6785a6e Key=InstanceName,Value=dev_internetds_front_app02 Key=PurgeAfterFE,Value=1488305405 Key=PurgeAllow,Value=true Key=Volume,Value=vol-058c9cba Key=Created,Value=1485713405
+INSTANCE i-3f7e5c87
+INSTANCE NAME: dev_internetds_opsmon_mongo02
+Tagging Snapshot snap-01dcfdd7135a21003 with the following Tags: Key=CreatedBy,Value=ec2-automate-backup Key=InstanceId,Value=i-3f7e5c87 Key=InstanceName,Value=dev_internetds_opsmon_mongo02 Key=PurgeAfterFE,Value=1488305405 Key=PurgeAllow,Value=true Key=Volume,Value=vol-738c9ccc Key=Created,Value=1485713405
+INSTANCE i-3e7e5c86
+INSTANCE NAME: dev_internetds_opsmon_mongo01
+Tagging Snapshot snap-019ec090861540794 with the following Tags: Key=CreatedBy,Value=ec2-automate-backup Key=InstanceId,Value=i-3e7e5c86 Key=InstanceName,Value=dev_internetds_opsmon_mongo01 Key=PurgeAfterFE,Value=1488305405 Key=PurgeAllow,Value=true Key=Volume,Value=vol-528c9ced Key=Created,Value=1485713405
+INSTANCE i-3f7e5c87
+INSTANCE NAME: dev_internetds_opsmon_mongo02
+Tagging Snapshot snap-0c40052840ac38d38 with the following Tags: Key=CreatedBy,Value=ec2-automate-backup Key=InstanceId,Value=i-3f7e5c87 Key=InstanceName,Value=dev_internetds_opsmon_mongo02 Key=PurgeAfterFE,Value=1488305405 Key=PurgeAllow,Value=true Key=Volume,Value=vol-bd8d9d02 Key=Created,Value=1485713405
+INSTANCE i-3e7e5c86
+INSTANCE NAME: dev_internetds_opsmon_mongo01
+Tagging Snapshot snap-020fef2c9fdd10562 with the following Tags: Key=CreatedBy,Value=ec2-automate-backup Key=InstanceId,Value=i-3e7e5c86 Key=InstanceName,Value=dev_internetds_opsmon_mongo01 Key=PurgeAfterFE,Value=1488305405 Key=PurgeAllow,Value=true Key=Volume,Value=vol-8e8d9d31 Key=Created,Value=1485713405
+INSTANCE i-607e5cd8
+INSTANCE NAME: dev_internetds_opsmon_app02
+Tagging Snapshot snap-039322f496ec94c35 with the following Tags: Key=CreatedBy,Value=ec2-automate-backup Key=InstanceId,Value=i-607e5cd8 Key=InstanceName,Value=dev_internetds_opsmon_app02 Key=PurgeAfterFE,Value=1488305405 Key=PurgeAllow,Value=true Key=Volume,Value=vol-2d8d9d92 Key=Created,Value=1485713405
+INSTANCE i-587e5ce0
+INSTANCE NAME: uat_internetds_health_app01
+Tagging Snapshot snap-0cf35784baa2d0dea with the following Tags: Key=CreatedBy,Value=ec2-automate-backup Key=InstanceId,Value=i-587e5ce0 Key=InstanceName,Value=uat_internetds_health_app01 Key=PurgeAfterFE,Value=1488305405 Key=PurgeAllow,Value=true Key=Volume,Value=vol-738d9dcc Key=Created,Value=1485713405
+INSTANCE i-607e5cd8
+INSTANCE NAME: dev_internetds_opsmon_app02
+Tagging Snapshot snap-075817275229326c7 with the following Tags: Key=CreatedBy,Value=ec2-automate-backup Key=InstanceId,Value=i-607e5cd8 Key=InstanceName,Value=dev_internetds_opsmon_app02 Key=PurgeAfterFE,Value=1488305405 Key=PurgeAllow,Value=true Key=Volume,Value=vol-6e8d9dd1 Key=Created,Value=1485713405
+INSTANCE i-587e5ce0
+INSTANCE NAME: uat_internetds_health_app01
+Tagging Snapshot snap-06157c56bd6e855ed with the following Tags: Key=CreatedBy,Value=ec2-automate-backup Key=InstanceId,Value=i-587e5ce0 Key=InstanceName,Value=uat_internetds_health_app01 Key=PurgeAfterFE,Value=1488305405 Key=PurgeAllow,Value=true Key=Volume,Value=vol-468d9df9 Key=Created,Value=1485713405
+INSTANCE i-bd7e5c05
+INSTANCE NAME: dev_internetds_health_app02
+Tagging Snapshot snap-0d62d47cdbc4789b8 with the following Tags: Key=CreatedBy,Value=ec2-automate-backup Key=InstanceId,Value=i-bd7e5c05 Key=InstanceName,Value=dev_internetds_health_app02 Key=PurgeAfterFE,Value=1488305405 Key=PurgeAllow,Value=true Key=Volume,Value=vol-e78e9e58 Key=Created,Value=1485713405
+INSTANCE i-bd7e5c05
+INSTANCE NAME: dev_internetds_health_app02
+Tagging Snapshot snap-0e4ffb10a57014887 with the following Tags: Key=CreatedBy,Value=ec2-automate-backup Key=InstanceId,Value=i-bd7e5c05 Key=InstanceName,Value=dev_internetds_health_app02 Key=PurgeAfterFE,Value=1488305405 Key=PurgeAllow,Value=true Key=Volume,Value=vol-338e9e8c Key=Created,Value=1485713405
+INSTANCE i-6d7f5dd5
+INSTANCE NAME: dev_internetds_cache01
+Tagging Snapshot snap-03e306a4a8fff5ee9 with the following Tags: Key=CreatedBy,Value=ec2-automate-backup Key=InstanceId,Value=i-6d7f5dd5 Key=InstanceName,Value=dev_internetds_cache01 Key=PurgeAfterFE,Value=1488305405 Key=PurgeAllow,Value=true Key=Volume,Value=vol-bab0a005 Key=Created,Value=1485713405
+INSTANCE i-627f5dda
+INSTANCE NAME: dev_internetds_mid02
+Tagging Snapshot snap-053b12ec328e8fd47 with the following Tags: Key=CreatedBy,Value=ec2-automate-backup Key=InstanceId,Value=i-627f5dda Key=InstanceName,Value=dev_internetds_mid02 Key=PurgeAfterFE,Value=1488305405 Key=PurgeAllow,Value=true Key=Volume,Value=vol-efb0a050 Key=Created,Value=1485713405
+INSTANCE i-6d7f5dd5
+INSTANCE NAME: dev_internetds_cache01
+Tagging Snapshot snap-000b38e8373b3fb3b with the following Tags: Key=CreatedBy,Value=ec2-automate-backup Key=InstanceId,Value=i-6d7f5dd5 Key=InstanceName,Value=dev_internetds_cache01 Key=PurgeAfterFE,Value=1488305405 Key=PurgeAllow,Value=true Key=Volume,Value=vol-d4b0a06b Key=Created,Value=1485713405
+INSTANCE i-627f5dda
+INSTANCE NAME: dev_internetds_mid02
+Tagging Snapshot snap-0c1e3c39d118e3f1c with the following Tags: Key=CreatedBy,Value=ec2-automate-backup Key=InstanceId,Value=i-627f5dda Key=InstanceName,Value=dev_internetds_mid02 Key=PurgeAfterFE,Value=1488305405 Key=PurgeAllow,Value=true Key=Volume,Value=vol-c5b0a07a Key=Created,Value=1485713405
+INSTANCE i-397f5d81
+INSTANCE NAME: dev_internetds_datax_app02
+Tagging Snapshot snap-06d43534f8e53c727 with the following Tags: Key=CreatedBy,Value=ec2-automate-backup Key=InstanceId,Value=i-397f5d81 Key=InstanceName,Value=dev_internetds_datax_app02 Key=PurgeAfterFE,Value=1488305405 Key=PurgeAllow,Value=true Key=Volume,Value=vol-14b0a0ab Key=Created,Value=1485713405
+INSTANCE i-397f5d81
+INSTANCE NAME: dev_internetds_datax_app02
+Tagging Snapshot snap-0de3e34fde187df66 with the following Tags: Key=CreatedBy,Value=ec2-automate-backup Key=InstanceId,Value=i-397f5d81 Key=InstanceName,Value=dev_internetds_datax_app02 Key=PurgeAfterFE,Value=1488305405 Key=PurgeAllow,Value=true Key=Volume,Value=vol-6db0a0d2 Key=Created,Value=1485713405
+INSTANCE i-987f5d20
+INSTANCE NAME: dev_internetds_cache02
+Tagging Snapshot snap-0bc262d72f94a3b93 with the following Tags: Key=CreatedBy,Value=ec2-automate-backup Key=InstanceId,Value=i-987f5d20 Key=InstanceName,Value=dev_internetds_cache02 Key=PurgeAfterFE,Value=1488305405 Key=PurgeAllow,Value=true Key=Volume,Value=vol-b8b1a107 Key=Created,Value=1485713405
+INSTANCE i-8e7f5d36
+INSTANCE NAME: uat_internetds_opsmon_app01
+Tagging Snapshot snap-03db1fb5ee67f260b with the following Tags: Key=CreatedBy,Value=ec2-automate-backup Key=InstanceId,Value=i-8e7f5d36 Key=InstanceName,Value=uat_internetds_opsmon_app01 Key=PurgeAfterFE,Value=1488305405 Key=PurgeAllow,Value=true Key=Volume,Value=vol-9cb1a123 Key=Created,Value=1485713405
+INSTANCE i-987f5d20
+INSTANCE NAME: dev_internetds_cache02
+Tagging Snapshot snap-014f350449c733f38 with the following Tags: Key=CreatedBy,Value=ec2-automate-backup Key=InstanceId,Value=i-987f5d20 Key=InstanceName,Value=dev_internetds_cache02 Key=PurgeAfterFE,Value=1488305405 Key=PurgeAllow,Value=true Key=Volume,Value=vol-90b1a12f Key=Created,Value=1485713405
+INSTANCE i-8e7f5d36
+INSTANCE NAME: uat_internetds_opsmon_app01
+Tagging Snapshot snap-0fb8aebddfe29243d with the following Tags: Key=CreatedBy,Value=ec2-automate-backup Key=InstanceId,Value=i-8e7f5d36 Key=InstanceName,Value=uat_internetds_opsmon_app01 Key=PurgeAfterFE,Value=1488305405 Key=PurgeAllow,Value=true Key=Volume,Value=vol-86b1a139 Key=Created,Value=1485713405
+INSTANCE i-aabd9012
+INSTANCE NAME: test_epolicy_mail02
+Tagging Snapshot snap-05a9580999845443c with the following Tags: Key=CreatedBy,Value=ec2-automate-backup Key=InstanceId,Value=i-aabd9012 Key=InstanceName,Value=test_epolicy_mail02 Key=PurgeAfterFE,Value=1488305405 Key=PurgeAllow,Value=true Key=Volume,Value=vol-ac205e31 Key=Created,Value=1485713405
+INSTANCE i-aabd9012
+INSTANCE NAME: test_epolicy_mail02
+Tagging Snapshot snap-0f752e05560898bb2 with the following Tags: Key=CreatedBy,Value=ec2-automate-backup Key=InstanceId,Value=i-aabd9012 Key=InstanceName,Value=test_epolicy_mail02 Key=PurgeAfterFE,Value=1488305405 Key=PurgeAllow,Value=true Key=Volume,Value=vol-dc205e41 Key=Created,Value=1485713405
+INSTANCE i-95260a2d
+INSTANCE NAME: dev_internetds_life_app01
+Tagging Snapshot snap-0f519f002ae5a99e6 with the following Tags: Key=CreatedBy,Value=ec2-automate-backup Key=InstanceId,Value=i-95260a2d Key=InstanceName,Value=dev_internetds_life_app01 Key=PurgeAfterFE,Value=1488305405 Key=PurgeAllow,Value=true Key=Volume,Value=vol-f6f58b6b Key=Created,Value=1485713405
+INSTANCE i-95260a2d
+INSTANCE NAME: dev_internetds_life_app01
+Tagging Snapshot snap-0096a938a63045a2a with the following Tags: Key=CreatedBy,Value=ec2-automate-backup Key=InstanceId,Value=i-95260a2d Key=InstanceName,Value=dev_internetds_life_app01 Key=PurgeAfterFE,Value=1488305405 Key=PurgeAllow,Value=true Key=Volume,Value=vol-28f58bb5 Key=Created,Value=1485713405
+INSTANCE i-f3ddf24b
+INSTANCE NAME: uat_internetds_datax_app3
+Tagging Snapshot snap-0bec8914c9bff8f62 with the following Tags: Key=CreatedBy,Value=ec2-automate-backup Key=InstanceId,Value=i-f3ddf24b Key=InstanceName,Value=uat_internetds_datax_app3 Key=PurgeAfterFE,Value=1488305405 Key=PurgeAllow,Value=true Key=Volume,Value=vol-19394284 Key=Created,Value=1485713405
+INSTANCE i-43ddf2fb
+INSTANCE NAME: uat_internetds_datax_app4
+Tagging Snapshot snap-0b52571645b5de5be with the following Tags: Key=CreatedBy,Value=ec2-automate-backup Key=InstanceId,Value=i-43ddf2fb Key=InstanceName,Value=uat_internetds_datax_app4 Key=PurgeAfterFE,Value=1488305405 Key=PurgeAllow,Value=true Key=Volume,Value=vol-393942a4 Key=Created,Value=1485713405
+INSTANCE i-f3ddf24b
+INSTANCE NAME: uat_internetds_datax_app3
+Tagging Snapshot snap-0baeb9104ec16902b with the following Tags: Key=CreatedBy,Value=ec2-automate-backup Key=InstanceId,Value=i-f3ddf24b Key=InstanceName,Value=uat_internetds_datax_app3 Key=PurgeAfterFE,Value=1488305405 Key=PurgeAllow,Value=true Key=Volume,Value=vol-503942cd Key=Created,Value=1485713405
+INSTANCE i-43ddf2fb
+INSTANCE NAME: uat_internetds_datax_app4
+Tagging Snapshot snap-0e31e1e6575c6fc50 with the following Tags: Key=CreatedBy,Value=ec2-automate-backup Key=InstanceId,Value=i-43ddf2fb Key=InstanceName,Value=uat_internetds_datax_app4 Key=PurgeAfterFE,Value=1488305405 Key=PurgeAllow,Value=true Key=Volume,Value=vol-8038431d Key=Created,Value=1485713405
+INSTANCE i-4b042af3
+INSTANCE NAME: internetds_front_nginx02
+Tagging Snapshot snap-027ce76c2bd61a00b with the following Tags: Key=CreatedBy,Value=ec2-automate-backup Key=InstanceId,Value=i-4b042af3 Key=InstanceName,Value=internetds_front_nginx02 Key=PurgeAfterFE,Value=1488305405 Key=PurgeAllow,Value=true Key=Volume,Value=vol-51215bcc Key=Created,Value=1485713405
+INSTANCE i-da042a62
+INSTANCE NAME: internetds_front_zkp_app02
+Tagging Snapshot snap-0fcc28d75acdf39fe with the following Tags: Key=CreatedBy,Value=ec2-automate-backup Key=InstanceId,Value=i-da042a62 Key=InstanceName,Value=internetds_front_zkp_app02 Key=PurgeAfterFE,Value=1488305405 Key=PurgeAllow,Value=true Key=Volume,Value=vol-7e215be3 Key=Created,Value=1485713405
+INSTANCE i-4b042af3
+INSTANCE NAME: internetds_front_nginx02
+Tagging Snapshot snap-0076e4a6b0df89675 with the following Tags: Key=CreatedBy,Value=ec2-automate-backup Key=InstanceId,Value=i-4b042af3 Key=InstanceName,Value=internetds_front_nginx02 Key=PurgeAfterFE,Value=1488305405 Key=PurgeAllow,Value=true Key=Volume,Value=vol-6c215bf1 Key=Created,Value=1485713405
+INSTANCE i-c1042a79
+INSTANCE NAME: internetds_front_mq_app02
+Tagging Snapshot snap-01671578ffa0308a7 with the following Tags: Key=CreatedBy,Value=ec2-automate-backup Key=InstanceId,Value=i-c1042a79 Key=InstanceName,Value=internetds_front_mq_app02 Key=PurgeAfterFE,Value=1488305405 Key=PurgeAllow,Value=true Key=Volume,Value=vol-dc265c41 Key=Created,Value=1485713405
+INSTANCE i-c1042a79
+INSTANCE NAME: internetds_front_mq_app02
+Tagging Snapshot snap-026c2e649ebf66385 with the following Tags: Key=CreatedBy,Value=ec2-automate-backup Key=InstanceId,Value=i-c1042a79 Key=InstanceName,Value=internetds_front_mq_app02 Key=PurgeAfterFE,Value=1488305405 Key=PurgeAllow,Value=true Key=Volume,Value=vol-df265c42 Key=Created,Value=1485713405
+INSTANCE i-da042a62
+INSTANCE NAME: internetds_front_zkp_app02
+Tagging Snapshot snap-0ef7c6f588b735a36 with the following Tags: Key=CreatedBy,Value=ec2-automate-backup Key=InstanceId,Value=i-da042a62 Key=InstanceName,Value=internetds_front_zkp_app02 Key=PurgeAfterFE,Value=1488305405 Key=PurgeAllow,Value=true Key=Volume,Value=vol-d4265c49 Key=Created,Value=1485713405
+INSTANCE i-c5042a7d
+INSTANCE NAME: internetds_front_dsjr_app02
+Tagging Snapshot snap-083080cd7d14e1aff with the following Tags: Key=CreatedBy,Value=ec2-automate-backup Key=InstanceId,Value=i-c5042a7d Key=InstanceName,Value=internetds_front_dsjr_app02 Key=PurgeAfterFE,Value=1488305405 Key=PurgeAllow,Value=true Key=Volume,Value=vol-c7265c5a Key=Created,Value=1485713405
+INSTANCE i-a9052b11
+INSTANCE NAME: internetds_front_yyzc_app02
+Tagging Snapshot snap-0c6958899046ecfc1 with the following Tags: Key=CreatedBy,Value=ec2-automate-backup Key=InstanceId,Value=i-a9052b11 Key=InstanceName,Value=internetds_front_yyzc_app02 Key=PurgeAfterFE,Value=1488305405 Key=PurgeAllow,Value=true Key=Volume,Value=vol-09265c94 Key=Created,Value=1485713405
+INSTANCE i-c5042a7d
+INSTANCE NAME: internetds_front_dsjr_app02
+Tagging Snapshot snap-04dbdbcb397848d47 with the following Tags: Key=CreatedBy,Value=ec2-automate-backup Key=InstanceId,Value=i-c5042a7d Key=InstanceName,Value=internetds_front_dsjr_app02 Key=PurgeAfterFE,Value=1488305405 Key=PurgeAllow,Value=true Key=Volume,Value=vol-01265c9c Key=Created,Value=1485713405
+INSTANCE i-a9052b11
+INSTANCE NAME: internetds_front_yyzc_app02
+Tagging Snapshot snap-012f073c21e7a65fc with the following Tags: Key=CreatedBy,Value=ec2-automate-backup Key=InstanceId,Value=i-a9052b11 Key=InstanceName,Value=internetds_front_yyzc_app02 Key=PurgeAfterFE,Value=1488305405 Key=PurgeAllow,Value=true Key=Volume,Value=vol-46265cdb Key=Created,Value=1485713405
+INSTANCE i-aa032d12
+INSTANCE NAME: internetds_opsmon_app02
+Tagging Snapshot snap-07ab53460677e4e1a with the following Tags: Key=CreatedBy,Value=ec2-automate-backup Key=InstanceId,Value=i-aa032d12 Key=InstanceName,Value=internetds_opsmon_app02 Key=PurgeAfterFE,Value=1488305405 Key=PurgeAllow,Value=true Key=Volume,Value=vol-00255f9d Key=Created,Value=1485713405
+INSTANCE i-aa032d12
+INSTANCE NAME: internetds_opsmon_app02
+Tagging Snapshot snap-03cbe0dd6eba441fa with the following Tags: Key=CreatedBy,Value=ec2-automate-backup Key=InstanceId,Value=i-aa032d12 Key=InstanceName,Value=internetds_opsmon_app02 Key=PurgeAfterFE,Value=1488305405 Key=PurgeAllow,Value=true Key=Volume,Value=vol-4e255fd3 Key=Created,Value=1485713405
+INSTANCE i-64002edc
+INSTANCE NAME: internetds_front_yyzc_app02
+Tagging Snapshot snap-079f6dcf38295fd8e with the following Tags: Key=CreatedBy,Value=ec2-automate-backup Key=InstanceId,Value=i-64002edc Key=InstanceName,Value=internetds_front_yyzc_app02 Key=PurgeAfterFE,Value=1488305405 Key=PurgeAllow,Value=true Key=Volume,Value=vol-ae1b6133 Key=Created,Value=1485713405
+INSTANCE i-6d002ed5
+INSTANCE NAME: internetds_dmz_nginx02
+Tagging Snapshot snap-0504693ac02e5fc55 with the following Tags: Key=CreatedBy,Value=ec2-automate-backup Key=InstanceId,Value=i-6d002ed5 Key=InstanceName,Value=internetds_dmz_nginx02 Key=PurgeAfterFE,Value=1488305405 Key=PurgeAllow,Value=true Key=Volume,Value=vol-da1b6147 Key=Created,Value=1485713405
+INSTANCE i-6d002ed5
+INSTANCE NAME: internetds_dmz_nginx02
+Tagging Snapshot snap-0d0dc34f1a8cbff93 with the following Tags: Key=CreatedBy,Value=ec2-automate-backup Key=InstanceId,Value=i-6d002ed5 Key=InstanceName,Value=internetds_dmz_nginx02 Key=PurgeAfterFE,Value=1488305405 Key=PurgeAllow,Value=true Key=Volume,Value=vol-f21b616f Key=Created,Value=1485713405
+INSTANCE i-64002edc
+INSTANCE NAME: internetds_front_yyzc_app02
+Tagging Snapshot snap-0dc54446e7191fa46 with the following Tags: Key=CreatedBy,Value=ec2-automate-backup Key=InstanceId,Value=i-64002edc Key=InstanceName,Value=internetds_front_yyzc_app02 Key=PurgeAfterFE,Value=1488305405 Key=PurgeAllow,Value=true Key=Volume,Value=vol-181b6185 Key=Created,Value=1485713405
+INSTANCE i-5a002ee2
+INSTANCE NAME: internetds_nat02
+Tagging Snapshot snap-08fdaac98c47ffa37 with the following Tags: Key=CreatedBy,Value=ec2-automate-backup Key=InstanceId,Value=i-5a002ee2 Key=InstanceName,Value=internetds_nat02 Key=PurgeAfterFE,Value=1488305405 Key=PurgeAllow,Value=true Key=Volume,Value=vol-7f1b61e2 Key=Created,Value=1485713405
+INSTANCE i-79b59bc1
+INSTANCE NAME: internetds_datax_app02
+Tagging Snapshot snap-097fd2b9b84295042 with the following Tags: Key=CreatedBy,Value=ec2-automate-backup Key=InstanceId,Value=i-79b59bc1 Key=InstanceName,Value=internetds_datax_app02 Key=PurgeAfterFE,Value=1488305405 Key=PurgeAllow,Value=true Key=Volume,Value=vol-75f68ce8 Key=Created,Value=1485713405
+INSTANCE i-7ab59bc2
+INSTANCE NAME: internetds_datax_yc_app02
+Tagging Snapshot snap-0f34eedaf1d68f1e8 with the following Tags: Key=CreatedBy,Value=ec2-automate-backup Key=InstanceId,Value=i-7ab59bc2 Key=InstanceName,Value=internetds_datax_yc_app02 Key=PurgeAfterFE,Value=1488305405 Key=PurgeAllow,Value=true Key=Volume,Value=vol-74f68ce9 Key=Created,Value=1485713405
+INSTANCE i-7ab59bc2
+INSTANCE NAME: internetds_datax_yc_app02
+Tagging Snapshot snap-0ab44932ad82fa48d with the following Tags: Key=CreatedBy,Value=ec2-automate-backup Key=InstanceId,Value=i-7ab59bc2 Key=InstanceName,Value=internetds_datax_yc_app02 Key=PurgeAfterFE,Value=1488305405 Key=PurgeAllow,Value=true Key=Volume,Value=vol-92f78d0f Key=Created,Value=1485713405
+INSTANCE i-79b59bc1
+INSTANCE NAME: internetds_datax_app02
+Tagging Snapshot snap-0da12bc03da864d7a with the following Tags: Key=CreatedBy,Value=ec2-automate-backup Key=InstanceId,Value=i-79b59bc1 Key=InstanceName,Value=internetds_datax_app02 Key=PurgeAfterFE,Value=1488305405 Key=PurgeAllow,Value=true Key=Volume,Value=vol-a9f78d34 Key=Created,Value=1485713405
+INSTANCE i-046148bc
+INSTANCE NAME: internetds_epolicy_app03
+Tagging Snapshot snap-0e4b2288ad7613084 with the following Tags: Key=CreatedBy,Value=ec2-automate-backup Key=InstanceId,Value=i-046148bc Key=InstanceName,Value=internetds_epolicy_app03 Key=PurgeAfterFE,Value=1488305405 Key=PurgeAllow,Value=true Key=Volume,Value=vol-bc165321 Key=Created,Value=1485713405
+INSTANCE i-046148bc
+INSTANCE NAME: internetds_epolicy_app03
+Tagging Snapshot snap-06c5b8738ace931c7 with the following Tags: Key=CreatedBy,Value=ec2-automate-backup Key=InstanceId,Value=i-046148bc Key=InstanceName,Value=internetds_epolicy_app03 Key=PurgeAfterFE,Value=1488305405 Key=PurgeAllow,Value=true Key=Volume,Value=vol-db165346 Key=Created,Value=1485713405
+INSTANCE i-056148bd
+INSTANCE NAME: internetds_epolicy_app04
+Tagging Snapshot snap-0af071d4496041194 with the following Tags: Key=CreatedBy,Value=ec2-automate-backup Key=InstanceId,Value=i-056148bd Key=InstanceName,Value=internetds_epolicy_app04 Key=PurgeAfterFE,Value=1488305405 Key=PurgeAllow,Value=true Key=Volume,Value=vol-fd165360 Key=Created,Value=1485713405
+INSTANCE i-056148bd
+INSTANCE NAME: internetds_epolicy_app04
+Tagging Snapshot snap-09aca99c8e0b4bb8a with the following Tags: Key=CreatedBy,Value=ec2-automate-backup Key=InstanceId,Value=i-056148bd Key=InstanceName,Value=internetds_epolicy_app04 Key=PurgeAfterFE,Value=1488305405 Key=PurgeAllow,Value=true Key=Volume,Value=vol-e4165379 Key=Created,Value=1485713405
+INSTANCE i-51634ae9
+INSTANCE NAME: internetds_dmz_email02
+Tagging Snapshot snap-0f3d9e384dc25a013 with the following Tags: Key=CreatedBy,Value=ec2-automate-backup Key=InstanceId,Value=i-51634ae9 Key=InstanceName,Value=internetds_dmz_email02 Key=PurgeAfterFE,Value=1488305405 Key=PurgeAllow,Value=true Key=Volume,Value=vol-b210552f Key=Created,Value=1485713405
+INSTANCE i-51634ae9
+INSTANCE NAME: internetds_dmz_email02
+Tagging Snapshot snap-042b6920ef8bfa163 with the following Tags: Key=CreatedBy,Value=ec2-automate-backup Key=InstanceId,Value=i-51634ae9 Key=InstanceName,Value=internetds_dmz_email02 Key=PurgeAfterFE,Value=1488305405 Key=PurgeAllow,Value=true Key=Volume,Value=vol-d9105544 Key=Created,Value=1485713405
+INSTANCE i-e298b05a
+INSTANCE NAME: internetds_epolicy_app07
+Tagging Snapshot snap-0e57099d0eaab0e0a with the following Tags: Key=CreatedBy,Value=ec2-automate-backup Key=InstanceId,Value=i-e298b05a Key=InstanceName,Value=internetds_epolicy_app07 Key=PurgeAfterFE,Value=1488305405 Key=PurgeAllow,Value=true Key=Volume,Value=vol-17e8af8a Key=Created,Value=1485713405
+INSTANCE i-e398b05b
+INSTANCE NAME: internetds_epolicy_app08
+Tagging Snapshot snap-03f23a907f78ab0e8 with the following Tags: Key=CreatedBy,Value=ec2-automate-backup Key=InstanceId,Value=i-e398b05b Key=InstanceName,Value=internetds_epolicy_app08 Key=PurgeAfterFE,Value=1488305405 Key=PurgeAllow,Value=true Key=Volume,Value=vol-16e8af8b Key=Created,Value=1485713405
+INSTANCE i-e398b05b
+INSTANCE NAME: internetds_epolicy_app08
+Tagging Snapshot snap-01b9e11a7ae2a6bf7 with the following Tags: Key=CreatedBy,Value=ec2-automate-backup Key=InstanceId,Value=i-e398b05b Key=InstanceName,Value=internetds_epolicy_app08 Key=PurgeAfterFE,Value=1488305405 Key=PurgeAllow,Value=true Key=Volume,Value=vol-11e8af8c Key=Created,Value=1485713405
+INSTANCE i-e298b05a
+INSTANCE NAME: internetds_epolicy_app07
+Tagging Snapshot snap-0ebe78331a4ded436 with the following Tags: Key=CreatedBy,Value=ec2-automate-backup Key=InstanceId,Value=i-e298b05a Key=InstanceName,Value=internetds_epolicy_app07 Key=PurgeAfterFE,Value=1488305405 Key=PurgeAllow,Value=true Key=Volume,Value=vol-34e8afa9 Key=Created,Value=1485713405
+INSTANCE i-b61a2e0e
+INSTANCE NAME: internetds_life_bq_app02
+Tagging Snapshot snap-02343c4686c8e6000 with the following Tags: Key=CreatedBy,Value=ec2-automate-backup Key=InstanceId,Value=i-b61a2e0e Key=InstanceName,Value=internetds_life_bq_app02 Key=PurgeAfterFE,Value=1488305405 Key=PurgeAllow,Value=true Key=Volume,Value=vol-b93a7824 Key=Created,Value=1485713405
+INSTANCE i-741a2ecc
+INSTANCE NAME: internetds_life_xqyhb_app02
+Tagging Snapshot snap-0ee0bfb4a0e51e5e6 with the following Tags: Key=CreatedBy,Value=ec2-automate-backup Key=InstanceId,Value=i-741a2ecc Key=InstanceName,Value=internetds_life_xqyhb_app02 Key=PurgeAfterFE,Value=1488305405 Key=PurgeAllow,Value=true Key=Volume,Value=vol-d63a784b Key=Created,Value=1485713405
+INSTANCE i-741a2ecc
+INSTANCE NAME: internetds_life_xqyhb_app02
+Tagging Snapshot snap-02b18ba0aff18db62 with the following Tags: Key=CreatedBy,Value=ec2-automate-backup Key=InstanceId,Value=i-741a2ecc Key=InstanceName,Value=internetds_life_xqyhb_app02 Key=PurgeAfterFE,Value=1488305405 Key=PurgeAllow,Value=true Key=Volume,Value=vol-1b3a7886 Key=Created,Value=1485713405
+INSTANCE i-731a2ecb
+INSTANCE NAME: internetds_life_bdgl_app02
+Tagging Snapshot snap-0878082d28edb3fc3 with the following Tags: Key=CreatedBy,Value=ec2-automate-backup Key=InstanceId,Value=i-731a2ecb Key=InstanceName,Value=internetds_life_bdgl_app02 Key=PurgeAfterFE,Value=1488305405 Key=PurgeAllow,Value=true Key=Volume,Value=vol-353a78a8 Key=Created,Value=1485713405
+INSTANCE i-4b1a2ef3
+INSTANCE NAME: internetds_life_jsyq_app02
+Tagging Snapshot snap-0cc3fc83a77972033 with the following Tags: Key=CreatedBy,Value=ec2-automate-backup Key=InstanceId,Value=i-4b1a2ef3 Key=InstanceName,Value=internetds_life_jsyq_app02 Key=PurgeAfterFE,Value=1488305405 Key=PurgeAllow,Value=true Key=Volume,Value=vol-2d3a78b0 Key=Created,Value=1485713405
+INSTANCE i-731a2ecb
+INSTANCE NAME: internetds_life_bdgl_app02
+Tagging Snapshot snap-0a83c979ed812200a with the following Tags: Key=CreatedBy,Value=ec2-automate-backup Key=InstanceId,Value=i-731a2ecb Key=InstanceName,Value=internetds_life_bdgl_app02 Key=PurgeAfterFE,Value=1488305405 Key=PurgeAllow,Value=true Key=Volume,Value=vol-2e3a78b3 Key=Created,Value=1485713405
+INSTANCE i-b61a2e0e
+INSTANCE NAME: internetds_life_bq_app02
+Tagging Snapshot snap-072e6f15d49e95a41 with the following Tags: Key=CreatedBy,Value=ec2-automate-backup Key=InstanceId,Value=i-b61a2e0e Key=InstanceName,Value=internetds_life_bq_app02 Key=PurgeAfterFE,Value=1488305405 Key=PurgeAllow,Value=true Key=Volume,Value=vol-583a78c5 Key=Created,Value=1485713405
+INSTANCE i-4b1a2ef3
+INSTANCE NAME: internetds_life_jsyq_app02
+Tagging Snapshot snap-08c3df64e9a111802 with the following Tags: Key=CreatedBy,Value=ec2-automate-backup Key=InstanceId,Value=i-4b1a2ef3 Key=InstanceName,Value=internetds_life_jsyq_app02 Key=PurgeAfterFE,Value=1488305405 Key=PurgeAllow,Value=true Key=Volume,Value=vol-973b790a Key=Created,Value=1485713405
+INSTANCE i-6b81b0d3
+INSTANCE NAME: mgmt-bastion02
+Tagging Snapshot snap-02d591a7e29641e33 with the following Tags: Key=CreatedBy,Value=ec2-automate-backup Key=InstanceId,Value=i-6b81b0d3 Key=InstanceName,Value=mgmt-bastion02 Key=PurgeAfterFE,Value=1488305405 Key=PurgeAllow,Value=true Key=Volume,Value=vol-22e6a8bf Key=Created,Value=1485713405
+INSTANCE i-6b81b0d3
+INSTANCE NAME: mgmt-bastion02
+Tagging Snapshot snap-0010d3a87df2184f1 with the following Tags: Key=CreatedBy,Value=ec2-automate-backup Key=InstanceId,Value=i-6b81b0d3 Key=InstanceName,Value=mgmt-bastion02 Key=PurgeAfterFE,Value=1488305405 Key=PurgeAllow,Value=true Key=Volume,Value=vol-b6e7a92b Key=Created,Value=1485713405
+INSTANCE i-5c9eade4
+INSTANCE NAME: internetds_opsmon_DB02
+Tagging Snapshot snap-09381bf184f9eee05 with the following Tags: Key=CreatedBy,Value=ec2-automate-backup Key=InstanceId,Value=i-5c9eade4 Key=InstanceName,Value=internetds_opsmon_DB02 Key=PurgeAfterFE,Value=1488305405 Key=PurgeAllow,Value=true Key=Volume,Value=vol-ad357e30 Key=Created,Value=1485713405
+INSTANCE i-5c9eade4
+INSTANCE NAME: internetds_opsmon_DB02
+Tagging Snapshot snap-09415d7e7e12b3dd3 with the following Tags: Key=CreatedBy,Value=ec2-automate-backup Key=InstanceId,Value=i-5c9eade4 Key=InstanceName,Value=internetds_opsmon_DB02 Key=PurgeAfterFE,Value=1488305405 Key=PurgeAllow,Value=true Key=Volume,Value=vol-f7357e6a Key=Created,Value=1485713405
+INSTANCE i-6b340753
+INSTANCE NAME: test_internetds_nat01
+Tagging Snapshot snap-06c7ffb3895bd1e4f with the following Tags: Key=CreatedBy,Value=ec2-automate-backup Key=InstanceId,Value=i-6b340753 Key=InstanceName,Value=test_internetds_nat01 Key=PurgeAfterFE,Value=1488305405 Key=PurgeAllow,Value=true Key=Volume,Value=vol-55a18cd0 Key=Created,Value=1485713405
+INSTANCE i-fe2516c6
+INSTANCE NAME: uat_internetds_front_app02
+Tagging Snapshot snap-02cac3196780eb282 with the following Tags: Key=CreatedBy,Value=ec2-automate-backup Key=InstanceId,Value=i-fe2516c6 Key=InstanceName,Value=uat_internetds_front_app02 Key=PurgeAfterFE,Value=1488305405 Key=PurgeAllow,Value=true Key=Volume,Value=vol-c88da04d Key=Created,Value=1485713405
+INSTANCE i-fe2516c6
+INSTANCE NAME: uat_internetds_front_app02
+Tagging Snapshot snap-04df408080eba9323 with the following Tags: Key=CreatedBy,Value=ec2-automate-backup Key=InstanceId,Value=i-fe2516c6 Key=InstanceName,Value=uat_internetds_front_app02 Key=PurgeAfterFE,Value=1488305405 Key=PurgeAllow,Value=true Key=Volume,Value=vol-0b8da08e Key=Created,Value=1485713405
+INSTANCE i-ae241796
+INSTANCE NAME: uat_internetds_health_app02
+Tagging Snapshot snap-02f795cc14c69183e with the following Tags: Key=CreatedBy,Value=ec2-automate-backup Key=InstanceId,Value=i-ae241796 Key=InstanceName,Value=uat_internetds_health_app02 Key=PurgeAfterFE,Value=1488305405 Key=PurgeAllow,Value=true Key=Volume,Value=vol-218da0a4 Key=Created,Value=1485713405
+INSTANCE i-ae241796
+INSTANCE NAME: uat_internetds_health_app02
+Tagging Snapshot snap-05a6c4ba18930a172 with the following Tags: Key=CreatedBy,Value=ec2-automate-backup Key=InstanceId,Value=i-ae241796 Key=InstanceName,Value=uat_internetds_health_app02 Key=PurgeAfterFE,Value=1488305405 Key=PurgeAllow,Value=true Key=Volume,Value=vol-818ca104 Key=Created,Value=1485713405
+INSTANCE i-d82516e0
+INSTANCE NAME: dev_internetds_epolicy_app01
+Tagging Snapshot snap-0ebb6fe9918ddc937 with the following Tags: Key=CreatedBy,Value=ec2-automate-backup Key=InstanceId,Value=i-d82516e0 Key=InstanceName,Value=dev_internetds_epolicy_app01 Key=PurgeAfterFE,Value=1488305405 Key=PurgeAllow,Value=true Key=Volume,Value=vol-838ca106 Key=Created,Value=1485713405
+INSTANCE i-ab251693
+INSTANCE NAME: uat_internetds_opsmon_app02
+Tagging Snapshot snap-0cebca2b8d071dee0 with the following Tags: Key=CreatedBy,Value=ec2-automate-backup Key=InstanceId,Value=i-ab251693 Key=InstanceName,Value=uat_internetds_opsmon_app02 Key=PurgeAfterFE,Value=1488305405 Key=PurgeAllow,Value=true Key=Volume,Value=vol-998ca11c Key=Created,Value=1485713405
+INSTANCE i-ba241782
+INSTANCE NAME: uat_internetds_mid02
+Tagging Snapshot snap-0a7758a70aca40e0d with the following Tags: Key=CreatedBy,Value=ec2-automate-backup Key=InstanceId,Value=i-ba241782 Key=InstanceName,Value=uat_internetds_mid02 Key=PurgeAfterFE,Value=1488305405 Key=PurgeAllow,Value=true Key=Volume,Value=vol-ea8ca16f Key=Created,Value=1485713405
+INSTANCE i-ae251696
+INSTANCE NAME: sim_internetds_epolicy_app01
+Tagging Snapshot snap-0e629978dbf8d3086 with the following Tags: Key=CreatedBy,Value=ec2-automate-backup Key=InstanceId,Value=i-ae251696 Key=InstanceName,Value=sim_internetds_epolicy_app01 Key=PurgeAfterFE,Value=1488305405 Key=PurgeAllow,Value=true Key=Volume,Value=vol-0d8ca188 Key=Created,Value=1485713405
+INSTANCE i-d92516e1
+INSTANCE NAME: dat_internetds_epolicy_app01
+Tagging Snapshot snap-02f755b00cda0a831 with the following Tags: Key=CreatedBy,Value=ec2-automate-backup Key=InstanceId,Value=i-d92516e1 Key=InstanceName,Value=dat_internetds_epolicy_app01 Key=PurgeAfterFE,Value=1488305405 Key=PurgeAllow,Value=true Key=Volume,Value=vol-0c8ca189 Key=Created,Value=1485713405
+INSTANCE i-ab251693
+INSTANCE NAME: uat_internetds_opsmon_app02
+Tagging Snapshot snap-0f2f74af9166ed359 with the following Tags: Key=CreatedBy,Value=ec2-automate-backup Key=InstanceId,Value=i-ab251693 Key=InstanceName,Value=uat_internetds_opsmon_app02 Key=PurgeAfterFE,Value=1488305405 Key=PurgeAllow,Value=true Key=Volume,Value=vol-098ca18c Key=Created,Value=1485713405
+INSTANCE i-af251697
+INSTANCE NAME: uat_internetds_epolicy_app01
+Tagging Snapshot snap-0b13daa3b33738e55 with the following Tags: Key=CreatedBy,Value=ec2-automate-backup Key=InstanceId,Value=i-af251697 Key=InstanceName,Value=uat_internetds_epolicy_app01 Key=PurgeAfterFE,Value=1488305405 Key=PurgeAllow,Value=true Key=Volume,Value=vol-1c8ca199 Key=Created,Value=1485713405
+INSTANCE i-ba241782
+INSTANCE NAME: uat_internetds_mid02
+Tagging Snapshot snap-05e3f453ef310f973 with the following Tags: Key=CreatedBy,Value=ec2-automate-backup Key=InstanceId,Value=i-ba241782 Key=InstanceName,Value=uat_internetds_mid02 Key=PurgeAfterFE,Value=1488305405 Key=PurgeAllow,Value=true Key=Volume,Value=vol-348ca1b1 Key=Created,Value=1485713405
+INSTANCE i-00241738
+INSTANCE NAME: uat_internetds_life_app01
+Tagging Snapshot snap-0fc268c97c2e5a13d with the following Tags: Key=CreatedBy,Value=ec2-automate-backup Key=InstanceId,Value=i-00241738 Key=InstanceName,Value=uat_internetds_life_app01 Key=PurgeAfterFE,Value=1488305405 Key=PurgeAllow,Value=true Key=Volume,Value=vol-dc8fa259 Key=Created,Value=1485713405
+INSTANCE i-00241738
+INSTANCE NAME: uat_internetds_life_app01
+Tagging Snapshot snap-0fe002b1706f2905a with the following Tags: Key=CreatedBy,Value=ec2-automate-backup Key=InstanceId,Value=i-00241738 Key=InstanceName,Value=uat_internetds_life_app01 Key=PurgeAfterFE,Value=1488305405 Key=PurgeAllow,Value=true Key=Volume,Value=vol-e78fa262 Key=Created,Value=1485713405
+INSTANCE i-2e281b16
+INSTANCE NAME: dev_internetds_front_app01
+Tagging Snapshot snap-06019fc2cef67dc70 with the following Tags: Key=CreatedBy,Value=ec2-automate-backup Key=InstanceId,Value=i-2e281b16 Key=InstanceName,Value=dev_internetds_front_app01 Key=PurgeAfterFE,Value=1488305405 Key=PurgeAllow,Value=true Key=Volume,Value=vol-4c84a9c9 Key=Created,Value=1485713405
+INSTANCE i-2e281b16
+INSTANCE NAME: dev_internetds_front_app01
+Tagging Snapshot snap-015b5becc8e111b8b with the following Tags: Key=CreatedBy,Value=ec2-automate-backup Key=InstanceId,Value=i-2e281b16 Key=InstanceName,Value=dev_internetds_front_app01 Key=PurgeAfterFE,Value=1488305405 Key=PurgeAllow,Value=true Key=Volume,Value=vol-cd87aa48 Key=Created,Value=1485713405
+INSTANCE i-08281b30
+INSTANCE NAME: dev_internetds_life_app01
+Tagging Snapshot snap-0f03c99a00e887b4d with the following Tags: Key=CreatedBy,Value=ec2-automate-backup Key=InstanceId,Value=i-08281b30 Key=InstanceName,Value=dev_internetds_life_app01 Key=PurgeAfterFE,Value=1488305405 Key=PurgeAllow,Value=true Key=Volume,Value=vol-5287aad7 Key=Created,Value=1485713405
+INSTANCE i-08281b30
+INSTANCE NAME: dev_internetds_life_app01
+Tagging Snapshot snap-046b80190ae7225b7 with the following Tags: Key=CreatedBy,Value=ec2-automate-backup Key=InstanceId,Value=i-08281b30 Key=InstanceName,Value=dev_internetds_life_app01 Key=PurgeAfterFE,Value=1488305405 Key=PurgeAllow,Value=true Key=Volume,Value=vol-a486ab21 Key=Created,Value=1485713405
+INSTANCE i-05281b3d
+INSTANCE NAME: dev_internetds_health_app01
+Tagging Snapshot snap-06e2986bef47a3f21 with the following Tags: Key=CreatedBy,Value=ec2-automate-backup Key=InstanceId,Value=i-05281b3d Key=InstanceName,Value=dev_internetds_health_app01 Key=PurgeAfterFE,Value=1488305405 Key=PurgeAllow,Value=true Key=Volume,Value=vol-3486abb1 Key=Created,Value=1485713405
+INSTANCE i-c4281bfc
+INSTANCE NAME: dev_internetds_opsmon_app01
+Tagging Snapshot snap-00d6d442b2294b8c0 with the following Tags: Key=CreatedBy,Value=ec2-automate-backup Key=InstanceId,Value=i-c4281bfc Key=InstanceName,Value=dev_internetds_opsmon_app01 Key=PurgeAfterFE,Value=1488305405 Key=PurgeAllow,Value=true Key=Volume,Value=vol-7286abf7 Key=Created,Value=1485713405
+INSTANCE i-05281b3d
+INSTANCE NAME: dev_internetds_health_app01
+Tagging Snapshot snap-07fae7d12b606e80a with the following Tags: Key=CreatedBy,Value=ec2-automate-backup Key=InstanceId,Value=i-05281b3d Key=InstanceName,Value=dev_internetds_health_app01 Key=PurgeAfterFE,Value=1488305405 Key=PurgeAllow,Value=true Key=Volume,Value=vol-8581ac00 Key=Created,Value=1485713405
+INSTANCE i-c4281bfc
+INSTANCE NAME: dev_internetds_opsmon_app01
+Tagging Snapshot snap-0d9c7af48b5f424ba with the following Tags: Key=CreatedBy,Value=ec2-automate-backup Key=InstanceId,Value=i-c4281bfc Key=InstanceName,Value=dev_internetds_opsmon_app01 Key=PurgeAfterFE,Value=1488305405 Key=PurgeAllow,Value=true Key=Volume,Value=vol-9581ac10 Key=Created,Value=1485713405
+INSTANCE i-392d1e01
+INSTANCE NAME: dev_internetds_mid01
+Tagging Snapshot snap-052be966852706467 with the following Tags: Key=CreatedBy,Value=ec2-automate-backup Key=InstanceId,Value=i-392d1e01 Key=InstanceName,Value=dev_internetds_mid01 Key=PurgeAfterFE,Value=1488305405 Key=PurgeAllow,Value=true Key=Volume,Value=vol-a29db027 Key=Created,Value=1485713405
+INSTANCE i-392d1e01
+INSTANCE NAME: dev_internetds_mid01
+Tagging Snapshot snap-03e071aa7def26c8b with the following Tags: Key=CreatedBy,Value=ec2-automate-backup Key=InstanceId,Value=i-392d1e01 Key=InstanceName,Value=dev_internetds_mid01 Key=PurgeAfterFE,Value=1488305405 Key=PurgeAllow,Value=true Key=Volume,Value=vol-ce9db04b Key=Created,Value=1485713405
+INSTANCE i-322d1e0a
+INSTANCE NAME: dev_internetds_datax_app01
+Tagging Snapshot snap-0b7bdf0920d2acf7a with the following Tags: Key=CreatedBy,Value=ec2-automate-backup Key=InstanceId,Value=i-322d1e0a Key=InstanceName,Value=dev_internetds_datax_app01 Key=PurgeAfterFE,Value=1488305405 Key=PurgeAllow,Value=true Key=Volume,Value=vol-f19db074 Key=Created,Value=1485713405
+INSTANCE i-322d1e0a
+INSTANCE NAME: dev_internetds_datax_app01
+Tagging Snapshot snap-054713e0bfe5bed9f with the following Tags: Key=CreatedBy,Value=ec2-automate-backup Key=InstanceId,Value=i-322d1e0a Key=InstanceName,Value=dev_internetds_datax_app01 Key=PurgeAfterFE,Value=1488305405 Key=PurgeAllow,Value=true Key=Volume,Value=vol-2a9db0af Key=Created,Value=1485713405
+INSTANCE i-062d1e3e
+INSTANCE NAME: uat_internetds_datax_app02
+Tagging Snapshot snap-0aa518e53d29826cf with the following Tags: Key=CreatedBy,Value=ec2-automate-backup Key=InstanceId,Value=i-062d1e3e Key=InstanceName,Value=uat_internetds_datax_app02 Key=PurgeAfterFE,Value=1488305405 Key=PurgeAllow,Value=true Key=Volume,Value=vol-729db0f7 Key=Created,Value=1485713405
+INSTANCE i-062d1e3e
+INSTANCE NAME: uat_internetds_datax_app02
+Tagging Snapshot snap-0130180aed058528c with the following Tags: Key=CreatedBy,Value=ec2-automate-backup Key=InstanceId,Value=i-062d1e3e Key=InstanceName,Value=uat_internetds_datax_app02 Key=PurgeAfterFE,Value=1488305405 Key=PurgeAllow,Value=true Key=Volume,Value=vol-d79cb152 Key=Created,Value=1485713405
+INSTANCE i-04330e3c
+INSTANCE NAME: test_epolicy_mail01
+Tagging Snapshot snap-025f7b298061696fd with the following Tags: Key=CreatedBy,Value=ec2-automate-backup Key=InstanceId,Value=i-04330e3c Key=InstanceName,Value=test_epolicy_mail01 Key=PurgeAfterFE,Value=1488305405 Key=PurgeAllow,Value=true Key=Volume,Value=vol-f0567f75 Key=Created,Value=1485713405
+INSTANCE i-04330e3c
+INSTANCE NAME: test_epolicy_mail01
+Tagging Snapshot snap-0a928727958ca622d with the following Tags: Key=CreatedBy,Value=ec2-automate-backup Key=InstanceId,Value=i-04330e3c Key=InstanceName,Value=test_epolicy_mail01 Key=PurgeAfterFE,Value=1488305405 Key=PurgeAllow,Value=true Key=Volume,Value=vol-74567ff1 Key=Created,Value=1485713405
+INSTANCE i-1eb28f26
+INSTANCE NAME: uat_internetds_datax_app1
+Tagging Snapshot snap-0fe3449acaed868a0 with the following Tags: Key=CreatedBy,Value=ec2-automate-backup Key=InstanceId,Value=i-1eb28f26 Key=InstanceName,Value=uat_internetds_datax_app1 Key=PurgeAfterFE,Value=1488305405 Key=PurgeAllow,Value=true Key=Volume,Value=vol-41644cc4 Key=Created,Value=1485713405
+INSTANCE i-1eb28f26
+INSTANCE NAME: uat_internetds_datax_app1
+Tagging Snapshot snap-09c4595609b8af9a7 with the following Tags: Key=CreatedBy,Value=ec2-automate-backup Key=InstanceId,Value=i-1eb28f26 Key=InstanceName,Value=uat_internetds_datax_app1 Key=PurgeAfterFE,Value=1488305405 Key=PurgeAllow,Value=true Key=Volume,Value=vol-ab654d2e Key=Created,Value=1485713405
+INSTANCE i-d1a598e9
+INSTANCE NAME: dev_internetds_datax_app03
+Tagging Snapshot snap-0d4a7829b510f92b9 with the following Tags: Key=CreatedBy,Value=ec2-automate-backup Key=InstanceId,Value=i-d1a598e9 Key=InstanceName,Value=dev_internetds_datax_app03 Key=PurgeAfterFE,Value=1488305405 Key=PurgeAllow,Value=true Key=Volume,Value=vol-13745c96 Key=Created,Value=1485713405
+INSTANCE i-d1a598e9
+INSTANCE NAME: dev_internetds_datax_app03
+Tagging Snapshot snap-0d0222336cd4dbfe0 with the following Tags: Key=CreatedBy,Value=ec2-automate-backup Key=InstanceId,Value=i-d1a598e9 Key=InstanceName,Value=dev_internetds_datax_app03 Key=PurgeAfterFE,Value=1488305405 Key=PurgeAllow,Value=true Key=Volume,Value=vol-50745cd5 Key=Created,Value=1485713405
+INSTANCE i-8099a6b8
+INSTANCE NAME: internetds_dmz_nginx01
+Tagging Snapshot snap-03dcc10d2ac75020e with the following Tags: Key=CreatedBy,Value=ec2-automate-backup Key=InstanceId,Value=i-8099a6b8 Key=InstanceName,Value=internetds_dmz_nginx01 Key=PurgeAfterFE,Value=1488305405 Key=PurgeAllow,Value=true Key=Volume,Value=vol-88c6f30d Key=Created,Value=1485713405
+INSTANCE i-8099a6b8
+INSTANCE NAME: internetds_dmz_nginx01
+Tagging Snapshot snap-00ec33f605e0a2c4a with the following Tags: Key=CreatedBy,Value=ec2-automate-backup Key=InstanceId,Value=i-8099a6b8 Key=InstanceName,Value=internetds_dmz_nginx01 Key=PurgeAfterFE,Value=1488305405 Key=PurgeAllow,Value=true Key=Volume,Value=vol-a7c6f322 Key=Created,Value=1485713405
+INSTANCE i-a794ab9f
+INSTANCE NAME: internetds_front_nginx01
+Tagging Snapshot snap-0a20eab63798fd66c with the following Tags: Key=CreatedBy,Value=ec2-automate-backup Key=InstanceId,Value=i-a794ab9f Key=InstanceName,Value=internetds_front_nginx01 Key=PurgeAfterFE,Value=1488305405 Key=PurgeAllow,Value=true Key=Volume,Value=vol-b8ccf93d Key=Created,Value=1485713405
+INSTANCE i-a794ab9f
+INSTANCE NAME: internetds_front_nginx01
+Tagging Snapshot snap-0591d873d86675502 with the following Tags: Key=CreatedBy,Value=ec2-automate-backup Key=InstanceId,Value=i-a794ab9f Key=InstanceName,Value=internetds_front_nginx01 Key=PurgeAfterFE,Value=1488305405 Key=PurgeAllow,Value=true Key=Volume,Value=vol-cfccf94a Key=Created,Value=1485713405
+INSTANCE i-0194ab39
+INSTANCE NAME: internetds_front_zkp_app01
+Tagging Snapshot snap-0a38d4cdf8df64a7d with the following Tags: Key=CreatedBy,Value=ec2-automate-backup Key=InstanceId,Value=i-0194ab39 Key=InstanceName,Value=internetds_front_zkp_app01 Key=PurgeAfterFE,Value=1488305405 Key=PurgeAllow,Value=true Key=Volume,Value=vol-33ccf9b6 Key=Created,Value=1485713405
+INSTANCE i-0194ab39
+INSTANCE NAME: internetds_front_zkp_app01
+Tagging Snapshot snap-072d5052255a3400b with the following Tags: Key=CreatedBy,Value=ec2-automate-backup Key=InstanceId,Value=i-0194ab39 Key=InstanceName,Value=internetds_front_zkp_app01 Key=PurgeAfterFE,Value=1488305405 Key=PurgeAllow,Value=true Key=Volume,Value=vol-c1cffa44 Key=Created,Value=1485713405
+INSTANCE i-d187b8e9
+INSTANCE NAME: internetds_front_dsjr_app01
+Tagging Snapshot snap-077be1f530108f257 with the following Tags: Key=CreatedBy,Value=ec2-automate-backup Key=InstanceId,Value=i-d187b8e9 Key=InstanceName,Value=internetds_front_dsjr_app01 Key=PurgeAfterFE,Value=1488305405 Key=PurgeAllow,Value=true Key=Volume,Value=vol-e4b98c61 Key=Created,Value=1485713405
+INSTANCE i-9c87b8a4
+INSTANCE NAME: internetds_life_jsyq_app01
+Tagging Snapshot snap-0ef2aba36a3e0f42d with the following Tags: Key=CreatedBy,Value=ec2-automate-backup Key=InstanceId,Value=i-9c87b8a4 Key=InstanceName,Value=internetds_life_jsyq_app01 Key=PurgeAfterFE,Value=1488305405 Key=PurgeAllow,Value=true Key=Volume,Value=vol-f3b98c76 Key=Created,Value=1485713405
+INSTANCE i-9c87b8a4
+INSTANCE NAME: internetds_life_jsyq_app01
+Tagging Snapshot snap-044171b1bac738594 with the following Tags: Key=CreatedBy,Value=ec2-automate-backup Key=InstanceId,Value=i-9c87b8a4 Key=InstanceName,Value=internetds_life_jsyq_app01 Key=PurgeAfterFE,Value=1488305405 Key=PurgeAllow,Value=true Key=Volume,Value=vol-f2b98c77 Key=Created,Value=1485713405
+INSTANCE i-0187b839
+INSTANCE NAME: internetds_life_bdgl_app01
+Tagging Snapshot snap-0140bfce2bec76da9 with the following Tags: Key=CreatedBy,Value=ec2-automate-backup Key=InstanceId,Value=i-0187b839 Key=InstanceName,Value=internetds_life_bdgl_app01 Key=PurgeAfterFE,Value=1488305405 Key=PurgeAllow,Value=true Key=Volume,Value=vol-00b98c85 Key=Created,Value=1485713405
+INSTANCE i-d187b8e9
+INSTANCE NAME: internetds_front_dsjr_app01
+Tagging Snapshot snap-02a14f26cb7cbd420 with the following Tags: Key=CreatedBy,Value=ec2-automate-backup Key=InstanceId,Value=i-d187b8e9 Key=InstanceName,Value=internetds_front_dsjr_app01 Key=PurgeAfterFE,Value=1488305405 Key=PurgeAllow,Value=true Key=Volume,Value=vol-0cb98c89 Key=Created,Value=1485713405
+INSTANCE i-1786b92f
+INSTANCE NAME: internetds_front_mq_app01
+Tagging Snapshot snap-00677fb5d91b0c44d with the following Tags: Key=CreatedBy,Value=ec2-automate-backup Key=InstanceId,Value=i-1786b92f Key=InstanceName,Value=internetds_front_mq_app01 Key=PurgeAfterFE,Value=1488305405 Key=PurgeAllow,Value=true Key=Volume,Value=vol-0fb98c8a Key=Created,Value=1485713405
+INSTANCE i-1186b929
+INSTANCE NAME: internetds_life_xqyhb_app01
+Tagging Snapshot snap-0c79b567ee5a1e2c1 with the following Tags: Key=CreatedBy,Value=ec2-automate-backup Key=InstanceId,Value=i-1186b929 Key=InstanceName,Value=internetds_life_xqyhb_app01 Key=PurgeAfterFE,Value=1488305405 Key=PurgeAllow,Value=true Key=Volume,Value=vol-56b98cd3 Key=Created,Value=1485713405
+INSTANCE i-0a87b832
+INSTANCE NAME: internetds_life_bq_app01
+Tagging Snapshot snap-016d64585b52bdbbf with the following Tags: Key=CreatedBy,Value=ec2-automate-backup Key=InstanceId,Value=i-0a87b832 Key=InstanceName,Value=internetds_life_bq_app01 Key=PurgeAfterFE,Value=1488305405 Key=PurgeAllow,Value=true Key=Volume,Value=vol-6cb98ce9 Key=Created,Value=1485713405
+INSTANCE i-0187b839
+INSTANCE NAME: internetds_life_bdgl_app01
+Tagging Snapshot snap-0317a71cb64e3e8c4 with the following Tags: Key=CreatedBy,Value=ec2-automate-backup Key=InstanceId,Value=i-0187b839 Key=InstanceName,Value=internetds_life_bdgl_app01 Key=PurgeAfterFE,Value=1488305405 Key=PurgeAllow,Value=true Key=Volume,Value=vol-80b88d05 Key=Created,Value=1485713405
+INSTANCE i-0a87b832
+INSTANCE NAME: internetds_life_bq_app01
+Tagging Snapshot snap-0f2bb50baecb74f6e with the following Tags: Key=CreatedBy,Value=ec2-automate-backup Key=InstanceId,Value=i-0a87b832 Key=InstanceName,Value=internetds_life_bq_app01 Key=PurgeAfterFE,Value=1488305405 Key=PurgeAllow,Value=true Key=Volume,Value=vol-89b88d0c Key=Created,Value=1485713405
+INSTANCE i-1186b929
+INSTANCE NAME: internetds_life_xqyhb_app01
+Tagging Snapshot snap-00d227d47cca4eff9 with the following Tags: Key=CreatedBy,Value=ec2-automate-backup Key=InstanceId,Value=i-1186b929 Key=InstanceName,Value=internetds_life_xqyhb_app01 Key=PurgeAfterFE,Value=1488305405 Key=PurgeAllow,Value=true Key=Volume,Value=vol-a7b88d22 Key=Created,Value=1485713405
+INSTANCE i-1786b92f
+INSTANCE NAME: internetds_front_mq_app01
+Tagging Snapshot snap-0904ca6e3dc07dcc2 with the following Tags: Key=CreatedBy,Value=ec2-automate-backup Key=InstanceId,Value=i-1786b92f Key=InstanceName,Value=internetds_front_mq_app01 Key=PurgeAfterFE,Value=1488305405 Key=PurgeAllow,Value=true Key=Volume,Value=vol-a1b88d24 Key=Created,Value=1485713405
+INSTANCE i-d75967ef
+INSTANCE NAME: internetds_opsmon_app01
+Tagging Snapshot snap-01ef9f9b4280959dc with the following Tags: Key=CreatedBy,Value=ec2-automate-backup Key=InstanceId,Value=i-d75967ef Key=InstanceName,Value=internetds_opsmon_app01 Key=PurgeAfterFE,Value=1488305405 Key=PurgeAllow,Value=true Key=Volume,Value=vol-3d695db8 Key=Created,Value=1485713405
+INSTANCE i-d75967ef
+INSTANCE NAME: internetds_opsmon_app01
+Tagging Snapshot snap-0d8ba6416e01ec839 with the following Tags: Key=CreatedBy,Value=ec2-automate-backup Key=InstanceId,Value=i-d75967ef Key=InstanceName,Value=internetds_opsmon_app01 Key=PurgeAfterFE,Value=1488305405 Key=PurgeAllow,Value=true Key=Volume,Value=vol-9c6a5e19 Key=Created,Value=1485713405
+INSTANCE i-985668a0
+INSTANCE NAME: internetds_front_yyzc_app01
+Tagging Snapshot snap-0a7ef8cc49ec89e4d with the following Tags: Key=CreatedBy,Value=ec2-automate-backup Key=InstanceId,Value=i-985668a0 Key=InstanceName,Value=internetds_front_yyzc_app01 Key=PurgeAfterFE,Value=1488305405 Key=PurgeAllow,Value=true Key=Volume,Value=vol-9854601d Key=Created,Value=1485713405
+INSTANCE i-985668a0
+INSTANCE NAME: internetds_front_yyzc_app01
+Tagging Snapshot snap-09941d49eb95cded9 with the following Tags: Key=CreatedBy,Value=ec2-automate-backup Key=InstanceId,Value=i-985668a0 Key=InstanceName,Value=internetds_front_yyzc_app01 Key=PurgeAfterFE,Value=1488305405 Key=PurgeAllow,Value=true Key=Volume,Value=vol-ab54602e Key=Created,Value=1485713405
+INSTANCE i-4257697a
+INSTANCE NAME: internetds_nat01
+Tagging Snapshot snap-0e7350a2e8d4cdf64 with the following Tags: Key=CreatedBy,Value=ec2-automate-backup Key=InstanceId,Value=i-4257697a Key=InstanceName,Value=internetds_nat01 Key=PurgeAfterFE,Value=1488305405 Key=PurgeAllow,Value=true Key=Volume,Value=vol-a855612d Key=Created,Value=1485713405
+INSTANCE i-3bead403
+INSTANCE NAME: internetds_life_xqyhb_app03
+Tagging Snapshot snap-0f5a905869a28c8ff with the following Tags: Key=CreatedBy,Value=ec2-automate-backup Key=InstanceId,Value=i-3bead403 Key=InstanceName,Value=internetds_life_xqyhb_app03 Key=PurgeAfterFE,Value=1488305405 Key=PurgeAllow,Value=true Key=Volume,Value=vol-429aaec7 Key=Created,Value=1485713405
+INSTANCE i-3bead403
+INSTANCE NAME: internetds_life_xqyhb_app03
+Tagging Snapshot snap-0b71a5b4be51da4fa with the following Tags: Key=CreatedBy,Value=ec2-automate-backup Key=InstanceId,Value=i-3bead403 Key=InstanceName,Value=internetds_life_xqyhb_app03 Key=PurgeAfterFE,Value=1488305405 Key=PurgeAllow,Value=true Key=Volume,Value=vol-d89baf5d Key=Created,Value=1485713405
+INSTANCE i-a3e9d79b
+INSTANCE NAME: internetds_datax_yc_app01
+Tagging Snapshot snap-081bf65165f4ce4f7 with the following Tags: Key=CreatedBy,Value=ec2-automate-backup Key=InstanceId,Value=i-a3e9d79b Key=InstanceName,Value=internetds_datax_yc_app01 Key=PurgeAfterFE,Value=1488305405 Key=PurgeAllow,Value=true Key=Volume,Value=vol-5c87b3d9 Key=Created,Value=1485713405
+INSTANCE i-3ce8d604
+INSTANCE NAME: internetds_datax_app01
+Tagging Snapshot snap-03c618eb7d7b5af60 with the following Tags: Key=CreatedBy,Value=ec2-automate-backup Key=InstanceId,Value=i-3ce8d604 Key=InstanceName,Value=internetds_datax_app01 Key=PurgeAfterFE,Value=1488305405 Key=PurgeAllow,Value=true Key=Volume,Value=vol-5f87b3da Key=Created,Value=1485713405
+INSTANCE i-3ce8d604
+INSTANCE NAME: internetds_datax_app01
+Tagging Snapshot snap-06f82a454e6786118 with the following Tags: Key=CreatedBy,Value=ec2-automate-backup Key=InstanceId,Value=i-3ce8d604 Key=InstanceName,Value=internetds_datax_app01 Key=PurgeAfterFE,Value=1488305405 Key=PurgeAllow,Value=true Key=Volume,Value=vol-9e80b41b Key=Created,Value=1485713405
+INSTANCE i-a3e9d79b
+INSTANCE NAME: internetds_datax_yc_app01
+Tagging Snapshot snap-079140887e3ca8be4 with the following Tags: Key=CreatedBy,Value=ec2-automate-backup Key=InstanceId,Value=i-a3e9d79b Key=InstanceName,Value=internetds_datax_yc_app01 Key=PurgeAfterFE,Value=1488305405 Key=PurgeAllow,Value=true Key=Volume,Value=vol-b780b432 Key=Created,Value=1485713405
+INSTANCE i-4cc5fb74
+INSTANCE NAME: mgmt_bastion01
+Tagging Snapshot snap-06d54700efc2347cd with the following Tags: Key=CreatedBy,Value=ec2-automate-backup Key=InstanceId,Value=i-4cc5fb74 Key=InstanceName,Value=mgmt_bastion01 Key=PurgeAfterFE,Value=1488305405 Key=PurgeAllow,Value=true Key=Volume,Value=vol-234176a6 Key=Created,Value=1485713405
+INSTANCE i-4cc5fb74
+INSTANCE NAME: mgmt_bastion01
+Tagging Snapshot snap-0601d85ab468fc002 with the following Tags: Key=CreatedBy,Value=ec2-automate-backup Key=InstanceId,Value=i-4cc5fb74 Key=InstanceName,Value=mgmt_bastion01 Key=PurgeAfterFE,Value=1488305405 Key=PurgeAllow,Value=true Key=Volume,Value=vol-654176e0 Key=Created,Value=1485713405
+INSTANCE i-bfba8487
+INSTANCE NAME: internetds_epolicy_app02
+Tagging Snapshot snap-08a9bf650ddee69a5 with the following Tags: Key=CreatedBy,Value=ec2-automate-backup Key=InstanceId,Value=i-bfba8487 Key=InstanceName,Value=internetds_epolicy_app02 Key=PurgeAfterFE,Value=1488305405 Key=PurgeAllow,Value=true Key=Volume,Value=vol-533f08d6 Key=Created,Value=1485713405
+INSTANCE i-beba8486
+INSTANCE NAME: internetds_epolicy_app01
+Tagging Snapshot snap-06387d2208e5410ea with the following Tags: Key=CreatedBy,Value=ec2-automate-backup Key=InstanceId,Value=i-beba8486 Key=InstanceName,Value=internetds_epolicy_app01 Key=PurgeAfterFE,Value=1488305405 Key=PurgeAllow,Value=true Key=Volume,Value=vol-523f08d7 Key=Created,Value=1485713405
+INSTANCE i-beba8486
+INSTANCE NAME: internetds_epolicy_app01
+Tagging Snapshot snap-043e7d2b6b8079b56 with the following Tags: Key=CreatedBy,Value=ec2-automate-backup Key=InstanceId,Value=i-beba8486 Key=InstanceName,Value=internetds_epolicy_app01 Key=PurgeAfterFE,Value=1488305405 Key=PurgeAllow,Value=true Key=Volume,Value=vol-a03e0925 Key=Created,Value=1485713405
+INSTANCE i-bfba8487
+INSTANCE NAME: internetds_epolicy_app02
+Tagging Snapshot snap-06830ecdb67ea92b8 with the following Tags: Key=CreatedBy,Value=ec2-automate-backup Key=InstanceId,Value=i-bfba8487 Key=InstanceName,Value=internetds_epolicy_app02 Key=PurgeAfterFE,Value=1488305405 Key=PurgeAllow,Value=true Key=Volume,Value=vol-a33e0926 Key=Created,Value=1485713405
+INSTANCE i-b0b88688
+INSTANCE NAME: internetds_dmz_email01
+Tagging Snapshot snap-0aec3b3246d481c57 with the following Tags: Key=CreatedBy,Value=ec2-automate-backup Key=InstanceId,Value=i-b0b88688 Key=InstanceName,Value=internetds_dmz_email01 Key=PurgeAfterFE,Value=1488305405 Key=PurgeAllow,Value=true Key=Volume,Value=vol-eb3c0b6e Key=Created,Value=1485713405
+INSTANCE i-b0b88688
+INSTANCE NAME: internetds_dmz_email01
+Tagging Snapshot snap-0d39331ccf869da57 with the following Tags: Key=CreatedBy,Value=ec2-automate-backup Key=InstanceId,Value=i-b0b88688 Key=InstanceName,Value=internetds_dmz_email01 Key=PurgeAfterFE,Value=1488305405 Key=PurgeAllow,Value=true Key=Volume,Value=vol-263c0ba3 Key=Created,Value=1485713405
+INSTANCE i-08b18930
+INSTANCE NAME: internetds_epolicy_app05
+Tagging Snapshot snap-01de63b1b4ee8dfa8 with the following Tags: Key=CreatedBy,Value=ec2-automate-backup Key=InstanceId,Value=i-08b18930 Key=InstanceName,Value=internetds_epolicy_app05 Key=PurgeAfterFE,Value=1488305405 Key=PurgeAllow,Value=true Key=Volume,Value=vol-2ca494a9 Key=Created,Value=1485713405
+INSTANCE i-09b18931
+INSTANCE NAME: internetds_epolicy_app06
+Tagging Snapshot snap-0a1c5199be480d763 with the following Tags: Key=CreatedBy,Value=ec2-automate-backup Key=InstanceId,Value=i-09b18931 Key=InstanceName,Value=internetds_epolicy_app06 Key=PurgeAfterFE,Value=1488305405 Key=PurgeAllow,Value=true Key=Volume,Value=vol-2fa494aa Key=Created,Value=1485713405
+INSTANCE i-09b18931
+INSTANCE NAME: internetds_epolicy_app06
+Tagging Snapshot snap-0c6c30c8827e681df with the following Tags: Key=CreatedBy,Value=ec2-automate-backup Key=InstanceId,Value=i-09b18931 Key=InstanceName,Value=internetds_epolicy_app06 Key=PurgeAfterFE,Value=1488305405 Key=PurgeAllow,Value=true Key=Volume,Value=vol-33a494b6 Key=Created,Value=1485713405
+INSTANCE i-08b18930
+INSTANCE NAME: internetds_epolicy_app05
+Tagging Snapshot snap-0486a325330064861 with the following Tags: Key=CreatedBy,Value=ec2-automate-backup Key=InstanceId,Value=i-08b18930 Key=InstanceName,Value=internetds_epolicy_app05 Key=PurgeAfterFE,Value=1488305405 Key=PurgeAllow,Value=true Key=Volume,Value=vol-59a494dc Key=Created,Value=1485713405
+INSTANCE i-8feeeab7
+INSTANCE NAME: internetds_life_wzyhdz_ftp
+Tagging Snapshot snap-08fedb1a0511d6a1f with the following Tags: Key=CreatedBy,Value=ec2-automate-backup Key=InstanceId,Value=i-8feeeab7 Key=InstanceName,Value=internetds_life_wzyhdz_ftp Key=PurgeAfterFE,Value=1488305405 Key=PurgeAllow,Value=true Key=Volume,Value=vol-550638d0 Key=Created,Value=1485713405
+INSTANCE i-8feeeab7
+INSTANCE NAME: internetds_life_wzyhdz_ftp
+Tagging Snapshot snap-024b74db489a41656 with the following Tags: Key=CreatedBy,Value=ec2-automate-backup Key=InstanceId,Value=i-8feeeab7 Key=InstanceName,Value=internetds_life_wzyhdz_ftp Key=PurgeAfterFE,Value=1488305405 Key=PurgeAllow,Value=true Key=Volume,Value=vol-7b0739fe Key=Created,Value=1485713405
+INSTANCE i-66eaee5e
+INSTANCE NAME: test_internetds_life_wzyhdz_ftp
+Tagging Snapshot snap-0727b2b4f00274cb0 with the following Tags: Key=CreatedBy,Value=ec2-automate-backup Key=InstanceId,Value=i-66eaee5e Key=InstanceName,Value=test_internetds_life_wzyhdz_ftp Key=PurgeAfterFE,Value=1488305405 Key=PurgeAllow,Value=true Key=Volume,Value=vol-b5033d30 Key=Created,Value=1485713405
+INSTANCE i-66eaee5e
+INSTANCE NAME: test_internetds_life_wzyhdz_ftp
+Tagging Snapshot snap-05d2e2055b8e1674a with the following Tags: Key=CreatedBy,Value=ec2-automate-backup Key=InstanceId,Value=i-66eaee5e Key=InstanceName,Value=test_internetds_life_wzyhdz_ftp Key=PurgeAfterFE,Value=1488305405 Key=PurgeAllow,Value=true Key=Volume,Value=vol-d9033d5c Key=Created,Value=1485713405
+INSTANCE i-98696ea0
+INSTANCE NAME: yc_internetds_life_loadrunner3
+Tagging Snapshot snap-0eda8ca9b0543cb8d with the following Tags: Key=CreatedBy,Value=ec2-automate-backup Key=InstanceId,Value=i-98696ea0 Key=InstanceName,Value=yc_internetds_life_loadrunner3 Key=PurgeAfterFE,Value=1488305405 Key=PurgeAllow,Value=true Key=Volume,Value=vol-0d340d88 Key=Created,Value=1485713405
+INSTANCE i-69696e51
+INSTANCE NAME: yc_internetds_life_loadrunner4
+Tagging Snapshot snap-0d974ad25bf1453b4 with the following Tags: Key=CreatedBy,Value=ec2-automate-backup Key=InstanceId,Value=i-69696e51 Key=InstanceName,Value=yc_internetds_life_loadrunner4 Key=PurgeAfterFE,Value=1488305405 Key=PurgeAllow,Value=true Key=Volume,Value=vol-62340de7 Key=Created,Value=1485713405
+INSTANCE i-69696e51
+INSTANCE NAME: yc_internetds_life_loadrunner4
+Tagging Snapshot snap-03cd4eb847f006882 with the following Tags: Key=CreatedBy,Value=ec2-automate-backup Key=InstanceId,Value=i-69696e51 Key=InstanceName,Value=yc_internetds_life_loadrunner4 Key=PurgeAfterFE,Value=1488305405 Key=PurgeAllow,Value=true Key=Volume,Value=vol-7f340dfa Key=Created,Value=1485713405
+INSTANCE i-98696ea0
+INSTANCE NAME: yc_internetds_life_loadrunner3
+Tagging Snapshot snap-0b6eba68d556392d0 with the following Tags: Key=CreatedBy,Value=ec2-automate-backup Key=InstanceId,Value=i-98696ea0 Key=InstanceName,Value=yc_internetds_life_loadrunner3 Key=PurgeAfterFE,Value=1488305405 Key=PurgeAllow,Value=true Key=Volume,Value=vol-82370e07 Key=Created,Value=1485713405
+INSTANCE i-ea5855d2
+INSTANCE NAME: internetds_opsmon_MongoDB01
+Tagging Snapshot snap-00fcd996737e4698a with the following Tags: Key=CreatedBy,Value=ec2-automate-backup Key=InstanceId,Value=i-ea5855d2 Key=InstanceName,Value=internetds_opsmon_MongoDB01 Key=PurgeAfterFE,Value=1488305405 Key=PurgeAllow,Value=true Key=Volume,Value=vol-916b6a14 Key=Created,Value=1485713405
+INSTANCE i-6758555f
+INSTANCE NAME: internetds_opsmon_MongoDB02
+Tagging Snapshot snap-0497e2a953f14d7d6 with the following Tags: Key=CreatedBy,Value=ec2-automate-backup Key=InstanceId,Value=i-6758555f Key=InstanceName,Value=internetds_opsmon_MongoDB02 Key=PurgeAfterFE,Value=1488305405 Key=PurgeAllow,Value=true Key=Volume,Value=vol-9d6b6a18 Key=Created,Value=1485713405
+INSTANCE i-965855ae
+INSTANCE NAME: internetds_opsmon_MongoDB03
+Tagging Snapshot snap-0dc2b137cac674213 with the following Tags: Key=CreatedBy,Value=ec2-automate-backup Key=InstanceId,Value=i-965855ae Key=InstanceName,Value=internetds_opsmon_MongoDB03 Key=PurgeAfterFE,Value=1488305405 Key=PurgeAllow,Value=true Key=Volume,Value=vol-e06b6a65 Key=Created,Value=1485713405
+INSTANCE i-6758555f
+INSTANCE NAME: internetds_opsmon_MongoDB02
+Tagging Snapshot snap-08f8337624ac21c88 with the following Tags: Key=CreatedBy,Value=ec2-automate-backup Key=InstanceId,Value=i-6758555f Key=InstanceName,Value=internetds_opsmon_MongoDB02 Key=PurgeAfterFE,Value=1488305405 Key=PurgeAllow,Value=true Key=Volume,Value=vol-f66b6a73 Key=Created,Value=1485713405
+INSTANCE i-ea5855d2
+INSTANCE NAME: internetds_opsmon_MongoDB01
+Tagging Snapshot snap-015943bdcfda76494 with the following Tags: Key=CreatedBy,Value=ec2-automate-backup Key=InstanceId,Value=i-ea5855d2 Key=InstanceName,Value=internetds_opsmon_MongoDB01 Key=PurgeAfterFE,Value=1488305405 Key=PurgeAllow,Value=true Key=Volume,Value=vol-006b6a85 Key=Created,Value=1485713405
+INSTANCE i-965855ae
+INSTANCE NAME: internetds_opsmon_MongoDB03
+Tagging Snapshot snap-0bac081adefc20b9d with the following Tags: Key=CreatedBy,Value=ec2-automate-backup Key=InstanceId,Value=i-965855ae Key=InstanceName,Value=internetds_opsmon_MongoDB03 Key=PurgeAfterFE,Value=1488305405 Key=PurgeAllow,Value=true Key=Volume,Value=vol-116b6a94 Key=Created,Value=1485713405
+INSTANCE i-0c585534
+INSTANCE NAME: internetds_opsmon_DB01
+Tagging Snapshot snap-060e59974945712be with the following Tags: Key=CreatedBy,Value=ec2-automate-backup Key=InstanceId,Value=i-0c585534 Key=InstanceName,Value=internetds_opsmon_DB01 Key=PurgeAfterFE,Value=1488305405 Key=PurgeAllow,Value=true Key=Volume,Value=vol-8f6a6b0a Key=Created,Value=1485713405
+INSTANCE i-0c585534
+INSTANCE NAME: internetds_opsmon_DB01
+Tagging Snapshot snap-061e148761b57d03d with the following Tags: Key=CreatedBy,Value=ec2-automate-backup Key=InstanceId,Value=i-0c585534 Key=InstanceName,Value=internetds_opsmon_DB01 Key=PurgeAfterFE,Value=1488305405 Key=PurgeAllow,Value=true Key=Volume,Value=vol-f26a6b77 Key=Created,Value=1485713405
+Snapshot Purging is Starting Now.
+Snapshot "snap-01073a7c068a91efe" with the PurgeAfterFE date of "1485713401" will be deleted.
+Snapshot "snap-0d4a2b5eb4364ded0" with the PurgeAfterFE date of "1485713401" will be deleted.
+Snapshot "snap-0d4cb7ba7e1296bd2" with the PurgeAfterFE date of "1485713401" will be deleted.
+Snapshot "snap-0ae049a1239e24bb9" with the PurgeAfterFE date of "1485713401" will be deleted.
+Snapshot "snap-095de632e43573b1b" with the PurgeAfterFE date of "1485713401" will be deleted.
+Snapshot "snap-03620b21829af5062" with the PurgeAfterFE date of "1485713401" will be deleted.
+Snapshot "snap-0869231e561926c05" with the PurgeAfterFE date of "1485713401" will be deleted.
+Snapshot "snap-05e04e47a83b9387b" with the PurgeAfterFE date of "1485713401" will be deleted.
+Snapshot "snap-0534283d57e60887e" with the PurgeAfterFE date of "1485713401" will be deleted.
+Snapshot "snap-0bbe9d6c1407e193a" with the PurgeAfterFE date of "1485713401" will be deleted.
+Snapshot "snap-0d930bd246f575d3e" with the PurgeAfterFE date of "1485713401" will be deleted.
+Snapshot "snap-058fa0c463cbe8d9a" with the PurgeAfterFE date of "1485713401" will be deleted.
+Snapshot "snap-052eae9ebae86305d" with the PurgeAfterFE date of "1485713401" will be deleted.
+Snapshot "snap-0249b4ce3fd3c54d5" with the PurgeAfterFE date of "1485713401" will be deleted.
+Snapshot "snap-04415a302afee33a8" with the PurgeAfterFE date of "1485713401" will be deleted.
+Snapshot "snap-0be2095947a52ddb4" with the PurgeAfterFE date of "1485713401" will be deleted.
+Snapshot "snap-07b2fc8ebcdc0472d" with the PurgeAfterFE date of "1485713401" will be deleted.
+Snapshot "snap-0f813a9419f8f4912" with the PurgeAfterFE date of "1485713401" will be deleted.
+Snapshot "snap-04beddfbcdaee1230" with the PurgeAfterFE date of "1485713401" will be deleted.
+Snapshot "snap-0c34f659645e93410" with the PurgeAfterFE date of "1485713401" will be deleted.
+Snapshot "snap-083556881b21bf66d" with the PurgeAfterFE date of "1485713401" will be deleted.
+Snapshot "snap-0cb76b8517431e956" with the PurgeAfterFE date of "1485713401" will be deleted.
+Snapshot "snap-05eae9e496b65e1db" with the PurgeAfterFE date of "1485713401" will be deleted.
+Snapshot "snap-089f8f86f7c2bcb76" with the PurgeAfterFE date of "1485713401" will be deleted.
+Snapshot "snap-0a1a09a513de31097" with the PurgeAfterFE date of "1485713401" will be deleted.
+Snapshot "snap-07921ae6a35c82ac8" with the PurgeAfterFE date of "1485713401" will be deleted.
+Snapshot "snap-0cbbd48bb992e36d0" with the PurgeAfterFE date of "1485713401" will be deleted.
+Snapshot "snap-00b67db41361826e7" with the PurgeAfterFE date of "1485713401" will be deleted.
+Snapshot "snap-0e8b9a0675e9aaec2" with the PurgeAfterFE date of "1485713401" will be deleted.
+Snapshot "snap-0e45b786baecd0dda" with the PurgeAfterFE date of "1485713401" will be deleted.
+Snapshot "snap-007099554d27fb0cc" with the PurgeAfterFE date of "1485713401" will be deleted.
+Snapshot "snap-09b02aa7456a81dc7" with the PurgeAfterFE date of "1485713401" will be deleted.
+Snapshot "snap-09cf2c647f8e6800d" with the PurgeAfterFE date of "1485713401" will be deleted.
+Snapshot "snap-0bde1797d8facdaa1" with the PurgeAfterFE date of "1485713401" will be deleted.
+Snapshot "snap-02acc738e0c422291" with the PurgeAfterFE date of "1485713401" will be deleted.
+Snapshot "snap-05dd9365b1be7cf06" with the PurgeAfterFE date of "1485713401" will be deleted.
+Snapshot "snap-033b139ed16698055" with the PurgeAfterFE date of "1485713401" will be deleted.
+Snapshot "snap-0207af3bdcf745608" with the PurgeAfterFE date of "1485713401" will be deleted.
+Snapshot "snap-0a7e6a44bfc23b0f1" with the PurgeAfterFE date of "1485713401" will be deleted.
+Snapshot "snap-0a22c5d5a8140082f" with the PurgeAfterFE date of "1485713401" will be deleted.
+Snapshot "snap-08cb115414fc1a36f" with the PurgeAfterFE date of "1485713401" will be deleted.
+Snapshot "snap-05faa222e7ba070e8" with the PurgeAfterFE date of "1485713401" will be deleted.
+Snapshot "snap-0d3d77edc92602a7f" with the PurgeAfterFE date of "1485713401" will be deleted.
+Snapshot "snap-06150c5bf22ec9d17" with the PurgeAfterFE date of "1485713401" will be deleted.
+Snapshot "snap-0a1529ded9bbe633b" with the PurgeAfterFE date of "1485713401" will be deleted.
+Snapshot "snap-08b42f09aab253dd0" with the PurgeAfterFE date of "1485713401" will be deleted.
+Snapshot "snap-09ce59914f18809ec" with the PurgeAfterFE date of "1485713401" will be deleted.
+Snapshot "snap-0579910719f098f45" with the PurgeAfterFE date of "1485713401" will be deleted.
+Snapshot "snap-0b1fbc527a851548f" with the PurgeAfterFE date of "1485713401" will be deleted.
+Snapshot "snap-037d8e01cb4652263" with the PurgeAfterFE date of "1485713401" will be deleted.
+Snapshot "snap-04a13371bfa19194a" with the PurgeAfterFE date of "1485713401" will be deleted.
+Snapshot "snap-06840ed7fe142e954" with the PurgeAfterFE date of "1485713401" will be deleted.
+Snapshot "snap-0c4978370cfed4c75" with the PurgeAfterFE date of "1485713401" will be deleted.
+Snapshot "snap-0af8ddf217ecfc99a" with the PurgeAfterFE date of "1485713401" will be deleted.
+Snapshot "snap-00bca944a4e90c7a6" with the PurgeAfterFE date of "1485713401" will be deleted.
+Snapshot "snap-0e0d84fb1831d0b58" with the PurgeAfterFE date of "1485713401" will be deleted.
+Snapshot "snap-00cb8d16a959fc4ff" with the PurgeAfterFE date of "1485713401" will be deleted.
+Snapshot "snap-05859b8030d9260cc" with the PurgeAfterFE date of "1485713401" will be deleted.
+Snapshot "snap-07dd9ffab1ce72220" with the PurgeAfterFE date of "1485713401" will be deleted.
+Snapshot "snap-07eeef79beac198c8" with the PurgeAfterFE date of "1485713401" will be deleted.
+Snapshot "snap-01da0bb2a57514096" with the PurgeAfterFE date of "1485713401" will be deleted.
+Snapshot "snap-0c948a80c7d82be98" with the PurgeAfterFE date of "1485713401" will be deleted.
+Snapshot "snap-00e630ec017e19446" with the PurgeAfterFE date of "1485713401" will be deleted.
+Snapshot "snap-0d24c37c96fd52406" with the PurgeAfterFE date of "1485713401" will be deleted.
+Snapshot "snap-0c4784c8397ac0956" with the PurgeAfterFE date of "1485713401" will be deleted.
+Snapshot "snap-0aeab9804271c7ac6" with the PurgeAfterFE date of "1485713401" will be deleted.
+Snapshot "snap-0cf71348f77715bfd" with the PurgeAfterFE date of "1485713401" will be deleted.
+Snapshot "snap-03ed7ca02c4b7fc7b" with the PurgeAfterFE date of "1485713401" will be deleted.
+Snapshot "snap-0ca2906db4b838af3" with the PurgeAfterFE date of "1485713401" will be deleted.
+Snapshot "snap-021e40167df87ebae" with the PurgeAfterFE date of "1485713401" will be deleted.
+Snapshot "snap-07657b2cce9a1a5a7" with the PurgeAfterFE date of "1485713401" will be deleted.
+Snapshot "snap-039b9ed0bf306e727" with the PurgeAfterFE date of "1485713401" will be deleted.
+Snapshot "snap-02e3c767e632c7b4a" with the PurgeAfterFE date of "1485713401" will be deleted.
+Snapshot "snap-015e865a3091345d4" with the PurgeAfterFE date of "1485713401" will be deleted.
+Snapshot "snap-05210cbf2b4914e4e" with the PurgeAfterFE date of "1485713401" will be deleted.
+Snapshot "snap-069da3182c56ea253" with the PurgeAfterFE date of "1485713401" will be deleted.
+Snapshot "snap-041921732f90a5d80" with the PurgeAfterFE date of "1485713401" will be deleted.
+Snapshot "snap-02bc24ca43bad9dbd" with the PurgeAfterFE date of "1485713401" will be deleted.
+Snapshot "snap-036b201e89ed19381" with the PurgeAfterFE date of "1485713401" will be deleted.
+Snapshot "snap-0cccf7f2c44e13faa" with the PurgeAfterFE date of "1485713401" will be deleted.
+Snapshot "snap-0c3e6176b31a31674" with the PurgeAfterFE date of "1485713401" will be deleted.
+Snapshot "snap-06c1d162e4835075c" with the PurgeAfterFE date of "1485713401" will be deleted.
+Snapshot "snap-0ffd5633b9951bfa4" with the PurgeAfterFE date of "1485713401" will be deleted.
+Snapshot "snap-0675782e691231968" with the PurgeAfterFE date of "1485713401" will be deleted.
+Snapshot "snap-02e1c738362c170c4" with the PurgeAfterFE date of "1485713401" will be deleted.
+Snapshot "snap-0e3f0eb239e497bf4" with the PurgeAfterFE date of "1485713401" will be deleted.
+Snapshot "snap-0435a69bb8b0b9582" with the PurgeAfterFE date of "1485713401" will be deleted.
+Snapshot "snap-01d53d10ea3c5c0b9" with the PurgeAfterFE date of "1485713401" will be deleted.
+Snapshot "snap-02cbd8481a4da67ed" with the PurgeAfterFE date of "1485713401" will be deleted.
+Snapshot "snap-04336e223bb54d706" with the PurgeAfterFE date of "1485713401" will be deleted.
+Snapshot "snap-0680fcb73b33803b9" with the PurgeAfterFE date of "1485713401" will be deleted.
+Snapshot "snap-094cebc3839e82c4e" with the PurgeAfterFE date of "1485713401" will be deleted.
+Snapshot "snap-04a5fca9a5a4c881e" with the PurgeAfterFE date of "1485713401" will be deleted.
+Snapshot "snap-0be37c4f59a58f7de" with the PurgeAfterFE date of "1485713401" will be deleted.
+Snapshot "snap-0cad2fcd439c45362" with the PurgeAfterFE date of "1485713401" will be deleted.
+Snapshot "snap-0a742eb69c1672913" with the PurgeAfterFE date of "1485713401" will be deleted.
+Snapshot "snap-03b9f861085a34a7b" with the PurgeAfterFE date of "1485713401" will be deleted.
+Snapshot "snap-07be4f512fe332bf5" with the PurgeAfterFE date of "1485713401" will be deleted.
+Snapshot "snap-08c6a53d63898e5c0" with the PurgeAfterFE date of "1485713401" will be deleted.
+Snapshot "snap-0ccf4c33cb48bf20a" with the PurgeAfterFE date of "1485713401" will be deleted.
+Snapshot "snap-0ec7669928dd80b04" with the PurgeAfterFE date of "1485713401" will be deleted.
+Snapshot "snap-017fc1abd5152aec5" with the PurgeAfterFE date of "1485713401" will be deleted.
+Snapshot "snap-0698a6a138c4bc7e4" with the PurgeAfterFE date of "1485713401" will be deleted.
+Snapshot "snap-07c25503f644ac683" with the PurgeAfterFE date of "1485713401" will be deleted.
+Snapshot "snap-0ded12ccb98ad74cd" with the PurgeAfterFE date of "1485713401" will be deleted.
+Snapshot "snap-0f1365fa57c708f8e" with the PurgeAfterFE date of "1485713401" will be deleted.
+Snapshot "snap-07dc3570a1f1be2ee" with the PurgeAfterFE date of "1485713401" will be deleted.
+Snapshot "snap-0948194cdbaaf61e5" with the PurgeAfterFE date of "1485713401" will be deleted.
+Snapshot "snap-012d61f8312e0911e" with the PurgeAfterFE date of "1485713401" will be deleted.
+Snapshot "snap-0b3bd1f78c77f7902" with the PurgeAfterFE date of "1485713401" will be deleted.
+Snapshot "snap-0b0ba69042b5191a4" with the PurgeAfterFE date of "1485713401" will be deleted.
+Snapshot "snap-0f04c28024483becf" with the PurgeAfterFE date of "1485713401" will be deleted.
+Snapshot "snap-09044b5949012ad0e" with the PurgeAfterFE date of "1485713401" will be deleted.
+Snapshot "snap-0b4ede33d75d164a1" with the PurgeAfterFE date of "1485713401" will be deleted.
+Snapshot "snap-01961d407d70e9bb2" with the PurgeAfterFE date of "1485713401" will be deleted.
+Snapshot "snap-09cbfa40a9c762636" with the PurgeAfterFE date of "1485713401" will be deleted.
+Snapshot "snap-034936a70946aba2f" with the PurgeAfterFE date of "1485713401" will be deleted.
+Snapshot "snap-0d2bb0b3e2a278ec3" with the PurgeAfterFE date of "1485713401" will be deleted.
+Snapshot "snap-034d48844ec598e6d" with the PurgeAfterFE date of "1485713401" will be deleted.
+Snapshot "snap-04cb9c0d90462e17d" with the PurgeAfterFE date of "1485713401" will be deleted.
+Snapshot "snap-0f22b427d6c57ecd9" with the PurgeAfterFE date of "1485713401" will be deleted.
+Snapshot "snap-02f8d474eb8531824" with the PurgeAfterFE date of "1485713401" will be deleted.
+Snapshot "snap-0d7b37617ae027a71" with the PurgeAfterFE date of "1485713401" will be deleted.
+Snapshot "snap-02b3cb53a09e2857d" with the PurgeAfterFE date of "1485713401" will be deleted.
+Snapshot "snap-05c4c50a97269fe58" with the PurgeAfterFE date of "1485713401" will be deleted.
+Snapshot "snap-07a0d784287ae51e2" with the PurgeAfterFE date of "1485713401" will be deleted.
+Snapshot "snap-04b6aa4b04b2bf450" with the PurgeAfterFE date of "1485713401" will be deleted.
+Snapshot "snap-03fcbf7d639195b46" with the PurgeAfterFE date of "1485713401" will be deleted.
+Snapshot "snap-02efede12055183fc" with the PurgeAfterFE date of "1485713401" will be deleted.
+Snapshot "snap-0c1ed1fc88a4b41eb" with the PurgeAfterFE date of "1485713401" will be deleted.
+Snapshot "snap-04dc815b850581029" with the PurgeAfterFE date of "1485713401" will be deleted.
+Snapshot "snap-098e16fd1a5400ba4" with the PurgeAfterFE date of "1485713401" will be deleted.
+Snapshot "snap-05343082411e1fe98" with the PurgeAfterFE date of "1485713401" will be deleted.
+Snapshot "snap-0591daf9c6fb25ded" with the PurgeAfterFE date of "1485713401" will be deleted.
+Snapshot "snap-075cddb87dedd11be" with the PurgeAfterFE date of "1485713401" will be deleted.
+Snapshot "snap-0755affd36d1c5046" with the PurgeAfterFE date of "1485713401" will be deleted.
+Snapshot "snap-086ed5e454b429d40" with the PurgeAfterFE date of "1485713401" will be deleted.
+Snapshot "snap-0c5436e84cb992d30" with the PurgeAfterFE date of "1485713401" will be deleted.
+Snapshot "snap-0790837bdee53024a" with the PurgeAfterFE date of "1485713401" will be deleted.
+Snapshot "snap-0bb844b41cc22befd" with the PurgeAfterFE date of "1485713401" will be deleted.
+Snapshot "snap-0555c70c321c35f22" with the PurgeAfterFE date of "1485713401" will be deleted.
+Snapshot "snap-0eca59bde78f17cf6" with the PurgeAfterFE date of "1485713401" will be deleted.
+Snapshot "snap-0b4838669a8eedf49" with the PurgeAfterFE date of "1485713401" will be deleted.
+Snapshot "snap-057ac9894c0a23650" with the PurgeAfterFE date of "1485713401" will be deleted.
+Snapshot "snap-00f80b34a1a7802c4" with the PurgeAfterFE date of "1485713401" will be deleted.
+Snapshot "snap-09968e741521633fe" with the PurgeAfterFE date of "1485713401" will be deleted.
+Snapshot "snap-02f855dc1d18d10b6" with the PurgeAfterFE date of "1485713401" will be deleted.
+Snapshot "snap-08b7e1757b0dc528f" with the PurgeAfterFE date of "1485713401" will be deleted.
+Snapshot "snap-0a5a05b2b1df6ac5b" with the PurgeAfterFE date of "1485713401" will be deleted.
+Snapshot "snap-0884ca2071a6e0baa" with the PurgeAfterFE date of "1485713401" will be deleted.
+Snapshot "snap-082a9864c69964ab1" with the PurgeAfterFE date of "1485713401" will be deleted.
+Snapshot "snap-0afc0a2c53be66e54" with the PurgeAfterFE date of "1485713401" will be deleted.
+Snapshot "snap-0d4ac54c0554fe614" with the PurgeAfterFE date of "1485713401" will be deleted.
+Snapshot "snap-0eda5a974d6cda3dc" with the PurgeAfterFE date of "1485713401" will be deleted.
+Snapshot "snap-005062012fc6a7098" with the PurgeAfterFE date of "1485713401" will be deleted.
+Snapshot "snap-0bd2ead12c97fb55e" with the PurgeAfterFE date of "1485713401" will be deleted.
+Snapshot "snap-0b4ccb16d4829216d" with the PurgeAfterFE date of "1485713401" will be deleted.
+Snapshot "snap-04dec1eec800349cd" with the PurgeAfterFE date of "1485713401" will be deleted.
+Snapshot "snap-09b39f2b43a696734" with the PurgeAfterFE date of "1485713401" will be deleted.
+Snapshot "snap-0b30e2ac0e50edcae" with the PurgeAfterFE date of "1485713401" will be deleted.
+Snapshot "snap-00ebe86dc1c82450a" with the PurgeAfterFE date of "1485713401" will be deleted.
+Snapshot "snap-0c7b07a73dc39701b" with the PurgeAfterFE date of "1485713401" will be deleted.
+Snapshot "snap-0683f85a8083c58ce" with the PurgeAfterFE date of "1485713401" will be deleted.
+Snapshot "snap-0c4c5c5f011a86ab7" with the PurgeAfterFE date of "1485713401" will be deleted.
+Snapshot "snap-0fc42b32028af2500" with the PurgeAfterFE date of "1485713401" will be deleted.
+Snapshot "snap-007cebf2ff4aeb134" with the PurgeAfterFE date of "1485713401" will be deleted.
+Snapshot "snap-066ffcc8095116d31" with the PurgeAfterFE date of "1485713401" will be deleted.
+Snapshot "snap-04ac0213aee1025e0" with the PurgeAfterFE date of "1485713401" will be deleted.
+Snapshot "snap-002e87116a905bb57" with the PurgeAfterFE date of "1485713401" will be deleted.
+Snapshot "snap-0c0caa047be474cf7" with the PurgeAfterFE date of "1485713401" will be deleted.
+Snapshot "snap-017cd690452fbf180" with the PurgeAfterFE date of "1485713401" will be deleted.
+Snapshot "snap-036b2c000382de76b" with the PurgeAfterFE date of "1485713401" will be deleted.
+Snapshot "snap-057f973c42623ffd1" with the PurgeAfterFE date of "1485713401" will be deleted.
+Snapshot "snap-09395bd7b87ffed00" with the PurgeAfterFE date of "1485713401" will be deleted.
+Snapshot "snap-02182d791ca797464" with the PurgeAfterFE date of "1485713401" will be deleted.
+Snapshot "snap-058bb0c61353fdd69" with the PurgeAfterFE date of "1485713401" will be deleted.
+Snapshot "snap-0e32a9bf6b6ebf71d" with the PurgeAfterFE date of "1485713401" will be deleted.
+Snapshot "snap-0693fd572d8e6e289" with the PurgeAfterFE date of "1485713401" will be deleted.
+Snapshot "snap-01bca3ca39b0b3b6a" with the PurgeAfterFE date of "1485713401" will be deleted.
+Snapshot "snap-084cc199879d8809f" with the PurgeAfterFE date of "1485713401" will be deleted.
+Snapshot "snap-0774e6036078dcb66" with the PurgeAfterFE date of "1485713401" will be deleted.
+Snapshot "snap-08282402a8cff988a" with the PurgeAfterFE date of "1485713401" will be deleted.
+Snapshot "snap-0a46b7a38e10d9ed1" with the PurgeAfterFE date of "1485713401" will be deleted.
+Snapshot "snap-0a539c1096fde69ff" with the PurgeAfterFE date of "1485713401" will be deleted.
+Snapshot "snap-0a6dbec3dbc8c216c" with the PurgeAfterFE date of "1485713401" will be deleted.
+Snapshot "snap-0aa714278343a0976" with the PurgeAfterFE date of "1485713401" will be deleted.
+Snapshot "snap-0c58823088a04bf34" with the PurgeAfterFE date of "1485713401" will be deleted.
+Snapshot "snap-07b8aa7a955a693cf" with the PurgeAfterFE date of "1485713401" will be deleted.
+Snapshot "snap-0ded95dd8d28ec2c0" with the PurgeAfterFE date of "1485713401" will be deleted.
+Snapshot "snap-042fe0e3912f54b18" with the PurgeAfterFE date of "1485713401" will be deleted.
+Snapshot "snap-0dc7f74f45b667a1e" with the PurgeAfterFE date of "1485713401" will be deleted.
+Snapshot "snap-0d141a1389de4c063" with the PurgeAfterFE date of "1485713401" will be deleted.
+Snapshot "snap-0fa11f469a57964c9" with the PurgeAfterFE date of "1485713401" will be deleted.
+Snapshot "snap-04d0b7a311542a553" with the PurgeAfterFE date of "1485713401" will be deleted.
+Snapshot "snap-050b4794d7bc3c9bf" with the PurgeAfterFE date of "1485713401" will be deleted.
+Snapshot "snap-03d375238177ab847" with the PurgeAfterFE date of "1485713401" will be deleted.
+Snapshot "snap-03ef458d9d9b2dd2c" with the PurgeAfterFE date of "1485713401" will be deleted.
+Snapshot "snap-0c40fe9e43de81cd6" with the PurgeAfterFE date of "1485713401" will be deleted.
+Snapshot "snap-0101640fca2284766" with the PurgeAfterFE date of "1485713401" will be deleted.
+Snapshot "snap-0e201256b78ded39b" with the PurgeAfterFE date of "1485713401" will be deleted.
+Snapshot "snap-049a7b08cc6fb35de" with the PurgeAfterFE date of "1485713401" will be deleted.
+Snapshot "snap-0879db2bf4a87bce5" with the PurgeAfterFE date of "1485713401" will be deleted.
+Snapshot "snap-0a36bee3cf5a332a9" with the PurgeAfterFE date of "1485713401" will be deleted.
+Snapshot "snap-0f6e464bfae0fb418" with the PurgeAfterFE date of "1485713401" will be deleted.
+Snapshot "snap-0ed50792a85873e75" with the PurgeAfterFE date of "1485713401" will be deleted.
+Snapshot "snap-0d4567f414585388f" with the PurgeAfterFE date of "1485713401" will be deleted.
+Snapshot "snap-05d8c4fa065fdec37" with the PurgeAfterFE date of "1485713401" will be deleted.
+Snapshot "snap-07bf9110fdf636b88" with the PurgeAfterFE date of "1485713401" will be deleted.
+Snapshot "snap-05832a2b0758ddd68" with the PurgeAfterFE date of "1485713401" will be deleted.
+Snapshot "snap-0b421336fd274f073" with the PurgeAfterFE date of "1485713401" will be deleted.
+Snapshot "snap-007507233ef06bab3" with the PurgeAfterFE date of "1485713401" will be deleted.
+Snapshot "snap-025c850a48d1017ef" with the PurgeAfterFE date of "1485713401" will be deleted.
+Snapshot "snap-0950149dc04ac245e" with the PurgeAfterFE date of "1485713401" will be deleted.
+Snapshot "snap-0ffeb6cd56a19a5a9" with the PurgeAfterFE date of "1485713401" will be deleted.
+Snapshot "snap-04897d9682cc42ff2" with the PurgeAfterFE date of "1485713401" will be deleted.
+Snapshot "snap-0d19c217c7c12444b" with the PurgeAfterFE date of "1485713401" will be deleted.
+Snapshot "snap-071c3a20bf7960561" with the PurgeAfterFE date of "1485713401" will be deleted.
+Snapshot "snap-071d1bab151b28031" with the PurgeAfterFE date of "1485713401" will be deleted.
+Snapshot "snap-0203c229bfbd14931" with the PurgeAfterFE date of "1485713401" will be deleted.
+Snapshot "snap-06dc33710c15c9b6c" with the PurgeAfterFE date of "1485713401" will be deleted.
+Snapshot "snap-07d665b92f8965f66" with the PurgeAfterFE date of "1485713401" will be deleted.
+Snapshot "snap-02abc731fbd6a79de" with the PurgeAfterFE date of "1485713401" will be deleted.
+Snapshot "snap-075fdfbc34bad7e03" with the PurgeAfterFE date of "1485713401" will be deleted.
+Snapshot "snap-04eb9ab8d122b3dc6" with the PurgeAfterFE date of "1485713401" will be deleted.
+Snapshot "snap-0d28441a526933967" with the PurgeAfterFE date of "1485713401" will be deleted.
+Snapshot "snap-0844292c34040a76b" with the PurgeAfterFE date of "1485713401" will be deleted.
+Snapshot "snap-0ca5a97e30995e01c" with the PurgeAfterFE date of "1485713401" will be deleted.
+Snapshot "snap-03cceb5e02c5df9b6" with the PurgeAfterFE date of "1485713401" will be deleted.
+Snapshot "snap-04393c1eef2a0839c" with the PurgeAfterFE date of "1485713401" will be deleted.
+Snapshot "snap-07c230cab75521761" with the PurgeAfterFE date of "1485713401" will be deleted.
+Snapshot "snap-058df393f3940f760" with the PurgeAfterFE date of "1485713401" will be deleted.
+Snapshot "snap-0b4168589b4afa825" with the PurgeAfterFE date of "1485713401" will be deleted.
+Snapshot "snap-0a55b12bd9ca41007" with the PurgeAfterFE date of "1485713401" will be deleted.
+Snapshot "snap-09d37cdaf8d2deae2" with the PurgeAfterFE date of "1485713401" will be deleted.
+Snapshot "snap-0153839d6a3ae3b87" with the PurgeAfterFE date of "1485713401" will be deleted.
+Snapshot "snap-044be9ecd36721315" with the PurgeAfterFE date of "1485713401" will be deleted.
+Snapshot "snap-0aa400a2dfd871311" with the PurgeAfterFE date of "1485713401" will be deleted.
+Snapshot "snap-08d926bad6a448fd1" with the PurgeAfterFE date of "1485713401" will be deleted.
+Snapshot "snap-091af656ece8ae350" with the PurgeAfterFE date of "1485713401" will be deleted.
+Snapshot "snap-09ee85c8c8c384f43" with the PurgeAfterFE date of "1485713401" will be deleted.
+Snapshot "snap-0b45c1341c0aa3090" with the PurgeAfterFE date of "1485713401" will be deleted.
+Snapshot "snap-05696f31a58a36597" with the PurgeAfterFE date of "1485713401" will be deleted.
+Snapshot "snap-02f4309b1a2b315b5" with the PurgeAfterFE date of "1485713401" will be deleted.
+Snapshot "snap-0ad5baabc8ede1901" with the PurgeAfterFE date of "1485713401" will be deleted.
+Snapshot "snap-0a869204c415ca9f3" with the PurgeAfterFE date of "1485713401" will be deleted.
+Snapshot "snap-032a3351e0ca411dc" with the PurgeAfterFE date of "1485713401" will be deleted.
+Snapshot "snap-0220e7f3e5f99e8e1" with the PurgeAfterFE date of "1485713401" will be deleted.
+Snapshot "snap-01c8969ebe9639582" with the PurgeAfterFE date of "1485713401" will be deleted.
+Snapshot "snap-05e386b89fcc5c3a6" with the PurgeAfterFE date of "1485713401" will be deleted.
+Snapshot "snap-0df622b7bf23ea0f9" with the PurgeAfterFE date of "1485713401" will be deleted.
+Snapshot "snap-01c37f49767536dcc" with the PurgeAfterFE date of "1485713401" will be deleted.
+Snapshot "snap-0f62f69fb5a3d6b8b" with the PurgeAfterFE date of "1485713401" will be deleted.
+Snapshot "snap-072a131a72750446d" with the PurgeAfterFE date of "1485713401" will be deleted.
+Snapshot "snap-08f5392e8d88c1822" with the PurgeAfterFE date of "1485713401" will be deleted.
+Snapshot "snap-0dfbc9b9157dbda23" with the PurgeAfterFE date of "1485713401" will be deleted.
+Snapshot "snap-006bdc16317f8fde2" with the PurgeAfterFE date of "1485713401" will be deleted.
+Snapshot "snap-049236598a490aa6e" with the PurgeAfterFE date of "1485713401" will be deleted.
+Snapshot "snap-0b09c2c8ec077f831" with the PurgeAfterFE date of "1485713401" will be deleted.
+Snapshot "snap-0b1d683bcdbafc5ee" with the PurgeAfterFE date of "1485713401" will be deleted.
+Snapshot "snap-0a4919aa919402440" with the PurgeAfterFE date of "1485713401" will be deleted.
+Snapshot "snap-03b52cca4c130f9ab" with the PurgeAfterFE date of "1485713401" will be deleted.
+Snapshot "snap-02be3105c276b7dfc" with the PurgeAfterFE date of "1485713401" will be deleted.
+Snapshot "snap-0915ca6b795df53a4" with the PurgeAfterFE date of "1485713401" will be deleted.
+Snapshot "snap-01b2e3b0741d7cdd9" with the PurgeAfterFE date of "1485713401" will be deleted.
+Snapshot "snap-09cea84dfdf4765d0" with the PurgeAfterFE date of "1485713401" will be deleted.
+Snapshot "snap-071679e7edadf1067" with the PurgeAfterFE date of "1485713401" will be deleted.
+Snapshot "snap-01e0e5f852e19fc35" with the PurgeAfterFE date of "1485713401" will be deleted.
+Snapshot "snap-048073e69f57b4e4e" with the PurgeAfterFE date of "1485713401" will be deleted.
+Snapshot "snap-09ce1e1aa22e45987" with the PurgeAfterFE date of "1485713401" will be deleted.
+Snapshot "snap-03c1ce556c44d6b1b" with the PurgeAfterFE date of "1485713401" will be deleted.
+Snapshot "snap-0bad92ec823967cc6" with the PurgeAfterFE date of "1485713401" will be deleted.
+Snapshot "snap-098e9794f3c3f80ac" with the PurgeAfterFE date of "1485713401" will be deleted.
+Snapshot "snap-037f295ce3066a63f" with the PurgeAfterFE date of "1485713401" will be deleted.
+Snapshot "snap-0d2b65eaf354ff407" with the PurgeAfterFE date of "1485713401" will be deleted.
+Snapshot "snap-0b13d6e9a1d127c42" with the PurgeAfterFE date of "1485713401" will be deleted.

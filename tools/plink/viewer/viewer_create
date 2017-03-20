@@ -1,0 +1,24 @@
+v0=`cat /etc/passwd|grep viewer`
+if [ "${v0}" = "" ] ;then
+    groupadd viewer
+    useradd -g viewer -d /home/viewer viewer
+    echo "viewer!@3" |passwd --stdin viewer
+
+    v1=`cat /etc/passwd|grep weblogic`
+    if [ "${v1}" != "" ] ;then
+        chmod -R 755 /weblogic
+        usermod -G weblogic,viewer viewer
+    fi
+
+    v2=`cat /etc/passwd|grep jboss`
+    if [ "${v2}" != "" ] ;then
+        chmod -R 755 /jboss
+        usermod -G jboss,viewer viewer
+    fi
+
+    if [ "${v1}" != "" ] && [ "${v2}" != "" ] ;then
+        chmod -R 755 /weblogic
+        chmod -R 755 /jboss
+        usermod -G jboss,weblogic,viewer viewer
+    fi
+fi

@@ -1,0 +1,2 @@
+#while read ip password user;do echo "$ip";echo y|plink "$user@$ip" -pw "$password" -m syn_modify_sysctl.conf;done < syn_list
+while read ip password user;do echo "$ip";echo y|plink "$user@$ip" -pw "$password" -m syn_modify_sysctl.conf0922;done < syn-ip-0922-sysctl

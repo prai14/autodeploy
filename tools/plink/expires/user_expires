@@ -1,0 +1,37 @@
+export LANG=C
+
+rm -rf user_expires.log
+ 
+echo "/etc/login.defs"                   >>user_expires.log
+echo "++++++++++++++++++++"              >>user_expires.log
+cat /etc/login.defs|grep PASS_MAX_DAYS   >>user_expires.log
+#passwd -x 90 username
+cat /etc/login.defs|grep PASS_WARN_AGE   >>user_expires.log
+#passwd -w 10 username
+echo "=========================================================================================" >>user_expires.log
+
+v0=`awk -F ":" '{print $1}' /etc/passwd`
+echo ${v0}              >>user_expires.log 
+echo "=========================================================================================" >>user_expires.log
+
+for i in ${v0}
+do
+    echo ${i}           >>user_expires.log
+    echo "+++++++++++++++" >>user_expires.log
+    chage -l ${i}       >>user_expires.log
+    echo "=========================================================================================" >>user_expires.log
+    v1=`chage -l ${i}|awk -F ":" '/Password [Ee]xpires/ {print $2}'|column -t`
+    #echo ${v1}
+    case "${v1}" in
+        never)
+            ;;
+        Never)
+            ;;
+            *)
+            echo "Password expires is not Never!!!"
+            echo ${i}
+            echo "----------------"
+            chage -l ${i}
+            ;;
+    esac
+done

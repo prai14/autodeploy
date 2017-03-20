@@ -1,0 +1,63 @@
+---------------------------------------------------------------------------------------------------------------------------------
+./launch-ec2.sh ami-126db97f c3.large 10/90 abfinance_95569 sg_app_abfinance_95569 bp1_abfinance_95569_ext1 role_95569 abfinance
+./launch-ec2.sh ami-126db97f c3.large 10/90 abfinance_95569 sg_app_abfinance_95569 bp1_abfinance_95569_ext2 role_95569 abfinance
+
+./launch-ec2.sh ami-f668bc9b c3.xlarge 10/90 abfinance_95569 sg_app_abfinance_95569 bp1_abfinance_95569_ext1 role_95569 abfinance
+./launch-ec2.sh ami-f668bc9b c3.xlarge 10/90 abfinance_95569 sg_app_abfinance_95569 bp1_abfinance_95569_ext2 role_95569 abfinance
+
+./launch-ec2.sh ami-576fbb3a c3.xlarge 10/90 abfinance_95569 sg_app_abfinance_95569 bp1_abfinance_95569_ext1 role_95569 abfinance
+./launch-ec2.sh ami-576fbb3a c3.xlarge 10/90 abfinance_95569 sg_app_abfinance_95569 bp1_abfinance_95569_ext2 role_95569 abfinance
+
+./launch-ec2.sh ami-d663b7bb c3.4xlarge 10/500 abfinance_95569 sg_db_abfinance_95569 bp1_abfinance_95569_int1 role_95569 abfinance
+./launch-ec2.sh ami-d663b7bb c3.4xlarge 10/500 abfinance_95569 sg_db_abfinance_95569 bp1_abfinance_95569_int2 role_95569 abfinance
+---------------------------------------------------------------------------------------------------------------------------------
+./launch-ec2.sh ami-116db97c c3.xlarge 10/90 abfinance_top20 sg_app_abfinance_top20 bp1_abfinance_top20_ext1 role_top20 abfinance
+./launch-ec2.sh ami-116db97c c3.xlarge 10/90 abfinance_top20 sg_app_abfinance_top20 bp1_abfinance_top20_ext2 role_top20 abfinance
+
+./launch-ec2.sh ami-0369bd6e c3.xlarge 10/500 abfinance_top20 sg_db_abfinance_top20 bp1_abfinance_top20_int1 role_top20 abfinance
+./launch-ec2.sh ami-0369bd6e c3.xlarge 10/500 abfinance_top20 sg_db_abfinance_top20 bp1_abfinance_top20_int2 role_top20 abfinance
+---------------------------------------------------------------------------------------------------------------------------------
+./launch-ec2.sh ami-436abe2e c3.4xlarge 10/500 abfinance_bases sg_db_abfinance bp1_abfinance_int1 role_abfinance
+./launch-ec2.sh ami-7768bc1a c3.4xlarge 10/500 abfinance_bases sg_db_abfinance bp1_abfinance_int2 role_abfinance
+
+./launch-ec2.sh ami-7c6abe11 c3.xlarge 10/90 abfinance_bases sg_app_abfinance_fileshare bp1_abfinance_ext1 role_abfinance
+
+./launch-ec2.sh ami-0169bd6c c3.xlarge 10/90 abfinance_bases sg_app_abfinance_lcb_admin bp1_abfinance_ext1 role_abfinance
+
+./launch-ec2.sh ami-0269bd6f c3.xlarge 10/90 abfinance_bases sg_app_abfinance_lcb_production bp1_abfinance_ext1 role_abfinance
+./launch-ec2.sh ami-0269bd6f c3.xlarge 10/90 abfinance_bases sg_app_abfinance_lcb_production bp1_abfinance_ext2 role_abfinance
+
+./launch-ec2.sh ami-b56abed8 c3.xlarge 10/90 abfinance_bases sg_app_abfinance_lcb_sales bp1_abfinance_ext1 role_abfinance
+./launch-ec2.sh ami-b56abed8 c3.xlarge 10/90 abfinance_bases sg_app_abfinance_lcb_sales bp1_abfinance_ext2 role_abfinance
+
+./launch-ec2.sh ami-f568bc98 c3.xlarge 10/90 abfinance_bases sg_app_abfinance_lcb_webview bp1_abfinance_ext1 role_abfinance
+./launch-ec2.sh ami-f568bc98 c3.xlarge 10/90 abfinance_bases sg_app_abfinance_lcb_webview bp1_abfinance_ext2 role_abfinance
+
+./launch-ec2.sh ami-d563b7b8 c3.xlarge 10 abfinance_bases sg_nat_abfinance bp1_abfinance_dmz1 role_nat
+./launch-ec2.sh ami-d563b7b8 c3.xlarge 10 abfinance_bases sg_nat_abfinance bp1_abfinance_dmz1 role_nat
+---------------------------------------------------------------------------------------------------------------------------------
+
+./launch-ec2.sh ami-116db97c c3.xlarge 10/90 abfinance_top20 sg_app_abfinance_top20 bp1_abfinance_top20_ext1 role_top20 abf-aws
+----------------
+./launch-ec2.sh ami-55e83d38 c3.large 10/90 abfinance_waf sg_waf_abfinance bp1_abfinance_dmz1 role_waf
+./launch-ec2.sh ami-55e83d38 c3.large 10/90 abfinance_waf sg_waf_abfinance bp1_abfinance_dmz2 role_waf
+####20170223 top20
+./launch-ec2.sh ami-116db97c c3.xlarge 10/90 abfinance_top20 sg_app_abfinance_top20 bp1_abfinance_top20_ext1 role_top20 abf-aws
+./launch-ec2.sh ami-116db97c c3.xlarge 10/90 abfinance_top20 sg_app_abfinance_top20 bp1_abfinance_top20_ext1 role_top20 abf-aws
+./launch-ec2.sh ami-116db97c c3.xlarge 10/90 abfinance_top20 sg_app_abfinance_top20 bp1_abfinance_top20_ext1 role_top20 abf-aws
+
+####20170306
+i-0900f2c3ece4f73ce||10.219.23.82||20170306
+ami-0e6abd63    image-10.219.23.82-20170306
+./launch-ec2.sh ami-0e6abd63 c3.large 10/90 abfinance_95569 sg_app_abfinance_95569 bp1_abfinance_95569_ext1 role_95569 abf-aws
+./launch-ec2.sh ami-0e6abd63 c3.large 10/90 abfinance_95569 sg_app_abfinance_95569 bp1_abfinance_95569_ext2 role_95569 abf-aws
+
+####20170309
+test nat
+./launch-ec2.sh ami-d563b7b8 c3.xlarge 10 test_nat_abfinance test_sg_nat_abfinance bt1_abfinance_dmz1 role_nat
+./launch-ec2.sh ami-d563b7b8 c3.xlarge 10 test_nat_abfinance test_sg_nat_abfinance bt1_abfinance_dmz2 role_nat
+
+
+####20170310
+./launch-ec2.sh ami-a89d4bc5 c3.xlarge 10/90 abfinance_top20 sg_app_abfinance_top20 bp1_abfinance_top20_ext1 role_top20 abf-aws
+./launch-ec2.sh ami-c69b4dab c3.xlarge 10/90 abfinance_top20 sg_app_abfinance_top20 bp1_abfinance_top20_ext2 role_top20 abf-aws

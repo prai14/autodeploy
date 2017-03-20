@@ -1,0 +1,18 @@
+sudo echo "----check fstab-----"
+sudo cat /etc/fstab|grep app
+sudo cat /etc/fstab|grep swapfile
+sudo echo "----ls -lrt fstab-----"
+sudo ls -lrt /etc/fstab
+sudo echo "----chmod 777 fstab-----"
+sudo chmod 777 /etc/fstab
+sudo echo "-----add app to fstab-----"
+sudo echo "/dev/vgapp/lvapp  /app          ext4    defaults        1 2 " >> /etc/fstab
+sudo echo "-----add swapfile to fstab-----"
+sudo echo "/app/swapfile swap swap defaults 0 0" >> /etc/fstab
+sudo echo "----chmod 644 fstab-----"
+sudo chmod 644 /etc/fstab
+sudo echo "----ls -lrt fstab-----"
+sudo ls -lrt /etc/fstab
+sudo echo "----check fstab-----"
+sudo cat /etc/fstab|grep app
+sudo cat /etc/fstab|grep swapfile

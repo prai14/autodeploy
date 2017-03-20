@@ -1,0 +1,1 @@
+aws ec2 describe-instances --filters file://filters-running.json --query 'Reservations[*].Instances[*].{ID:InstanceId,AZ:Placement.AvailabilityZone,State:State.Name,PublicIP:PublicIpAddress,PrivateIP:PrivateIpAddress,Application:Tags[?Key==`Application`] | [0].Value,Stage:Tags[?Key==`Environment`] | [0].Value}'

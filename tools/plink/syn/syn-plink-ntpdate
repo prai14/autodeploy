@@ -1,0 +1,19 @@
+#while read ip password user;do echo "$ip";echo y|plink "$user@$ip" -pw "$password" -m syn_ntpdate;done < syn_list-pr
+#while read ip password user;do echo "$ip";echo y|plink "$user@$ip" -pw "$password" -m syn-ntpdate-0922;done<syn-ip-0922
+#while read ip password user;do echo "$ip";echo y|plink "$user@$ip" -pw "$password" -m syn-ntpdate-0922;done<syn-ip-pr-0922
+#while read ip password user;do echo "$ip";echo y|plink "$user@$ip" -pw "$password" -m syn-ntpdate-0922-s;done < syn-ip-0922
+#while read ip password user;do echo "$ip";echo y|plink "$user@$ip" -pw "$password" -m syn-ntpdate-s;done < syn-ip-pr-0922
+#while read ip password user;do echo "$ip";echo y|plink "$user@$ip" -pw "$password" -m syn-ntpdate-q;done < syn-20151014
+#while read ip password user;do echo "$ip";echo y|plink "$user@$ip" -pw "$password" -m syn-ntpdate-s;done < syn-20151014
+#while read ip password user;do echo "$ip";echo y|plink "$user@$ip" -pw "$password" -m syn-ntpdate-q;done < syn-liyunlei
+#while read ip password user;do echo "$ip";echo y|plink "$user@$ip" -pw "$password" -m syn-ntpdate-s;done < syn-liyunlei
+#while read ip password user;do echo "$ip";echo y|plink "$user@$ip" -pw "$password" -m syn-ntpdate-s;done < syn1118
+#while read ip password user;do echo "$ip";echo y|plink "$user@$ip" -pw "$password" -m syn-ntpdate-0922-s;done < syn-ip-0922-sysctl
+#while read ip password user;do echo "$ip";echo y|plink "$user@$ip" -pw "$password" -m syn-ntpdate-s;done < syn0113
+#while read ip password user;do echo "$ip";echo y|plink "$user@$ip" -pw "$password" -m syn-ntpdate-s;done < syn0120
+#while read ip password user;do echo "$ip";echo y|plink "$user@$ip" -pw "$password" -m syn-ntpdate-s;done < syn0122
+#while read ip password user;do echo "$ip";echo y|plink "$user@$ip" -pw "$password" -m syn-ntpdate-s;done < syn0226pym
+#while read ip password user;do echo "$ip";echo y|plink "$user@$ip" -pw "$password" -m syn-ntpdate-s;done < syn0226zrx
+#while read ip password user;do echo "$ip";echo y|plink "$user@$ip" -pw "$password" -m syn-ntpdate-s;done < syn0226zwc
+#while read ip password user;do echo "$ip";echo y|plink "$user@$ip" -pw "$password" -m syn-query;done < synlplist
+while read ip password user;do echo "$ip";echo y|plink "$user@$ip" -pw "$password" -m syn-query;done < synvlist

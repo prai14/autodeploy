@@ -1,0 +1,9 @@
+./launch-ec2.sh internetds_dmz_nginx01 ami-fa875397 c3.xlarge 8/100 kp_deploy sg_nginx_internetds_nginx bp1_internetds_dmz1 role_internetds
+./launch-ec2.sh internetds_front_nginx01 ami-fa875397 c3.xlarge 8/100 kp_deploy sg_nginx_internetds_nginx bp1_internetds_front_int1 role_internetds
+./launch-ec2.sh internetds_front_zkp_app01 ami-fa875397 c3.xlarge 8/100 kp_deploy sg_app_internetds_front_zkp bp1_internetds_front_int1 role_internetds 
+./launch-ec2.sh internetds_front_mq_app01 ami-fa875397 c3.xlarge 8/100 kp_deploy sg_app_internetds_front_mq bp1_internetds_front_int1 role_internetds
+./launch-ec2.sh internetds_front_dsjr_app01 ami-fa875397 c3.xlarge 8/100 kp_deploy sg_app_internetds_front_dsjr bp1_internetds_front_int1 role_internetds
+./launch-ec2.sh internetds_life_xqyhb_app01 ami-fa875397 c3.xlarge 8/100 kp_deploy sg_app_internetds_life_xqyhb bp1_internetds_life_int1 role_internetds
+./launch-ec2.sh internetds_life_bq_app01 ami-fa875397 c3.xlarge 8/100 kp_deploy sg_app_internetds_life_bq bp1_internetds_life_int1 role_internetds\
+./launch-ec2.sh internetds_life_bdgl_app01 ami-fa875397 m3.xlarge 8/100 kp_deploy sg_app_internetds_life_bdgl bp1_internetds_life_int1 role_internetds
+./launch-ec2.sh internetds_life_jsyq_app01 ami-fa875397 m3.2xlarge 8/100 kp_deploy sg_app_internetds_life_jsyq bp1_internetds_life_int1 role_internetds

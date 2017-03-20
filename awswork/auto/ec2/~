@@ -1,0 +1,2 @@
+aws ec2 run-instances --image-id ami-981d8fa1 --key-name demo-bjs --security-group-ids sg-673e2005 --instance-type t2.micro --subnet-id subnet-d77061b5 --user-data file:///home/ec2-user/scripts/ec2/user-data.txt --query 'Instances[*].InstanceId'
+

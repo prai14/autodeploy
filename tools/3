@@ -1,0 +1,5 @@
+fuser -k /dev/sddlmch1
+fuser -k /dev/sddlmbk1
+fuser -k /dev/sddlmbl1
+fuser -k /dev/sddlmbm1
+fuser -k /dev/sddlmbn1

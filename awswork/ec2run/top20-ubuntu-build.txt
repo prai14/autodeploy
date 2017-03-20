@@ -1,0 +1,3 @@
+./launch-ec2.sh ami-116db97c c3.xlarge 10/90 abfinance_top20 sg_app_abfinance_top20 bp1_abfinance_top20_ext1 role_top20 abf-aws
+------------------------------------------------------------------------------------------------------------------------------------
+./launch-ec2.sh ami-7adf0817 c3.xlarge 10/90 abfinance_top20 sg_app_abfinance_top20 bp1_abfinance_top20_ext1 role_top20 abf-aws

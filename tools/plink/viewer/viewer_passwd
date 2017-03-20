@@ -1,0 +1,4 @@
+v0=`cat /etc/passwd|grep viewer`
+if [ "${v0}" != "" ] ;then
+    echo "viewer!@3" |passwd --stdin viewer
+fi

@@ -1,0 +1,5 @@
+$ ssh-keygen -t rsa -b 2048 -v -f mycert
+$ chmod 600 mycert
+$ mv mycert mycert.pem
+
+cat mycert.pub|ssh -y -i <old.pem>  user@<ip address> "cat > .ssh/authorized_keys"

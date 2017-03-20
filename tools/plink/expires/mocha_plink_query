@@ -1,0 +1,3 @@
+#while read ip password user;do echo "$ip";echo y|plink "$user@$ip" -pw "$password" -m mocha_grep;done < mocha_list
+#date;while read ip password user;do echo "$ip";echo y|plink "$user@$ip" -pw "$password" -m mocha_grep;done < mochavm_list ;date
+date;while read ip password user;do echo "$ip";echo y|plink "$user@$ip" -pw "$password" -m mocha_grep;done < mochapm_list ;date

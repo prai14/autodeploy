@@ -1,0 +1,299 @@
+/etc/login.defs
+++++++++++++++++++++
+#       PASS_MAX_DAYS   Maximum number of days a password may be used.
+PASS_MAX_DAYS   99999
+#       PASS_WARN_AGE   Number of days warning given before a password expires.
+PASS_WARN_AGE   7
+=========================================================================================
+root bin daemon adm lp sync shutdown halt mail uucp operator games gopher ftp nobody dbus rpc vcsa abrt saslauth postfix rpcuser nfsnobody haldaemon ntp sshd tcpdump oprofile mocha
+=========================================================================================
+root
++++++++++++++++
+Last password change                                    : Jul 03, 2015
+Password expires                                        : never
+Password inactive                                       : never
+Account expires                                         : never
+Minimum number of days between password change          : 0
+Maximum number of days between password change          : 99999
+Number of days of warning before password expires       : 7
+=========================================================================================
+bin
++++++++++++++++
+Last password change                                    : Aug 20, 2013
+Password expires                                        : never
+Password inactive                                       : never
+Account expires                                         : never
+Minimum number of days between password change          : 0
+Maximum number of days between password change          : 99999
+Number of days of warning before password expires       : 7
+=========================================================================================
+daemon
++++++++++++++++
+Last password change                                    : Aug 20, 2013
+Password expires                                        : never
+Password inactive                                       : never
+Account expires                                         : never
+Minimum number of days between password change          : 0
+Maximum number of days between password change          : 99999
+Number of days of warning before password expires       : 7
+=========================================================================================
+adm
++++++++++++++++
+Last password change                                    : Aug 20, 2013
+Password expires                                        : never
+Password inactive                                       : never
+Account expires                                         : never
+Minimum number of days between password change          : 0
+Maximum number of days between password change          : 99999
+Number of days of warning before password expires       : 7
+=========================================================================================
+lp
++++++++++++++++
+Last password change                                    : Aug 20, 2013
+Password expires                                        : never
+Password inactive                                       : never
+Account expires                                         : never
+Minimum number of days between password change          : 0
+Maximum number of days between password change          : 99999
+Number of days of warning before password expires       : 7
+=========================================================================================
+sync
++++++++++++++++
+Last password change                                    : Aug 20, 2013
+Password expires                                        : never
+Password inactive                                       : never
+Account expires                                         : never
+Minimum number of days between password change          : 0
+Maximum number of days between password change          : 99999
+Number of days of warning before password expires       : 7
+=========================================================================================
+shutdown
++++++++++++++++
+Last password change                                    : Aug 20, 2013
+Password expires                                        : never
+Password inactive                                       : never
+Account expires                                         : never
+Minimum number of days between password change          : 0
+Maximum number of days between password change          : 99999
+Number of days of warning before password expires       : 7
+=========================================================================================
+halt
++++++++++++++++
+Last password change                                    : Aug 20, 2013
+Password expires                                        : never
+Password inactive                                       : never
+Account expires                                         : never
+Minimum number of days between password change          : 0
+Maximum number of days between password change          : 99999
+Number of days of warning before password expires       : 7
+=========================================================================================
+mail
++++++++++++++++
+Last password change                                    : Aug 20, 2013
+Password expires                                        : never
+Password inactive                                       : never
+Account expires                                         : never
+Minimum number of days between password change          : 0
+Maximum number of days between password change          : 99999
+Number of days of warning before password expires       : 7
+=========================================================================================
+uucp
++++++++++++++++
+Last password change                                    : Aug 20, 2013
+Password expires                                        : never
+Password inactive                                       : never
+Account expires                                         : never
+Minimum number of days between password change          : 0
+Maximum number of days between password change          : 99999
+Number of days of warning before password expires       : 7
+=========================================================================================
+operator
++++++++++++++++
+Last password change                                    : Aug 20, 2013
+Password expires                                        : never
+Password inactive                                       : never
+Account expires                                         : never
+Minimum number of days between password change          : 0
+Maximum number of days between password change          : 99999
+Number of days of warning before password expires       : 7
+=========================================================================================
+games
++++++++++++++++
+Last password change                                    : Aug 20, 2013
+Password expires                                        : never
+Password inactive                                       : never
+Account expires                                         : never
+Minimum number of days between password change          : 0
+Maximum number of days between password change          : 99999
+Number of days of warning before password expires       : 7
+=========================================================================================
+gopher
++++++++++++++++
+Last password change                                    : Aug 20, 2013
+Password expires                                        : never
+Password inactive                                       : never
+Account expires                                         : never
+Minimum number of days between password change          : 0
+Maximum number of days between password change          : 99999
+Number of days of warning before password expires       : 7
+=========================================================================================
+ftp
++++++++++++++++
+Last password change                                    : Aug 20, 2013
+Password expires                                        : never
+Password inactive                                       : never
+Account expires                                         : never
+Minimum number of days between password change          : 0
+Maximum number of days between password change          : 99999
+Number of days of warning before password expires       : 7
+=========================================================================================
+nobody
++++++++++++++++
+Last password change                                    : Aug 20, 2013
+Password expires                                        : never
+Password inactive                                       : never
+Account expires                                         : never
+Minimum number of days between password change          : 0
+Maximum number of days between password change          : 99999
+Number of days of warning before password expires       : 7
+=========================================================================================
+dbus
++++++++++++++++
+Last password change                                    : Apr 09, 2014
+Password expires                                        : never
+Password inactive                                       : never
+Account expires                                         : never
+Minimum number of days between password change          : -1
+Maximum number of days between password change          : -1
+Number of days of warning before password expires       : -1
+=========================================================================================
+rpc
++++++++++++++++
+Last password change                                    : Apr 09, 2014
+Password expires                                        : never
+Password inactive                                       : never
+Account expires                                         : never
+Minimum number of days between password change          : 0
+Maximum number of days between password change          : 99999
+Number of days of warning before password expires       : 7
+=========================================================================================
+vcsa
++++++++++++++++
+Last password change                                    : Apr 09, 2014
+Password expires                                        : never
+Password inactive                                       : never
+Account expires                                         : never
+Minimum number of days between password change          : -1
+Maximum number of days between password change          : -1
+Number of days of warning before password expires       : -1
+=========================================================================================
+abrt
++++++++++++++++
+Last password change                                    : Apr 09, 2014
+Password expires                                        : never
+Password inactive                                       : never
+Account expires                                         : never
+Minimum number of days between password change          : -1
+Maximum number of days between password change          : -1
+Number of days of warning before password expires       : -1
+=========================================================================================
+saslauth
++++++++++++++++
+Last password change                                    : Apr 09, 2014
+Password expires                                        : never
+Password inactive                                       : never
+Account expires                                         : never
+Minimum number of days between password change          : -1
+Maximum number of days between password change          : -1
+Number of days of warning before password expires       : -1
+=========================================================================================
+postfix
++++++++++++++++
+Last password change                                    : Apr 09, 2014
+Password expires                                        : never
+Password inactive                                       : never
+Account expires                                         : never
+Minimum number of days between password change          : -1
+Maximum number of days between password change          : -1
+Number of days of warning before password expires       : -1
+=========================================================================================
+rpcuser
++++++++++++++++
+Last password change                                    : Apr 09, 2014
+Password expires                                        : never
+Password inactive                                       : never
+Account expires                                         : never
+Minimum number of days between password change          : -1
+Maximum number of days between password change          : -1
+Number of days of warning before password expires       : -1
+=========================================================================================
+nfsnobody
++++++++++++++++
+Last password change                                    : Apr 09, 2014
+Password expires                                        : never
+Password inactive                                       : never
+Account expires                                         : never
+Minimum number of days between password change          : -1
+Maximum number of days between password change          : -1
+Number of days of warning before password expires       : -1
+=========================================================================================
+haldaemon
++++++++++++++++
+Last password change                                    : Apr 09, 2014
+Password expires                                        : never
+Password inactive                                       : never
+Account expires                                         : never
+Minimum number of days between password change          : -1
+Maximum number of days between password change          : -1
+Number of days of warning before password expires       : -1
+=========================================================================================
+ntp
++++++++++++++++
+Last password change                                    : Apr 09, 2014
+Password expires                                        : never
+Password inactive                                       : never
+Account expires                                         : never
+Minimum number of days between password change          : -1
+Maximum number of days between password change          : -1
+Number of days of warning before password expires       : -1
+=========================================================================================
+sshd
++++++++++++++++
+Last password change                                    : Apr 09, 2014
+Password expires                                        : never
+Password inactive                                       : never
+Account expires                                         : never
+Minimum number of days between password change          : -1
+Maximum number of days between password change          : -1
+Number of days of warning before password expires       : -1
+=========================================================================================
+tcpdump
++++++++++++++++
+Last password change                                    : Apr 09, 2014
+Password expires                                        : never
+Password inactive                                       : never
+Account expires                                         : never
+Minimum number of days between password change          : -1
+Maximum number of days between password change          : -1
+Number of days of warning before password expires       : -1
+=========================================================================================
+oprofile
++++++++++++++++
+Last password change                                    : Apr 09, 2014
+Password expires                                        : never
+Password inactive                                       : never
+Account expires                                         : never
+Minimum number of days between password change          : -1
+Maximum number of days between password change          : -1
+Number of days of warning before password expires       : -1
+=========================================================================================
+mocha
++++++++++++++++
+Last password change                                    : Apr 21, 2015
+Password expires                                        : never
+Password inactive                                       : never
+Account expires                                         : never
+Minimum number of days between password change          : 0
+Maximum number of days between password change          : 99999
+Number of days of warning before password expires       : 7
+=========================================================================================

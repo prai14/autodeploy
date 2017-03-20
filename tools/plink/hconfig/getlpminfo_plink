@@ -1,0 +1,2 @@
+while read ip password user;do echo "$ip";echo y|plink "$user@$ip" -pw "$password" -m getlpminfo.sh;done < rootpm_list
+#while read ip password user;do echo "$ip";echo y|plink "$user@$ip" -pw "$password" -m getlpmhdisk.sh;done < rootpm_list

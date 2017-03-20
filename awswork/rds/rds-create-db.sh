@@ -1,0 +1,1 @@
+aws rds create-db-instance --db-name users --db-instance-identifier $1 --allocated-storage 100 --iops 1000 --db-instance-class db.t2.medium --engine $2 --master-username frank --master-user-password welcome123 --db-subnet-group-name rds-subgrp-private  --vpc-security-group-ids sg-15ef0e70 --storage-type io1 --no-publicly-accessible

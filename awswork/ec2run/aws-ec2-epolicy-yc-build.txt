@@ -1,0 +1,10 @@
+---------------------------------------------------------------------------------------------------------------------------------
+./launch-ec2.sh ami-126db97f d2.xlarge 10/90 kp_deploy sg_app_internetds_epolicy bp1_internetds_epolicy_ext1 role_epolicy abfinance
+./launch-ec2.sh ami-126db97f d2.xlarge 10/90 kp_deploy sg_app_internetds_epolicy bp1_internetds_epolicy_ext2 role_epolicy abfinance
+
+./launch-ec2.sh ami-f668bc9b d2.xlarge 10/500 kp_deploy sg_db_internetds_epolicy bp1_internetds_epolicy_ext1 role_epolicy abfinance
+./launch-ec2.sh ami-f668bc9b d2.xlarge 10/500 kp_deploy sg_db_internetds_epolicy bp1_internetds_epolicy_ext2 role_epolicy abfinance
+---------------------------------------------------------------------------------------------------------------------------------
+./launch-ec2.sh ami-705c881d m4.large 100/200 kp_deploy sg_app_internetds_epolicy bp1_internetds_epolicy_ext1 role_epolicy ids-aws
+------------------------------------------------------------------------------------------------------------------------------------
+./launch-ec2.sh ami-7c15c111 r3.xlarge 10/200 kp_deploy sg_app_internetds_epolicy bp1_internetds_epolicy_ext1 role_epolicy ids-aws

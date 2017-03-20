@@ -1,0 +1,3 @@
+echo "#Set independent wall clock time" >>/etc/sysctl.conf
+echo "xen.independent_wallclock=1" >>/etc/sysctl.conf
+sysctl -p

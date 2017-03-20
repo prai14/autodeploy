@@ -1,0 +1,504 @@
+/etc/login.defs
+++++++++++++++++++++
+#       PASS_MAX_DAYS   Maximum number of days a password may be used.
+PASS_MAX_DAYS   99999
+#       PASS_WARN_AGE   Number of days warning given before a password expires.
+PASS_WARN_AGE   7
+=========================================================================================
+root bin daemon adm lp sync shutdown halt mail news uucp operator games gopher ftp nobody dbus vcsa rpm haldaemon netdump nscd sshd rpc rpcuser nfsnobody mailnull smmsp pcap apache squid webalizer xfs ntp gdm pegasus htt weblogic sino tomcat axl oracle unreal viewer mocha
+=========================================================================================
+root
++++++++++++++++
+Minimum:        0
+Maximum:        99999
+Warning:        7
+Inactive:       -1
+Last Change:            Mar 11, 2015
+Password Expires:       Never
+Password Inactive:      Never
+Account Expires:        Never
+=========================================================================================
+bin
++++++++++++++++
+Minimum:        0
+Maximum:        99999
+Warning:        7
+Inactive:       -1
+Last Change:            Jan 30, 2008
+Password Expires:       Never
+Password Inactive:      Never
+Account Expires:        Never
+=========================================================================================
+daemon
++++++++++++++++
+Minimum:        0
+Maximum:        99999
+Warning:        7
+Inactive:       -1
+Last Change:            Jan 30, 2008
+Password Expires:       Never
+Password Inactive:      Never
+Account Expires:        Never
+=========================================================================================
+adm
++++++++++++++++
+Minimum:        0
+Maximum:        99999
+Warning:        7
+Inactive:       -1
+Last Change:            Jan 30, 2008
+Password Expires:       Never
+Password Inactive:      Never
+Account Expires:        Never
+=========================================================================================
+lp
++++++++++++++++
+Minimum:        0
+Maximum:        99999
+Warning:        7
+Inactive:       -1
+Last Change:            Jan 30, 2008
+Password Expires:       Never
+Password Inactive:      Never
+Account Expires:        Never
+=========================================================================================
+sync
++++++++++++++++
+Minimum:        0
+Maximum:        99999
+Warning:        7
+Inactive:       -1
+Last Change:            Jan 30, 2008
+Password Expires:       Never
+Password Inactive:      Never
+Account Expires:        Never
+=========================================================================================
+shutdown
++++++++++++++++
+Minimum:        0
+Maximum:        99999
+Warning:        7
+Inactive:       -1
+Last Change:            Jan 30, 2008
+Password Expires:       Never
+Password Inactive:      Never
+Account Expires:        Never
+=========================================================================================
+halt
++++++++++++++++
+Minimum:        0
+Maximum:        99999
+Warning:        7
+Inactive:       -1
+Last Change:            Jan 30, 2008
+Password Expires:       Never
+Password Inactive:      Never
+Account Expires:        Never
+=========================================================================================
+mail
++++++++++++++++
+Minimum:        0
+Maximum:        99999
+Warning:        7
+Inactive:       -1
+Last Change:            Jan 30, 2008
+Password Expires:       Never
+Password Inactive:      Never
+Account Expires:        Never
+=========================================================================================
+news
++++++++++++++++
+Minimum:        0
+Maximum:        99999
+Warning:        7
+Inactive:       -1
+Last Change:            Jan 30, 2008
+Password Expires:       Never
+Password Inactive:      Never
+Account Expires:        Never
+=========================================================================================
+uucp
++++++++++++++++
+Minimum:        0
+Maximum:        99999
+Warning:        7
+Inactive:       -1
+Last Change:            Jan 30, 2008
+Password Expires:       Never
+Password Inactive:      Never
+Account Expires:        Never
+=========================================================================================
+operator
++++++++++++++++
+Minimum:        0
+Maximum:        99999
+Warning:        7
+Inactive:       -1
+Last Change:            Jan 30, 2008
+Password Expires:       Never
+Password Inactive:      Never
+Account Expires:        Never
+=========================================================================================
+games
++++++++++++++++
+Minimum:        0
+Maximum:        99999
+Warning:        7
+Inactive:       -1
+Last Change:            Jan 30, 2008
+Password Expires:       Never
+Password Inactive:      Never
+Account Expires:        Never
+=========================================================================================
+gopher
++++++++++++++++
+Minimum:        0
+Maximum:        99999
+Warning:        7
+Inactive:       -1
+Last Change:            Jan 30, 2008
+Password Expires:       Never
+Password Inactive:      Never
+Account Expires:        Never
+=========================================================================================
+ftp
++++++++++++++++
+Minimum:        0
+Maximum:        99999
+Warning:        7
+Inactive:       -1
+Last Change:            Jan 30, 2008
+Password Expires:       Never
+Password Inactive:      Never
+Account Expires:        Never
+=========================================================================================
+nobody
++++++++++++++++
+Minimum:        0
+Maximum:        99999
+Warning:        7
+Inactive:       -1
+Last Change:            Jan 30, 2008
+Password Expires:       Never
+Password Inactive:      Never
+Account Expires:        Never
+=========================================================================================
+dbus
++++++++++++++++
+Minimum:        0
+Maximum:        99999
+Warning:        7
+Inactive:       -1
+Last Change:            Jan 30, 2008
+Password Expires:       Never
+Password Inactive:      Never
+Account Expires:        Never
+=========================================================================================
+vcsa
++++++++++++++++
+Minimum:        0
+Maximum:        99999
+Warning:        7
+Inactive:       -1
+Last Change:            Jan 30, 2008
+Password Expires:       Never
+Password Inactive:      Never
+Account Expires:        Never
+=========================================================================================
+rpm
++++++++++++++++
+Minimum:        0
+Maximum:        99999
+Warning:        7
+Inactive:       -1
+Last Change:            Jan 30, 2008
+Password Expires:       Never
+Password Inactive:      Never
+Account Expires:        Never
+=========================================================================================
+haldaemon
++++++++++++++++
+Minimum:        0
+Maximum:        99999
+Warning:        7
+Inactive:       -1
+Last Change:            Jan 30, 2008
+Password Expires:       Never
+Password Inactive:      Never
+Account Expires:        Never
+=========================================================================================
+netdump
++++++++++++++++
+Minimum:        0
+Maximum:        99999
+Warning:        7
+Inactive:       -1
+Last Change:            Jan 30, 2008
+Password Expires:       Never
+Password Inactive:      Never
+Account Expires:        Never
+=========================================================================================
+nscd
++++++++++++++++
+Minimum:        0
+Maximum:        99999
+Warning:        7
+Inactive:       -1
+Last Change:            Jan 30, 2008
+Password Expires:       Never
+Password Inactive:      Never
+Account Expires:        Never
+=========================================================================================
+sshd
++++++++++++++++
+Minimum:        0
+Maximum:        99999
+Warning:        7
+Inactive:       -1
+Last Change:            Jan 30, 2008
+Password Expires:       Never
+Password Inactive:      Never
+Account Expires:        Never
+=========================================================================================
+rpc
++++++++++++++++
+Minimum:        0
+Maximum:        99999
+Warning:        7
+Inactive:       -1
+Last Change:            Jan 30, 2008
+Password Expires:       Never
+Password Inactive:      Never
+Account Expires:        Never
+=========================================================================================
+rpcuser
++++++++++++++++
+Minimum:        0
+Maximum:        99999
+Warning:        7
+Inactive:       -1
+Last Change:            Jan 30, 2008
+Password Expires:       Never
+Password Inactive:      Never
+Account Expires:        Never
+=========================================================================================
+nfsnobody
++++++++++++++++
+Minimum:        0
+Maximum:        99999
+Warning:        7
+Inactive:       -1
+Last Change:            Jan 30, 2008
+Password Expires:       Never
+Password Inactive:      Never
+Account Expires:        Never
+=========================================================================================
+mailnull
++++++++++++++++
+Minimum:        0
+Maximum:        99999
+Warning:        7
+Inactive:       -1
+Last Change:            Jan 30, 2008
+Password Expires:       Never
+Password Inactive:      Never
+Account Expires:        Never
+=========================================================================================
+smmsp
++++++++++++++++
+Minimum:        0
+Maximum:        99999
+Warning:        7
+Inactive:       -1
+Last Change:            Jan 30, 2008
+Password Expires:       Never
+Password Inactive:      Never
+Account Expires:        Never
+=========================================================================================
+pcap
++++++++++++++++
+Minimum:        0
+Maximum:        99999
+Warning:        7
+Inactive:       -1
+Last Change:            Jan 30, 2008
+Password Expires:       Never
+Password Inactive:      Never
+Account Expires:        Never
+=========================================================================================
+apache
++++++++++++++++
+Minimum:        0
+Maximum:        99999
+Warning:        7
+Inactive:       -1
+Last Change:            Jan 30, 2008
+Password Expires:       Never
+Password Inactive:      Never
+Account Expires:        Never
+=========================================================================================
+squid
++++++++++++++++
+Minimum:        0
+Maximum:        99999
+Warning:        7
+Inactive:       -1
+Last Change:            Jan 30, 2008
+Password Expires:       Never
+Password Inactive:      Never
+Account Expires:        Never
+=========================================================================================
+webalizer
++++++++++++++++
+Minimum:        0
+Maximum:        99999
+Warning:        7
+Inactive:       -1
+Last Change:            Jan 30, 2008
+Password Expires:       Never
+Password Inactive:      Never
+Account Expires:        Never
+=========================================================================================
+xfs
++++++++++++++++
+Minimum:        0
+Maximum:        99999
+Warning:        7
+Inactive:       -1
+Last Change:            Jan 30, 2008
+Password Expires:       Never
+Password Inactive:      Never
+Account Expires:        Never
+=========================================================================================
+ntp
++++++++++++++++
+Minimum:        0
+Maximum:        99999
+Warning:        7
+Inactive:       -1
+Last Change:            Jan 30, 2008
+Password Expires:       Never
+Password Inactive:      Never
+Account Expires:        Never
+=========================================================================================
+gdm
++++++++++++++++
+Minimum:        0
+Maximum:        99999
+Warning:        7
+Inactive:       -1
+Last Change:            Jan 30, 2008
+Password Expires:       Never
+Password Inactive:      Never
+Account Expires:        Never
+=========================================================================================
+pegasus
++++++++++++++++
+Minimum:        0
+Maximum:        99999
+Warning:        7
+Inactive:       -1
+Last Change:            Jan 30, 2008
+Password Expires:       Never
+Password Inactive:      Never
+Account Expires:        Never
+=========================================================================================
+htt
++++++++++++++++
+Minimum:        0
+Maximum:        99999
+Warning:        7
+Inactive:       -1
+Last Change:            Jan 30, 2008
+Password Expires:       Never
+Password Inactive:      Never
+Account Expires:        Never
+=========================================================================================
+weblogic
++++++++++++++++
+Minimum:        0
+Maximum:        99999
+Warning:        7
+Inactive:       -1
+Last Change:            Jan 31, 2008
+Password Expires:       Never
+Password Inactive:      Never
+Account Expires:        Never
+=========================================================================================
+sino
++++++++++++++++
+Minimum:        0
+Maximum:        99999
+Warning:        7
+Inactive:       -1
+Last Change:            Jun 26, 2009
+Password Expires:       Never
+Password Inactive:      Never
+Account Expires:        Never
+=========================================================================================
+tomcat
++++++++++++++++
+Minimum:        0
+Maximum:        99999
+Warning:        7
+Inactive:       -1
+Last Change:            Oct 02, 2013
+Password Expires:       Never
+Password Inactive:      Never
+Account Expires:        Never
+=========================================================================================
+axl
++++++++++++++++
+Minimum:        0
+Maximum:        99999
+Warning:        7
+Inactive:       -1
+Last Change:            May 04, 2013
+Password Expires:       Never
+Password Inactive:      Never
+Account Expires:        Never
+=========================================================================================
+oracle
++++++++++++++++
+Minimum:        0
+Maximum:        99999
+Warning:        7
+Inactive:       -1
+Last Change:            May 04, 2013
+Password Expires:       Never
+Password Inactive:      Never
+Account Expires:        Never
+=========================================================================================
+unreal
++++++++++++++++
+Minimum:        0
+Maximum:        99999
+Warning:        7
+Inactive:       -1
+Last Change:            Sep 16, 2013
+Password Expires:       Never
+Password Inactive:      Never
+Account Expires:        Never
+=========================================================================================
+viewer
++++++++++++++++
+Minimum:        0
+Maximum:        99999
+Warning:        7
+Inactive:       -1
+Last Change:            Sep 21, 2015
+Password Expires:       Never
+Password Inactive:      Never
+Account Expires:        Never
+=========================================================================================
+mocha
++++++++++++++++
+Minimum:        0
+Maximum:        99999
+Warning:        7
+Inactive:       -1
+Last Change:            Apr 16, 2015
+Password Expires:       Never
+Password Inactive:      Never
+Account Expires:        Never
+=========================================================================================

@@ -1,0 +1,9 @@
+find /etc -type f | cpio -ocvB > /opt/etc.cpio
+find /    -print  | cpio -ocvB > /dev/st0
+
+cpio -icdvt < /dev/st0 > /tmp/st_content
+cpio -icduv < /opt/etc.cpio
+
+find /app \( -path /app/ec2log -o -path /app/swapfile -o -path /app/software \) -prune -o -type f -print|cpio -ocvB > /home/ec2-user/app.cpio;gzip /home/ec2-user/app.cpio
+
+find . -type f  | xargs du | sort -rn | head

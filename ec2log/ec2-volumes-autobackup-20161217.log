@@ -1,0 +1,5 @@
+Snapshots taken by ec2-volumes-autobackup.sh will be eligible for purging after the following date (the purge after date given in seconds from epoch): 1484503801.
+
+An error occurred (AuthFailure) when calling the DescribeVolumes operation: Authorization header or parameters are not formatted correctly.
+An error occurred when running ec2-describe-volumes. The error returned is below:
+

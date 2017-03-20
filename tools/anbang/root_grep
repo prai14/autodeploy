@@ -1,0 +1,41 @@
+#sudo echo "-----ip-----"
+#sudo ifconfig -a |grep "10.219"
+#sudo echo "-----swap-----"
+#sudo free -m |grep -i swap
+#sudo echo "-----df-h-----"
+#sudo df -h
+#sudo echo "-----fdisk-l-----"
+#sudo fdisk -l |grep "Disk \/dev\/xvd"
+#sudo echo "-----pvs-----"
+#sudo pvs
+#sudo echo "-----lvs-----"
+#sudo lvs
+#sudo echo "-----vgs-----"
+#sudo vgs
+#sudo echo "-----os version-----"
+#sudo cat /etc/*release
+file="/etc/redhat-release"
+if [ -f "${file}" ] ;then
+    vb=`cat /etc/profile|grep "Asia\/Shanghai"`
+    if [ "${vb}" != "" ] ;then
+        echo "Redhat TZ modified!!!"
+        date
+    else
+        echo "Redhat TZ not modified!!!"
+        date
+        sudo sed -i '$a\TZ='Asia/Shanghai'; export TZ' /etc/profile
+        sudo ln -sf /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
+    fi
+else
+    vv=`date|grep UTC`
+    if [ "${vv}" != "" ] ;then
+        echo "Amazon Linux TZ not modified!!!"
+        date
+        sudo sed -i '1s/UTC/\/usr\/share\/zoneinfo\/Asia\/Shanghai/' /etc/sysconfig/clock
+        sudo ln -sf /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
+    else
+        echo "Amazon Linux TZ modified!!!"
+        date
+    fi
+fi
+#sudo /bin/ls -l /etc/localtime

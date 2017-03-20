@@ -1,0 +1,2 @@
+groupadd mocha
+useradd -g mocha -d /home/mocha mocha

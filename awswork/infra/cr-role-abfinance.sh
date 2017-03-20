@@ -1,0 +1,9 @@
+aws iam create-role --role-name CloudTrail_CloudWatchLogs_Role --assume-role-policy-document file://Test-Role-Trust-Policy.json 
+aws iam create-role --role-name rds-monitoring-role            --assume-role-policy-document file://Test-Role-Trust-Policy.json 
+aws iam create-role --role-name role_95569                     --assume-role-policy-document file://Test-Role-Trust-Policy.json 
+aws iam create-role --role-name role_abfinance                 --assume-role-policy-document file://Test-Role-Trust-Policy.json 
+aws iam create-role --role-name role_admin                     --assume-role-policy-document file://Test-Role-Trust-Policy.json 
+aws iam create-role --role-name role_top20                     --assume-role-policy-document file://Test-Role-Trust-Policy.json 
+aws iam create-role --role-name role_nat                       --assume-role-policy-document file://Test-Role-Trust-Policy.json 
+aws iam create-role --role-name role_test_abfinance            --assume-role-policy-document file://Test-Role-Trust-Policy.json 
+aws iam create-role --role-name vmimport                       --assume-role-policy-document file://Test-Role-Trust-Policy.json 

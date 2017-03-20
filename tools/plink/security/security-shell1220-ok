@@ -1,0 +1,68 @@
+echo "++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++" >>security.log
+v1=`ls|grep security.log`
+echo ${v1}                             >>security.log
+echo "++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++" >>security.log
+echo "++++1.2 account login limit++++start++++" >>security.log
+echo "---------------------------------------------------"
+for i in test1 test2
+do
+    echo ${i}
+    passwd -d ${i}
+done
+v2=`awk -F: ' ($2 == "") { print $1 }' /etc/shadow`
+if [ "${v2}" != "" ] ;then
+    echo "esiting null password user in system!!!"
+    echo ${v2}
+    echo "need single operation!!!"
+    for i in ${v2}
+    do
+        echo ${i}
+        echo "${i}!@#" |passwd --stdin ${i}
+        echo "${i} user password modified!!!"
+    done
+else
+    echo "not esiting null password user in system!!!"   >>security.log
+fi
+echo "---------------------------------------------------"
+echo "++++1.2 account login limit++++end++++++" >>security.log
+echo "++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++" >>security.log
+echo "++++1.3 account login limit++++start++++" >>security.log
+for i in test3 test4
+do
+    echo ${i}
+    cat /etc/passwd|grep ${i}
+    vb=`cat /etc/passwd|grep ${i}|awk -F: '{print $3}'`
+    sed -i '/'${i}'/ s/'${vb}'/0/' /etc/passwd
+    cat /etc/passwd|grep ${i}
+done
+v3=`awk -F: ' ($3 == 0) { print $1 }' /etc/passwd|grep -v root`
+if [ "${v3}" != "" ] ;then
+    echo "esiting root authority user in system!!!"
+    echo ${v3}
+    echo "need single operation!!!"
+    counter=1000
+    for i in ${v3}
+    do
+        echo ${i}
+        cat /etc/passwd|grep ${i}
+        su - ${i} -c"pwd"
+        su - ${i} -c"groups"
+        counter=`expr ${counter} + 1`
+        v9=`su - ${i} -c "id"|awk '{print $2}'|awk -F"[()]" '{print $2}'`
+        v0=`su - ${i} -c "pwd"`
+        va=`su - ${i} -c "groups"|awk -v OFS=',' '{$1=$1; print}'`
+        usermod -u ${counter} ${i}
+        echo "${i} user root authority modified!!!"
+        chown -R ${i}:${v9} ${v0}
+        echo ${va}
+        #usermod -G ${va} ${i}
+        cat /etc/passwd|grep ${i}
+        su - ${i} -c"pwd"
+        su - ${i} -c"groups"
+    done
+else
+    echo "not esiting root authority user in system!!!"   >>security.log
+fi
+echo "---------------------------------------------------"
+echo "++++1.3 account login limit++++end++++++" >>security.log
+echo "++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++" >>security.log

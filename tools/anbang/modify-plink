@@ -1,0 +1,15 @@
+#while read ip user;do echo "$ip";sudo echo y|plink "$user@$ip" -i "/app/ppk/95569_private.ppk" -m root_grep;done < iplist0
+#while read ip user;do echo "$ip";sudo echo y|plink "$user@$ip" -i "/app/ppk/95569_private.ppk" -m cr-lvm-swap-app.sh;done < iplist0
+#while read ip user;do echo "$ip";sudo echo y|plink "$user@$ip" -i "/app/ppk/95569_private.ppk" -m certi;done < iplist0
+#while read ip user;do echo "$ip";sudo echo y|plink "$user@$ip" -i "/app/ppk/95569_private.ppk" -m certi2;done < iplist0
+#while read ip user;do echo "$ip";sudo echo y|plink "$user@$ip" -i "/app/ppk/abfinance_private.ppk" -m root_grep;done < iplist1102
+#while read ip user;do echo "$ip";sudo echo y|plink "$user@$ip" -i "/app/ppk/abfinance_private.ppk" -m certi;done < iplist1
+#while read ip user;do echo "$ip";sudo echo y|plink "$user@$ip" -i "/app/ppk/abfinance_private.ppk" -m cr-lvm-swap-app.sh;done < iplist1102
+#while read ip user;do echo "$ip";sudo echo y|plink "$user@$ip" -i "/app/ppk/abfinance_private.ppk" -m root_grep;done < iplist1103
+#while read ip user;do echo "$ip";sudo echo y|plink "$user@$ip" -i "/app/ppk/kp_deploy.ppk" -m root_grep ;done < iplist11032
+#while read ip user;do echo "$ip";sudo echo y|plink "$user@$ip" -i "/app/ppk/abfinance_public.ppk" -m root_grep;done < iplist11031
+#while read ip user;do echo "$ip";sudo echo y|plink "$user@$ip" -i "/app/ppk/95569_private.ppk" -m root_grep;done < iplist95569
+#while read ip user;do echo "$ip";sudo echo y|plink "$user@$ip" -i "/app/ppk/kp_deploy.ppk" -m root_grep;done < iplistyc
+#while read ip user;do echo "$ip";sudo echo y|plink "$user@$ip" -i "/app/ppk/kp_deploy.ppk" -m query;done < iplistds
+#while read ip user;do echo "$ip";sudo echo y|plink "$user@$ip" -i "/app/ppk/kp_management.ppk" -m query;done < iplistmgmt
+while read ip user;do echo "$ip";sudo echo y|plink "$user@$ip" -i "/app/ppk/kp_deploy.ppk" -m query;done < iplist11

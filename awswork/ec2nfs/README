@@ -1,0 +1,44 @@
+#server
+
+sudo vi /etc/exports
+/app/tomcat/image 10.219.19.63(rw) 
+
+sudo yum -y install nfs-util portmap rpcbind   
+
+sudo service rpcbind restart
+sudo service nfs restart
+sudo exportfs -a
+
+sudo service portmap restart
+sudo service nfs restart
+sudo exportfs -a
+
+#AWS SG network firewall setup
+
+in security group add rpcbind and nfs port also mount -t nfs command port
+
+NFS   TCP   2049    sg-51e4ec34 (sg_app_abfinance_lcb_production)
+
+#client
+
+sudo yum -y install nfs-util portmap rpcbind   
+
+sudo service rpcbind restart
+sudo service nfs restart
+sudo exportfs -a
+
+sudo service portmap restart
+sudo service nfs restart
+sudo exportfs -a
+
+sudo mount -t nfs 10.219.18.29:/app/tomcat/image /app/tomcat/image
+sudo df -h
+Filesystem                      Size  Used Avail Use% Mounted on
+/dev/xvda1                      9.8G  1.1G  8.6G  12% /
+devtmpfs                        3.7G   72K  3.7G   1% /dev
+tmpfs                           3.7G     0  3.7G   0% /dev/shm
+/dev/mapper/vgapp-lvapp          50G  8.3G   39G  18% /app
+10.219.18.150:/app/tomcat/image   50G  8.4G   39G  18% /app/tomcat/image
+
+#demo
+linux 5---->portmap  linux 6 up---->rpcbind

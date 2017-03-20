@@ -1,0 +1,20 @@
+#ntpd query
+vntp=`ps -ef|grep ntpd|grep -v grep|awk '{print $1}'`
+v0=`crontab -l|grep ntpdate|grep -v '#'|grep "10.10.2.65"`
+if [ "${vntp}"  = "" ] ;then
+    if [ "${v0}"  = "" ] ;then
+        v1=`echo "no syn setup!"`
+        v2=`ntpdate -q 10.10.2.65|grep delay|awk '{print $6}'|awk -F',' '{print $1}'`
+        echo "${v1}|${v2}"
+    else
+        v3=`echo "syn ntpdate-cron mode!"`
+        v4=`ntpdate -q 10.10.2.65|grep delay|awk '{print $6}'|awk -F',' '{print $1}'`
+        echo "${v3}|${v4}"
+    fi
+else
+    v5=`echo "syn ntpd mode!"`
+    service ntpd stop
+    v6=`ntpdate -q 10.10.2.65|grep delay|awk '{print $6}'|awk -F',' '{print $1}'`
+    service ntpd start
+    echo "${v5}|${v6}"
+fi
