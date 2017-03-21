@@ -19,7 +19,7 @@ if [ "$cond" != "" ] ;then
         for ipolicy in $cond2
         do
             echo "====>delete the role inline policy $ipolicy"
-            aws iam delete-role-policy --role-name zcl_role --policy-name $ipolicy
+            aws iam delete-role-policy --role-name $rolename --policy-name $ipolicy
         done 
     fi
 
