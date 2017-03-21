@@ -13,3 +13,7 @@ arn:aws-cn:iam::484879136155:role/role_nat                             AROAPDRSF
 arn:aws-cn:iam::484879136155:role/role_test_abfinance                  AROAO37AA7KILXWWV6YSW  role_test_abfinance
 arn:aws-cn:iam::484879136155:role/role_test_internetds                 AROAPMIO5GT5GL745U656  role_test_internetds
 arn:aws-cn:iam::484879136155:role/vmimport                             AROAPP2LVLEWS4PAIETQO  vmimport
+aws iam create-role --role-name Test-Role --assume-role-policy-document file://Test-Role-Trust-Policy.json
+aws iam put-role-policy --role-name Test-Role --policy-name ExamplePolicy --policy-document file://AdminPolicy.json
+aws iam create-instance-profile --instance-profile-name Webserver
+aws iam add-role-to-instance-profile --role-name S3Access --instance-profile-name Webserver
