@@ -541,3 +541,17 @@
 2017/03/10 16:01:55: vol-034bf0cd673d73b04 is tagged.
 2017/03/10 16:01:56: vol-0661fcbcb7fca8736 is tagged.
 2017/03/10 16:01:56: vol-020dc1f08a4d59a28 is tagged.
+2017/03/22 15:10:20: ERR: Launch Instance failed: aws ec2 run-instances --image-id ami-84b86ee9 --instance-type c3.xlarge --key-name abfinance_95569 --security-group-ids sg-4b4ba42f --subnet-id subnet-ea43708f --iam-instance-profile Name=role_95569 --block-device-mappings file://block_device_map/10-90.json --monitoring Enabled=true --disable-api-termination --profile abf-aws
+2017/03/22 15:10:23: ERR: Launch Instance failed: aws ec2 run-instances --image-id ami-84b86ee9 --instance-type c3.xlarge --key-name abfinance_95569 --security-group-ids sg-4b4ba42f --subnet-id subnet-f4e65483 --iam-instance-profile Name=role_95569 --block-device-mappings file://block_device_map/10-90.json --monitoring Enabled=true --disable-api-termination --profile abf-aws
+2017/03/22 15:22:20: Launching i-01f667dbc1dbb5eea: aws ec2 run-instances --image-id ami-80b86eed --instance-type c3.xlarge --key-name abfinance_95569 --security-group-ids sg-4b4ba42f --subnet-id subnet-ea43708f --iam-instance-profile Name=role_95569 --block-device-mappings file://block_device_map/10-90.json --monitoring Enabled=true --disable-api-termination --profile abf-aws
+2017/03/22 15:22:21: vol-0bec313ae93701613 is tagged.
+2017/03/22 15:22:22: vol-051c3fd9b01df5df2 is tagged.
+2017/03/22 15:22:55: Launching i-0d7230e88c36d2400: aws ec2 run-instances --image-id ami-80b86eed --instance-type c3.xlarge --key-name abfinance_95569 --security-group-ids sg-4b4ba42f --subnet-id subnet-f4e65483 --iam-instance-profile Name=role_95569 --block-device-mappings file://block_device_map/10-90.json --monitoring Enabled=true --disable-api-termination --profile abf-aws
+2017/03/22 15:22:56: vol-054cf736afba140c8 is tagged.
+2017/03/22 15:22:57: vol-0f2406898e0098b4a is tagged.
+2017/03/22 15:43:05: Launching i-003e572b72696bd8b: aws ec2 run-instances --image-id ami-80b86eed --instance-type c3.large --key-name abfinance_95569 --security-group-ids sg-4b4ba42f --subnet-id subnet-ea43708f --iam-instance-profile Name=role_95569 --block-device-mappings file://block_device_map/10-90.json --monitoring Enabled=true --disable-api-termination --profile abf-aws
+2017/03/22 15:43:06: vol-0077565cb767761b1 is tagged.
+2017/03/22 15:43:07: vol-02f1c5a0c7e1662cc is tagged.
+2017/03/22 15:43:24: Launching i-0bcd22592948a3bc8: aws ec2 run-instances --image-id ami-80b86eed --instance-type c3.large --key-name abfinance_95569 --security-group-ids sg-4b4ba42f --subnet-id subnet-f4e65483 --iam-instance-profile Name=role_95569 --block-device-mappings file://block_device_map/10-90.json --monitoring Enabled=true --disable-api-termination --profile abf-aws
+2017/03/22 15:43:25: vol-018e795cdbb9f839f is tagged.
+2017/03/22 15:43:26: vol-086aba265d94e61b4 is tagged.

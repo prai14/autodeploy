@@ -57,7 +57,16 @@ test nat
 ./launch-ec2.sh ami-d563b7b8 c3.xlarge 10 test_nat_abfinance test_sg_nat_abfinance bt1_abfinance_dmz1 role_nat
 ./launch-ec2.sh ami-d563b7b8 c3.xlarge 10 test_nat_abfinance test_sg_nat_abfinance bt1_abfinance_dmz2 role_nat
 
-
 ####20170310
 ./launch-ec2.sh ami-a89d4bc5 c3.xlarge 10/90 abfinance_top20 sg_app_abfinance_top20 bp1_abfinance_top20_ext1 role_top20 abf-aws
 ./launch-ec2.sh ami-c69b4dab c3.xlarge 10/90 abfinance_top20 sg_app_abfinance_top20 bp1_abfinance_top20_ext2 role_top20 abf-aws
+
+####20170322
+./launch-ec2.sh ami-84b86ee9 c3.xlarge 10/90 abfinance_95569 sg_app_abfinance_95569 bp1_abfinance_95569_ext1 role_95569 abf-aws
+./launch-ec2.sh ami-84b86ee9 c3.xlarge 10/90 abfinance_95569 sg_app_abfinance_95569 bp1_abfinance_95569_ext2 role_95569 abf-aws
+
+./launch-ec2.sh ami-80b86eed c3.xlarge 10/90 abfinance_95569 sg_app_abfinance_95569 bp1_abfinance_95569_ext1 role_95569 abf-aws
+./launch-ec2.sh ami-80b86eed c3.xlarge 10/90 abfinance_95569 sg_app_abfinance_95569 bp1_abfinance_95569_ext2 role_95569 abf-aws
+
+./launch-ec2.sh ami-80b86eed c3.large 10/90 abfinance_95569 sg_app_abfinance_95569 bp1_abfinance_95569_ext1 role_95569 abf-aws
+./launch-ec2.sh ami-80b86eed c3.large 10/90 abfinance_95569 sg_app_abfinance_95569 bp1_abfinance_95569_ext2 role_95569 abf-aws
