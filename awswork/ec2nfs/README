@@ -1,4 +1,4 @@
-#server
+#server end
 
 sudo vi /etc/exports
 /app/tomcat/image 10.219.19.63(rw) 
@@ -13,13 +13,13 @@ sudo service portmap restart
 sudo service nfs restart
 sudo exportfs -a
 
-#AWS SG network firewall setup
+#AWS end ====> SG network firewall setup
 
 in security group add rpcbind and nfs port also mount -t nfs command port
 
 NFS   TCP   2049    sg-51e4ec34 (sg_app_abfinance_lcb_production)
 
-#client
+#client end
 
 sudo yum -y install nfs-util portmap rpcbind   
 
