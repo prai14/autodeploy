@@ -26,11 +26,13 @@ spc2=$(aws ec2 describe-instances                                               
 #echo "$iid2|$pip2|$en2|$spc2"
 
 if [ "$spc1" -lt 9 ] ;then
+    echo "assign secondary-private-ip-address-count $[9-$spc1] for $en1====>$pip1"
     aws ec2 assign-private-ip-addresses --network-interface-id $en1 --private-ip-addresses $pip1 $cha
     aws ec2 assign-private-ip-addresses --network-interface-id $en1 --secondary-private-ip-address-count $[9-$spc1] $cha
 fi
 
 if [ "$spc1" -lt 9 ] ;then
+    echo "assign secondary-private-ip-address-count $[9-$spc2] for $en2====>$pip2"
     aws ec2 assign-private-ip-addresses --network-interface-id $en2 --private-ip-addresses $pip2 $cha
     aws ec2 assign-private-ip-addresses --network-interface-id $en2 --secondary-private-ip-address-count $[9-$spc2] $cha
 fi
