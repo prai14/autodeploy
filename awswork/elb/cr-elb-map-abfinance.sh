@@ -1,5 +1,6 @@
-ws elb register-instances-with-load-balancer --load-balancer-name elb-95569-01 --instances i-00737f9ceeaad86d1
-#aws elb register-instances-with-load-balancer --load-balancer-name elb-95569-01 --instances i-01bfc53726a11ca9c
+#elb1
+aws elb register-instances-with-load-balancer --load-balancer-name elb-95569-01 --instances i-00737f9ceeaad86d1
+aws elb register-instances-with-load-balancer --load-balancer-name elb-95569-01 --instances i-01bfc53726a11ca9c
 
 #elb2
 aws elb register-instances-with-load-balancer --load-balancer-name elb-95569-02 --instances i-08b97f2fe53f80f22
@@ -51,4 +52,3 @@ aws elb register-instances-with-load-balancer --load-balancer-name elb-95569-10 
 aws elb register-instances-with-load-balancer --load-balancer-name elb-95569-10 --instances i-0dce85c3f212a5de0
 aws elb register-instances-with-load-balancer --load-balancer-name elb-95569-10 --instances i-0a5f15688eacd2e3e
 aws elb register-instances-with-load-balancer --load-balancer-name elb-95569-10 --instances i-09ddd98828f970e2b
-
