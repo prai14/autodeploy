@@ -1,0 +1,449 @@
+----------------VGDA/VGSA lqueryvg-------------------
+----------------------
+hdisk1====>
+----------------------
+lqueryvg -Atp hdisk1
+----------------------
+Max LVs:      	512
+PP Size:      	26
+Free PPs:     	0
+LV count:     	2
+PV count:     	8
+Total VGDAs:  	8
+Conc Allowed: 	0
+MAX PPs per PV	1016
+MAX PVs:      	128
+Quorum (disk):	1
+Quorum (dd):  	1
+Auto Varyon ?:	1
+Conc Autovaryo	0
+Varied on Conc	0
+Logical:      	000c75a20000d900000001213d056817.1   loglv00 1  
+              	000c75a20000d900000001213d056817.2   fslv00 1  
+Physical:     	000c75a23d05549e                1   0  
+              	000c75a23d05576a                1   0  
+              	000c75a23d0559f3                1   0  
+              	000c75a23d055c8a                1   0  
+              	000c75a23d055f1e                1   0  
+              	000c75a23d0561b0                1   0  
+              	000c75a23d05644e                1   0  
+              	000c75a23d0566e9                1   0  
+Total PPs:    	6392
+LTG size:     	128
+HOT SPARE:    	0
+AUTO SYNC:    	0
+VG PERMISSION:	0
+SNAPSHOT VG:  	0
+IS_PRIMARY VG:	0
+PSNFSTPP:     	16128
+VARYON MODE:  	0
+VG Type:      	1
+Max PPs:      	130048
+----------------------
+lqueryvg -Ptp hdisk1
+----------------------
+Physical:     	000c75a23d05549e                1   0  
+              	000c75a23d05576a                1   0  
+              	000c75a23d0559f3                1   0  
+              	000c75a23d055c8a                1   0  
+              	000c75a23d055f1e                1   0  
+              	000c75a23d0561b0                1   0  
+              	000c75a23d05644e                1   0  
+              	000c75a23d0566e9                1   0  
+----------------------
+lqueryvg -Ltp hdisk1
+----------------------
+Logical:      	000c75a20000d900000001213d056817.1   loglv00 1  
+              	000c75a20000d900000001213d056817.2   fslv00 1  
+----------------------
+hdisk2====>
+----------------------
+lqueryvg -Atp hdisk2
+----------------------
+Max LVs:      	512
+PP Size:      	26
+Free PPs:     	0
+LV count:     	2
+PV count:     	8
+Total VGDAs:  	8
+Conc Allowed: 	0
+MAX PPs per PV	1016
+MAX PVs:      	128
+Quorum (disk):	1
+Quorum (dd):  	1
+Auto Varyon ?:	1
+Conc Autovaryo	0
+Varied on Conc	0
+Logical:      	000c75a20000d900000001213d056817.1   loglv00 1  
+              	000c75a20000d900000001213d056817.2   fslv00 1  
+Physical:     	000c75a23d05549e                1   0  
+              	000c75a23d05576a                1   0  
+              	000c75a23d0559f3                1   0  
+              	000c75a23d055c8a                1   0  
+              	000c75a23d055f1e                1   0  
+              	000c75a23d0561b0                1   0  
+              	000c75a23d05644e                1   0  
+              	000c75a23d0566e9                1   0  
+Total PPs:    	6392
+LTG size:     	128
+HOT SPARE:    	0
+AUTO SYNC:    	0
+VG PERMISSION:	0
+SNAPSHOT VG:  	0
+IS_PRIMARY VG:	0
+PSNFSTPP:     	16128
+VARYON MODE:  	0
+VG Type:      	1
+Max PPs:      	130048
+----------------------
+lqueryvg -Ptp hdisk2
+----------------------
+Physical:     	000c75a23d05549e                1   0  
+              	000c75a23d05576a                1   0  
+              	000c75a23d0559f3                1   0  
+              	000c75a23d055c8a                1   0  
+              	000c75a23d055f1e                1   0  
+              	000c75a23d0561b0                1   0  
+              	000c75a23d05644e                1   0  
+              	000c75a23d0566e9                1   0  
+----------------------
+lqueryvg -Ltp hdisk2
+----------------------
+Logical:      	000c75a20000d900000001213d056817.1   loglv00 1  
+              	000c75a20000d900000001213d056817.2   fslv00 1  
+----------------------
+hdisk3====>
+----------------------
+lqueryvg -Atp hdisk3
+----------------------
+Max LVs:      	512
+PP Size:      	26
+Free PPs:     	0
+LV count:     	2
+PV count:     	8
+Total VGDAs:  	8
+Conc Allowed: 	0
+MAX PPs per PV	1016
+MAX PVs:      	128
+Quorum (disk):	1
+Quorum (dd):  	1
+Auto Varyon ?:	1
+Conc Autovaryo	0
+Varied on Conc	0
+Logical:      	000c75a20000d900000001213d056817.1   loglv00 1  
+              	000c75a20000d900000001213d056817.2   fslv00 1  
+Physical:     	000c75a23d05549e                1   0  
+              	000c75a23d05576a                1   0  
+              	000c75a23d0559f3                1   0  
+              	000c75a23d055c8a                1   0  
+              	000c75a23d055f1e                1   0  
+              	000c75a23d0561b0                1   0  
+              	000c75a23d05644e                1   0  
+              	000c75a23d0566e9                1   0  
+Total PPs:    	6392
+LTG size:     	128
+HOT SPARE:    	0
+AUTO SYNC:    	0
+VG PERMISSION:	0
+SNAPSHOT VG:  	0
+IS_PRIMARY VG:	0
+PSNFSTPP:     	16128
+VARYON MODE:  	0
+VG Type:      	1
+Max PPs:      	130048
+----------------------
+lqueryvg -Ptp hdisk3
+----------------------
+Physical:     	000c75a23d05549e                1   0  
+              	000c75a23d05576a                1   0  
+              	000c75a23d0559f3                1   0  
+              	000c75a23d055c8a                1   0  
+              	000c75a23d055f1e                1   0  
+              	000c75a23d0561b0                1   0  
+              	000c75a23d05644e                1   0  
+              	000c75a23d0566e9                1   0  
+----------------------
+lqueryvg -Ltp hdisk3
+----------------------
+Logical:      	000c75a20000d900000001213d056817.1   loglv00 1  
+              	000c75a20000d900000001213d056817.2   fslv00 1  
+----------------------
+hdisk4====>
+----------------------
+lqueryvg -Atp hdisk4
+----------------------
+Max LVs:      	512
+PP Size:      	26
+Free PPs:     	0
+LV count:     	2
+PV count:     	8
+Total VGDAs:  	8
+Conc Allowed: 	0
+MAX PPs per PV	1016
+MAX PVs:      	128
+Quorum (disk):	1
+Quorum (dd):  	1
+Auto Varyon ?:	1
+Conc Autovaryo	0
+Varied on Conc	0
+Logical:      	000c75a20000d900000001213d056817.1   loglv00 1  
+              	000c75a20000d900000001213d056817.2   fslv00 1  
+Physical:     	000c75a23d05549e                1   0  
+              	000c75a23d05576a                1   0  
+              	000c75a23d0559f3                1   0  
+              	000c75a23d055c8a                1   0  
+              	000c75a23d055f1e                1   0  
+              	000c75a23d0561b0                1   0  
+              	000c75a23d05644e                1   0  
+              	000c75a23d0566e9                1   0  
+Total PPs:    	6392
+LTG size:     	128
+HOT SPARE:    	0
+AUTO SYNC:    	0
+VG PERMISSION:	0
+SNAPSHOT VG:  	0
+IS_PRIMARY VG:	0
+PSNFSTPP:     	16128
+VARYON MODE:  	0
+VG Type:      	1
+Max PPs:      	130048
+----------------------
+lqueryvg -Ptp hdisk4
+----------------------
+Physical:     	000c75a23d05549e                1   0  
+              	000c75a23d05576a                1   0  
+              	000c75a23d0559f3                1   0  
+              	000c75a23d055c8a                1   0  
+              	000c75a23d055f1e                1   0  
+              	000c75a23d0561b0                1   0  
+              	000c75a23d05644e                1   0  
+              	000c75a23d0566e9                1   0  
+----------------------
+lqueryvg -Ltp hdisk4
+----------------------
+Logical:      	000c75a20000d900000001213d056817.1   loglv00 1  
+              	000c75a20000d900000001213d056817.2   fslv00 1  
+----------------------
+hdisk5====>
+----------------------
+lqueryvg -Atp hdisk5
+----------------------
+Max LVs:      	512
+PP Size:      	26
+Free PPs:     	0
+LV count:     	2
+PV count:     	8
+Total VGDAs:  	8
+Conc Allowed: 	0
+MAX PPs per PV	1016
+MAX PVs:      	128
+Quorum (disk):	1
+Quorum (dd):  	1
+Auto Varyon ?:	1
+Conc Autovaryo	0
+Varied on Conc	0
+Logical:      	000c75a20000d900000001213d056817.1   loglv00 1  
+              	000c75a20000d900000001213d056817.2   fslv00 1  
+Physical:     	000c75a23d05549e                1   0  
+              	000c75a23d05576a                1   0  
+              	000c75a23d0559f3                1   0  
+              	000c75a23d055c8a                1   0  
+              	000c75a23d055f1e                1   0  
+              	000c75a23d0561b0                1   0  
+              	000c75a23d05644e                1   0  
+              	000c75a23d0566e9                1   0  
+Total PPs:    	6392
+LTG size:     	128
+HOT SPARE:    	0
+AUTO SYNC:    	0
+VG PERMISSION:	0
+SNAPSHOT VG:  	0
+IS_PRIMARY VG:	0
+PSNFSTPP:     	16128
+VARYON MODE:  	0
+VG Type:      	1
+Max PPs:      	130048
+----------------------
+lqueryvg -Ptp hdisk5
+----------------------
+Physical:     	000c75a23d05549e                1   0  
+              	000c75a23d05576a                1   0  
+              	000c75a23d0559f3                1   0  
+              	000c75a23d055c8a                1   0  
+              	000c75a23d055f1e                1   0  
+              	000c75a23d0561b0                1   0  
+              	000c75a23d05644e                1   0  
+              	000c75a23d0566e9                1   0  
+----------------------
+lqueryvg -Ltp hdisk5
+----------------------
+Logical:      	000c75a20000d900000001213d056817.1   loglv00 1  
+              	000c75a20000d900000001213d056817.2   fslv00 1  
+----------------------
+hdisk6====>
+----------------------
+lqueryvg -Atp hdisk6
+----------------------
+Max LVs:      	512
+PP Size:      	26
+Free PPs:     	0
+LV count:     	2
+PV count:     	8
+Total VGDAs:  	8
+Conc Allowed: 	0
+MAX PPs per PV	1016
+MAX PVs:      	128
+Quorum (disk):	1
+Quorum (dd):  	1
+Auto Varyon ?:	1
+Conc Autovaryo	0
+Varied on Conc	0
+Logical:      	000c75a20000d900000001213d056817.1   loglv00 1  
+              	000c75a20000d900000001213d056817.2   fslv00 1  
+Physical:     	000c75a23d05549e                1   0  
+              	000c75a23d05576a                1   0  
+              	000c75a23d0559f3                1   0  
+              	000c75a23d055c8a                1   0  
+              	000c75a23d055f1e                1   0  
+              	000c75a23d0561b0                1   0  
+              	000c75a23d05644e                1   0  
+              	000c75a23d0566e9                1   0  
+Total PPs:    	6392
+LTG size:     	128
+HOT SPARE:    	0
+AUTO SYNC:    	0
+VG PERMISSION:	0
+SNAPSHOT VG:  	0
+IS_PRIMARY VG:	0
+PSNFSTPP:     	16128
+VARYON MODE:  	0
+VG Type:      	1
+Max PPs:      	130048
+----------------------
+lqueryvg -Ptp hdisk6
+----------------------
+Physical:     	000c75a23d05549e                1   0  
+              	000c75a23d05576a                1   0  
+              	000c75a23d0559f3                1   0  
+              	000c75a23d055c8a                1   0  
+              	000c75a23d055f1e                1   0  
+              	000c75a23d0561b0                1   0  
+              	000c75a23d05644e                1   0  
+              	000c75a23d0566e9                1   0  
+----------------------
+lqueryvg -Ltp hdisk6
+----------------------
+Logical:      	000c75a20000d900000001213d056817.1   loglv00 1  
+              	000c75a20000d900000001213d056817.2   fslv00 1  
+----------------------
+hdisk7====>
+----------------------
+lqueryvg -Atp hdisk7
+----------------------
+Max LVs:      	512
+PP Size:      	26
+Free PPs:     	0
+LV count:     	2
+PV count:     	8
+Total VGDAs:  	8
+Conc Allowed: 	0
+MAX PPs per PV	1016
+MAX PVs:      	128
+Quorum (disk):	1
+Quorum (dd):  	1
+Auto Varyon ?:	1
+Conc Autovaryo	0
+Varied on Conc	0
+Logical:      	000c75a20000d900000001213d056817.1   loglv00 1  
+              	000c75a20000d900000001213d056817.2   fslv00 1  
+Physical:     	000c75a23d05549e                1   0  
+              	000c75a23d05576a                1   0  
+              	000c75a23d0559f3                1   0  
+              	000c75a23d055c8a                1   0  
+              	000c75a23d055f1e                1   0  
+              	000c75a23d0561b0                1   0  
+              	000c75a23d05644e                1   0  
+              	000c75a23d0566e9                1   0  
+Total PPs:    	6392
+LTG size:     	128
+HOT SPARE:    	0
+AUTO SYNC:    	0
+VG PERMISSION:	0
+SNAPSHOT VG:  	0
+IS_PRIMARY VG:	0
+PSNFSTPP:     	16128
+VARYON MODE:  	0
+VG Type:      	1
+Max PPs:      	130048
+----------------------
+lqueryvg -Ptp hdisk7
+----------------------
+Physical:     	000c75a23d05549e                1   0  
+              	000c75a23d05576a                1   0  
+              	000c75a23d0559f3                1   0  
+              	000c75a23d055c8a                1   0  
+              	000c75a23d055f1e                1   0  
+              	000c75a23d0561b0                1   0  
+              	000c75a23d05644e                1   0  
+              	000c75a23d0566e9                1   0  
+----------------------
+lqueryvg -Ltp hdisk7
+----------------------
+Logical:      	000c75a20000d900000001213d056817.1   loglv00 1  
+              	000c75a20000d900000001213d056817.2   fslv00 1  
+----------------------
+hdisk8====>
+----------------------
+lqueryvg -Atp hdisk8
+----------------------
+Max LVs:      	512
+PP Size:      	26
+Free PPs:     	0
+LV count:     	2
+PV count:     	8
+Total VGDAs:  	8
+Conc Allowed: 	0
+MAX PPs per PV	1016
+MAX PVs:      	128
+Quorum (disk):	1
+Quorum (dd):  	1
+Auto Varyon ?:	1
+Conc Autovaryo	0
+Varied on Conc	0
+Logical:      	000c75a20000d900000001213d056817.1   loglv00 1  
+              	000c75a20000d900000001213d056817.2   fslv00 1  
+Physical:     	000c75a23d05549e                1   0  
+              	000c75a23d05576a                1   0  
+              	000c75a23d0559f3                1   0  
+              	000c75a23d055c8a                1   0  
+              	000c75a23d055f1e                1   0  
+              	000c75a23d0561b0                1   0  
+              	000c75a23d05644e                1   0  
+              	000c75a23d0566e9                1   0  
+Total PPs:    	6392
+LTG size:     	128
+HOT SPARE:    	0
+AUTO SYNC:    	0
+VG PERMISSION:	0
+SNAPSHOT VG:  	0
+IS_PRIMARY VG:	0
+PSNFSTPP:     	16128
+VARYON MODE:  	0
+VG Type:      	1
+Max PPs:      	130048
+----------------------
+lqueryvg -Ptp hdisk8
+----------------------
+Physical:     	000c75a23d05549e                1   0  
+              	000c75a23d05576a                1   0  
+              	000c75a23d0559f3                1   0  
+              	000c75a23d055c8a                1   0  
+              	000c75a23d055f1e                1   0  
+              	000c75a23d0561b0                1   0  
+              	000c75a23d05644e                1   0  
+              	000c75a23d0566e9                1   0  
+----------------------
+lqueryvg -Ltp hdisk8
+----------------------
+Logical:      	000c75a20000d900000001213d056817.1   loglv00 1  
+              	000c75a20000d900000001213d056817.2   fslv00 1  

@@ -1,0 +1,652 @@
+-----------------------odmget -q & getlvodm -v---------------------
+---------------------------------
+dbvg====>
+---------------------------------
+odmget -q name=dbvg CuAt
+---------------------------------
+
+CuAt:
+	name = "dbvg"
+	attribute = "vgserial_id"
+	value = "000c75a20000d900000001213d056817"
+	type = "R"
+	generic = "D"
+	rep = "n"
+	nls_index = 637
+
+CuAt:
+	name = "dbvg"
+	attribute = "timestamp"
+	value = "530178680909329a"
+	type = "R"
+	generic = "DU"
+	rep = "s"
+	nls_index = 0
+
+CuAt:
+	name = "dbvg"
+	attribute = "pv"
+	value = "000c75a23d05549e0000000000000000"
+	type = "R"
+	generic = ""
+	rep = "sl"
+	nls_index = 0
+
+CuAt:
+	name = "dbvg"
+	attribute = "pv"
+	value = "000c75a23d05576a0000000000000000"
+	type = "R"
+	generic = ""
+	rep = "sl"
+	nls_index = 0
+
+CuAt:
+	name = "dbvg"
+	attribute = "pv"
+	value = "000c75a23d0559f30000000000000000"
+	type = "R"
+	generic = ""
+	rep = "sl"
+	nls_index = 0
+
+CuAt:
+	name = "dbvg"
+	attribute = "pv"
+	value = "000c75a23d055c8a0000000000000000"
+	type = "R"
+	generic = ""
+	rep = "sl"
+	nls_index = 0
+
+CuAt:
+	name = "dbvg"
+	attribute = "pv"
+	value = "000c75a23d055f1e0000000000000000"
+	type = "R"
+	generic = ""
+	rep = "sl"
+	nls_index = 0
+
+CuAt:
+	name = "dbvg"
+	attribute = "pv"
+	value = "000c75a23d0561b00000000000000000"
+	type = "R"
+	generic = ""
+	rep = "sl"
+	nls_index = 0
+
+CuAt:
+	name = "dbvg"
+	attribute = "pv"
+	value = "000c75a23d05644e0000000000000000"
+	type = "R"
+	generic = ""
+	rep = "sl"
+	nls_index = 0
+
+CuAt:
+	name = "dbvg"
+	attribute = "pv"
+	value = "000c75a23d0566e90000000000000000"
+	type = "R"
+	generic = ""
+	rep = "sl"
+	nls_index = 0
+---------------------------------
+odmget -q name=dbvg CuDep
+---------------------------------
+
+CuDep:
+	name = "dbvg"
+	dependency = "loglv00"
+
+CuDep:
+	name = "dbvg"
+	dependency = "fslv00"
+---------------------------------
+odmget -q name=dbvg CuAv
+---------------------------------
+---------------------------------
+odmget -q name=dbvg CuDvDr
+---------------------------------
+---------------------------------
+getlvodm -v dbvg
+---------------------------------
+000c75a20000d900000001213d056817
+---------------------------------
+rootvg====>
+---------------------------------
+odmget -q name=rootvg CuAt
+---------------------------------
+
+CuAt:
+	name = "rootvg"
+	attribute = "vgserial_id"
+	value = "000c75a20000d900000001206a17cdf9"
+	type = "R"
+	generic = "D"
+	rep = "n"
+	nls_index = 637
+
+CuAt:
+	name = "rootvg"
+	attribute = "timestamp"
+	value = "568f64223a9a11da"
+	type = "R"
+	generic = "DU"
+	rep = "s"
+	nls_index = 0
+
+CuAt:
+	name = "rootvg"
+	attribute = "pv"
+	value = "000c75a21a4e1d030000000000000000"
+	type = "R"
+	generic = ""
+	rep = "sl"
+	nls_index = 0
+---------------------------------
+odmget -q name=rootvg CuDep
+---------------------------------
+
+CuDep:
+	name = "rootvg"
+	dependency = "hd5"
+
+CuDep:
+	name = "rootvg"
+	dependency = "hd6"
+
+CuDep:
+	name = "rootvg"
+	dependency = "hd8"
+
+CuDep:
+	name = "rootvg"
+	dependency = "hd4"
+
+CuDep:
+	name = "rootvg"
+	dependency = "hd2"
+
+CuDep:
+	name = "rootvg"
+	dependency = "hd9var"
+
+CuDep:
+	name = "rootvg"
+	dependency = "hd3"
+
+CuDep:
+	name = "rootvg"
+	dependency = "hd1"
+
+CuDep:
+	name = "rootvg"
+	dependency = "hd10opt"
+
+CuDep:
+	name = "rootvg"
+	dependency = "lg_dumplv"
+
+CuDep:
+	name = "rootvg"
+	dependency = "cdlv"
+
+CuDep:
+	name = "rootvg"
+	dependency = "isolv"
+
+CuDep:
+	name = "rootvg"
+	dependency = "iso1lv"
+
+CuDep:
+	name = "rootvg"
+	dependency = "fslv01"
+---------------------------------
+odmget -q name=rootvg CuAv
+---------------------------------
+---------------------------------
+odmget -q name=rootvg CuDvDr
+---------------------------------
+---------------------------------
+getlvodm -v rootvg
+---------------------------------
+000c75a20000d900000001206a17cdf9
+-----------------------getlvodm -p---------------------
+---------------------------------
+hdisk0====>
+---------------------------------
+getlvodm -p hdisk0
+---------------------------------
+000c75a21a4e1d03
+---------------------------------
+hdisk1====>
+---------------------------------
+getlvodm -p hdisk1
+---------------------------------
+000c75a23d05549e
+---------------------------------
+hdisk2====>
+---------------------------------
+getlvodm -p hdisk2
+---------------------------------
+000c75a23d05576a
+---------------------------------
+hdisk3====>
+---------------------------------
+getlvodm -p hdisk3
+---------------------------------
+000c75a23d0559f3
+---------------------------------
+hdisk4====>
+---------------------------------
+getlvodm -p hdisk4
+---------------------------------
+000c75a23d055c8a
+---------------------------------
+hdisk5====>
+---------------------------------
+getlvodm -p hdisk5
+---------------------------------
+000c75a23d055f1e
+---------------------------------
+hdisk6====>
+---------------------------------
+getlvodm -p hdisk6
+---------------------------------
+000c75a23d0561b0
+---------------------------------
+hdisk7====>
+---------------------------------
+getlvodm -p hdisk7
+---------------------------------
+000c75a23d05644e
+---------------------------------
+hdisk8====>
+---------------------------------
+getlvodm -p hdisk8
+---------------------------------
+000c75a23d0566e9
+-----------------------getlvcb -AT---------------------
+---------------------------------
+loglv00====>
+---------------------------------
+getlvcb -AT loglv00
+---------------------------------
+	 AIX LVCB
+	 intrapolicy = m 
+	 copies = 1 
+	 interpolicy = m 
+	 lvid = 000c75a20000d900000001213d056817.1 
+	 lvname = loglv00 
+	 label = None 
+	 machine id = C75A2D900 
+	 number lps = 1 
+	 relocatable = y 
+	 strict = y 
+	 stripe width = 0 
+	 stripe size in exponent = 0 
+	 type = jfs2log 
+	 upperbound = 128 
+	 fs =  
+	 time created  = Thu May 14 10:58:08 2009
+ 	 time modified = Thu May 14 10:58:08 2009
+ 
+---------------------------------
+fslv00====>
+---------------------------------
+getlvcb -AT fslv00
+---------------------------------
+	 AIX LVCB
+	 intrapolicy = m 
+	 copies = 1 
+	 interpolicy = m 
+	 lvid = 000c75a20000d900000001213d056817.2 
+	 lvname = fslv00 
+	 label = /data 
+	 machine id = C75A2D900 
+	 number lps = 6391 
+	 relocatable = y 
+	 strict = y 
+	 stripe width = 0 
+	 stripe size in exponent = 0 
+	 type = jfs2 
+	 upperbound = 128 
+	 fs = vfs=jfs2:log=/dev/loglv00:mount=true:options=rw:account=false 
+	 time created  = Thu May 14 10:58:08 2009
+ 	 time modified = Mon Aug 17 10:12:21 2015
+ 
+---------------------------------
+hd5====>
+---------------------------------
+getlvcb -AT hd5
+---------------------------------
+	 AIX LVCB
+	 intrapolicy = e 
+	 copies = 1 
+	 interpolicy = m 
+	 lvid = 000c75a20000d900000001206a17cdf9.1 
+	 lvname = hd5 
+	 label = primary_bootlv 
+	 machine id = C75A2D900 
+	 number lps = 1 
+	 relocatable = y 
+	 strict = y 
+	 stripe width = 0 
+	 stripe size in exponent = 0 
+	 type = boot 
+	 upperbound = 32 
+	 fs =  
+	 time created  = Fri Apr  3 03:49:04 2009
+ 	 time modified = Fri Jan  8 15:20:18 2016
+ 
+---------------------------------
+hd6====>
+---------------------------------
+getlvcb -AT hd6
+---------------------------------
+	 AIX LVCB
+	 intrapolicy = m 
+	 copies = 1 
+	 interpolicy = m 
+	 lvid = 000c75a20000d900000001206a17cdf9.2 
+	 lvname = hd6 
+	 label = None 
+	 machine id = C75A2D900 
+	 number lps = 16 
+	 relocatable = y 
+	 strict = y 
+	 stripe width = 0 
+	 stripe size in exponent = 0 
+	 type = paging 
+	 upperbound = 32 
+	 fs =  
+	 time created  = Fri Apr  3 03:49:17 2009
+ 	 time modified = Sat May 16 09:01:36 2009
+ 
+---------------------------------
+hd8====>
+---------------------------------
+getlvcb -AT hd8
+---------------------------------
+	 AIX LVCB
+	 intrapolicy = c 
+	 copies = 1 
+	 interpolicy = m 
+	 lvid = 000c75a20000d900000001206a17cdf9.3 
+	 lvname = hd8 
+	 label = None 
+	 machine id = C75A2D900 
+	 number lps = 1 
+	 relocatable = y 
+	 strict = y 
+	 stripe width = 0 
+	 stripe size in exponent = 0 
+	 type = jfs2log 
+	 upperbound = 32 
+	 fs =  
+	 time created  = Fri Apr  3 03:49:32 2009
+ 	 time modified = Fri Apr  3 03:49:32 2009
+ 
+---------------------------------
+hd4====>
+---------------------------------
+getlvcb -AT hd4
+---------------------------------
+	 AIX LVCB
+	 intrapolicy = c 
+	 copies = 1 
+	 interpolicy = m 
+	 lvid = 000c75a20000d900000001206a17cdf9.4 
+	 lvname = hd4 
+	 label = / 
+	 machine id = C75A2D900 
+	 number lps = 3 
+	 relocatable = y 
+	 strict = y 
+	 stripe width = 0 
+	 stripe size in exponent = 0 
+	 type = jfs2 
+	 upperbound = 32 
+	 fs =  
+	 time created  = Fri Apr  3 03:49:45 2009
+ 	 time modified = Thu Apr 23 03:42:11 2009
+ 
+---------------------------------
+hd2====>
+---------------------------------
+getlvcb -AT hd2
+---------------------------------
+	 AIX LVCB
+	 intrapolicy = c 
+	 copies = 1 
+	 interpolicy = m 
+	 lvid = 000c75a20000d900000001206a17cdf9.5 
+	 lvname = hd2 
+	 label = /usr 
+	 machine id = C75A2D900 
+	 number lps = 8 
+	 relocatable = y 
+	 strict = y 
+	 stripe width = 0 
+	 stripe size in exponent = 0 
+	 type = jfs2 
+	 upperbound = 32 
+	 fs =  
+	 time created  = Fri Apr  3 03:49:58 2009
+ 	 time modified = Fri Sep 18 16:12:12 2009
+ 
+---------------------------------
+hd9var====>
+---------------------------------
+getlvcb -AT hd9var
+---------------------------------
+	 AIX LVCB
+	 intrapolicy = c 
+	 copies = 1 
+	 interpolicy = m 
+	 lvid = 000c75a20000d900000001206a17cdf9.6 
+	 lvname = hd9var 
+	 label = /var 
+	 machine id = C75A2D900 
+	 number lps = 4 
+	 relocatable = y 
+	 strict = y 
+	 stripe width = 0 
+	 stripe size in exponent = 0 
+	 type = jfs2 
+	 upperbound = 32 
+	 fs =  
+	 time created  = Fri Apr  3 03:50:12 2009
+ 	 time modified = Mon Sep 21 15:06:28 2009
+ 
+---------------------------------
+hd3====>
+---------------------------------
+getlvcb -AT hd3
+---------------------------------
+	 AIX LVCB
+	 intrapolicy = c 
+	 copies = 1 
+	 interpolicy = m 
+	 lvid = 000c75a20000d900000001206a17cdf9.7 
+	 lvname = hd3 
+	 label = /tmp 
+	 machine id = C75A2D900 
+	 number lps = 4 
+	 relocatable = y 
+	 strict = y 
+	 stripe width = 0 
+	 stripe size in exponent = 0 
+	 type = jfs2 
+	 upperbound = 32 
+	 fs =  
+	 time created  = Fri Apr  3 03:50:25 2009
+ 	 time modified = Fri Sep 18 16:40:33 2009
+ 
+---------------------------------
+hd1====>
+---------------------------------
+getlvcb -AT hd1
+---------------------------------
+	 AIX LVCB
+	 intrapolicy = c 
+	 copies = 1 
+	 interpolicy = m 
+	 lvid = 000c75a20000d900000001206a17cdf9.8 
+	 lvname = hd1 
+	 label = /home 
+	 machine id = C75A2D900 
+	 number lps = 660 
+	 relocatable = y 
+	 strict = y 
+	 stripe width = 0 
+	 stripe size in exponent = 0 
+	 type = jfs2 
+	 upperbound = 32 
+	 fs =  
+	 time created  = Fri Apr  3 03:50:40 2009
+ 	 time modified = Fri Jan  8 15:24:19 2016
+ 
+---------------------------------
+hd10opt====>
+---------------------------------
+getlvcb -AT hd10opt
+---------------------------------
+	 AIX LVCB
+	 intrapolicy = c 
+	 copies = 1 
+	 interpolicy = m 
+	 lvid = 000c75a20000d900000001206a17cdf9.9 
+	 lvname = hd10opt 
+	 label = /opt 
+	 machine id = C75A2D900 
+	 number lps = 3 
+	 relocatable = y 
+	 strict = y 
+	 stripe width = 0 
+	 stripe size in exponent = 0 
+	 type = jfs2 
+	 upperbound = 32 
+	 fs =  
+	 time created  = Fri Apr  3 03:50:53 2009
+ 	 time modified = Thu Apr 23 03:37:57 2009
+ 
+---------------------------------
+lg_dumplv====>
+---------------------------------
+getlvcb -AT lg_dumplv
+---------------------------------
+	 AIX LVCB
+	 intrapolicy = m 
+	 copies = 1 
+	 interpolicy = m 
+	 lvid = 000c75a20000d900000001206a17cdf9.10 
+	 lvname = lg_dumplv 
+	 label = None 
+	 machine id = C75A2D900 
+	 number lps = 4 
+	 relocatable = y 
+	 strict = y 
+	 stripe width = 0 
+	 stripe size in exponent = 0 
+	 type = sysdump 
+	 upperbound = 32 
+	 fs =  
+	 time created  = Fri Apr  3 05:06:42 2009
+ 	 time modified = Thu Jul  7 08:20:51 2011
+ 
+---------------------------------
+cdlv====>
+---------------------------------
+getlvcb -AT cdlv
+---------------------------------
+	 
+	 intrapolicy =   
+	 copies = 1 
+	 interpolicy =   
+	 lvid =  
+	 lvname =  
+	 label =  
+	 machine id =  
+	 number lps = 2 
+	 relocatable =   
+	 strict =   
+	 stripe width = 0 
+	 stripe size in exponent = 0 
+	 type =  
+	 upperbound = 0 
+	 fs =  
+	 time created  =  	 time modified =  
+---------------------------------
+isolv====>
+---------------------------------
+getlvcb -AT isolv
+---------------------------------
+	 
+	 intrapolicy =   
+	 copies = 1 
+	 interpolicy =   
+	 lvid =  
+	 lvname =  
+	 label =  
+	 machine id =  
+	 number lps = 6 
+	 relocatable =   
+	 strict =   
+	 stripe width = 0 
+	 stripe size in exponent = 0 
+	 type =  
+	 upperbound = 0 
+	 fs =  
+	 time created  =  	 time modified =  
+---------------------------------
+iso1lv====>
+---------------------------------
+getlvcb -AT iso1lv
+---------------------------------
+	 
+	 intrapolicy =   
+	 copies = 1 
+	 interpolicy =   
+	 lvid =  
+	 lvname =  
+	 label =  
+	 machine id =  
+	 number lps = 6 
+	 relocatable =   
+	 strict =   
+	 stripe width = 0 
+	 stripe size in exponent = 0 
+	 type =  
+	 upperbound = 0 
+	 fs =  
+	 time created  =  	 time modified =  
+---------------------------------
+fslv01====>
+---------------------------------
+getlvcb -AT fslv01
+---------------------------------
+	 AIX LVCB
+	 intrapolicy = m 
+	 copies = 1 
+	 interpolicy = m 
+	 lvid = 000c75a20000d900000001206a17cdf9.14 
+	 lvname = fslv01 
+	 label = /iso 
+	 machine id = C75A2D900 
+	 number lps = 20 
+	 relocatable = y 
+	 strict = y 
+	 stripe width = 0 
+	 stripe size in exponent = 0 
+	 type = jfs2 
+	 upperbound = 32 
+	 fs = vfs=jfs2:log=/dev/hd8:options=rw:account=false 
+	 time created  = Tue Dec 30 11:08:59 2014
+ 	 time modified = Tue Dec 30 12:16:36 2014
+ 
