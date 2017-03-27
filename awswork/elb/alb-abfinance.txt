@@ -1,0 +1,4 @@
+aws elbv2 describe-load-balancers --query 'LoadBalancers[].[LoadBalancerArn,LoadBalancerName]' --output text --profile abf-aws 
+
+arn:aws-cn:elasticloadbalancing:cn-north-1:530545868767:loadbalancer/app/alb-abfinance-lcb/77646289900360f2     alb-abfinance-lcb
+arn:aws-cn:elasticloadbalancing:cn-north-1:530545868767:loadbalancer/app/alb-abfinance-top20/bf9969ff3c379e37   alb-abfinance-top20
