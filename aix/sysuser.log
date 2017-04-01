@@ -1,0 +1,91 @@
+for i in $(awk -F: '{print $1}' /etc/passwd|sed "s/$/:/g"); do echo "$i====>"; cat /etc/security/passwd|sed -n "/$i/{n;p}"; cat /etc/passwd|grep "$i"|awk -F: '{print $6}'; done 
+root:====>
+        password = e7MaRJp.ESZ7s
+/root
+daemon:====>
+        password = *
+/etc
+bin:====>
+        password = *
+/bin
+sys:====>
+        password = *
+/usr/sys
+adm:====>
+        password = *
+/var/adm
+uucp:====>
+        password = *
+/usr/lib/uucp
+/var/spool/uucppublic
+guest:====>
+        password = *
+/home/guest
+nobody:====>
+        password = *
+/
+lpd:====>
+        password = *
+/
+lp:====>
+/var/spool/lp
+invscout:====>
+/var/adm/invscout
+snapp:====>
+/usr/sbin/snapp
+nuucp:====>
+/var/spool/uucppublic
+ipsec:====>
+/etc/ipsec
+esaadmin:====>
+/var/esa
+sshd:====>
+/var/empty
+oracle:====>
+        password = Kh5au/DRu0DzQ
+/home/oracle
+beaadmin:====>
+/home/beaadmin
+bea1:====>
+        password = FTHV4lgszBPN6
+/home/bea1
+nagios:====>
+/home/nagios
+essbase:====>
+        password = SIMSwcDDoxU4k
+/home/essbase
+bea2:====>
+        password = vaceautJQ046A
+/home/bea2
+bea3:====>
+        password = VYVLYJMsKsa7Q
+/home/bea3
+bea4:====>
+        password = q0nqwZIzesH6E
+/home/bea4
+bea5:====>
+        password = EM5J7ppZTN5qs
+/home/bea5
+haijiang:====>
+        password = J5fH3f2wHx7nU
+/home/haijiang
+cognos:====>
+        password =              xvj./IR7t.YUc
+/home/cognos
+bea6:====>
+        password = 4wxqIAZcWVF8U
+/home/bea6
+cognos1:====>
+        password = UaNLyBUs7Az3k
+/home/cognos1
+bea7:====>
+/home/bea7
+pde:====>
+        password = OD/ZNEeMmHQE6
+/home/bea3/upload
+bea10:====>
+        password = ALCv5vVnCAl0Y
+/home/weblogic10
+Cogtr:====>
+        password = leLMN0xIMefq.
+/home/Cogtr

@@ -1,0 +1,33 @@
+root:!:0:0::/root:/usr/bin/bash
+daemon:!:1:1::/etc:
+bin:!:2:2::/bin:
+sys:!:3:3::/usr/sys:
+adm:!:4:4::/var/adm:
+uucp:!:5:5::/usr/lib/uucp:
+guest:!:100:100::/home/guest:
+nobody:!:4294967294:4294967294::/:
+lpd:!:9:4294967294::/:
+lp:*:11:11::/var/spool/lp:/bin/false
+invscout:*:6:12::/var/adm/invscout:/usr/bin/ksh
+snapp:*:200:13:snapp login user:/usr/sbin/snapp:/usr/sbin/snappd
+nuucp:*:7:5:uucp login user:/var/spool/uucppublic:/usr/sbin/uucp/uucico
+ipsec:*:201:1::/etc/ipsec:/usr/bin/ksh
+esaadmin:*:8:0::/var/esa:/usr/bin/ksh
+sshd:*:202:201::/var/empty:/usr/bin/ksh
+oracle:!:601:600::/home/oracle:/usr/bin/bash
+beaadmin:*:701:700::/home/beaadmin:/usr/bin/bash
+bea1:!:702:700::/home/bea1:/usr/bin/bash
+nagios:*:203:204::/home/nagios:/usr/bin/bash
+essbase:!:801:800::/home/essbase:/usr/bin/bash
+bea2:!:703:700::/home/bea2:/usr/bin/bash
+bea3:!:704:700::/home/bea3:/usr/bin/bash
+bea4:!:705:700::/home/bea4:/usr/bin/bash
+bea5:!:706:700::/home/bea5:/usr/bin/bash
+haijiang:!:205:1::/home/haijiang:/usr/bin/bash
+cognos:!:350:600::/home/cognos:/usr/bin/bash
+bea6:!:709:1::/home/bea6:/usr/bin/bash
+cognos1:!:207:600::/home/cognos1:/usr/bin/bash
+bea7:*:710:700::/home/bea7:/usr/bin/bash
+pde:!:209:700::/home/bea3/upload:/usr/bin/bash
+bea10:!:720:700::/home/weblogic10:/usr/bin/bash
+Cogtr:!:211:600::/home/Cogtr:/usr/bin/bash
