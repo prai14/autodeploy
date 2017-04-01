@@ -1,0 +1,533 @@
+/opt/freeware/lib:[root]# ifconfig -a
+en0: flags=1e080863,c0<UP,BROADCAST,NOTRAILERS,RUNNING,SIMPLEX,MULTICAST,GROUPRT,64BIT,CHECKSUM_OFFLOAD(ACTIVE),LARGESEND,CHAIN>
+        inet 10.3.0.18 netmask 0xffffff00 broadcast 10.3.0.255
+         tcp_sendspace 131072 tcp_recvspace 65536 rfc1323 0
+lo0: flags=e08084b<UP,BROADCAST,LOOPBACK,RUNNING,SIMPLEX,MULTICAST,GROUPRT,64BIT>
+        inet 127.0.0.1 netmask 0xff000000 broadcast 127.255.255.255
+        inet6 ::1/0
+         tcp_sendspace 131072 tcp_recvspace 131072 rfc1323 1
+
+/opt/freeware/lib:[root]# ls -lrt
+total 3584
+-rwxr-xr-x    1 root     system       374612 Jan 09 2008  libintl.a
+-rwxr-xr-x    1 root     system       271724 Jan 09 2008  libz.a
+-rwxr-xr-x    1 root     system        46789 Jan 09 2008  libpopt.so.0.0.0
+-rwxr-xr-x    1 root     system       174931 Jan 09 2008  librpmbuild.so.0.0.0
+-rwxr-xr-x    1 root     system       953028 Jan 09 2008  librpm.so.0.0.0
+drwxr-xr-x    2 root     system         4096 Jan 12 2008  rpm
+drwxr-xr-x    3 root     system          256 Mar 25 2008  gcc
+lrwxrwxrwx    1 root     system            9 Apr 03 2009  rpmrc -> rpm/rpmrc
+lrwxrwxrwx    1 root     system           20 Apr 03 2009  librpmbuild.so.0 -> librpmbuild.so.0.0.0
+lrwxrwxrwx    1 root     system           20 Apr 03 2009  librpmbuild.so -> librpmbuild.so.0.0.0
+lrwxrwxrwx    1 root     system           15 Apr 03 2009  librpm.so.0 -> librpm.so.0.0.0
+lrwxrwxrwx    1 root     system           15 Apr 03 2009  librpm.so -> librpm.so.0.0.0
+lrwxrwxrwx    1 root     system           16 Apr 03 2009  libpopt.so.0 -> libpopt.so.0.0.0
+lrwxrwxrwx    1 root     system           16 Apr 03 2009  libpopt.so -> libpopt.so.0.0.0
+lrwxrwxrwx    1 root     system           11 Apr 03 2009  rpmpopt -> rpm/rpmpopt
+
+/root:[root]# ldd /opt/freeware/bin/rpm
+/opt/freeware/bin/rpm needs:
+         /opt/freeware/lib/librpmbuild.so
+         /opt/freeware/lib/libintl.a(libintl.so.1)
+         /opt/freeware/lib/librpm.so
+         /opt/freeware/lib/libpopt.so
+         /usr/lib/libc.a(shr.o)
+         /usr/lib/librtl.a(shr.o)
+         /usr/lib/libiconv.a(shr4.o)
+         /opt/freeware/lib/libz.a(libz.so.1)
+Cannot find      /unix
+         /usr/lib/libcrypt.a(shr.o)
+/root:[root]# pwd
+/root
+/root:[root]# rpm 
+exec(): 0509-036 Cannot load program /opt/freeware/bin/rpm because of the following errors:
+        0509-022 Cannot load module /opt/freeware/lib/librpm.so.
+        0509-150   Dependent module libbz2.a(libbz2.so.1) could not be loaded.
+        0509-022 Cannot load module libbz2.a(libbz2.so.1).
+        0509-026 System error: A file or directory in the path name does not exist.
+        0509-022 Cannot load module rpm.
+        0509-150   Dependent module /opt/freeware/lib/librpm.so could not be loaded.
+        0509-022 Cannot load module .
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+# find / -name rpm -print
+/var/lib/rpm
+/var/opt/freeware/lib/rpm
+/opt/freeware/bin/rpm
+/opt/freeware/lib/rpm
+/usr/lpp/rpm.rte/inst_root/etc/rpm
+/usr/lib/rpm
+/usr/bin/rpm
+/etc/rpm
+find: 0652-023 Cannot open file /proc/192770.
+find: 0652-023 Cannot open file /proc/758222.
+find: 0652-023 Cannot open file /proc/1348046.
+find: 0652-023 Cannot open file /proc/1360310.
+
+# cd /opt/           
+# ls -lrt
+total 24
+drwxrwxr-x    3 bin      bin             256 Jul 13 2004  eclipse2
+drwxrwxr-x    3 root     system          256 Apr 24 2007  IBM
+drwxrwxr-x    7 bin      bin             256 Oct 06 2007  LicenseUseManagement
+drwxrwxr-x    4 root     system          256 Oct 25 2007  IBMinvscout
+drwxrwxr-x    8 bin      bin             256 Mar 06 2008  diagnostics
+drwxrwxr-x    2 root     system          256 Jul 29 2009  lost+found
+drwxrwxr-x    3 root     system          256 Jul 29 2009  perl
+drwxrwxr-x    3 root     system          256 Jul 29 2009  cam
+drwxrwxr-x   12 bin      bin            4096 Jul 29 2009  csm
+drwxrwxr-x    3 root     system          256 Jul 29 2009  Tivoli
+drwxrwxr-x    3 root     system          256 Jul 29 2009  hsc
+drwxrwxr-x    4 root     sys            4096 Jul 29 2009  perfwb
+drwxrwxr-x    2 oracle   dba             256 Jul 30 2009  oracle
+drwxr-xr-x    5 root     system          256 Jul 30 2009  ORCLcluster
+drwxrwxr-x   11 root     system         4096 Aug 27 2009  freeware
+drwxr-xr-x    4 root     system          256 Dec 10 2011  ORCLfmap
+
+# cd freeware
+# ls -lrt
+total 16
+drwxrwxr-x    3 root     system          256 Jan 12 2008  src
+drwxrwxr-x    4 root     system          256 Jan 12 2008  man
+drwxrwxr-x    3 root     system          256 Jul 29 2009  share
+drwxrwxr-x    2 root     system          256 Jul 29 2009  packages
+drwxrwxr-x    4 root     system         4096 Aug 27 2009  lib
+drwxrwxr-x    2 root     system          256 Aug 27 2009  info
+drwxr-xr-x    3 root     system          256 Aug 27 2009  libexec
+drwxrwxr-x   10 root     system          256 Feb 08 2014  doc
+drwxrwxr-x    2 root     system         4096 Feb 08 2014  bin
+# cd lib
+# ls -lrt
+total 3936
+-rwxrwxr-x    1 root     system       178008 Jan 09 2008  libbz2.a
+-rwxrwxr-x    1 root     system       374612 Jan 09 2008  libintl.a
+-rwxrwxr-x    1 root     system       271724 Jan 09 2008  libz.a
+-rwxrwxr-x    1 root     system        46789 Jan 09 2008  libpopt.so.0.0.0
+-rwxrwxr-x    1 root     system       174931 Jan 09 2008  librpmbuild.so.0.0.0
+-rwxrwxr-x    1 root     system       953028 Jan 09 2008  librpm.so.0.0.0
+drwxrwxr-x    2 root     system         4096 Jan 12 2008  rpm
+drwxr-xr-x    3 root     system          256 Mar 25 2008  gcc
+lrwxrwxrwx    1 root     system            9 Jul 29 2009  rpmrc -> rpm/rpmrc
+lrwxrwxrwx    1 root     system           20 Jul 29 2009  librpmbuild.so.0 -> librpmbuild.so.0.0.0
+lrwxrwxrwx    1 root     system           20 Jul 29 2009  librpmbuild.so -> librpmbuild.so.0.0.0
+lrwxrwxrwx    1 root     system           15 Jul 29 2009  librpm.so.0 -> librpm.so.0.0.0
+lrwxrwxrwx    1 root     system           15 Jul 29 2009  librpm.so -> librpm.so.0.0.0
+lrwxrwxrwx    1 root     system           16 Jul 29 2009  libpopt.so.0 -> libpopt.so.0.0.0
+lrwxrwxrwx    1 root     system           16 Jul 29 2009  libpopt.so -> libpopt.so.0.0.0
+lrwxrwxrwx    1 root     system           11 Jul 29 2009  rpmpopt -> rpm/rpmpopt
+# scp libbz2.a 10.3.0.18:/normal/
+The authenticity of host '10.3.0.18 (10.3.0.18)' can't be established.
+ RSA key fingerprint is e6:ba:56:31:bc:47:de:56:28:86:5e:39:a1:33:44:86.
+ Are you sure you want to continue connecting (yes/no)?yes
+Warning: Permanently added '10.3.0.18' (RSA) to the list of known hosts.
+root@10.3.0.18's password: 
+libbz2.a                                                                                          100%  174KB 173.8KB/s   00:00    
+# pwd
+/opt/freeware/lib
+# ifconfig -a
+en0: flags=5e080863,c0<UP,BROADCAST,NOTRAILERS,RUNNING,SIMPLEX,MULTICAST,GROUPRT,64BIT,CHECKSUM_OFFLOAD(ACTIVE),PSEG,LARGESEND,CHAIN>
+        inet 10.2.0.28 netmask 0xffffff00 broadcast 10.2.0.255
+         tcp_sendspace 131072 tcp_recvspace 65536 rfc1323 0
+en1: flags=1e080863,c0<UP,BROADCAST,NOTRAILERS,RUNNING,SIMPLEX,MULTICAST,GROUPRT,64BIT,CHECKSUM_OFFLOAD(ACTIVE),LARGESEND,CHAIN>
+        inet 192.168.10.4 netmask 0xffffff00 broadcast 192.168.10.255
+         tcp_sendspace 131072 tcp_recvspace 65536 rfc1323 0
+lo0: flags=e08084b<UP,BROADCAST,LOOPBACK,RUNNING,SIMPLEX,MULTICAST,GROUPRT,64BIT>
+        inet 127.0.0.1 netmask 0xff000000 broadcast 127.255.255.255
+        inet6 ::1/0
+         tcp_sendspace 131072 tcp_recvspace 131072 rfc1323 1
+# 
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+*******************************************************************************
+*                                                                             *
+*                                                                             *
+*  Welcome to AIX Version 5.3!                                                *
+*                                                                             *
+*                                                                             *
+*  Please see the README file in /usr/lpp/bos for information pertinent to    *
+*  this release of the AIX Operating System.                                  *
+*                                                                             *
+*                                                                             *
+*******************************************************************************
+/root:[root]# cd normal
+-bash: cd: normal: A file or directory in the path name does not exist.
+/root:[root]# ls -lrt
+total 152
+-rwxr-xr-x    1 root     system         3970 Apr 23 2009  .dtprofile
+drwx------    2 root     system          256 Apr 25 2009  .ssh
+-rw-rw-r--    1 root     system            3 Jun 05 2010  .wmrc
+-rw-------    1 root     system          147 Jun 05 2010  .Xauthority
+-rw-------    1 root     system          142 Jun 05 2010  .TTauthority
+drwxr-xr-x   10 root     system         4096 Jun 05 2010  .dt
+drwxr-xr-x    3 root     system          256 Jun 10 2010  .java
+-rw-------    1 root     system        11656 Mar 16 09:38 .sh_history
+-rw-------    1 root     system        14075 Mar 29 15:24 .lsof_bitest
+-rw-------    1 root     system         2686 Mar 29 17:05 .bash_history
+-rw-r--r--    1 root     system         1580 Mar 29 17:18 smit.transaction
+-rw-r--r--    1 root     system         1183 Mar 29 17:18 smit.script
+-rw-r--r--    1 root     system        11666 Mar 29 17:18 smit.log
+-rw-------    1 root     system          417 Mar 29 17:20 .vi_history
+/root:[root]# cd /normal/
+/normal:[root]# ls -lrt
+total 112
+-rw-r--r--    1 root     system        13466 Mar 24 10:19 odm-info-10.3.0.18
+-rw-r--r--    1 root     system          532 Mar 24 10:29 query-vgda-info.sh
+-rw-r--r--    1 root     system         1625 Mar 24 10:30 get-odm-info.sh
+-rw-r--r--    1 root     system        14590 Mar 24 10:31 vgda-info-10.3.0.18
+drwxr-xr-x    2 root     system         4096 Mar 29 14:03 aix53lt
+drwxr-xr-x    2 root     system         4096 Mar 29 14:03 aix61lt
+-rw-r--r--    1 root     system         4597 Mar 29 17:20 linux-bash-tools.sh
+/normal:[root]# cd aix53lt/
+/normal/aix53lt:[root]# ls -lrt
+total 9632
+-rw-r--r--    1 root     system      1598616 Mar 16 09:27 bash-4.2-2.aix5.3.ppc.rpm
+-rw-r--r--    1 root     system       800528 Mar 29 09:08 rpm-3.0.5-52.aix5.3.ppc.rpm
+-rw-r--r--    1 root     system       156854 Mar 29 10:16 unzip-5.51-1.aix5.1.ppc.rpm
+-rw-r--r--    1 root     system       124474 Mar 29 10:22 zip-2.3-3.aix4.3.ppc.rpm
+-rw-r--r--    1 root     system       182389 Mar 29 10:41 bzip2-1.0.5-3.aix5.3.ppc.rpm
+-rw-r--r--    1 root     system        75371 Mar 29 10:48 gzip-1.2.4a-9.aix5.1.ppc.rpm
+-rw-r--r--    1 root     system       226074 Mar 29 11:51 curl-7.9.3-2.aix4.3.ppc.rpm
+-rw-r--r--    1 root     system        39862 Mar 29 11:51 curl-devel-7.9.3-2.aix4.3.ppc.rpm
+-rw-r--r--    1 root     system      1378777 Mar 29 13:58 yum-3.4.3-1.aix6.1.noarch.rpm
+-rw-r--r--    1 root     system       326845 Mar 29 14:09 lsof-4.61-3.aix5.2.ppc.rpm
+/normal/aix53lt:[root]# wpd
+-bash: wpd: command not found
+/normal/aix53lt:[root]# rpm -ivh unzip-5.51-1.aix5.1.ppc.rpm 
+exec(): 0509-036 Cannot load program /opt/freeware/bin/rpm because of the following errors:
+        0509-022 Cannot load module /opt/freeware/lib/librpm.so.
+        0509-150   Dependent module libbz2.a(libbz2.so.1) could not be loaded.
+        0509-022 Cannot load module libbz2.a(libbz2.so.1).
+        0509-026 System error: A file or directory in the path name does not exist.
+        0509-022 Cannot load module rpm.
+        0509-150   Dependent module /opt/freeware/lib/librpm.so could not be loaded.
+        0509-022 Cannot load module .
+/normal/aix53lt:[root]# find / -name librpm.so -print 
+/opt/freeware/lib/librpm.so
+/usr/lib/librpm.so
+find: 0652-023 Cannot open file /proc/729306.
+/normal/aix53lt:[root]# find / -name libbz2.so.1 -print 
+find: 0652-023 Cannot open file /proc/729306.
+/normal/aix53lt:[root]# rpm -ivh bzip2-1.0.5-3.aix5.3.ppc.rpm 
+exec(): 0509-036 Cannot load program /opt/freeware/bin/rpm because of the following errors:
+        0509-022 Cannot load module /opt/freeware/lib/librpm.so.
+        0509-150   Dependent module libbz2.a(libbz2.so.1) could not be loaded.
+        0509-022 Cannot load module libbz2.a(libbz2.so.1).
+        0509-026 System error: A file or directory in the path name does not exist.
+        0509-022 Cannot load module rpm.
+        0509-150   Dependent module /opt/freeware/lib/librpm.so could not be loaded.
+        0509-022 Cannot load module .
+/normal/aix53lt:[root]# clear
+/normal/aix53lt:[root]# find / -name librpm.so -print 
+/opt/freeware/lib/librpm.so
+/usr/lib/librpm.so
+find: 0652-023 Cannot open file /proc/729306.
+/normal/aix53lt:[root]# find / -name libbz2.so.1 -print 
+find: 0652-023 Cannot open file /proc/729306.
+/normal/aix53lt:[root]# cd /opt/freeware/lib/
+/opt/freeware/lib:[root]# ls -lrt
+total 3584
+-rwxr-xr-x    1 root     system       374612 Jan 09 2008  libintl.a
+-rwxr-xr-x    1 root     system       271724 Jan 09 2008  libz.a
+-rwxr-xr-x    1 root     system        46789 Jan 09 2008  libpopt.so.0.0.0
+-rwxr-xr-x    1 root     system       174931 Jan 09 2008  librpmbuild.so.0.0.0
+-rwxr-xr-x    1 root     system       953028 Jan 09 2008  librpm.so.0.0.0
+drwxr-xr-x    2 root     system         4096 Jan 12 2008  rpm
+drwxr-xr-x    3 root     system          256 Mar 25 2008  gcc
+lrwxrwxrwx    1 root     system            9 Apr 03 2009  rpmrc -> rpm/rpmrc
+lrwxrwxrwx    1 root     system           20 Apr 03 2009  librpmbuild.so.0 -> librpmbuild.so.0.0.0
+lrwxrwxrwx    1 root     system           20 Apr 03 2009  librpmbuild.so -> librpmbuild.so.0.0.0
+lrwxrwxrwx    1 root     system           15 Apr 03 2009  librpm.so.0 -> librpm.so.0.0.0
+lrwxrwxrwx    1 root     system           15 Apr 03 2009  librpm.so -> librpm.so.0.0.0
+lrwxrwxrwx    1 root     system           16 Apr 03 2009  libpopt.so.0 -> libpopt.so.0.0.0
+lrwxrwxrwx    1 root     system           16 Apr 03 2009  libpopt.so -> libpopt.so.0.0.0
+lrwxrwxrwx    1 root     system           11 Apr 03 2009  rpmpopt -> rpm/rpmpopt
+/opt/freeware/lib:[root]# ls -l /usr/lib/librpm.so
+lrwxrwxrwx    1 root     system           37 Apr 03 2009  /usr/lib/librpm.so -> /usr/opt/freeware/lib/librpm.so.0.0.0
+/opt/freeware/lib:[root]# unzip
+-bash: unzip: command not found
+/opt/freeware/lib:[root]# zip
+Copyright (C) 1990-1999 Info-ZIP
+Type 'zip "-L"' for software license.
+Zip 2.3 (November 29th 1999). Usage:
+zip [-options] [-b path] [-t mmddyyyy] [-n suffixes] [zipfile list] [-xi list]
+  The default action is to add or replace zipfile entries from list, which
+  can include the special name - to compress standard input.
+  If zipfile and list are omitted, zip compresses stdin to stdout.
+  -f   freshen: only changed files  -u   update: only changed or new files
+  -d   delete entries in zipfile    -m   move into zipfile (delete files)
+  -r   recurse into directories     -j   junk (don't record) directory names
+  -0   store only                   -l   convert LF to CR LF (-ll CR LF to LF)
+  -1   compress faster              -9   compress better
+  -q   quiet operation              -v   verbose operation/print version info
+  -c   add one-line comments        -z   add zipfile comment
+  -@   read names from stdin        -o   make zipfile as old as latest entry
+  -x   exclude the following names  -i   include only the following names
+  -F   fix zipfile (-FF try harder) -D   do not add directory entries
+  -A   adjust self-extracting exe   -J   junk zipfile prefix (unzipsfx)
+  -T   test zipfile integrity       -X   eXclude eXtra file attributes
+  -y   store symbolic links as the link instead of the referenced file
+  -R   PKZIP recursion (see manual)
+  -h   show this help               -n   don't compress these suffixes
+/opt/freeware/lib:[root]# bzip2
+-bash: bzip2: command not found
+/opt/freeware/lib:[root]# ls -lrt
+total 3584
+-rwxr-xr-x    1 root     system       374612 Jan 09 2008  libintl.a
+-rwxr-xr-x    1 root     system       271724 Jan 09 2008  libz.a
+-rwxr-xr-x    1 root     system        46789 Jan 09 2008  libpopt.so.0.0.0
+-rwxr-xr-x    1 root     system       174931 Jan 09 2008  librpmbuild.so.0.0.0
+-rwxr-xr-x    1 root     system       953028 Jan 09 2008  librpm.so.0.0.0
+drwxr-xr-x    2 root     system         4096 Jan 12 2008  rpm
+drwxr-xr-x    3 root     system          256 Mar 25 2008  gcc
+lrwxrwxrwx    1 root     system            9 Apr 03 2009  rpmrc -> rpm/rpmrc
+lrwxrwxrwx    1 root     system           20 Apr 03 2009  librpmbuild.so.0 -> librpmbuild.so.0.0.0
+lrwxrwxrwx    1 root     system           20 Apr 03 2009  librpmbuild.so -> librpmbuild.so.0.0.0
+lrwxrwxrwx    1 root     system           15 Apr 03 2009  librpm.so.0 -> librpm.so.0.0.0
+lrwxrwxrwx    1 root     system           15 Apr 03 2009  librpm.so -> librpm.so.0.0.0
+lrwxrwxrwx    1 root     system           16 Apr 03 2009  libpopt.so.0 -> libpopt.so.0.0.0
+lrwxrwxrwx    1 root     system           16 Apr 03 2009  libpopt.so -> libpopt.so.0.0.0
+lrwxrwxrwx    1 root     system           11 Apr 03 2009  rpmpopt -> rpm/rpmpopt
+/opt/freeware/lib:[root]# pwd
+/opt/freeware/lib
+/opt/freeware/lib:[root]# ifconfig -a
+en0: flags=1e080863,c0<UP,BROADCAST,NOTRAILERS,RUNNING,SIMPLEX,MULTICAST,GROUPRT,64BIT,CHECKSUM_OFFLOAD(ACTIVE),LARGESEND,CHAIN>
+        inet 10.3.0.18 netmask 0xffffff00 broadcast 10.3.0.255
+         tcp_sendspace 131072 tcp_recvspace 65536 rfc1323 0
+lo0: flags=e08084b<UP,BROADCAST,LOOPBACK,RUNNING,SIMPLEX,MULTICAST,GROUPRT,64BIT>
+        inet 127.0.0.1 netmask 0xff000000 broadcast 127.255.255.255
+        inet6 ::1/0
+         tcp_sendspace 131072 tcp_recvspace 131072 rfc1323 1
+/opt/freeware/lib:[root]# ls -lrt
+total 3584
+-rwxr-xr-x    1 root     system       374612 Jan 09 2008  libintl.a
+-rwxr-xr-x    1 root     system       271724 Jan 09 2008  libz.a
+-rwxr-xr-x    1 root     system        46789 Jan 09 2008  libpopt.so.0.0.0
+-rwxr-xr-x    1 root     system       174931 Jan 09 2008  librpmbuild.so.0.0.0
+-rwxr-xr-x    1 root     system       953028 Jan 09 2008  librpm.so.0.0.0
+drwxr-xr-x    2 root     system         4096 Jan 12 2008  rpm
+drwxr-xr-x    3 root     system          256 Mar 25 2008  gcc
+lrwxrwxrwx    1 root     system            9 Apr 03 2009  rpmrc -> rpm/rpmrc
+lrwxrwxrwx    1 root     system           20 Apr 03 2009  librpmbuild.so.0 -> librpmbuild.so.0.0.0
+lrwxrwxrwx    1 root     system           20 Apr 03 2009  librpmbuild.so -> librpmbuild.so.0.0.0
+lrwxrwxrwx    1 root     system           15 Apr 03 2009  librpm.so.0 -> librpm.so.0.0.0
+lrwxrwxrwx    1 root     system           15 Apr 03 2009  librpm.so -> librpm.so.0.0.0
+lrwxrwxrwx    1 root     system           16 Apr 03 2009  libpopt.so.0 -> libpopt.so.0.0.0
+lrwxrwxrwx    1 root     system           16 Apr 03 2009  libpopt.so -> libpopt.so.0.0.0
+lrwxrwxrwx    1 root     system           11 Apr 03 2009  rpmpopt -> rpm/rpmpopt
+/opt/freeware/lib:[root]# pwd
+/opt/freeware/lib
+/opt/freeware/lib:[root]# cp /normal/libbz2.a .
+/opt/freeware/lib:[root]# ls -lrt
+total 3936
+-rwxr-xr-x    1 root     system       374612 Jan 09 2008  libintl.a
+-rwxr-xr-x    1 root     system       271724 Jan 09 2008  libz.a
+-rwxr-xr-x    1 root     system        46789 Jan 09 2008  libpopt.so.0.0.0
+-rwxr-xr-x    1 root     system       174931 Jan 09 2008  librpmbuild.so.0.0.0
+-rwxr-xr-x    1 root     system       953028 Jan 09 2008  librpm.so.0.0.0
+drwxr-xr-x    2 root     system         4096 Jan 12 2008  rpm
+drwxr-xr-x    3 root     system          256 Mar 25 2008  gcc
+lrwxrwxrwx    1 root     system            9 Apr 03 2009  rpmrc -> rpm/rpmrc
+lrwxrwxrwx    1 root     system           20 Apr 03 2009  librpmbuild.so.0 -> librpmbuild.so.0.0.0
+lrwxrwxrwx    1 root     system           20 Apr 03 2009  librpmbuild.so -> librpmbuild.so.0.0.0
+lrwxrwxrwx    1 root     system           15 Apr 03 2009  librpm.so.0 -> librpm.so.0.0.0
+lrwxrwxrwx    1 root     system           15 Apr 03 2009  librpm.so -> librpm.so.0.0.0
+lrwxrwxrwx    1 root     system           16 Apr 03 2009  libpopt.so.0 -> libpopt.so.0.0.0
+lrwxrwxrwx    1 root     system           16 Apr 03 2009  libpopt.so -> libpopt.so.0.0.0
+lrwxrwxrwx    1 root     system           11 Apr 03 2009  rpmpopt -> rpm/rpmpopt
+-rwxr-xr-x    1 root     system       178008 Mar 30 10:06 libbz2.a
+/opt/freeware/lib:[root]# pwd
+/opt/freeware/lib
+/opt/freeware/lib:[root]# rpm 
+RPM version 3.0.5
+Copyright (C) 1998 - Red Hat Software
+This may be freely redistributed under the terms of the GNU GPL
+
+usage: rpm {--help}
+       rpm {--version}
+       rpm {--initdb}   [--dbpath <dir>]
+       rpm {--install -i} [-v] [--hash -h] [--percent] [--force] [--test]
+                        [--replacepkgs] [--replacefiles] [--root <dir>]
+                        [--excludedocs] [--includedocs] [--noscripts]
+                        [--rcfile <file>] [--ignorearch] [--dbpath <dir>]
+                        [--prefix <dir>] [--ignoreos] [--nodeps] [--allfiles]
+                        [--ftpproxy <host>] [--ftpport <port>] [--justdb]
+                        [--httpproxy <host>] [--httpport <port>] 
+                        [--noorder] [--relocate oldpath=newpath]
+                        [--badreloc] [--notriggers] [--excludepath <path>]
+                        [--ignoresize] file1.rpm ... fileN.rpm
+       rpm {--upgrade -U} [-v] [--hash -h] [--percent] [--force] [--test]
+                        [--oldpackage] [--root <dir>] [--noscripts]
+                        [--excludedocs] [--includedocs] [--rcfile <file>]
+                        [--ignorearch]  [--dbpath <dir>] [--prefix <dir>] 
+                        [--ftpproxy <host>] [--ftpport <port>]
+                        [--httpproxy <host>] [--httpport <port>] 
+                        [--ignoreos] [--nodeps] [--allfiles] [--justdb]
+                        [--noorder] [--relocate oldpath=newpath]
+                        [--badreloc] [--excludepath <path>] [--ignoresize]
+                        file1.rpm ... fileN.rpm
+       rpm {--query -q} [-afpg] [-i] [-l] [-s] [-d] [-c] [-v] [-R]
+                        [--scripts] [--root <dir>] [--rcfile <file>]
+                        [--whatprovides] [--whatrequires] [--requires]
+                        [--triggeredby] [--ftpport] [--ftpproxy <host>]
+                        [--httpproxy <host>] [--httpport <port>] 
+                        [--ftpport <port>] [--provides] [--triggers] [--dump]
+                        [--changelog] [--dbpath <dir>] [targets]
+       rpm {--verify -V -y} [-afpg] [--root <dir>] [--rcfile <file>]
+                        [--dbpath <dir>] [--nodeps] [--nofiles] [--noscripts]
+                        [--nomd5] [targets]
+       rpm {--setperms} [-afpg] [target]
+       rpm {--setugids} [-afpg] [target]
+       rpm {--freshen -F} file1.rpm ... fileN.rpm
+       rpm {--erase -e} [--root <dir>] [--noscripts] [--rcfile <file>]
+                        [--dbpath <dir>] [--nodeps] [--allmatches]
+                        [--justdb] [--notriggers] rpackage1 ... packageN
+       rpm {-b|t}[plciba] [-v] [--short-circuit] [--clean] [--rcfile  <file>]
+                        [--sign] [--nobuild] [--timecheck <s>] ]
+                        [--target=platform1[,platform2...]]
+                        [--rmsource] [--rmspec] specfile
+       rpm {--rmsource} [--rcfile <file>] [-v] specfile
+       rpm {--rebuild} [--rcfile <file>] [-v] source1.rpm ... sourceN.rpm
+       rpm {--recompile} [--rcfile <file>] [-v] source1.rpm ... sourceN.rpm
+       rpm {--resign} [--rcfile <file>] package1 package2 ... packageN
+       rpm {--addsign} [--rcfile <file>] package1 package2 ... packageN
+       rpm {--checksig -K} [--nopgp] [--nogpg] [--nomd5] [--rcfile <file>]
+                           package1 ... packageN
+       rpm {--rebuilddb} [--rcfile <file>] [--dbpath <dir>]
+       rpm {--querytags}
+/opt/freeware/lib:[root]# clear
+/opt/freeware/lib:[root]# ls -lrt
+total 3936
+-rwxr-xr-x    1 root     system       374612 Jan 09 2008  libintl.a
+-rwxr-xr-x    1 root     system       271724 Jan 09 2008  libz.a
+-rwxr-xr-x    1 root     system        46789 Jan 09 2008  libpopt.so.0.0.0
+-rwxr-xr-x    1 root     system       174931 Jan 09 2008  librpmbuild.so.0.0.0
+-rwxr-xr-x    1 root     system       953028 Jan 09 2008  librpm.so.0.0.0
+drwxr-xr-x    2 root     system         4096 Jan 12 2008  rpm
+drwxr-xr-x    3 root     system          256 Mar 25 2008  gcc
+lrwxrwxrwx    1 root     system            9 Apr 03 2009  rpmrc -> rpm/rpmrc
+lrwxrwxrwx    1 root     system           20 Apr 03 2009  librpmbuild.so.0 -> librpmbuild.so.0.0.0
+lrwxrwxrwx    1 root     system           20 Apr 03 2009  librpmbuild.so -> librpmbuild.so.0.0.0
+lrwxrwxrwx    1 root     system           15 Apr 03 2009  librpm.so.0 -> librpm.so.0.0.0
+lrwxrwxrwx    1 root     system           15 Apr 03 2009  librpm.so -> librpm.so.0.0.0
+lrwxrwxrwx    1 root     system           16 Apr 03 2009  libpopt.so.0 -> libpopt.so.0.0.0
+lrwxrwxrwx    1 root     system           16 Apr 03 2009  libpopt.so -> libpopt.so.0.0.0
+lrwxrwxrwx    1 root     system           11 Apr 03 2009  rpmpopt -> rpm/rpmpopt
+-rwxr-xr-x    1 root     system       178008 Mar 30 10:06 libbz2.a
+/opt/freeware/lib:[root]# rpm -qa
+cdrecord-1.9-7
+mkisofs-1.13-4
+bash-4.2-2
+zip-2.3-3
+gcc-4.2.0-3
+gcc-c++-4.2.0-3
+libgcc-4.2.0-3
+libstdc++-4.2.0-3
+libstdc++-devel-4.2.0-3
+lsof-4.61-3
+AIX-rpm-5.3.8.0-10
+/opt/freeware/lib:[root]# unzip
+-bash: unzip: command not found
+/opt/freeware/lib:[root]# gzip
+-bash: gzip: command not found
+/opt/freeware/lib:[root]# bzip2
+-bash: bzip2: command not found
+/opt/freeware/lib:[root]# pwd
+/opt/freeware/lib
+/opt/freeware/lib:[root]# ls -lrt
+total 3936
+-rwxr-xr-x    1 root     system       374612 Jan 09 2008  libintl.a
+-rwxr-xr-x    1 root     system       271724 Jan 09 2008  libz.a
+-rwxr-xr-x    1 root     system        46789 Jan 09 2008  libpopt.so.0.0.0
+-rwxr-xr-x    1 root     system       174931 Jan 09 2008  librpmbuild.so.0.0.0
+-rwxr-xr-x    1 root     system       953028 Jan 09 2008  librpm.so.0.0.0
+drwxr-xr-x    2 root     system         4096 Jan 12 2008  rpm
+drwxr-xr-x    3 root     system          256 Mar 25 2008  gcc
+lrwxrwxrwx    1 root     system            9 Apr 03 2009  rpmrc -> rpm/rpmrc
+lrwxrwxrwx    1 root     system           20 Apr 03 2009  librpmbuild.so.0 -> librpmbuild.so.0.0.0
+lrwxrwxrwx    1 root     system           20 Apr 03 2009  librpmbuild.so -> librpmbuild.so.0.0.0
+lrwxrwxrwx    1 root     system           15 Apr 03 2009  librpm.so.0 -> librpm.so.0.0.0
+lrwxrwxrwx    1 root     system           15 Apr 03 2009  librpm.so -> librpm.so.0.0.0
+lrwxrwxrwx    1 root     system           16 Apr 03 2009  libpopt.so.0 -> libpopt.so.0.0.0
+lrwxrwxrwx    1 root     system           16 Apr 03 2009  libpopt.so -> libpopt.so.0.0.0
+lrwxrwxrwx    1 root     system           11 Apr 03 2009  rpmpopt -> rpm/rpmpopt
+-rwxr-xr-x    1 root     system       178008 Mar 30 10:06 libbz2.a
+/opt/freeware/lib:[root]# pwd
+/opt/freeware/lib
+/opt/freeware/lib:[root]# rpm 
+RPM version 3.0.5
+Copyright (C) 1998 - Red Hat Software
+This may be freely redistributed under the terms of the GNU GPL
+
+usage: rpm {--help}
+       rpm {--version}
+       rpm {--initdb}   [--dbpath <dir>]
+       rpm {--install -i} [-v] [--hash -h] [--percent] [--force] [--test]
+                        [--replacepkgs] [--replacefiles] [--root <dir>]
+                        [--excludedocs] [--includedocs] [--noscripts]
+                        [--rcfile <file>] [--ignorearch] [--dbpath <dir>]
+                        [--prefix <dir>] [--ignoreos] [--nodeps] [--allfiles]
+                        [--ftpproxy <host>] [--ftpport <port>] [--justdb]
+                        [--httpproxy <host>] [--httpport <port>] 
+                        [--noorder] [--relocate oldpath=newpath]
+                        [--badreloc] [--notriggers] [--excludepath <path>]
+                        [--ignoresize] file1.rpm ... fileN.rpm
+       rpm {--upgrade -U} [-v] [--hash -h] [--percent] [--force] [--test]
+                        [--oldpackage] [--root <dir>] [--noscripts]
+                        [--excludedocs] [--includedocs] [--rcfile <file>]
+                        [--ignorearch]  [--dbpath <dir>] [--prefix <dir>] 
+                        [--ftpproxy <host>] [--ftpport <port>]
+                        [--httpproxy <host>] [--httpport <port>] 
+                        [--ignoreos] [--nodeps] [--allfiles] [--justdb]
+                        [--noorder] [--relocate oldpath=newpath]
+                        [--badreloc] [--excludepath <path>] [--ignoresize]
+                        file1.rpm ... fileN.rpm
+       rpm {--query -q} [-afpg] [-i] [-l] [-s] [-d] [-c] [-v] [-R]
+                        [--scripts] [--root <dir>] [--rcfile <file>]
+                        [--whatprovides] [--whatrequires] [--requires]
+                        [--triggeredby] [--ftpport] [--ftpproxy <host>]
+                        [--httpproxy <host>] [--httpport <port>] 
+                        [--ftpport <port>] [--provides] [--triggers] [--dump]
+                        [--changelog] [--dbpath <dir>] [targets]
+       rpm {--verify -V -y} [-afpg] [--root <dir>] [--rcfile <file>]
+                        [--dbpath <dir>] [--nodeps] [--nofiles] [--noscripts]
+                        [--nomd5] [targets]
+       rpm {--setperms} [-afpg] [target]
+       rpm {--setugids} [-afpg] [target]
+       rpm {--freshen -F} file1.rpm ... fileN.rpm
+       rpm {--erase -e} [--root <dir>] [--noscripts] [--rcfile <file>]
+                        [--dbpath <dir>] [--nodeps] [--allmatches]
+                        [--justdb] [--notriggers] rpackage1 ... packageN
+       rpm {-b|t}[plciba] [-v] [--short-circuit] [--clean] [--rcfile  <file>]
+                        [--sign] [--nobuild] [--timecheck <s>] ]
+                        [--target=platform1[,platform2...]]
+                        [--rmsource] [--rmspec] specfile
+       rpm {--rmsource} [--rcfile <file>] [-v] specfile
+       rpm {--rebuild} [--rcfile <file>] [-v] source1.rpm ... sourceN.rpm
+       rpm {--recompile} [--rcfile <file>] [-v] source1.rpm ... sourceN.rpm
+       rpm {--resign} [--rcfile <file>] package1 package2 ... packageN
+       rpm {--addsign} [--rcfile <file>] package1 package2 ... packageN
+       rpm {--checksig -K} [--nopgp] [--nogpg] [--nomd5] [--rcfile <file>]
+                           package1 ... packageN
+       rpm {--rebuilddb} [--rcfile <file>] [--dbpath <dir>]
+       rpm {--querytags}
+/opt/freeware/lib:[root]# pwd
+/opt/freeware/lib
+/opt/freeware/lib:[root]# clear
+/opt/freeware/lib:[root]# ls -lrt
+total 3936
+-rwxr-xr-x    1 root     system       374612 Jan 09 2008  libintl.a
+-rwxr-xr-x    1 root     system       271724 Jan 09 2008  libz.a
+-rwxr-xr-x    1 root     system        46789 Jan 09 2008  libpopt.so.0.0.0
+-rwxr-xr-x    1 root     system       174931 Jan 09 2008  librpmbuild.so.0.0.0
+-rwxr-xr-x    1 root     system       953028 Jan 09 2008  librpm.so.0.0.0
+drwxr-xr-x    2 root     system         4096 Jan 12 2008  rpm
+drwxr-xr-x    3 root     system          256 Mar 25 2008  gcc
+lrwxrwxrwx    1 root     system            9 Apr 03 2009  rpmrc -> rpm/rpmrc
+lrwxrwxrwx    1 root     system           20 Apr 03 2009  librpmbuild.so.0 -> librpmbuild.so.0.0.0
+lrwxrwxrwx    1 root     system           20 Apr 03 2009  librpmbuild.so -> librpmbuild.so.0.0.0
+lrwxrwxrwx    1 root     system           15 Apr 03 2009  librpm.so.0 -> librpm.so.0.0.0
+lrwxrwxrwx    1 root     system           15 Apr 03 2009  librpm.so -> librpm.so.0.0.0
+lrwxrwxrwx    1 root     system           16 Apr 03 2009  libpopt.so.0 -> libpopt.so.0.0.0
+lrwxrwxrwx    1 root     system           16 Apr 03 2009  libpopt.so -> libpopt.so.0.0.0
+lrwxrwxrwx    1 root     system           11 Apr 03 2009  rpmpopt -> rpm/rpmpopt
+-rwxr-xr-x    1 root     system       178008 Mar 30 10:06 libbz2.a
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+

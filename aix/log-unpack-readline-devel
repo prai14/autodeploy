@@ -1,0 +1,22 @@
+AIX readline-devel  ################################################## unpacking of archive failed on file /usr/include/readline: cpio: unlink failed - Operation not permitted.
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+[ec2-user@cookbook autodeploy]$ lsattr 
+-------------e-- ./ppk
+-------------e-- ./shell
+-------------e-- ./README.md
+-------------e-- ./tools
+----------I--e-- ./ec2log
+-------------e-- ./GITCONFIG
+-------------e-- ./pem
+-------------e-- ./login
+-------------e-- ./awswork
+-------------e-- ./aix
+[ec2-user@cookbook autodeploy]$ which lsattr 
+/usr/bin/lsattr
+[ec2-user@cookbook autodeploy]$ rpm -qf /usr/bin/lsattr 
+e2fsprogs-1.42.9-7.el7.x86_64
+[ec2-user@cookbook autodeploy]$ cat /etc/redhat-release
+Red Hat Enterprise Linux Server release 7.2 (Maipo)
+[ec2-user@cookbook autodeploy]$ 
+---------------------------------------------------------------------------------------------------------------------------------
+no install readline-devel package in AIX
