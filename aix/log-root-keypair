@@ -1,0 +1,175 @@
+</normal>:[root]#sh aix-keypair.sh 
+spawn ssh-keygen -t rsa -b 2048 -v -f root-10.3.0.18-20170405
+Generating public/private rsa key pair.
+Enter passphrase (empty for no passphrase): 
+Enter same passphrase again: 
+Your identification has been saved in root-10.3.0.18-20170405.
+Your public key has been saved in root-10.3.0.18-20170405.pub.
+The key fingerprint is:
+e5:39:d5:f0:4e:cb:3d:52:0a:bf:b3:2e:ad:84:35:2f root@bitest
+</normal>:[root]#cat create-user-keypair
+#!/usr/bin/expect -f
+
+set username [lindex $argv 0] 
+set IP [lindex $argv 1]    
+set ymd [lindex $argv 2]    
+
+spawn ssh-keygen -t rsa -b 2048 -v -f ${username}-${IP}-${ymd}
+expect {
+       "*Enter passphrase*" {
+           send "\n\r"       
+           exp_continue        
+       }
+       "*Enter same passphrase again*" {
+           send "\n\r"       
+           exp_continue        
+       }
+}
+</normal>:[root]#cat aix-keypair.sh
+#/bin/sh
+
+USER0="root"
+
+IP=$(ifconfig -a|grep inet|grep -v inet6|grep -v "127."|awk '{print $2}'|head -1)
+
+ymd=$(date +"%Y%m%d")
+
+if [ "$USER0" = "root" ] ;then
+    cond=$(cat /etc/passwd|grep "$USER0:"|awk -F: '{print $6}')
+    if [ "$cond" = "/root" ] ;then
+        cp /normal/create-user-keypair $cond/create-user-keypair
+        su - $USER0 -c "expect create-user-keypair $USER0 $IP $ymd"
+        su - $USER0 -c "mv $USER0-$IP-$ymd $USER0-$IP-$ymd.pem"
+        su - $USER0 -c "chmod 600 $USER0-$IP-$ymd.pem"
+        su - $USER0 -c "touch $cond/.ssh/authorized_keys"
+        su - $USER0 -c "cat $USER0-$IP-$ymd.pub > $cond/.ssh/authorized_keys"
+    else
+        cp /normal/create-user-keypair /create-user-keypair
+        su - $USER0 -c "expect create-user-keypair $USER0 $IP $ymd"
+        su - $USER0 -c "mv $USER0-$IP-$ymd $USER0-$IP-$ymd.pem"
+        su - $USER0 -c "chmod 600 $USER0-$IP-$ymd.pem"
+        su - $USER0 -c "touch /.ssh/authorized_keys"
+        su - $USER0 -c "cat $USER0-$IP-$ymd.pub > /.ssh/authorized_keys"
+    fi
+else
+    udir=$(cat /etc/passwd|grep "$USER0:"|awk -F: '{print $6}')
+    cp /normal/create-user-keypair $udir/create-user-keypair
+    su - $USER0 -c "expect create-user-keypair $USER0 $IP $ymd"
+    su - $USER0 -c "mv $USER0-$IP-$ymd $USER0-$IP-$ymd.pem"
+    su - $USER0 -c "chmod 600 $USER0-$IP-$ymd.pem"
+    su - $USER0 -c "touch $udir/.ssh/authorized_keys"
+    su - $USER0 -c "cat $USER0-$IP-$ymd.pub > $udir/.ssh/authorized_keys"
+fi
+
+</root>:[root]#ls -l root-10.3.0.18-20170405.p*
+-rw-------    1 root     system         1671 Apr 05 13:04 root-10.3.0.18-20170405.pem
+-rw-r--r--    1 root     system          393 Apr 05 13:04 root-10.3.0.18-20170405.pub
+</root>:[root]#cat .ssh/authorized_keys 
+ssh-rsa AAAAB3NzaC1yc2EAAAABIwAAAQEArzhBv5M8FfqrSHIxMkS/xi+5lg2JZiqFGrFkFgRQ7wHyTi5MYDfilDqtfvrcHMOLqXY1Hpoce12Tu8CcYs/FyWJobvz7ZQncw4qA3DKNDymlPYSjtbByt5SyjLTwm8ovOwhTW68gqj7eG6VGo+B2uCMN31HxlRp3EGkcNrHdQdU4X/fPWGILMpKo0NW9ir5lozYIMEMt6my0aDACNBg5R7/yAOiQ2Sj3NFlBClZa4LtTA+/8vIV9uqEYrMssQz0wAYHGtTNcMbJvVscQs6Iyx7i2NPktzNzgmZk/UqkWIV9tmWi2Z2znFQkRPMxIAdT+RK5w/y4HKfaxOtiQ2bV1qQ== root@bitest
+
+----------------------------------------------------------------------------------------------------------------------------------
+</normal>:[root]#cat aix-create-user-keypair.sh 
+#/bin/sh
+
+USER0="root"
+#USER0="oracle"
+
+IP=$(ifconfig -a|grep inet|grep -v inet6|grep -v "127."|awk '{print $2}'|head -1)
+
+ymd=$(date +"%Y%m%d")
+
+if [ "$USER0" = "root" ] ;then
+    cond=$(cat /etc/passwd|grep "$USER0:"|awk -F: '{print $6}')
+    if [ "$cond" = "/root" ] ;then
+        cp /normal/create-user-keypair.exp $cond/create-user-keypair.exp
+        su - $USER0 -c "expect create-user-keypair.exp $USER0 $IP $ymd"
+        su - $USER0 -c "mv $USER0-$IP-$ymd $USER0-$IP-$ymd.pem"
+        su - $USER0 -c "chmod 600 $USER0-$IP-$ymd.pem"
+        su - $USER0 -c "touch $cond/.ssh/authorized_keys"
+        su - $USER0 -c "cat $USER0-$IP-$ymd.pub > $cond/.ssh/authorized_keys"
+        cp $cond/$USER0-$IP-$ymd.pem /normal/login/
+        rm -rf $cond/$USER0-$IP-$ymd.p*
+        rm -rf $cond/create-user-keypair.exp
+    else
+        cp /normal/create-user-keypair.exp /create-user-keypair.exp
+        su - $USER0 -c "expect create-user-keypair.exp $USER0 $IP $ymd"
+        su - $USER0 -c "mv $USER0-$IP-$ymd $USER0-$IP-$ymd.pem"
+        su - $USER0 -c "chmod 600 $USER0-$IP-$ymd.pem"
+        su - $USER0 -c "touch /.ssh/authorized_keys"
+        su - $USER0 -c "cat $USER0-$IP-$ymd.pub > /.ssh/authorized_keys"
+        cp $cond/$USER0-$IP-$ymd.pem /normal/login/
+        rm -rf /$USER0-$IP-$ymd.p*
+        rm -rf /create-user-keypair.exp
+    fi
+else
+    udir=$(cat /etc/passwd|grep "$USER0:"|awk -F: '{print $6}')
+    cp /normal/create-user-keypair.exp $udir/create-user-keypair.exp
+    gid=$(su - oracle -c "id"|awk '{print $2}'|awk -F [\(\)] '{print $2}')
+    chown $USER0:$gid $udir/create-user-keypair.exp
+    su - $USER0 -c "expect create-user-keypair.exp $USER0 $IP $ymd"
+    su - $USER0 -c "mv $USER0-$IP-$ymd $USER0-$IP-$ymd.pem"
+    su - $USER0 -c "chmod 600 $USER0-$IP-$ymd.pem"
+    su - $USER0 -c "touch $udir/.ssh/authorized_keys"
+    su - $USER0 -c "cat $USER0-$IP-$ymd.pub > $udir/.ssh/authorized_keys"
+    su - root   -c "cp $udir/$USER0-$IP-$ymd.pem /normal/login/"
+    rm -rf $udir/$USER0-$IP-$ymd.p*
+    rm -rf $udir/create-user-keypair.exp
+fi
+</normal>:[root]#sh aix-create-user-keypair.sh 
+spawn ssh-keygen -t rsa -b 2048 -v -f root-10.3.0.18-20170405
+Generating public/private rsa key pair.
+Enter passphrase (empty for no passphrase): 
+Enter same passphrase again: 
+Your identification has been saved in root-10.3.0.18-20170405.
+Your public key has been saved in root-10.3.0.18-20170405.pub.
+The key fingerprint is:
+fd:c0:cc:4f:03:32:bd:7c:de:20:b1:9a:65:dc:5f:b5 root@bitest
+</normal>:[root]#ls -lrt /root
+total 152
+-rwxr-xr-x    1 root     system         3970 Apr 23 2009  .dtprofile
+-rw-rw-r--    1 root     system            3 Jun 05 2010  .wmrc
+-rw-------    1 root     system          147 Jun 05 2010  .Xauthority
+-rw-------    1 root     system          142 Jun 05 2010  .TTauthority
+drwxr-xr-x   10 root     system         4096 Jun 05 2010  .dt
+drwxr-xr-x    3 root     system          256 Jun 10 2010  .java
+-rw-------    1 root     system        11656 Mar 16 09:38 .sh_history
+-rw-------    1 root     system        14075 Mar 29 15:24 .lsof_bitest
+-rw-r--r--    1 root     system         1580 Mar 29 17:18 smit.transaction
+-rw-r--r--    1 root     system         1183 Mar 29 17:18 smit.script
+-rw-r--r--    1 root     system        11666 Mar 29 17:18 smit.log
+-rw-------    1 root     system         3691 Apr 01 17:00 .bash_history
+drwx------    2 root     system          256 Apr 05 13:04 .ssh
+-rw-------    1 root     system          418 Apr 05 14:53 .vi_history
+</normal>:[root]#ls -l login/root-10.3.0.18-20170405.pem 
+-rw-------    1 root     system         1675 Apr 05 14:54 login/root-10.3.0.18-20170405.pem
+</normal>:[root]#cat login/root-10.3.0.18-20170405.pem 
+-----BEGIN RSA PRIVATE KEY-----
+MIIEoQIBAAKCAQEAmJNXEiwmiHk2WBsFxWg6iSloVPv+r9XmGwXhoEJRAX1WrrV1
+BKuER8F+qZk2y7ulw9KVyD/PEatH6bZAGfDRVRdIyT4u67K2228WilMgr1qllaH2
+dWwlT8H564bcY3hglmaoQJOoZLfxrd2VULzky9fncC7lLb3OKuyDKfvymSehAN7K
+cSl7LBtEsbzsBw55Ag7FsHJCuZNvEOLgi2/v0gyxzmGTW5e4YTI8jrNJwS2cYXE5
+sgiYwAKxoVgn+1tgoctSPyzaN72Q49O6roeekJPJTiH7nEo2pgLYr4BSLlr6cPD3
+t62Lg09C6+xmK15GoUOcbssqrlsYOfPoxADvjQIBIwKCAQARb+yxnqVRbPBElV++
+yhVRgRM86ZlzLmNwzXjfHYWZxS56XeF84GbjoRXKPWVZHMJ8x5wW4riUThbY4aDt
+BZREPSzjzJel6IntMURnlHjDlVTApMu1pfWitxU/fSCAZYdhpVUOscoaI6aXhwnA
+FZZ9skZV9rsbK6KIkA79e+E2Evso1GVEHaA7jWYPSeboOKd19xOgoNHzH4ihiJp/
+SVy0da8XoB0iGkI5cUx3wHWeDCL9CAa4JktQWoYBeFFIFmxuwePSNvmiTaHR4eVA
+FUbTCwt5OJQR51HVkysDCR0flYIodQLM6Lj2QfbdZHcxnCHLrO1TRFNWBrlnEllS
+aNnbAoGBAMngVlwDZ9BxzDwsHQncfQaHTYZaaH56Q4stESIO3NGv9GxO1n9LmK+j
+VlGgLRkWtl4jTRIQJ82m8x1fM4ZQkrmxRLUyEN9fHC/7TO1LMCwxz+lVohSMrVWo
+3gAHW/CFgVG7CcKdvEttwhJnwKvILWZBtc+EN62h1e62QE9Re+enAoGBAMF7RfhZ
+vnCxOct/2T26obkyj1OYipcv+/heZnai0TL3Eolw0hUlmUVHPI3WsiuDjQwYHezW
+kbgZ93+1R9p0BHInZhOduvKMehj8DjdynUaoIzuT0Ndy9NTwXSBNlKLUfXXT51yY
+/O2qzABy/KdxGripZLBR/aPbylM90wvhb5WrAoGAFxJTAzOW1f5ge+fIze1QHgDV
+qPRjtq7jJdlDyWDIx4HSyoyqzLgutPy5aGoTyFpd/CFKovqINMKfcRIxxjUYFTjU
+pv5oVArepmXc5+tV9mwXwuU3GEqXd4EDbbeyvGcHdw4PvnhtSnLxm7QWBQDvPuLw
+NPkq70WyDKcdSuS9tBMCgYEAu/QYFdOFzI7nr74GO/cgwojjAMARmi6c/+asrcK8
+l+iy6+nwptQRO/wO8C+lw97gyeuKyNBwTHD/DlhUbc/JzfpjKP+fqcpKuS9eRH33
+3jzvBqzZgNYSaHR3uProKSYwu5qmPLHfwk4lQkPQ3SwLVEzINkEFBZOumgGLMBzS
+y+cCgYBxH0DUn3gBgwq9Aa6m7DU44kXBDjrhx0iWfAqmNF2dAMOK14e6Gtu890PL
+gNDWW6Z2tlb8IU7fYerrAER3AjH9fw6zNmhCO9V8zA8lqWGrFcSwrkmH0T4MC/rD
+5c1b5H8lvUetD+m9GbthBcSCbAjcR1QdQ5jOjibTcUkiRRdAZQ==
+-----END RSA PRIVATE KEY-----
+
+</normal>:[root]#cat /root/.ssh/authorized_keys 
+ssh-rsa AAAAB3NzaC1yc2EAAAABIwAAAQEAmJNXEiwmiHk2WBsFxWg6iSloVPv+r9XmGwXhoEJRAX1WrrV1BKuER8F+qZk2y7ulw9KVyD/PEatH6bZAGfDRVRdIyT4u67K2228WilMgr1qllaH2dWwlT8H564bcY3hglmaoQJOoZLfxrd2VULzky9fncC7lLb3OKuyDKfvymSehAN7KcSl7LBtEsbzsBw55Ag7FsHJCuZNvEOLgi2/v0gyxzmGTW5e4YTI8jrNJwS2cYXE5sgiYwAKxoVgn+1tgoctSPyzaN72Q49O6roeekJPJTiH7nEo2pgLYr4BSLlr6cPD3t62Lg09C6+xmK15GoUOcbssqrlsYOfPoxADvjQ== root@bitest

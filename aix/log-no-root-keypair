@@ -1,0 +1,277 @@
+</root>:[root]#chfs -a size=+10G /home
+Filesystem size changed to 1405091840
+</root>:[root]#df -g
+Filesystem    GB blocks      Free %Used    Iused %Iused Mounted on
+/dev/hd4           3.00      2.43   20%     6666     2% /
+/dev/hd2           8.00      4.90   39%    53068     5% /usr
+/dev/hd9var        4.00      3.73    7%     1243     1% /var
+/dev/hd3           4.00      1.65   59%     6187     2% /tmp
+/dev/hd1         670.00      9.73   99%   530130    19% /home
+/proc                 -         -    -         -     -  /proc
+/dev/hd10opt       3.00      2.41   20%    11580     3% /opt
+/dev/fslv00      399.44      8.80   98%      537     1% /data
+</root>:[root]#
+
+</normal>:[root]#cat aix-keypair.sh 
+#/bin/sh
+
+#USER0="root"
+USER0="oracle"
+
+IP=$(ifconfig -a|grep inet|grep -v inet6|grep -v "127."|awk '{print $2}'|head -1)
+
+ymd=$(date +"%Y%m%d")
+
+if [ "$USER0" = "root" ] ;then
+    cond=$(cat /etc/passwd|grep "$USER0:"|awk -F: '{print $6}')
+    if [ "$cond" = "/root" ] ;then
+        cp /normal/create-user-keypair $cond/create-user-keypair
+        su - $USER0 -c "expect create-user-keypair $USER0 $IP $ymd"
+        su - $USER0 -c "mv $USER0-$IP-$ymd $USER0-$IP-$ymd.pem"
+        su - $USER0 -c "chmod 600 $USER0-$IP-$ymd.pem"
+        su - $USER0 -c "touch $cond/.ssh/authorized_keys"
+        su - $USER0 -c "cat $USER0-$IP-$ymd.pub > $cond/.ssh/authorized_keys"
+    else
+        cp /normal/create-user-keypair /create-user-keypair
+        su - $USER0 -c "expect create-user-keypair $USER0 $IP $ymd"
+        su - $USER0 -c "mv $USER0-$IP-$ymd $USER0-$IP-$ymd.pem"
+        su - $USER0 -c "chmod 600 $USER0-$IP-$ymd.pem"
+        su - $USER0 -c "touch /.ssh/authorized_keys"
+        su - $USER0 -c "cat $USER0-$IP-$ymd.pub > /.ssh/authorized_keys"
+    fi
+else
+    udir=$(cat /etc/passwd|grep "$USER0:"|awk -F: '{print $6}')
+    cp /normal/create-user-keypair $udir/create-user-keypair
+    gid=$(su - oracle -c "id"|awk '{print $2}'|awk -F [\(\)] '{print $2}')
+    chown $USER0:$gid $udir/create-user-keypair
+    su - $USER0 -c "expect create-user-keypair $USER0 $IP $ymd"
+    su - $USER0 -c "mv $USER0-$IP-$ymd $USER0-$IP-$ymd.pem"
+    su - $USER0 -c "chmod 600 $USER0-$IP-$ymd.pem"
+    su - $USER0 -c "touch $udir/.ssh/authorized_keys"
+    su - $USER0 -c "cat $USER0-$IP-$ymd.pub > $udir/.ssh/authorized_keys"
+fi
+</normal>:[root]#sh aix-keypair.sh 
+spawn ssh-keygen -t rsa -b 2048 -v -f oracle-10.3.0.18-20170405
+Generating public/private rsa key pair.
+Enter passphrase (empty for no passphrase): 
+Enter same passphrase again: 
+Your identification has been saved in oracle-10.3.0.18-20170405.
+Your public key has been saved in oracle-10.3.0.18-20170405.pub.
+The key fingerprint is:
+c6:72:e7:13:d9:38:f4:b9:82:97:59:d7:6a:ce:00:22 oracle@bitest
+</normal>:[root]#ls -l /home/oracle/oracle*.p*
+-rw-------    1 oracle   dba            1675 Apr 05 14:10 /home/oracle/oracle-10.3.0.18-20170405.pem
+-rw-r--r--    1 oracle   dba             395 Apr 05 14:10 /home/oracle/oracle-10.3.0.18-20170405.pub
+</normal>:[root]#cat /home/oracle/.ssh/authorized_keys 
+ssh-rsa AAAAB3NzaC1yc2EAAAABIwAAAQEAzZSanVrQMHbZFGcstSKeEMweBn6FjscMlqvKsln/+osJxaqKsmVM4ig20P1f8VLSQCZ051hVDctnXOLX2HBre/dNHAtUziVXGHARIU4b+BqB7vM8LBVViauxIGOY8f0QUc35VwlD2LfE4UW01y+XnOBjDe6EOYZLy3f1XjQHDfaIuKEcSDUvQ5lLZHqhSVFNar3PIInKL3Uwlx5SNZxbpb5/MboloG98PLANe7m01cXIIV9CfZL855/CJMy2pF3o6Uqn5oZmPTYirB8yLVRi3Z/M6Cz54WvMwmsUC3+Q5Iv/oECvqJpqiJ7ETqi0N3omq8FnqWH83ItSO0JHm789Mw== oracle@bitest
+
+---------------------------------------------------------------------------------------------------------------------------------
+</normal>:[root]#vi aix-create-user-keypair.sh 
+"aix-create-user-keypair.sh" 46 lines, 2058 characters 
+#/bin/sh
+
+#USER0="root"
+USER0="oracle"
+
+IP=$(ifconfig -a|grep inet|grep -v inet6|grep -v "127."|awk '{print $2}'|head -1)
+
+ymd=$(date +"%Y%m%d")
+
+if [ "$USER0" = "root" ] ;then
+    cond=$(cat /etc/passwd|grep "$USER0:"|awk -F: '{print $6}')
+    if [ "$cond" = "/root" ] ;then
+        cp /normal/create-user-keypair.exp $cond/create-user-keypair.exp
+        su - $USER0 -c "expect create-user-keypair.exp $USER0 $IP $ymd"
+        su - $USER0 -c "mv $USER0-$IP-$ymd $USER0-$IP-$ymd.pem"
+        su - $USER0 -c "chmod 600 $USER0-$IP-$ymd.pem"
+        su - $USER0 -c "touch $cond/.ssh/authorized_keys"
+        su - $USER0 -c "cat $USER0-$IP-$ymd.pub > $cond/.ssh/authorized_keys"
+        cp $cond/$USER0-$IP-$ymd.pem /normal/login/
+        rm -rf $cond/$USER0-$IP-$ymd.p*
+        rm -rf $cond/create-user-keypair.exp
+    else
+        cp /normal/create-user-keypair.exp /create-user-keypair.exp
+        su - $USER0 -c "expect create-user-keypair.exp $USER0 $IP $ymd"
+        su - $USER0 -c "mv $USER0-$IP-$ymd $USER0-$IP-$ymd.pem"
+        su - $USER0 -c "chmod 600 $USER0-$IP-$ymd.pem"
+        su - $USER0 -c "touch /.ssh/authorized_keys"
+        su - $USER0 -c "cat $USER0-$IP-$ymd.pub > /.ssh/authorized_keys"
+        cp $cond/$USER0-$IP-$ymd.pem /normal/login/
+        rm -rf /$USER0-$IP-$ymd.p*
+        rm -rf /create-user-keypair.exp
+    fi
+else
+    udir=$(cat /etc/passwd|grep "$USER0:"|awk -F: '{print $6}')
+    cp /normal/create-user-keypair.exp $udir/create-user-keypair.exp
+    gid=$(su - $USER0 -c "id"|awk '{print $2}'|awk -F [\(\)] '{print $2}')
+    chown $USER0:$gid $udir/create-user-keypair.exp
+    su - $USER0 -c "expect create-user-keypair.exp $USER0 $IP $ymd"
+    su - $USER0 -c "mv $USER0-$IP-$ymd $USER0-$IP-$ymd.pem"
+    su - $USER0 -c "chmod 600 $USER0-$IP-$ymd.pem"
+    su - $USER0 -c "touch $udir/.ssh/authorized_keys"
+    su - $USER0 -c "cat $USER0-$IP-$ymd.pub > $udir/.ssh/authorized_keys"
+    su - root   -c "cp $udir/$USER0-$IP-$ymd.pem /normal/login/"
+    rm -rf $udir/$USER0-$IP-$ymd.p*
+    rm -rf $udir/create-user-keypair.exp
+fi
+"aix-create-user-keypair.sh" 46 lines, 2058 characters 
+</normal>:[root]#ls -lrt
+total 296
+-rw-r--r--    1 root     system        13466 Mar 24 10:19 odm-info-10.3.0.18
+-rw-r--r--    1 root     system          532 Mar 24 10:29 query-vgda-info.sh
+-rw-r--r--    1 root     system         1625 Mar 24 10:30 get-odm-info.sh
+-rw-r--r--    1 root     system        14590 Mar 24 10:31 vgda-info-10.3.0.18
+-rw-r--r--    1 root     system          993 Mar 30 10:29 log-bash-tools
+-rw-r--r--    1 root     system        32208 Mar 30 10:30 log-rpm-corrept
+-rw-r--r--    1 root     system         1137 Mar 31 13:39 log-unpack-readline-devel
+-rw-r--r--    1 root     system          673 Apr 01 10:27 quote.txt
+-rw-r--r--    1 root     system         1656 Apr 01 13:17 sysuser.log
+-rw-r--r--    1 root     system          791 Apr 01 16:36 nosysuser.sh
+-rw-r--r--    1 root     system         1313 Apr 01 16:42 passwd.txt
+-rw-r--r--    1 root     system         3083 Apr 01 16:48 aix-install-linux-tool-bash.sh
+drwxr-xr-x    4 root     system         4096 Apr 05 09:35 aix53lt
+drwxr-xr-x    4 root     system         4096 Apr 05 09:35 aix61lt
+-rw-r--r--    1 root     system         9614 Apr 05 09:36 aix-install-linux-tool-packages.sh
+-rw-r--r--    1 root     system         2505 Apr 05 09:46 log-expect
+-rw-r--r--    1 root     system          398 Apr 05 13:00 create-user-keypair.exp
+-rw-r--r--    1 root     system         3451 Apr 05 14:14 log-no-root-keypair
+drwxr-xr-x    2 root     system          256 Apr 05 14:54 login
+-rw-r--r--    1 root     system         9023 Apr 05 14:57 log-root-keypair
+-rw-r--r--    1 root     system         2058 Apr 05 15:05 aix-create-user-keypair.sh
+</normal>:[root]#sh aix-create-user-keypair.sh 
+spawn ssh-keygen -t rsa -b 2048 -v -f oracle-10.3.0.18-20170405
+Generating public/private rsa key pair.
+Enter passphrase (empty for no passphrase): 
+Enter same passphrase again: 
+Your identification has been saved in oracle-10.3.0.18-20170405.
+Your public key has been saved in oracle-10.3.0.18-20170405.pub.
+The key fingerprint is:
+b2:32:df:db:19:d2:ac:30:d5:f7:3d:27:59:4c:36:b9 oracle@bitest 
+
+</root/.ssh>:[root]#cat /home/oracle/.ssh/authorized_keys 
+ssh-rsa AAAAB3NzaC1yc2EAAAABIwAAAQEA0BVbqceSY0xGDvxH3FnCls3qS/2nkNXzsZGma7SmV2VYxJmGB6/DnjBuZr2YO6jdueJNJSyuJUCyZ4tZs2cmOCxx4teLZwJjELYTMAoIfOPtBU2cqeuJpcMAaZ702NWto+WrA1OaYayWMMZWw/TdRR65/WiuhHzFp/1dcNuB3U1LtCKI+V+IRThz4KpelYKEbZ4/8yuBk00RR+Ig7qhDeXNr+LWTqm+eFkIqLDcP62d18F0uyIaPnVWtJ8He58KxtHIXQ6aiIHtPLN7/JfAhjNsP6T9YrsN4ZldWs4GbCj1Z1aMtAUA24YgaG77H+pHWrBey3z+qo2yvo0Tqy8CkKQ== oracle@bitest
+</root/.ssh>:[root]#cat /normal/login/oracle-10.3.0.18-20170405.pem 
+-----BEGIN RSA PRIVATE KEY-----
+MIIEowIBAAKCAQEA0BVbqceSY0xGDvxH3FnCls3qS/2nkNXzsZGma7SmV2VYxJmG
+B6/DnjBuZr2YO6jdueJNJSyuJUCyZ4tZs2cmOCxx4teLZwJjELYTMAoIfOPtBU2c
+qeuJpcMAaZ702NWto+WrA1OaYayWMMZWw/TdRR65/WiuhHzFp/1dcNuB3U1LtCKI
++V+IRThz4KpelYKEbZ4/8yuBk00RR+Ig7qhDeXNr+LWTqm+eFkIqLDcP62d18F0u
+yIaPnVWtJ8He58KxtHIXQ6aiIHtPLN7/JfAhjNsP6T9YrsN4ZldWs4GbCj1Z1aMt
+AUA24YgaG77H+pHWrBey3z+qo2yvo0Tqy8CkKQIBIwKCAQEAuE1ucc4FUKKkc6w/
+pekaEIp/EBsuA/CzRYEBHZFgIYWmZP0BrwlkHmVpGSuVdquCjrJ+18h8/GyAwhxW
+w3ieMcD3KAC9TJu21El+tYU6t8KQGqPT5vUwxgR8tVJGlCr44Z+I1w+IvOlR023X
+0iIFz4Gda2tYvn0kGHKx2PzvXZqg/mlrUq5SourSbDZKeGFWXKZJNOip6+c8UWhu
+a6g51/+9J/j0YPXUn5l2bTWJ5cDOrcoZfYpeVBLtowZVAHkplqvZeLylvhZsDxvP
+db7sVRaPc03ObVuo6OONXfrH5/8LcdqlCR30rTMsp/h6sgzKJDCt3evvfu2ZF0XT
+0DM4bwKBgQD+HtFOKBtNPj4kyqA0bfuT5uQXccEic4Z2sYte0vodE4iCVqhEdC9L
+pjpguushoFWfcWlwV4pq6BM46eXCF3FlINFn3AfdYtTFamRb6oMXrlRfUgzSRx7J
+h5efj+ewkkLtbisZcYDmUthiclDez2CCECxxJtWcYt9xpYXsSY2BdwKBgQDRn15W
+SqByX44XMIKLwKVt/RcwsQjZFW7zY7ePwyoGH3eYMtt1G1xR3N6m1Pa1swaakXKp
+64D0A8G6hcy0lfoNGxA1vkWmg/BR0nQDU2PuhreKgF7O4+qdlb7NNV2+cgwEpNwO
+6Iz6PsBDLdl/rH26tR+mtZl7uYD8gF+kAn1vXwKBgQDECSUfCP8eVJZW5XRFs+31
+wL6VvidGdmBqMTEAAdbjOvRHSioI6+n4h4wevBR5Bqhzr0K1v9/O0ElXymDI7YNc
+pEnFJhSyGQqJqdhkKfAZlRyEDBiE9QkfH3T3bwMwcNSLRlvDK6yUa8t/JPyOn/n9
+7zg6CAPfCnHbU822R16IcQKBgGXREJBQIguqwVu4eewbvhDaA/MUKN54H/KPhQtQ
+Klq+07BTN2TEJYbY/m5KLrAGf4znj3canbhZmJxs38VtatMqZvWITbdHZhkdE8cZ
+4BTFF1HmlHMePsGR4FULSso3ZOxQEx0vH+dDDO1uCo54WlNfSeNCQzwYRfb8hjm4
+EQo1AoGBAIi/VsvJBGetOOhT7FjuoY7VMzqT9DrXpY3Gv6rNuRhvgSBow4en1aNt
+TIvihXALBxmblULGJY9zvZD1xSaBmv+ZGwiAwPWSHlVxlcH7OtDs30usWhd/Je8n
+dQbq8oSU5YPwD5Gx4LKLA4ZhalEAuoUjEjzp5W+ezbBZVICVm7Y5
+-----END RSA PRIVATE KEY-----
+</root/.ssh>:[root]#cd /normal/login
+</normal/login>:[root]#ls -lrt
+total 16
+-rw-------    1 root     system         1675 Apr 05 14:54 root-10.3.0.18-20170405.pem
+-rw-------    1 root     system         1675 Apr 05 15:05 oracle-10.3.0.18-20170405.pem
+</normal/login>:[root]#ls -l /home/oracle
+total 116512
+drwxrwxr-x    2 oracle   dba             256 Feb 14 2011  .InstallAnywhere
+-rw-------    1 oracle   dba             142 Jan 13 2010  .TTauthority
+-rw-------    1 oracle   dba             147 Jan 13 2010  .Xauthority
+-rw-------    1 oracle   dba             642 Apr 05 15:05 .bash_history
+-rwxrwxrwx    1 oracle   dba            4508 Feb 14 2011  .com.zerog.registry.xml
+drwxr-xr-x   10 oracle   dba            4096 Jan 13 2010  .dt
+-rwxr-xr-x    1 oracle   dba            3969 Apr 23 2009  .dtprofile
+drwxr-xr-x    3 oracle   dba             256 Oct 26 2009  .gem
+drwxrwx---    3 oracle   dba             256 Apr 23 2009  .java
+-rw-r--r--    1 oracle   dba              11 Jun 05 2010  .mh_profile
+-rwxr-----    1 oracle   dba             816 Mar 31 15:32 .profile
+-rw-------    1 oracle   dba            6602 Mar 24 2016  .sh_history
+drwxrwxr-x    2 oracle   dba             256 Oct 26 2009  .shareplex
+-rw-r--r--    1 oracle   dba             268 Oct 26 2009  .splexrc
+drwx------    2 oracle   dba             256 Apr 05 15:05 .ssh
+-rw-------    1 oracle   dba             139 May 16 2013  .vi_history
+-rw-rw-r--    1 root     system            3 Jan 13 2010  .wmrc
+-rw-r--r--    1 oracle   dba            4395 Mar 24 2016  0324.log
+-rw-r--r--    1 oracle   dba         2121728 Mar 24 2016  032401.dmp
+-rw-r--r--    1 oracle   dba         2125824 Mar 24 2016  032402.dmp
+-rw-r--r--    1 oracle   dba             603 May 14 2013  2.log
+-rw-r--r--    1 oracle   dba            1819 Sep 19 2011  20110916.log
+drwxr-xr-x    4 oracle   dba             256 Jun 25 2008  6972843
+drwxr-xr-x    2 oracle   dba             256 Apr 10 2010  Disk1
+drwxr-xr-x    3 1703     244             256 Jun 04 2008  IBMdebugger
+-rw-r--r--    1 1703     244         1622616 Apr 05 2006  LicAgree.pdf
+-rw-r--r--    1 1703     244          978705 Jul 04 2008  LicInfo.pdf
+drwx--x--x    2 oracle   dba             256 Jun 05 2010  Mail
+-rw-r-----    1 1703     244            4830 Jul 07 2008  README
+-rw-rw-r--    1 1703     244           15557 Jun 23 2008  README.debug
+-rw-r--r--    1 1703     244            5394 Jun 17 2008  README.ja_JP
+-rw-r--r--    1 1703     244            3921 Jun 17 2008  README.zh_CN
+-rw-r--r--    1 oracle   dba          126976 Nov 04 2010  WEB_BAS_CODETB_CBS_UNIONPAY.dmp
+-rw-r--r--    1 oracle   dba          450560 Mar 09 2011  WEB_BAS_COMM_CODE_dmp.dmp
+-rw-r--r--    1 oracle   dba           77824 Dec 13 2010  WEB_TRD_APP_SEND_PACKET_nodata.dmp
+-rw-r--r--    1 oracle   dba             328 Aug 10 2011  abub.log
+-rw-r--r--    1 oracle   dba          108906 Aug 10 2011  abyb.log
+-rw-r--r--    1 oracle   dba         9469952 Jan 26 2011  abyb012nodata.dmp
+-rw-r--r--    1 oracle   dba         9629696 Dec 15 2010  abyb1215.dmp
+-rw-r--r--    1 oracle   dba        11829248 May 26 2011  abyb_ablcx.dmp
+drwxr-xr-x    4 oracle   dba             256 Feb 28 2011  agent
+-rw-r--r--    1 oracle   dba         1054720 Mar 15 2011  agent-setup.tar
+-rw-r--r--    1 oracle   dba          256946 Aug 13 2010  awrrpt_1_10936_10937.html
+-rw-r--r--    1 oracle   dba          321055 Aug 13 2010  awrrpt_1_10948_10949.html
+-rw-r--r--    1 oracle   dba          274210 Sep 10 2009  awrrpt_1_2832_2833.html
+-rw-r--r--    1 oracle   dba         4411884 Mar 29 2013  core
+drwxr-xr-x    2 oracle   dba             256 Jul 29 2009  cron
+drwxr-xr-x    2 oracle   dba             256 Jul 09 2010  data
+-rw-r--r--    1 oracle   dba            8192 May 26 2011  db_ablcx.dmp
+drwxrwxr-x    5 1703     244             256 Jul 08 2008  doc
+drwxr-xr-x    2 oracle   dba            4096 Apr 01 2013  exp
+drwxr-x---   13 oracle   dba            4096 Nov 20 2009  goldengate
+-rw-r--r--    1 oracle   dba             174 Sep 07 2009  hosts.bat
+-rw-r--r--    1 oracle   dba            1395 May 26 2010  imp_web_fin.log
+drwxr-xr-x    2 oracle   dba            4096 Apr 08 2010  impdp
+drwxr-xr-x    3 oracle   dba             256 Mar 15 2011  netgain_agent
+-rw-------    1 oracle   dba           52616 Jan 26 2011  nohup.out
+-rw-r--r--    1 1703     244           35673 Jul 07 2008  notices
+-rw-r--r--    1 oracle   dba         2121728 Mar 24 2016  oracle
+drwxr-xr-x    4 oracle   dba             256 Nov 02 2009  oradata
+drwxr-----    3 oracle   dba             256 Mar 01 2011  oradiag_oracle
+-rw-r--r--    1 oracle   dba            1051 May 26 2010  parfile.par
+drwxr-xr-x    3 oracle   dba             256 Apr 23 2009  patch
+-rw-r--r--    1 oracle   dba            1904 Jul 22 2009  pcisv6_ab.log
+-rw-r--r--    1 oracle   dba            2503 Jun 06 2009  pp.list
+drwxr-xr-x    9 oracle   dba            4096 Sep 20 2011  precise
+drwxrwx---    7 oracle   dba             256 Apr 23 2009  product
+drwxr-xr-x    9 oracle   dba            4096 Feb 14 2011  quest
+-rw-r-----    1 1703     244          149840 Jun 17 2008  quickstart.ja_JP.pdf
+-rw-r-----    1 1703     244          112496 Jun 17 2008  quickstart.pdf
+-rw-r-----    1 1703     244          235167 Jun 17 2008  quickstart.zh_CN.pdf
+drwxrwxr-x    2 1703     244            4096 Jul 08 2008  runtime
+-rw-r--r--    1 oracle   dba            6914 Mar 11 2011  smit.log
+-rw-r--r--    1 oracle   dba             217 Jul 19 2010  smit.script
+-rw-r--r--    1 oracle   dba             601 Jul 19 2010  smit.transaction
+drwxr-x---    2 oracle   dba             256 Mar 07 2011  source
+-rw-r-----    1 oracle   dba            8308 Jun 05 2010  sqlnet.log
+-rw-r--r--    1 oracle   dba           33007 Nov 30 2009  text_install.txt
+-rw-r--r--    1 oracle   dba            6292 Nov 30 2009  text_install_verification.log
+-rw-r--r--    1 oracle   dba          156854 Apr 23 2009  unzip-5.51-1.aix5.1.ppc.rpm
+drwxrwxr-x    3 1703     244             256 Jul 08 2008  usr
+drwxr-xr-x    2 oracle   dba             256 Oct 13 2009  utlfile
+-rw-r--r--    1 oracle   dba          161413 Jun 11 2010  vhl_v6.log
+-rw-r--r--    1 oracle   dba        11108352 Jan 26 2011  vhl_v6_nodata.dmp
+-rw-r--r--    1 oracle   dba          204800 May 26 2010  web_fin.dmp
+-rw-r--r--    1 oracle   dba            3349 May 26 2010  web_fin.log
+-rw-r--r--    1 oracle   dba            8192 Jun 09 2011  web_fin_rpe_doc_test.dmp
+-rw-r--r--    1 oracle   dba           12288 Jun 09 2011  web_fin_rpe_due_test.dmp
+-rw-r--r--    1 oracle   dba           16384 May 06 2011  web_org_dpt_nodata.dmp
+-rw-r--r--    1 oracle   dba          124474 Apr 23 2009  zip-2.3-3.aix4.3.ppc.rpm

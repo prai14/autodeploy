@@ -1,0 +1,56 @@
+#</etc/ssh>:[root]#sed -i "/RSAAuthentication/s/^/#/1" /etc/ssh/sshd_config
+#</etc/ssh>:[root]#cat /etc/ssh/sshd_config|grep RSAAuthentication|grep -v RhostsRSAAuthentication
+#RSAAuthentication yes
+#</etc/ssh>:[root]#sed -i "/RSAAuthentication/s/#//1" /etc/ssh/sshd_config
+#</etc/ssh>:[root]#cat /etc/ssh/sshd_config|grep RSAAuthentication|grep -v RhostsRSAAuthentication
+#RSAAuthentication yes
+
+
+</normal>:[root]#sh aix-setup-user-keypair.sh 
+-----------check----------------------
+RSAAuthentication yes
+PubkeyAuthentication yes
+AuthorizedKeysFile      .ssh/authorized_keys
+----------add #----------------------
+#RSAAuthentication yes
+#PubkeyAuthentication yes
+#AuthorizedKeysFile     .ssh/authorized_keys
+-----------delete #---------------------
+RSAAuthentication yes
+PubkeyAuthentication yes
+AuthorizedKeysFile      .ssh/authorized_keys
+----------stop & start ssh----------------------
+0513-044 The sshd Subsystem was requested to stop.
+0513-059 The sshd Subsystem has been started. Subsystem PID is 692492.
+</normal>:[root]#cat aix-setup-user-keypair.sh 
+#!/bin/sh
+
+echo "-----------check----------------------"
+cat /etc/ssh/sshd_config|grep RSAAuthentication|grep -v RhostsRSAAuthentication
+cat /etc/ssh/sshd_config|grep PubkeyAuthentication
+cat /etc/ssh/sshd_config|grep AuthorizedKeysFile
+
+echo "----------add #----------------------"
+sed -i "/RSAAuthentication/s/^/#/1" /etc/ssh/sshd_config
+sed -i "/PubkeyAuthentication/s/^/#/1" /etc/ssh/sshd_config 
+sed -i "/AuthorizedKeysFile/s/^/#/1" /etc/ssh/sshd_config
+
+cat /etc/ssh/sshd_config|grep RSAAuthentication|grep -v RhostsRSAAuthentication
+cat /etc/ssh/sshd_config|grep PubkeyAuthentication 
+cat /etc/ssh/sshd_config|grep AuthorizedKeysFile
+
+echo "-----------delete #---------------------"
+sed -i "/RSAAuthentication/s/#//1" /etc/ssh/sshd_config
+sed -i "/PubkeyAuthentication/s/#//1" /etc/ssh/sshd_config 
+sed -i "/AuthorizedKeysFile/s/#//1" /etc/ssh/sshd_config
+
+cat /etc/ssh/sshd_config|grep RSAAuthentication|grep -v RhostsRSAAuthentication
+cat /etc/ssh/sshd_config|grep PubkeyAuthentication 
+cat /etc/ssh/sshd_config|grep AuthorizedKeysFile
+
+echo "----------stop & start ssh----------------------"
+stopsrc -g ssh
+startsrc -g ssh
+===================================================================================================================================
+</etc/ssh>:[root]#stopsrc -g ssh 
+0513-004 The Subsystem or Group, ssh, is currently inoperative.
