@@ -1,0 +1,46 @@
+</normal>:[root]#sh aix-install-linux-tool-packages.sh 
+-----------AIX5300-05 rpm command installed!----------
+-----------AIX5300-05 unzip command installed!----------
+-----------AIX5300-05 zip command installed!----------
+-----------AIX5300-05 bzip2 command installed!----------
+-----------AIX5300-05 gzip command installed!----------
+-----------AIX5300-05 lsof command installed!----------
+-----------AIX5300-05 curl command installed!----------
+-----------AIX5300-05 wget command installed!----------
+-----------AIX5300-05 python command installed!----------
+-----------AIX5300-05 sed command installed!----------
+-----------AIX5300-05 expect command installing!----------
+tcl                         ##################################################
+error: failed dependencies:
+        libtk8.4.so is needed by expect-5.42.1-4
+</normal>:[root]#vi aix-install-linux-tool-packages.sh 
+"aix-install-linux-tool-packages.sh" 265 lines, 9449 characters 
+
+</normal>:[root]#sh aix-install-linux-tool-packages.sh 
+-----------AIX5300-05 rpm command installed!----------
+-----------AIX5300-05 unzip command installed!----------
+-----------AIX5300-05 zip command installed!----------
+-----------AIX5300-05 bzip2 command installed!----------
+-----------AIX5300-05 gzip command installed!----------
+-----------AIX5300-05 lsof command installed!----------
+-----------AIX5300-05 curl command installed!----------
+-----------AIX5300-05 wget command installed!----------
+-----------AIX5300-05 python command installed!----------
+-----------AIX5300-05 sed command installed!----------
+-----------AIX5300-05 expect command installing!----------
+package tcl-8.4.7-4 is already installed
+tk                          ##################################################
+expect                      ##################################################
+
+</normal>:[root]#sh aix-install-linux-tool-packages.sh 
+-----------AIX5300-05 rpm command installed!----------
+-----------AIX5300-05 unzip command installed!----------
+-----------AIX5300-05 zip command installed!----------
+-----------AIX5300-05 bzip2 command installed!----------
+-----------AIX5300-05 gzip command installed!----------
+-----------AIX5300-05 lsof command installed!----------
+-----------AIX5300-05 curl command installed!----------
+-----------AIX5300-05 wget command installed!----------
+-----------AIX5300-05 python command installed!----------
+-----------AIX5300-05 sed command installed!----------
+-----------AIX5300-05 expect command installed!----------

@@ -234,6 +234,33 @@ else
 fi
 
 
+#linux expect package
+if [ ! -f "/usr/bin/expect" ] ;then
+    av0=$(oslevel -r|awk -F- '{print $1}')
+    case $av0 in 
+        5300)
+            echo "-----------AIX$(oslevel -r) expect command installing!----------"
+            cd /normal/aix53lt;rpm -ivh $(ls|grep tcl-)
+            cd /normal/aix53lt;rpm -ivh $(ls|grep tk-)
+            cd /normal/aix53lt;rpm -ivh $(ls|grep expect-)
+            ;;
+        6100)
+            echo "-----------AIX$(oslevel -r) expect command installing!----------"
+            cd /normal/aix61lt;rpm -ivh $(ls|grep tcl-)
+            cd /normal/aix61lt;rpm -ivh $(ls|grep tk-)
+            cd /normal/aix61lt;rpm -ivh $(ls|grep expect-)
+            ;;
+        7100)
+            echo "-----------AIX$(oslevel -r) expect command installing!----------"
+            cd /normal/aix61lt;rpm -ivh $(ls|grep tcl-)
+            cd /normal/aix61lt;rpm -ivh $(ls|grep tk-)
+            cd /normal/aix61lt;rpm -ivh $(ls|grep expect-)
+            ;;
+    esac
+else
+    echo "-----------AIX$(oslevel -r) expect command installed!----------"
+fi
+
 #nmon
 
 #linux yum package
