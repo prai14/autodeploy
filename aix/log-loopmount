@@ -1,0 +1,86 @@
+ABV6DG01:/root>#df -g
+Filesystem    GB blocks      Free %Used    Iused %Iused Mounted on
+/dev/hd4           5.00      2.97   41%    18450     3% /
+/dev/hd2           6.00      3.87   36%    50983     6% /usr
+/dev/hd9var        1.00      0.60   41%     7374     5% /var
+/dev/hd3           5.00      4.23   16%     1002     1% /tmp
+/dev/hd1           5.00      0.86   83%    73047    23% /home
+/dev/hd11admin      0.50      0.50    1%        5     1% /admin
+/proc                 -         -    -         -     -  /proc
+/dev/hd10opt       5.00      4.78    5%    10259     1% /opt
+/dev/livedump      0.50      0.50    1%        4     1% /var/adm/ras/livedump
+/dev/fslv00       50.00     17.40   66%    63157     2% /oracle
+/dev/fslv01     9216.00    925.78   90%    21587     1% /oradata
+ABV6DG01:/root>#lslpp -l |grep loopback
+  devices.loopback.rte       6.1.5.0  COMMITTED  Loopback Device Driver 
+  devices.loopback.rte       6.1.5.0  COMMITTED  Loopback Device Driver 
+ABV6DG01:/root>##loopmount -i tsm__admin_v6.2_aix.iso -m /iso -o "-V cdrfs -o ro"
+ABV6DG01:/root>#oslevel -s 
+6100-05-08-1207
+ABV6DG01:/root>#oslevel -qr
+Known Recommended Maintenance Levels
+------------------------------------
+6100-05
+6100-04
+6100-03
+6100-02
+6100-01
+6100-00
+------------------------------------------------------------------------------------
+</normal>:[root]#bash aix-iso-mount.bash
+-----6100-04 is greater than or equal to 5300-05-----
+</normal>:[root]#ls -lrt
+total 368
+-rw-r--r--    1 root     system        13466 Mar 24 10:19 odm-info-10.3.0.18
+-rw-r--r--    1 root     system          532 Mar 24 10:29 query-vgda-info.sh
+-rw-r--r--    1 root     system         1625 Mar 24 10:30 get-odm-info.sh
+-rw-r--r--    1 root     system        14590 Mar 24 10:31 vgda-info-10.3.0.18
+-rw-r--r--    1 root     system          993 Mar 30 10:29 log-bash-tools
+-rw-r--r--    1 root     system        32208 Mar 30 10:30 log-rpm-corrept
+-rw-r--r--    1 root     system         1137 Mar 31 13:39 log-unpack-readline-devel
+-rw-r--r--    1 root     system          673 Apr 01 10:27 quote.txt
+-rw-r--r--    1 root     system         1656 Apr 01 13:17 sysuser.log
+-rw-r--r--    1 root     system          791 Apr 01 16:36 nosysuser.sh
+-rw-r--r--    1 root     system         1313 Apr 01 16:42 passwd.txt
+-rw-r--r--    1 root     system         3083 Apr 01 16:48 aix-install-linux-tool-bash.sh
+drwxr-xr-x    4 root     system         4096 Apr 05 09:35 aix53lt
+drwxr-xr-x    4 root     system         4096 Apr 05 09:35 aix61lt
+-rw-r--r--    1 root     system         9614 Apr 05 09:36 aix-install-linux-tool-packages.sh
+-rw-r--r--    1 root     system         2505 Apr 05 09:46 log-expect
+-rw-r--r--    1 root     system          398 Apr 05 13:00 create-user-keypair.exp
+-rw-r--r--    1 root     system         9023 Apr 05 14:57 log-root-keypair
+-rw-r--r--    1 root     system         2058 Apr 05 15:05 aix-create-user-keypair.sh
+drwxr-xr-x    2 root     system          256 Apr 05 15:05 login
+-rw-r--r--    1 root     system        16736 Apr 05 15:10 log-no-root-keypair
+-rw-r--r--    1 root     system         2422 Apr 05 16:59 log-setup-keypair
+-rw-r--r--    1 root     system         1136 Apr 06 08:22 aix-setup-user-keypair.sh
+-rw-r--r--    1 root     system         1248 Apr 06 08:50 log-loopmount
+-rw-r--r--    1 root     system         1137 Apr 06 09:39 aix-iso-mount.bashbak
+-rw-r--r--    1 root     system          761 Apr 06 09:56 aix-iso-mount.bash
+</normal>:[root]#pwd
+/normal
+</normal>:[root]#cat aix-iso-mount.bash
+#!/bin/bash
+
+#mount cdrom
+#mount -rv cdrfs /dev/cd0 /mnt
+ 
+VERSION="6100-04"
+VERSION2=$(oslevel -r)
+ 
+function version_ge() { test "$(echo "$@" | tr " " "\n" | sort -r | head -n 1)" == "$VERSION"; } 
+
+if version_ge $VERSION $VERSION2; then
+    echo "-----$VERSION is greater than or equal to $VERSION2-----"
+    #mklv -y is0_lv datavg 10
+    #dd if=test_unix_mount_iso.iso of=/dev/iso_lv bs=10M
+    #mount -rv cdrfs /dev/iso_lv   /mnt
+else
+    echo "-----$VERSION is less than $VERSION2-----"
+    loopbackp=$(lslpp -l|grep loopback)
+    loopmount=$(which loopmount)
+    if [ "$loopbackp" != "" ] || [ "$loopmount" != "" ] ;then
+        echo "-----AIX $(oslevel -r) ISO file mount-----"
+        #loopmount -i PowerHA6.1.iso -o "-V cdrfs -o ro" -m /mnt
+    fi
+fi

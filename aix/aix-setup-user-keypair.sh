@@ -24,5 +24,7 @@ cat /etc/ssh/sshd_config|grep PubkeyAuthentication
 cat /etc/ssh/sshd_config|grep AuthorizedKeysFile
 
 echo "----------stop & start ssh----------------------"
-stopsrc -g ssh
-startsrc -g ssh
+stopsrc  -s sshd
+startsrc -s sshd
+
+lssrc -a|grep ssh

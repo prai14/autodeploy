@@ -1,0 +1,34 @@
+#!/bin/bash
+
+#mount cdrom
+#mount -rv cdrfs /dev/cd0 /mnt
+ 
+VERSION="6100-04"
+VERSION2=$(oslevel -r)
+ 
+function version_gt() { test "$(echo "$@" | tr " " "\n" | sort -r | head -n 1)" != "$1"; }
+function version_le() { test "$(echo "$@" | tr " " "\n" | sort -r | head -n 1)" == "$1"; }
+function version_lt() { test "$(echo "$@" | tr " " "\n" | sort -r | head -n 1)" != "$1"; }
+function version_ge() { test "$(echo "$@" | tr " " "\n" | sort -r | head -n 1)" == "$1"; }
+ 
+if version_gt $VERSION $VERSION2; then
+   echo "$VERSION is greater than $VERSION2"
+fi
+ 
+if version_le $VERSION $VERSION2; then
+    echo "$VERSION is less than or equal to $VERSION2"
+    echo "---------------over AIX 6100-04-----------"
+    #loopmount -i PowerHA6.1.iso -o "-V cdrfs -o ro" -m /mnt
+fi
+ 
+if version_lt $VERSION $VERSION2; then
+   echo "$VERSION is less than $VERSION2"
+fi
+ 
+if version_ge $VERSION $VERSION2; then
+    echo "$VERSION is greater than or equal to $VERSION2"
+    echo "--------------less AIX 6100-04-----------"
+    #mklv -y is0_lv datavg 10
+    #dd if=test_unix_mount_iso.iso of=/dev/iso_lv bs=10M
+    #mount -rv cdrfs /dev/iso_lv   /mnt
+fi
